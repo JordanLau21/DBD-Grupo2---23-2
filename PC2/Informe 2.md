@@ -1,5 +1,12 @@
 # 1. MODELADO CONCEPTUAL DE DATOS
 ## DICCIONARIO DE DATOS
+#### Nombre entidad: EMPLEADO
+Semantica: 
+
+
+
+
+
 #### Nombre entidad: SOLICITUD
 Semantica: Entidad que representa las solicitudes hechas por los empleados
 
