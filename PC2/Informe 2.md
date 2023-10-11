@@ -461,7 +461,6 @@ Satisface la Segundo Forma Normal
 - Hay dependencia transitiva: Medio de Pago y Cuenta Bancaria dependen directamente de Tipo de Pago
 ![image1](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/c5cda6dd4bea271181432fa153197d74a9215fbc/image1.png)
 
-- Entidad: CONTRATO
 # 4. CREACIÓN DE TABLAS
 - Tabla: EMPRESA
 ```
