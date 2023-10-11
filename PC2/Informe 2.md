@@ -39,16 +39,16 @@ Semantica:
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
 | id_contrato |INT|99|2 dígitos||Identificador del contrato firmado por el empleado y la empresa|
-| Tipo de Jornada | CHAR   ||||Tipo de jornada que realiza el empleado en la empresa|
-| Sueldo Base | CHAR   ||||Sueldo base percibido por el empleado en la empresa|
-| Fecha de Contrato | CHAR   ||||Fecha de firma del contrato entre el empleado y la empresa|
-| Fecha Término de Contrato | CHAR   ||||Fecha de finalización del contrato firmado entre el empleado y la empresa|
-| Estado de Contrato | CHAR   ||||Estado del contrato firmado entre el empleado y la empresa|
-| Tipo de Contrato | CHAR   ||||Tipo de contrato firmado entre el empleado y la empresa|
-| Horario Semanal | CHAR   ||||Horario semanal realizado por el empleado en la empresa|
-| Periodicidad de la Jornada | CHAR   ||||Periodicidad de la jornada semanal por parte del empleado en la empresa|
-| Líquido Teórico | CHAR   ||||Líquito teórico que percibe el empleado por parte de la empresa|
-| Periodicidad de Pago | CHAR   ||||Periodicidad de pago realizado por la empresa al empleado|
+| Tipo de Jornada | CHAR   |||||Tipo de jornada que realiza el empleado en la empresa|
+| Sueldo Base | CHAR   |||||Sueldo base percibido por el empleado en la empresa|
+| Fecha de Contrato | CHAR   |||||Fecha de firma del contrato entre el empleado y la empresa|
+| Fecha Término de Contrato | CHAR   |||||Fecha de finalización del contrato firmado entre el empleado y la empresa|
+| Estado de Contrato | CHAR   |||||Estado del contrato firmado entre el empleado y la empresa|
+| Tipo de Contrato | CHAR   |||||Tipo de contrato firmado entre el empleado y la empresa|
+| Horario Semanal | CHAR   |||||Horario semanal realizado por el empleado en la empresa|
+| Periodicidad de la Jornada | CHAR   |||||Periodicidad de la jornada semanal por parte del empleado en la empresa|
+| Líquido Teórico | CHAR   |||||Líquito teórico que percibe el empleado por parte de la empresa|
+| Periodicidad de Pago | CHAR   |||||Periodicidad de pago realizado por la empresa al empleado|
 
 
 #### Nombre entidad: SOLICITUD
