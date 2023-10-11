@@ -301,10 +301,10 @@ Semantica:  Representa a la entidad que almacenara informacion de la empresa
 |----------|----------|----------|----------|----------|----------|----------|
 | id_empresa | NUMERIC | 9999 | 4 dígitos | - | - | Identificador de la empresa |
 | razon_social | VARCHAR | X(200) | NOT NULL | - | - | Nombre de la empresa registrada en el Registro de Entidades Contratantes |
-| ruc | VARCHAR | X(20) | Not Null | - | - | Corresponde al Registro Único de Contribuyentes, el número que identifica a la empresa ante la SUNAT |
-| rubro | VARCHAR | X(35) | Not Null | - | - | Descripcion sobre el movimiento de planilla registrado |
+| ruc | VARCHAR | X(20) | NOT NULL | - | - | Corresponde al Registro Único de Contribuyentes, el número que identifica a la empresa ante la SUNAT |
+| rubro | VARCHAR | X(35) | NOT NULL | - | - | Corresponde al sector dentro de la actividad económica |
 | estado | CHAR  | X(1) | TAB |- | - | Corresponde al estado de empresa contratante, informado por la misma | 
-| id_cuenta_empresa | INT | 999999 | 6 dígitos | - | - | Diferencia al usuario de otros usuarios |
+| id_cuenta_empresa | NUMERIC | 999999 | 6 dígitos | - | - | Diferencia al usuario de otros usuarios |
 
 TAB:
 | Codigo | estado |
