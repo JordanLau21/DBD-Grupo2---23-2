@@ -414,11 +414,7 @@ TAB:
 | I | Inactivo |
 
 ## LOOKUP TABLES
-- Entidad: EMPLEADO
 
-
-
-- Entidad: Contrato
 
 
 # 3. VALIDACIÓN DEL ESQUEMA UTILIZADO LAS FORMAS NORMALES
