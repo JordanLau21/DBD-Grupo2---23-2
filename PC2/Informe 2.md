@@ -370,12 +370,27 @@ TAB: Sexo
 
 | Nombre de la relacion | Entidades participantes  |  Cardinalidad  |  Atributos  |  ¿Entidad Aparte? |  
 |----------|----------|----------|----------|----------|
-| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
-| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
-| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
-| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
-| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
-| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
+| Envía | EMPLEADO-SOLICITUD | 1-N | - | NO |
+| Pertenece | SOLCITUD-EMPRESA | N-1 | - | NO |
+| Tiene | EMPRESA-REPRESENTANTE LEGAL | 1-N | - | NO |
+| Tiene | EMPRESA-CUENTA EMPRESA | 1-1 | - | NO |
+| Tiene | EMPRESA-ÁREA | 1-N | - | NO |
+| Tiene | EMPRESA-EMPLEADO | 1-N | - | NO |
+| Maneja | EMPRESA-CARGO | 1-N | - | NO |
+| Tiene | ÁREA-CONTRATO | 1-N | - | NO |
+| Tiene | CONTRATO-EMPLEADO | N-1 | - | NO |
+| Tiene | CONTRATO-ASISTENCIAS | 1-N | - | NO |
+| Tiene | CONTRATO-BOLETA | 1-N | - | NO |
+| Tiene | CONTRATO-CARGO | N-1 | - | NO |
+| Tiene | CONTRATO-MOVIMIENTO DE PLANILLA | 1-N | - | NO |
+| Compuesta | MOVIMIENTO DE PLANILLA-BOLETA | N-1 | - | NO |
+| Tiene | MOVIMIENTO DE PLANILLA-CONCEPTO NOMINA | N-1 | - | NO |
+| Tiene | PLANILLA-BOLETA | 1-N | - | NO |
+| Encuentran | CONTRATO-PLANILLA | N-N |  | SÍ |
+| Compuesta | ASISTENCIAS-BOLETA | N-1 | - | NO |
+| Tiene | ASISTENCIAS-CONCEPTO NOMINA | N-1 | - | NO |
+| Tiene | EMPLEADO-CUENTA | 1-1 | - | NO |
+| Contiene | EMPLEADO-FAMILIAR EMPLEADO | 1-N | - | NO |
 
 ### DICCIONARIO DE DATOS DE RELACIONES N-N (MUCHOS A MUCHOS)
 #### Nombre entidad: MOVIMIENTO PLANILLA
