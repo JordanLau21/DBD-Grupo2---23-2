@@ -224,7 +224,7 @@ Semantica: Función de la cual una persona tiene la responsabilidad en la organi
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| IdCargo |NUMERIC|99|2 dìgitos|-|-||
+| IdCargo |NUMERIC|99|2 dìgitos|-|-|Identifica y diferencia  a los diferentes cargos del personal |
 | NombreDeCargo | VARCHAR   |X(40)|NOT NULL|-|-||
 | Descripcion | VARCHAR  |X(100)|NOT NULL|-|-||
 | Requerimientos| VARCHAR  |X(100)|NOT NULL|-|-||
