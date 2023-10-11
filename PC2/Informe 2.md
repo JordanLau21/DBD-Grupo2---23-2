@@ -27,7 +27,7 @@ Semantica: Entidad que representa el estado de las solicitudes hechas por los em
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
 | id_est_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Diferencia el estado de la solicitud de un empleado |
-| descripcion_solicitud | CHAR | X(3) | TAB | - | - | Representa el estado de la solicitud de un empleado |
+| descripcion_solicitud | CHAR | X(3) | NOT NULL | - | - | Representa el estado de la solicitud de un empleado |
 
 
 #### Nombre entidad: TIPO SOLICITUD
@@ -36,7 +36,7 @@ Semantica: Entidad que representa el tipo de las solicitudes hechas por los empl
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
 | id_tipo_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Diferencia el tipo de solicitud del empleado |
-| descripcion_tipo_solicitud | CHAR | X(3) | TAB | - | - | Representa el tipo de solicitud del empleado |
+| descripcion_tipo_solicitud | CHAR | X(3) | NOT NULL | - | - | Representa el tipo de solicitud del empleado |
 
 
 
@@ -48,13 +48,15 @@ Semantica: Representa el respectivo usuario con el cual dicho empleado iniciará
 | id_cuenta | INTEGER | 999999 | 6 dígitos | - | - | Diferencia al usuario de otros usuarios |
 | usuario | VARCHAR | X(32) | NOT NULL | - | - | Nombre creado por el usuario |
 | contraseña | VARCHAR | X(32) | NOT NULL | - | - | Permite dar exclusividad al usuario |
-| estado_cuenta | CHAR | X(16) | TAB | - | - | Representa el estado en el que se encuentra la cuenta del empleado |
+| id_estado_cuenta | INTEGER | 99999 | 5 digitos | - | - | Diferencia el estado en el que se encuentra la cuenta del empleado |
 
-TAB1:
-| Codigo | estado_cuenta |
-|----------|----------|
-| ec1 | ACTIVO |
-| ec2 | INACTIVO |
+#### Nombre entidad: ESTADO CUENTA
+Semantica: Representa el estado del respectivo usuario con el cual dicho empleado iniciará sesión en el sistema de planillas
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|---------|-------|
+| id_estado_cuenta | INTEGER | 99999 | 5 digitos | - | - | Diferencia el estado en el que se encuentra la cuenta del empleado |
+| descripcion_estado_cuenta | CHAR | X(3) | NOT NULL | - | - | Representa el estado en el que se encuentra la cuenta del empleado |
 
 #### Entidad: EMPLEADO
 Semantica: Persona que trabaja en la empresa a cambio de una remuneración
