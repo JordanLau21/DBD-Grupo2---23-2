@@ -11,6 +11,8 @@ Semantica:
 | Apellido Materno| CHAR  ||||
 | Tipo Documento | CHAR   ||||
 | Nro Documento | CHAR   ||||
+| Sexo | CHAR   ||||
+| Fecha de Nacimiento | CHAR   ||||
 | Edad | INT  |999999|6 dìgitos||
 | Estado Civil | CHAR   ||||
 | País de Nacimiento | CHAR   ||||
@@ -20,9 +22,15 @@ Semantica:
 | e-mail corporativo | CHAR   ||||
 | Dirección | CHAR   ||||
 | Grupo Sanguíneo | CHAR   ||||
-
-
-
+| Régimen Pensionario | CHAR   ||||
+| Situación de Discapacidad | CHAR   ||||
+| Seguro de Salud | CHAR   ||||
+| Fecha de Ingreso | CHAR   ||||
+| Tipo de Pago | CHAR   ||||
+| Medio de Pago | CHAR   ||||
+| Cuenta Bancaria | CHAR   ||||
+| Frecuencia de Pago | CHAR   ||||
+| Día de Pago | CHAR   ||||
 
 
 #### Nombre entidad: SOLICITUD
