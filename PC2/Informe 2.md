@@ -240,12 +240,12 @@ Semantica: Función de la cual una persona tiene la responsabilidad en la organi
 |----------|----------|----------|----------|----------|----------|----------|
 | IdCargo |INT|99|2 dìgitos|-|-||
 | NombreDeCargo | CHAR   |X(40)|NOT NULL|-|-||
-| Descripcion | CHAR  |X(100)|NOT NULL|--|||
+| Descripcion | CHAR  |X(100)|NOT NULL|-|-||
 | Requerimientos| CHAR  |X(100)|NOT NULL|-|-||
 | IdEmpresa | INT  |999999|6 dìgitos|-|-||
 
 #### Entidad: AREA
-Semantica: Función de la cual una persona tiene la responsabilidad en la organización
+Semantica: Son las diversas actividades màs importantes de la empresa
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
