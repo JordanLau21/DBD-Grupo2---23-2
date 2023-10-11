@@ -38,7 +38,7 @@ Semantica:
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| id_contrato |INT|99|2 dígitos||Identificador del contrato firmado por el empleado y la empresa|
+| id_contrato |INT|99|2 dígitos|||Identificador del contrato firmado por el empleado y la empresa|
 | Tipo de Jornada | CHAR   |||||Tipo de jornada que realiza el empleado en la empresa|
 | Sueldo Base | CHAR   |||||Sueldo base percibido por el empleado en la empresa|
 | Fecha de Contrato | CHAR   |||||Fecha de firma del contrato entre el empleado y la empresa|
