@@ -1,3 +1,7 @@
+# 0. GRABACIONES INDIVIDUALES
+
+#### Link del repositorio OneDrive: [REPO](https://unipe-my.sharepoint.com/:f:/g/personal/jean_yucra_s_uni_pe/EsvbOPh8oYBFoIiMJ6urTQMBgd3mRbZN3uTgxpePPa_d6A?e=feTYoL)
+
 # 1. MODELADO CONCEPTUAL DE DATOS
 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/b66ff0a7-e467-4384-8e46-474ab7a93587)
