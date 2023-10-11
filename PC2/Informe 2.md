@@ -421,6 +421,10 @@ TAB:
 
 - Entidad: EMPLEADO
 
+
+
+
+
 - Entidad: CONTRATO
 
 # 4. CREACIÓN DE TABLAS
