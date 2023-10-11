@@ -259,6 +259,44 @@ TAB:
 | A | Activo |
 | I | Inactivo |
 
+#### Nombre entidad: PLANILLA
+Semantica:  Representa al documento que alberga a todos los trabajadores activos durante un periodo que recibiran pago por su trabajo en dicho periodo
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| id_planilla | INT | 999999 | 6 dígitos | - | - | Identificad or único de planilla|
+| periodo | CHAR | XXXXXXXX | NOT NULL | - | - | Fecha final del registro de movimiento planilla |
+| dias_laborables | INT | 99 | >0 | - | - | Descripcion sobre el movimiento de planilla registrado |
+| fechaIinicio | DATE | AAAAMMDD | Válido en calendario | - | - | Monto en soles, que se le asignara a dicho registro |
+| fechaFin | DATE  | AAAAMMDD | Válido en calendario |- | - | Estado de dicho registro | 
+| fechaCalculo | DATE | AAAAMMDD | Válido en calendario |- | - | Identificador del concepto de nomina que esta registrando |
+
+
+#### Nombre entidad: BOLETA
+Semantica:  Boleta que registra el pago a uun trabajador de la planilla en determinado periodo
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| id_boleta | INT | 999999 | 6 dígitos | - | - | Identificador único de boleta|
+| id_planilla | INt | 999999 | 6 dígitos | - | - | Identificador unico de planilla a la que pertenece esta boleta |
+| id_empleado | INT | 99 | 7 dígitos | - | - | Identificador único de empleado al que le pertenece esta boleta |
+| totalIngresos | FLOAT | >=0 | soles| - | - | Total de ingresos del empleado en el periodo |
+| totalDescuentos| FLOAT  | >=0 |soles |- | - | Total de descuentos del empleado en el periodo | 
+| TotalNeto | FLOAT | 999999.99 | >=0 |soles | totalIngresos - totalDescuentos | Total neto que se le pagará al empleado |
+| TotalAporte| FLOAT | 999999.99 | >=0 | soles | - | Total de aportes que recibe este empleado |
+
+#### Nombre entidad: CONCEPTO NOMINA
+Semantica:  Representa un concepto que interviene en el calculo de la boleta
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| Id_concepto | INT | 999999 | 6 dígitos | - | - | Identificador único de boleta|
+| nombreConcepto | INT | 999999 | 6 dígitos | - | - | Identificador unico de planilla a la que pertenece esta boleta |
+| tipoOperacion | CHAR | 99 | 7 dígitos | - | - | Identificador único de empleado al que le pertenece esta boleta |
+| estadoConcepto | CHAR | >=0 | soles| - | - | Total de ingresos del empleado en el periodo |
+| valor | CHAR | FLOAT | >=0 |soles | totalIngresos - totalDescuentos | Total neto que se le pagará al empleado |
+
+
+
+
 ## RELACIONES
 ### TABLA DE RELACIONES
 
@@ -291,6 +329,8 @@ TAB:
 |----------|----------|
 | A | Activo |
 | I | Inactivo |
+
+
 
 
 ## LOOKUP TABLES
