@@ -14,8 +14,8 @@ Semantica:
 | Sexo | CHAR   ||TAB|||Sexo del empleado de la empresa|
 | Fecha de Nacimiento | DATE   |AAAAMMDD|Válida en Calendario|||Fecha de nacimiento del empleado de la empresa|
 | Edad | INT   |99|>18|Años|Fecha de Nacimiento|Edad del empleado de la empresa|
-| Estado Civil | CHAR   ||||||
-| País de Nacimiento | CHAR   |||||
+| Estado Civil | CHAR   |X|TAB|||Estado Civil del empleado de la empresa|
+| País de Nacimiento | CHAR   |x(30)|NOT NULL|||País de Nacimiento del empleado de la empresa|
 | Celular | CHAR   |||||
 | Teléfono de Oficina | CHAR   |||||
 | e-mail personal | CHAR   |||||
