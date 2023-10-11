@@ -532,15 +532,19 @@ CREATE TABLE EMPRESA(
 - Tabla: REPRESENTANTE LEGAL
 ```
 CREATE TABLE REPRESENTANTE_LEGAL (
-    id_representante NUMERIC(4) PRIMARY KEY,
+    id_representante INT GENERATED ALWAYS AS IDENTITY,
+  	id_empresa INT,
     Nombre CHAR(60) NOT NULL,
     Apellido_Paterno CHAR(60) NOT NULL,
     Apellido_Materno CHAR(60) NOT NULL,
     Nro_Documento CHAR(8),
     Sexo CHAR(3),
     Fecha_de_Nacimiento DATE,
-    estado CHAR(1) CHECK (estado IN ('A', 'I')),
-    id_empresa NUMERIC(4) FOREING KEY,
+  	PRIMARY KEY(id_representante),
+  	CONSTRAINT fk_empresa
+  		FOREIGN KEY(id_empresa)
+  		REFERENCES EMPRESA(id_empresa)
+  		ON DELETE SET NULL
 );
 ```
 -tabla: CARGO
