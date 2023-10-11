@@ -211,18 +211,18 @@ Semantica: Función de la cual una persona tiene la responsabilidad en la organi
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| IdCargo |NUMERIC|99|2 dìgitos|-|-|Identifica y diferencia  a los diferentes cargos del personal |
+| IdCargo |INTEGER|99|2 dìgitos|-|-|Identifica y diferencia  a los diferentes cargos del personal |
 | NombreDeCargo | VARCHAR   |X(40)|NOT NULL|-|-|Nombre del cargo de cada elemento del personal|
 | Descripcion | VARCHAR  |X(100)|NOT NULL|-|-|Descripción general del cargo|
 | Requerimientos| VARCHAR  |X(100)|NOT NULL|-|-|Requerimientos necesarios minimos del cargo|
-| IdEmpresa | NUMERIC  |999999|6 dìgitos|-|-|Identifica y diferencia a la empresa|
+| IdEmpresa | INTEGER  |999999|6 dìgitos|-|-|Identifica y diferencia a la empresa|
 
 #### Entidad: AREA
 Semantica: Son las diversas actividades màs importantes de la empresa
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| IdArea |NUMERIC|99|2 dìgitos|-|-|Identifica y diferencia  a las diferentes áreas|
+| IdArea |INTEGER|99|2 dìgitos|-|-|Identifica y diferencia  a las diferentes áreas|
 | NombreArea | VARCHAR   |X(20)|NOT NULL|-|-|Nombre del área funcional de la empresa|
 | DescripcionArea | VARCHAR  |X(100)|NOT NULL|-|-|Descripcion general del área funcional de la empresa|
 | EstadoDeArea| VARCHAR  |X(10)|NOT NULL|-|-|Estado operativo del area funcional de la empresa|
