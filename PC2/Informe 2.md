@@ -250,9 +250,9 @@ Semantica: Función de la cual una persona tiene la responsabilidad en la organi
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
 | IdArea |INT|99|2 dìgitos||
-| NombreArea | CHAR   ||||
-| DescripcionArea | CHAR  ||||
-| EstadoDeArea| CHAR  ||||
+| NombreArea | CHAR   |X(20)|||
+| DescripcionArea | CHAR  |X(100)|||
+| EstadoDeArea| CHAR  |X(10)|||
 
 ## RELACIONES
 tabla 
