@@ -166,8 +166,8 @@ Semantica: Acuerdo firmado por el empleado y la empresa en que se esécifican lo
 | Sueldo Base | NUMERIC   |99999.99|>0|Soles||Sueldo base percibido por el empleado en la empresa|
 | Fecha de Contrato | DATE   |AAAAMMDD|Válido en calendario|||Fecha de firma del contrato entre el empleado y la empresa|
 | Fecha Término de Contrato | DATE   |AAAAMMDD|Válido en calendario|||Fecha de finalización del contrato firmado entre el empleado y la empresa|
-| Estado de Contrato | CHAR   |XXX|TAB|||Estado del contrato firmado entre el empleado y la empresa|
-| Tipo de Contrato | CHAR   |XXX|TAB|||Tipo de contrato firmado entre el empleado y la empresa|
+|id_estado_contrato | INTEGER   |XXX| |||Identificador del estado del contrato firmado entre el empleado y la empresa|
+|id_tipo_contrato | INTEGER   |XXX| |||Identificador del tipo de contrato firmado entre el empleado y la empresa|
 | Horario Semanal | TIME   |HH:MM:SS-HH:MM:SS|[00:00:00-23:59:59]|||Horario semanal realizado por el empleado en la empresa|
 | Periodicidad de la Jornada | CHAR   |XXXX|TAB|||Periodicidad de la jornada semanal por parte del empleado en la empresa|
 | Líquido Teórico | NUMERIC   |99999.99|>0|Soles||Líquito teórico que percibe el empleado por parte de la empresa|
