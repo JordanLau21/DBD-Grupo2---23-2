@@ -7,30 +7,30 @@ Semantica:
 |----------|----------|----------|----------|----------|----------|----------|
 | id_empleado |INT|999999|6 dígitos|||Identificar al empleado a nivel de la empresa|
 | Nombre | CHAR   |X(60)|NOT NULL|||Nombre del empleado de la empresa|
-| Apellido Paterno | CHAR  ||||
-| Apellido Materno| CHAR  ||||
-| Tipo Documento | CHAR   ||||
-| Nro Documento | CHAR   ||||
-| Sexo | CHAR   ||||
-| Fecha de Nacimiento | CHAR   ||||
-| Edad | INT  |999999|6 dìgitos||
-| Estado Civil | CHAR   ||||
-| País de Nacimiento | CHAR   ||||
-| Celular | CHAR   ||||
-| Teléfono de Oficina | CHAR   ||||
-| e-mail personal | CHAR   ||||
-| e-mail corporativo | CHAR   ||||
-| Dirección | CHAR   ||||
-| Grupo Sanguíneo | CHAR   ||||
-| Régimen Pensionario | CHAR   ||||
-| Situación de Discapacidad | CHAR   ||||
-| Seguro de Salud | CHAR   ||||
-| Fecha de Ingreso | CHAR   ||||
-| Tipo de Pago | CHAR   ||||
-| Medio de Pago | CHAR   ||||
-| Cuenta Bancaria | CHAR   ||||
-| Frecuencia de Pago | CHAR   ||||
-| Día de Pago | CHAR   ||||
+| Apellido Paterno | CHAR  |X(60)|NOT NULL|||Apellido paterno del empleado de la empresa|
+| Apellido Materno| CHAR  |X(60)|NOT NULL|||Apellido materno del empleado de la empresa|
+| Tipo Documento | CHAR   ||||||
+| Nro Documento | CHAR   ||||||
+| Sexo | CHAR   ||||||
+| Fecha de Nacimiento | CHAR   ||||||
+| Edad | INT  |999999|6 dìgitos|||||
+| Estado Civil | CHAR   ||||||
+| País de Nacimiento | CHAR   |||||
+| Celular | CHAR   |||||
+| Teléfono de Oficina | CHAR   |||||
+| e-mail personal | CHAR   |||||
+| e-mail corporativo | CHAR   |||||
+| Dirección | CHAR   |||||
+| Grupo Sanguíneo | CHAR   |||||
+| Régimen Pensionario | CHAR   |||||
+| Situación de Discapacidad | CHAR   |||||
+| Seguro de Salud | CHAR   |||||
+| Fecha de Ingreso | CHAR   |||||
+| Tipo de Pago | CHAR   |||||
+| Medio de Pago | CHAR   |||||
+| Cuenta Bancaria | CHAR   |||||
+| Frecuencia de Pago | CHAR   |||||
+| Día de Pago | CHAR   |||||
 
 
 #### Nombre entidad: CONTRATO
