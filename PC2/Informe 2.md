@@ -1,9 +1,11 @@
 # 1. MODELADO CONCEPTUAL DE DATOS
-![DIAGRAMA MER](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/740d7a57-ec19-4fc4-9bb0-6f11c80891dc)
+
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/b66ff0a7-e467-4384-8e46-474ab7a93587)
 
 # 2. MODELAMIENTO LÓGICO
 ## DIAGRAMA DE MODELADO RELACIONAL
-![DIAGRAMA RELACIONAL](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/dd9b03c7-0fb3-46b8-81aa-db2b08ebef13)
+
+![image (1)](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/e903d1b6-2d7b-4124-917b-1f9c186e474f)
 
 ## DICCIONARIO DE DATOS
 #### Nombre entidad: SOLICITUD
