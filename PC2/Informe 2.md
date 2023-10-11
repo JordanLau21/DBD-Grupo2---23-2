@@ -1,6 +1,10 @@
 # 1. MODELADO CONCEPTUAL DE DATOS
+![DIAGRAMA MER](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/740d7a57-ec19-4fc4-9bb0-6f11c80891dc)
 
 # 2. MODELAMIENTO LÓGICO
+## DIAGRAMA DE MODELADO RELACIONAL
+![DIAGRAMA RELACIONAL](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/dd9b03c7-0fb3-46b8-81aa-db2b08ebef13)
+
 ## DICCIONARIO DE DATOS
 #### Nombre entidad: SOLICITUD
 Semantica: Entidad que representa las solicitudes hechas por los empleados
@@ -215,25 +219,78 @@ Semantica: Son las diversas actividades màs importantes de la empresa
 | DescripcionArea | CHAR  |X(100)|NOT NULL|-|-||
 | EstadoDeArea| CHAR  |X(10)|NOT NULL|-|-||
 
-## RELACIONES
-tabla 
-## DICCIONARIO DE DATOS DE RELACIONES N-N (MUCHOS A MUCHOS)
-1. Nombre entidad: .
-   Semantica:
+#### Nombre entidad: ASISTENCIAS
+Semantica: Entidad representa el registros de las asistencias, licencias, vacaciones.
 
-| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Descripcion  |  
-|----------|----------|----------|----------|----------|
-||Verificar la identidad del usuario mediante un correo y una contraseña ingresada de manera correcta||||
-| Descripción   | El usuario ingresará su correo y contraseña respectiva para poder acceder al sistema de planillas; dicho sistema se encargará de verificar si los datos ingresados son correctos   ||||
-| Actor primario    | Un administrador de RRHH o otro empleado de la empresa  ||||
-| Actor secundario    | -  ||||
-| Precondiciones    | Los datos que ingrese el usuario deben estar en la base de datos del sistema  ||||
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| id_asistencia | NUMERIC | 9999 | 4 dígitos | - | - | Identificador de un registro de asistencia en particular|
+| fecha_inicio | DATE | AAAAMMDD | Valiido en fecha | - | - | Fecha del registro de dicha asistencia |
+| fecha_final | DATE | AAAAMMDD | Valiido en fecha | - | - | Fecha final del registro de dicha asistencia |
+| comentario| VARCHAR | X(100) | Not Null | - | - | Comentario sobre dicha asistencia, licencia, permiso registrado |
+| valor | NUMERIC | 99 | Válido en tiempo | - | - | Valor contable relacionado al concepto |
+| estado | CHAR  | X(1) | TAB |- | - | Estado de dicho registro | 
+| id_concepto | NUMERIC | 99 | 2 digitos | Not Null | - | Identificador del concepto de nomina que esta registrando |
+| id_boleta | INT  | 9999 | 4 digitos | Not Null | - | Identificador de la boleta de pago en donde se esta registrando | 
 
-TAB1:
-| Codigo | Semantica |
+TAB:
+| Codigo | estado |
 |----------|----------|
-| 11 | VALOR 1|
-| 22 | VALOR 2|
+| A | Activo |
+| I | Inactivo |
+
+#### Nombre entidad: MOVIMIENTO PLANILLA
+Semantica:  Representa los movimientos de planilla registrados dentro de la empresa
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| id_mov_plan | NUMERIC | 9999 | 4 dígitos | - | - | Identificador de un registro del movimiento planilla en particular|
+| fecha_inicio | DATE | AAAAMMDD | Valiido en fecha | - | - | Fecha del registro de dicho movimiento planilla |
+| fecha_final | DATE | AAAAMMDD | Valiido en fecha | - | - | Fecha final del registro de movimiento planilla |
+| descripcion | VARCHAR | X(100) | Not Null | - | - | Descripcion sobre el movimiento de planilla registrado |
+| monto | DECIMAL(4,2) | 9999.99 | Válido en tiempo | - | - | Monto en soles, que se le asignara a dicho registro |
+| estado | CHAR  | X(1) | TAB |- | - | Estado de dicho registro | 
+| id_concepto | NUMERIC | 99 | 2 digitos | Not Null | - | Identificador del concepto de nomina que esta registrando |
+| id_boleta | NUMERIC  | 9999 | 4 digitos | Not Null | - | Identificador de la boleta de pago en donde se esta registrando | 
+
+TAB:
+| Codigo | estado |
+|----------|----------|
+| A | Activo |
+| I | Inactivo |
+
+## RELACIONES
+### TABLA DE RELACIONES
+
+| Nombre de la relacion | Entidades participantes  |  Cardinalidad  |  Atributos  |  ¿Entidad Aparte? |  
+|----------|----------|----------|----------|----------|
+| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
+| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
+| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
+| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
+| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
+| Tiene | EMPLEADO-SOLICITUD | 1-N | - | NO |
+
+### DICCIONARIO DE DATOS DE RELACIONES N-N (MUCHOS A MUCHOS)
+#### Nombre entidad: MOVIMIENTO PLANILLA
+Semantica:  Representa los movimientos de planilla registrados dentro de la empresa
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| id_mov_plan | NUMERIC | 9999 | 4 dígitos | - | - | Identificador de un registro del movimiento planilla en particular|
+| fecha_inicio | DATE | AAAAMMDD | Valiido en fecha | - | - | Fecha del registro de dicho movimiento planilla |
+| fecha_final | DATE | AAAAMMDD | Valiido en fecha | - | - | Fecha final del registro de movimiento planilla |
+| descripcion | VARCHAR | X(100) | Not Null | - | - | Descripcion sobre el movimiento de planilla registrado |
+| monto | DECIMAL(4,2) | 9999.99 | Válido en tiempo | - | - | Monto en soles, que se le asignara a dicho registro |
+| estado | CHAR  | X(1) | TAB |- | - | Estado de dicho registro | 
+| id_concepto | NUMERIC | 99 | 2 digitos | Not Null | - | Identificador del concepto de nomina que esta registrando |
+| id_boleta | NUMERIC  | 9999 | 4 digitos | Not Null | - | Identificador de la boleta de pago en donde se esta registrando | 
+
+TAB:
+| Codigo | estado |
+|----------|----------|
+| A | Activo |
+| I | Inactivo |
 
 
 ## LOOKUP TABLES
