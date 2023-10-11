@@ -1,7 +1,7 @@
 # 1. MODELADO CONCEPTUAL DE DATOS
 ## DICCIONARIO DE DATOS
 #### Nombre entidad: EMPLEADO
-Semantica: 
+Semantica: Persona que trabaja en el sector non-food de la tienda Makro a cambio de una remuneración
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
