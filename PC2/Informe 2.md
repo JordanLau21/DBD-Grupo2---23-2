@@ -70,6 +70,23 @@ TAB:
 | es1 | Denegado |
 | es2 | En espera |
 | es3 | Aceptado |
+
+#### Nombre entidad: CUENTA
+Semantica: Representa el respectivo usuario con el cual dicho empleado iniciará sesión en el sistema de planillas
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|---------|-------|
+| id_cuenta | INT | 999999 | 6 dígitos | - | - | Diferencia al usuario de otros usuarios |
+| usuario | VARCHAR | X(32) | NOT NULL | - | - | Nombre creado por el usuario |
+| contraseña | VARCHAR | X(32) | NOT NULL | - | - | Permite dar exclusividad al usuario |
+| estado_cuenta | CHAR | X(16) | TAB | - | - | Representa el estado en el que se encuentra la cuenta del empleado |
+
+TAB1:
+| Codigo | estado_cuenta |
+|----------|----------|
+| ec1 | ACTIVO |
+| ec2 | INACTIVO |
+
 #### Entidad: EMPLEADO
 Semantica: Persona que trabaja en la empresa a cambio de una remuneración
 
