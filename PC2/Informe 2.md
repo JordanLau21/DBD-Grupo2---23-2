@@ -504,22 +504,29 @@ CREATE TABLE ESTADO_CUENTA(
     id_estado_cuenta INTEGER PRIMARY KEY,
     descripcion_estado_cuenta CHAR(3) NOT NULL
 );
----
-- Tabla: EMPRESA
-```
-CREATE TABLE EMPRESA (
-    id_empresa INTEGER PRIMARY KEY,
-    razon_social VARCHAR(200) UNIQUE NOT NULL,
-    ruc VARCHAR(20) UNIQUE NOT NULL,
-    rubro VARCHAR(35) UNIQUE NOT NULL
-);
-```
 - Tabla: CUENTA EMPRESA
 ```
 CREATE TABLE CUENTA_EMPRESA (
-    id_cuenta_empresa INTEGER PRIMARY KEY,
+    id_cuenta_empresa INT GENERATED ALWAYS AS IDENTITY,
     usuario VARCHAR(32) UNIQUE NOT NULL,
-    contraseña VARCHAR(32) UNIQUE NOT NULL
+    contraseña VARCHAR(32) UNIQUE NOT NULL,
+  	PRIMARY KEY(id_cuenta_empresa)
+);
+```
+---
+- Tabla: EMPRESA
+```
+CREATE TABLE EMPRESA(
+  id_empresa INT GENERATED ALWAYS AS IDENTITY,
+  id_cuenta_empresa INT,
+  razon_social VARCHAR(200) NOT NULL,
+  ruc VARCHAR(20) NOT NULL,
+  rubro VARCHAR(35) NOT NULL,
+  PRIMARY KEY(id_empresa),
+  CONSTRAINT fk_cuenta_empresa
+  	FOREIGN KEY(id_cuenta_empresa)
+  	REFERENCES CUENTA_EMPRESA(id_cuenta_empresa)
+  	ON DELETE SET NULL
 );
 ```
 - Tabla: REPRESENTANTE LEGAL
