@@ -425,6 +425,8 @@ TAB:
 |-----------|----------------|------|----------------|--------------|-------------|----|-------------------|----|------------|------------------|-------|-------------------|---------------|------------------|---------|---------------|-------------------|-------------------------|---------------|----------------|------------|-------------|---------------|------------------|-----------|
 |136459|Pérez|Silva|José|DNI|74895915|Masculino|11/12/2002|20|Soltero|Perú|984561234|2456687|joseps1@hotmail.com|juan.perez@gmail.com|Jr. Ana Paula Véliz # 4177 Piso 5|ABO|AFP|No Posee|Público|11/08/2023|Transferencia Bancaria|BCP|101548962341|Mensual|03|
 
+|126479|Paredes|Álvarez|Raúl|DNI|71259648|Masculino|15/01/1990|33|Casado|Perú|986421304|2478896|raulpaal04@hotmail.com|raul.paredes@gmail.com|Av. Camilo Quintero # 532|ABO|ONP|No Posee|Privado|14/01/2018|Transferencia Bancaria|BBVA|1478563405|Mensual|02|
+
 
 
 
