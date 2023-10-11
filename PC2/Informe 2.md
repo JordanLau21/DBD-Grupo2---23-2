@@ -396,9 +396,11 @@ TAB:
 
 - Entidad: EMPLEADO
 
-
-
-
+|Código|Nombre|
+|------|------|
+|154896|Luis Huamán Silva|
+|149632|Alex Mamani Olgado|
+|197845|Roberto Flores Velarde|
 
 - Entidad: CONTRATO
 
