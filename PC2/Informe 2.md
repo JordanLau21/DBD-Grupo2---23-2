@@ -43,6 +43,7 @@ Semantica: Entidad que representa el tipo de las solicitudes hechas por los empl
 | descripcion_tipo_solicitud | CHAR | X(3) | TAB | - | - | Representa el tipo de solicitud del empleado |
 
 TAB:
+
 | Codigo | tipo_solicitud |
 |----------|----------|
 | ts1 | Licencia |
