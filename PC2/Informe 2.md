@@ -536,3 +536,17 @@ VALUES (3, 'Pedro', 'Ramirez', 'Santos', '98765432', 'MAS', '1980-12-10', 'I', 3
 INSERT INTEGERO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
 VALUES (4, 'Luisa', 'Mendoza', 'Perez', '76543210', 'FEM', '1975-04-05', 'A', 4);
 ```
+CARGO
+```
+INSERT INTO CARGO  (id_cargo, nombre_cargo, descripcion, requerimientos, id_empresa)
+VALUES (11, 'Contador', 'manejar informacion financiera', 'Licenciatura en contabilidad', 478221);
+INSERT INTO CARGO  (id_cargo, nombre_cargo, descripcion, requerimientos, id_empresa)
+VALUES (14, 'Administrador', 'gestion empresarial', 'Licenciatura en administracion', 975541);
+```
+AREA
+```
+INSERT INTO AREA  (id_area, nombre_area, descripcion, estado)
+VALUES (15, 'Finanzas', 'Gstion de recursos financieros', 'A');
+INSERT INTO AREA  (id_area, nombre_area, descripcion, estado)
+VALUES (12, 'Contabilidad', 'Resgistro de operaciones financieras', 'I');
+```
