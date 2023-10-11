@@ -399,5 +399,28 @@ TAB:
 
 - Entidad: CONTRATO
 
+# 4. CREACIÓN DE TABLAS
+- Tabla: EMPRESA
+```
+CREATE TABLE EMPRESA (
+    id_empresa NUMERIC(4) PRIMARY KEY,
+    razon_social VARCHAR(200) NOT NULL,
+    ruc VARCHAR(20) NOT NULL,
+    rubro VARCHAR(35) NOT NULL,
+    estado CHAR(1) CHECK (estado IN ('A', 'I')),
+    id_cuenta_empresa NUMERIC(6)
+);
+```
 
-
+# 5. POBLAMIENTO DE DATOS
+- EMPRESAS
+```
+INSERT INTO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
+VALUES (1, 'Tecnosoluciones Perú S.A.C.', '20123456789', 'Tecnología', 'A', 123456);
+INSERT INTO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
+VALUES (2, 'Sabores Peruanos E.I.R.L.', '20456789123', 'Alimentación', 'A', 234567);
+INSERT INTO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
+VALUES (3, 'Construcciones Andinas S.A.', '20789012345', 'Construcción', 'A', 345678);
+INSERT INTO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
+VALUES (4, 'Jurídicos Legales y Asociados S.C.R.L.', '21012345678', 'Servicios Legales', 'A', 456789);
+```
