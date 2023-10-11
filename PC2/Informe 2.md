@@ -462,6 +462,49 @@ Satisface la Segundo Forma Normal
 ![image1](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/c5cda6dd4bea271181432fa153197d74a9215fbc/image1.png)
 
 # 4. CREACIÓN DE TABLAS
+- Tabla: SOLICITUD
+---
+CREATE TABLE SOLICITUD(
+    id_solicitud INTEGER PRIMARY KEY,
+    monto INTEGER,
+    fec_solicitud TIME NOT NULL,
+    hora_solicitud DATE NOT NULL,
+    id_est_solicitud INTEGER NOT NULL,
+    id_tipo_solicitud INTEGER NOT NULL,
+    id_empresa INTEGER NOT NULL,
+    id_empleado INTEGER NOT NULL
+);
+---
+- Tabla: ESTADO_SOLICITUD
+---
+CREATE TABLE ESTADO_SOLICITUD(
+    id_est_solicitud INTEGER PRIMARY KEY,
+    descripcion_est_solicitud CHAR(3)
+);
+---
+- Tabla: TIPO_SOLICITUD
+---
+CREATE TABLE TIPO_SOLICITUD(
+    id_tipo_solicitud INTEGER PRIMARY KEY,
+    descripcion_tipo_solicitud CHAR(3)
+);
+---
+- Tabla: CUENTA
+---
+CREATE TABLE CUENTA(
+    id_cuenta INTEGER PRIMARY KEY,
+    usuario VARCHAR(32) NOT NULL,
+    contraseña VARCHAR(32) NOT NULL,
+    id_estado_cuenta INTEGER NOT NULL
+);
+---
+- Tabla: ESTADO_CUENTA
+---
+CREATE TABLE ESTADO_CUENTA(
+    id_estado_cuenta INTEGER PRIMARY KEY,
+    descripcion_estado_cuenta CHAR(3) NOT NULL
+);
+---
 - Tabla: EMPRESA
 ```
 CREATE TABLE EMPRESA (
