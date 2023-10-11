@@ -290,10 +290,22 @@ Semantica:  Representa un concepto que interviene en el calculo de la boleta
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
 | Id_concepto | INT | 999999 | 6 dígitos | - | - | Identificador único de boleta|
-| nombreConcepto | INT | 999999 | 6 dígitos | - | - | Identificador unico de planilla a la que pertenece esta boleta |
-| tipoOperacion | CHAR | 99 | 7 dígitos | - | - | Identificador único de empleado al que le pertenece esta boleta |
-| estadoConcepto | CHAR | >=0 | soles| - | - | Total de ingresos del empleado en el periodo |
-| valor | CHAR | FLOAT | >=0 |soles | totalIngresos - totalDescuentos | Total neto que se le pagará al empleado |
+| nombreConcepto | CHAR | X(30) | NOT NULL | - | - | Identificador unico de planilla a la que pertenece esta boleta |
+| tipoOperacion | CHAR | XXX | TAB | - | - | Identificador único de empleado al que le pertenece esta boleta |
+| estadoConcepto | CHAR | XXX | TAB| - | - | Total de ingresos del empleado en el periodo |
+| valor | FLOAT | 9.99 | >=0 | - | - | Total neto que se le pagará al empleado |
+TAB:
+| Codigo | tipoOperacion |
+|----------|----------|
+| TO1 | Beneficio |
+| TO2 | Descuento |
+| TO3 | Aporte |
+
+| Codigo | estadoConcepto |
+|----------|----------|
+| EC1 | Activo |
+| EC2 | Inactivo |
+
 
 #### Nombre entidad: EMPRESA
 Semantica:  Representa a la entidad que almacenara informacion de la empresa
