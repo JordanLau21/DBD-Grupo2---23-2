@@ -130,6 +130,16 @@ Semantica: Función de la cual una persona tiene la responsabilidad en la organi
 | Requerimientos| CHAR  ||||
 | IdEmpresa | INT  |999999|6 dìgitos||
 
+#### Entidad: AREA
+Semantica: Función de la cual una persona tiene la responsabilidad en la organización
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| IdArea |INT|99|2 dìgitos||
+| NombreArea | CHAR   ||||
+| DescripcionArea | CHAR  ||||
+| EstadoDeArea| CHAR  ||||
+
 ## RELACIONES
 tabla 
 ## DICCIONARIO DE DATOS DE RELACIONES N-N (MUCHOS A MUCHOS)
