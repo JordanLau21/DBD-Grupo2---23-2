@@ -439,9 +439,12 @@ Satisface la Primera Forma Normal
 
 2) SEGUNDA FORMA NORMAL (2FN)
 - Satisface la Primera Forma Normal
-- Los atributos no clave dependen por completo del Primary Key (
+- No hay dependencias parciales
 
+Satisface la Segundo Forma Normal
 3) TERCERA FORMA NORMAL (3FN)
+
+
 
 - Entidad: CONTRATO
 
