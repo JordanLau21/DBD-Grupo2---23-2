@@ -15,9 +15,9 @@ Semantica:
 | Fecha de Nacimiento | DATE   |AAAAMMDD|Válida en Calendario|||Fecha de nacimiento del empleado de la empresa|
 | Edad | INT   |99|>18|Años|Fecha de Nacimiento|Edad del empleado de la empresa|
 | Estado Civil | CHAR   |X|TAB|||Estado Civil del empleado de la empresa|
-| País de Nacimiento | CHAR   |x(30)|NOT NULL|||País de Nacimiento del empleado de la empresa|
-| Celular | CHAR   |||||
-| Teléfono de Oficina | CHAR   |||||
+| País de Nacimiento | CHAR   |X(30)|NOT NULL|||País de Nacimiento del empleado de la empresa|
+| Celular | INT   |999999999|9 Dígitos||Celular del empleado de la empresa|
+| Teléfono de Oficina | INT   |9999999|7 Dígitos|||Teléfono de oficino del empleado de la empresa|
 | e-mail personal | CHAR   |||||
 | e-mail corporativo | CHAR   |||||
 | Dirección | CHAR   |||||
