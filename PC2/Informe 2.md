@@ -411,6 +411,28 @@ CREATE TABLE EMPRESA (
     id_cuenta_empresa NUMERIC(6)
 );
 ```
+- Tabla: CUENTA EMPRESA
+```
+CREATE TABLE CUENTA_EMPRESA (
+    id_cuenta_empresa INT PRIMARY KEY,
+    usuario VARCHAR(32) NOT NULL,
+    contraseña VARCHAR(32) NOT NULL
+);
+```
+- Tabla: REPRESENTANTE LEGAL
+```
+CREATE TABLE REPRESENTANTE_LEGAL (
+    id_representante NUMERIC(4) PRIMARY KEY,
+    Nombre CHAR(60) NOT NULL,
+    Apellido_Paterno CHAR(60) NOT NULL,
+    Apellido_Materno CHAR(60) NOT NULL,
+    Nro_Documento CHAR(8),
+    Sexo CHAR(3),
+    Fecha_de_Nacimiento DATE,
+    estado CHAR(1) CHECK (estado IN ('A', 'I')),
+    id_empresa NUMERIC(4)
+);
+```
 
 # 5. POBLAMIENTO DE DATOS
 - EMPRESAS
@@ -423,4 +445,26 @@ INSERT INTO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_emp
 VALUES (3, 'Construcciones Andinas S.A.', '20789012345', 'Construcción', 'A', 345678);
 INSERT INTO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
 VALUES (4, 'Jurídicos Legales y Asociados S.C.R.L.', '21012345678', 'Servicios Legales', 'A', 456789);
+```
+- CUENTA EMPRESA
+```
+INSERT INTO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
+VALUES (123456, 'usuario1', 'clave1');
+INSERT INTO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
+VALUES (234567, 'usuario2', 'clave2');
+INSERT INTO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
+VALUES (345678, 'usuario3', 'clave3');
+INSERT INTO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
+VALUES (456789, 'usuario4', 'clave4');
+```
+- REPRESENTANTE LEGAL
+```
+INSERT INTO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
+VALUES (1, 'Juan', 'Perez', 'Gomez', '12345678', 'MAS', '1990-05-15', 'A', 1);
+INSERT INTO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
+VALUES (2, 'María', 'González', 'Lopez', '87654321', 'FEM', '1985-08-20', 'A', 2);
+INSERT INTO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
+VALUES (3, 'Pedro', 'Ramirez', 'Santos', '98765432', 'MAS', '1980-12-10', 'I', 3);
+INSERT INTO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
+VALUES (4, 'Luisa', 'Mendoza', 'Perez', '76543210', 'FEM', '1975-04-05', 'A', 4);
 ```
