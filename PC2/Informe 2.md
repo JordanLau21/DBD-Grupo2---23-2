@@ -11,12 +11,12 @@ Semantica: Entidad que representa las solicitudes hechas por los empleados
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-|id_solicitud| INT | 9999999| 7 dígitos | - | - | Diferencia las solicitudes hechas por los empleados|
-| id_tipo_solicitud | INT | 99999 | 5 dígitos | - | - | Doferencia el tipo de solicitud del empleado |
-| id_est_solicitud | INT | 99999 | 5 dígitos | - | - | Diferencia el estado de la solicitud de un empleado |
+|id_solicitud| INTEGER | 9999999| 7 dígitos | - | - | Diferencia las solicitudes hechas por los empleados|
+| id_tipo_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Doferencia el tipo de solicitud del empleado |
+| id_est_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Diferencia el estado de la solicitud de un empleado |
 | fec_solicitud | DATE | AAAAMMDD | Válido en calendario | - | - | Fecha de cuando se hizo la solicitud |
 | hora_solicitud | TIME | HH:MM:SS | Válido en tiempo | - | - | Hora en la que se hizo la solicitud |
-| monto | FLOAT  | 999999.99 | >= 0| En soles | - | Monto que pide de adelanto el empleado | 
+| monto | NUMERIC  | 999999.99 | >= 0| En soles | - | Monto que pide de adelanto el empleado | 
 | descripcion | VARCHAR | X(32) | NOT NULL | - | - | Descropción de la solicitud del empleado |
 
 #### Nombre entidad: ESTADO SOLICITUD
@@ -24,7 +24,7 @@ Semantica: Entidad que representa el estado de las solicitudes hechas por los em
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| id_est_solicitud | INT | 99999 | 5 dígitos | - | - | Diferencia el estado de la solicitud de un empleado |
+| id_est_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Diferencia el estado de la solicitud de un empleado |
 | descripcion_solicitud | CHAR | X(3) | TAB | - | - | Representa el estado de la solicitud de un empleado |
 
 TAB:
@@ -39,7 +39,7 @@ Semantica: Entidad que representa el tipo de las solicitudes hechas por los empl
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| id_tipo_solicitud | INT | 99999 | 5 dígitos | - | - | Diferencia el tipo de solicitud del empleado |
+| id_tipo_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Diferencia el tipo de solicitud del empleado |
 | descripcion_tipo_solicitud | CHAR | X(3) | TAB | - | - | Representa el tipo de solicitud del empleado |
 
 TAB:
@@ -60,7 +60,7 @@ Semantica: Representa el respectivo usuario con el cual dicho empleado iniciará
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|---------|-------|
-| id_cuenta | INT | 999999 | 6 dígitos | - | - | Diferencia al usuario de otros usuarios |
+| id_cuenta | INTEGER | 999999 | 6 dígitos | - | - | Diferencia al usuario de otros usuarios |
 | usuario | VARCHAR | X(32) | NOT NULL | - | - | Nombre creado por el usuario |
 | contraseña | VARCHAR | X(32) | NOT NULL | - | - | Permite dar exclusividad al usuario |
 | estado_cuenta | CHAR | X(16) | TAB | - | - | Representa el estado en el que se encuentra la cuenta del empleado |
@@ -76,19 +76,19 @@ Semantica: Persona que trabaja en la empresa a cambio de una remuneración
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| id_empleado |INT|999999|6 dígitos|||Identificar al empleado a nivel de la empresa|
+| id_empleado |INTEGER|999999|6 dígitos|||Identificar al empleado a nivel de la empresa|
 | Nombre | CHAR   |X(60)|NOT NULL|||Nombre del empleado de la empresa|
 | Apellido Paterno | CHAR  |X(60)|NOT NULL|||Apellido paterno del empleado de la empresa|
 | Apellido Materno| CHAR  |X(60)|NOT NULL|||Apellido materno del empleado de la empresa|
-| Tipo Documento | INT   |XXXXXXX|TAB|||Tipo de documento con el que se identifica el empleado de la empresa|
+| Tipo Documento | INTEGER|XXXXXXX|TAB|||Tipo de documento con el que se identifica el empleado de la empresa|
 | Nro Documento | CHAR   |99999999|8 dígitos|||Número de documento del empleado de la empresa|
 | Sexo | CHAR   |XXX|TAB|||Sexo del empleado de la empresa|
 | Fecha de Nacimiento | DATE   |AAAAMMDD|Válida en Calendario|||Fecha de nacimiento del empleado de la empresa|
-| Edad | INT   |99|>18|Años|Fecha de Nacimiento|Edad del empleado de la empresa|
+| Edad | INTEGER   |99|>18|Años|Fecha de Nacimiento|Edad del empleado de la empresa|
 | Estado Civil | CHAR   |X|TAB|||Estado Civil del empleado de la empresa|
 | País de Nacimiento | CHAR   |X(30)|NOT NULL|||País de Nacimiento del empleado de la empresa|
-| Celular | INT   |999999999|9 Dígitos|||Celular del empleado de la empresa|
-| Teléfono de Oficina | INT   |9999999|7 Dígitos|||Teléfono de oficino del empleado de la empresa|
+| Celular | INTEGER   |999999999|9 Dígitos|||Celular del empleado de la empresa|
+| Teléfono de Oficina | INTEGER   |9999999|7 Dígitos|||Teléfono de oficino del empleado de la empresa|
 | e-mail personal | CHAR   |X*@X*.X*|Dirección correcta según RFC8398|||Correo personal del empleado de la empresa|
 | e-mail corporativo | CHAR   |X*@X*.X*|Dirección correcta según RFC8398|||Correo corporativo del empleado de la empresa|
 | Dirección | CHAR   |X(150)|NOT NULL|||Domicilio vigente del empleado de la empresa|
@@ -99,7 +99,7 @@ Semantica: Persona que trabaja en la empresa a cambio de una remuneración
 | Fecha de Ingreso | CHAR   |DATE|AAAAMMDD|Válida en Calendario||Fecha de ingreso a la empresa del empleado|
 | Tipo de Pago | CHAR   |XXX|TAB|||Tipo de pago al empleado de la empresa|
 | Medio de Pago | CHAR   |XXXX|TAB|||Medio de pago al empleado de la empresa|
-| Cuenta Bancaria | INT   |XXXXXXXXXX|10 Dígitos|||Cuenta bancario del empleado de la empresa, en caso posea|
+| Cuenta Bancaria | INTEGER   |XXXXXXXXXX|10 Dígitos|||Cuenta bancario del empleado de la empresa, en caso posea|
 | Frecuencia de Pago | CHAR   |XXXX|TAB|||Frecuencia de pago al empleado de la empresa|
 | Día de Pago | DAY   |XX|Válido en días calendario|||Día de cada mes en el que se efectuará el pago al empleado de la empresa|
 
@@ -174,16 +174,16 @@ Semantica: Acuerdo firmado por el empleado y la empresa en que se esécifican lo
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| id_contrato |INT|99|2 dígitos|||Identificador del contrato firmado por el empleado y la empresa|
+| id_contrato |INTEGER|99|2 dígitos|||Identificador del contrato firmado por el empleado y la empresa|
 | Tipo de Jornada | CHAR   |XXXX|TAB|||Tipo de jornada que realiza el empleado en la empresa|
-| Sueldo Base | FLOAT   |99999.99|>0|||Sueldo base percibido por el empleado en la empresa|
+| Sueldo Base | NUMERIC   |99999.99|>0|||Sueldo base percibido por el empleado en la empresa|
 | Fecha de Contrato | DATE   |AAAAMMDD|Válido en calendario|||Fecha de firma del contrato entre el empleado y la empresa|
 | Fecha Término de Contrato | DATE   |AAAAMMDD|Válido en calendario|||Fecha de finalización del contrato firmado entre el empleado y la empresa|
 | Estado de Contrato | CHAR   |XXX|TAB|||Estado del contrato firmado entre el empleado y la empresa|
 | Tipo de Contrato | CHAR   |XXX|TAB|||Tipo de contrato firmado entre el empleado y la empresa|
 | Horario Semanal | TIME   |HH:MM:SS-HH:MM:SS|[00:00:00-23:59:59]|||Horario semanal realizado por el empleado en la empresa|
 | Periodicidad de la Jornada | CHAR   |XXXX|TAB|||Periodicidad de la jornada semanal por parte del empleado en la empresa|
-| Líquido Teórico | FLOAT   |99999.99|>0|||Líquito teórico que percibe el empleado por parte de la empresa|
+| Líquido Teórico | NUMERIC   |99999.99|>0|||Líquito teórico que percibe el empleado por parte de la empresa|
 | Periodicidad de Pago | CHAR   |XXXX|TAB|||Periodicidad de pago realizado por la empresa al empleado|
 
 TAB: Tipo de Jornada
@@ -252,7 +252,7 @@ Semantica: Entidad representa el registros de las asistencias, licencias, vacaci
 | valor | NUMERIC | 99 | Válido en tiempo | - | - | Valor contable relacionado al concepto |
 | estado | CHAR  | X(1) | TAB |- | - | Estado de dicho registro | 
 | id_concepto | NUMERIC | 99 | 2 digitos | Not Null | - | Identificador del concepto de nomina que esta registrando |
-| id_boleta | INT  | 9999 | 4 digitos | Not Null | - | Identificador de la boleta de pago en donde se esta registrando | 
+| id_boleta | INTEGER  | 9999 | 4 digitos | Not Null | - | Identificador de la boleta de pago en donde se esta registrando | 
 
 TAB:
 | Codigo | estado |
@@ -285,9 +285,9 @@ Semantica:  Representa al documento que alberga a todos los trabajadores activos
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| id_planilla | INT | 999999 | 6 dígitos | - | - | Identificad or único de planilla|
+| id_planilla | INTEGER | 999999 | 6 dígitos | - | - | Identificad or único de planilla|
 | periodo | CHAR | XXXXXXXX | NOT NULL | - | - | Fecha final del registro de movimiento planilla |
-| dias_laborables | INT | 99 | >0 | - | - | Descripcion sobre el movimiento de planilla registrado |
+| dias_laborables | INTEGER | 99 | >0 | - | - | Descripcion sobre el movimiento de planilla registrado |
 | fechaIinicio | DATE | AAAAMMDD | Válido en calendario | - | - | Monto en soles, que se le asignara a dicho registro |
 | fechaFin | DATE  | AAAAMMDD | Válido en calendario |- | - | Estado de dicho registro | 
 | fechaCalculo | DATE | AAAAMMDD | Válido en calendario |- | - | Identificador del concepto de nomina que esta registrando |
@@ -297,23 +297,23 @@ Semantica:  Representa al documento que alberga a todos los trabajadores activos
 Semantica:  Boleta que registra el pago a uun trabajador de la planilla en determinado periodo
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| id_boleta | INT | 999999 | 6 dígitos | - | - | Identificador único de boleta|
-| id_planilla | INt | 999999 | 6 dígitos | - | - | Identificador unico de planilla a la que pertenece esta boleta |
-| id_empleado | INT | 99 | 7 dígitos | - | - | Identificador único de empleado al que le pertenece esta boleta |
-| totalIngresos | FLOAT | >=0 | soles| - | - | Total de ingresos del empleado en el periodo |
-| totalDescuentos| FLOAT  | >=0 |soles |- | - | Total de descuentos del empleado en el periodo | 
-| TotalNeto | FLOAT | 999999.99 | >=0 |soles | totalIngresos - totalDescuentos | Total neto que se le pagará al empleado |
-| TotalAporte| FLOAT | 999999.99 | >=0 | soles | - | Total de aportes que recibe este empleado |
+| id_boleta | INTEGER | 999999 | 6 dígitos | - | - | Identificador único de boleta|
+| id_planilla | INTEGER | 999999 | 6 dígitos | - | - | Identificador unico de planilla a la que pertenece esta boleta |
+| id_empleado | INTEGER | 99 | 7 dígitos | - | - | Identificador único de empleado al que le pertenece esta boleta |
+| totalIngresos | NUMERIC | >=0 | soles| - | - | Total de ingresos del empleado en el periodo |
+| totalDescuentos| NUMERIC  | >=0 |soles |- | - | Total de descuentos del empleado en el periodo | 
+| TotalNeto | NUMERIC | 999999.99 | >=0 |soles | totalIngresos - totalDescuentos | Total neto que se le pagará al empleado |
+| TotalAporte| NUMERIC | 999999.99 | >=0 | soles | - | Total de aportes que recibe este empleado |
 
 #### Nombre entidad: CONCEPTO NOMINA
-Semantica:  Representa un concepto que interviene en el calculo de la boleta
+Semantica:  Representa un concepto que INTEGERerviene en el calculo de la boleta
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| Id_concepto | INT | 999999 | 6 dígitos | - | - | Identificador único de boleta|
+| Id_concepto | INTEGER | 999999 | 6 dígitos | - | - | Identificador único de boleta|
 | nombreConcepto | CHAR | X(30) | NOT NULL | - | - | Identificador unico de planilla a la que pertenece esta boleta |
 | tipoOperacion | CHAR | XXX | TAB | - | - | Identificador único de empleado al que le pertenece esta boleta |
 | estadoConcepto | CHAR | XXX | TAB| - | - | Total de ingresos del empleado en el periodo |
-| valor | FLOAT | 9.99 | >=0 | - | - | Total neto que se le pagará al empleado |
+| valor | NUMERIC | 9.99 | >=0 | - | - | Total neto que se le pagará al empleado |
 
 TAB:
 | Codigo | tipoOperacion |
@@ -351,7 +351,7 @@ Semantica: Representa el respectivo usuario con el cual dicho empleado iniciará
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|---------|-------|
-| id_cuenta_empresa | INT | 999999 | 6 dígitos | - | - | Diferencia al usuario de otros usuarios |
+| id_cuenta_empresa | INTEGER | 999999 | 6 dígitos | - | - | Diferencia al usuario de otros usuarios |
 | usuario | VARCHAR | X(32) | NOT NULL | - | - | Nombre creado por el usuario |
 | contraseña | VARCHAR | X(32) | NOT NULL | - | - | Permite dar exclusividad al usuario |
 
@@ -444,7 +444,7 @@ TAB:
 |id_empleado|Apellido Paterno|Apellido Materno|Nombre|Tipo Documento|Nro Documento|Sexo|Fecha de Nacimiento|Edad|Estado Civil|País de Nacimiento|Celular|Teléfono de Oficina|e-mail personal|e-mail corporativo|Dirección|Grupo Sanguíneo|Régimen Pensionario|Situación de Discapacidad|Seguro de Salud|Fecha de Ingreso|Tipo de Pago|Medio de Pago|Cuenta Bancaria|Frecuencia de Pago|Día de Pago|
 |-----------|----------------|------|----------------|--------------|-------------|----|-------------------|----|------------|------------------|-------|-------------------|---------------|------------------|---------|---------------|-------------------|-------------------------|---------------|----------------|------------|-------------|---------------|------------------|-----------|
 |136459|Pérez|Silva|José|DNI|74895915|Masculino|11/12/2002|20|Soltero|Perú|984561234|2456687|joseps1@hotmail.com|juan.perez@gmail.com|Jr. Ana Paula Véliz # 4177 Piso 5|ABO|AFP|No Posee|Público|11/08/2023|Transferencia Bancaria|BCP|101548962341|Mensual|03|
-|154261|Paredes|Álvarez|Raúl|DNI|71485926|Masculino|15/01/1990|33|Casado|Perú|977546324|2478869|raulpaal04@hotmail.com|raul.paredes@gmail.com|Av. Camilo Quintero # 532|ABO|ONP|No Posee|Privado|01/04/2018|Transferencia Bancaria|BBVA|1459152614|Mensual|02|
+|154261|Paredes|Álvarez|Raúl|DNI|71485926|Masculino|15/01/1990|33|Casado|Perú|977546324|2478869|raulpaal04@hotmail.com|raul.paredes@gmail.com|Av. Camilo QuINTEGERero # 532|ABO|ONP|No Posee|Privado|01/04/2018|Transferencia Bancaria|BBVA|1459152614|Mensual|02|
 
 1) PRIMERA FORMA NORMAL (1FN)
 - Todos los dominios subyacentes contienen solo valores escalares.
@@ -475,7 +475,7 @@ CREATE TABLE EMPRESA (
 - Tabla: CUENTA EMPRESA
 ```
 CREATE TABLE CUENTA_EMPRESA (
-    id_cuenta_empresa INT PRIMARY KEY,
+    id_cuenta_empresa INTEGER PRIMARY KEY,
     usuario VARCHAR(32) NOT NULL,
     contraseña VARCHAR(32) NOT NULL
 );
@@ -517,34 +517,34 @@ CREATE TABLE AREA (
 # 5. POBLAMIENTO DE DATOS
 - EMPRESAS
 ```
-INSERT INTO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
+INSERT INTEGERO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
 VALUES (1, 'Tecnosoluciones Perú S.A.C.', '20123456789', 'Tecnología', 'A', 123456);
-INSERT INTO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
+INSERT INTEGERO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
 VALUES (2, 'Sabores Peruanos E.I.R.L.', '20456789123', 'Alimentación', 'A', 234567);
-INSERT INTO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
+INSERT INTEGERO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
 VALUES (3, 'Construcciones Andinas S.A.', '20789012345', 'Construcción', 'A', 345678);
-INSERT INTO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
+INSERT INTEGERO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
 VALUES (4, 'Jurídicos Legales y Asociados S.C.R.L.', '21012345678', 'Servicios Legales', 'A', 456789);
 ```
 - CUENTA EMPRESA
 ```
-INSERT INTO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
+INSERT INTEGERO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
 VALUES (123456, 'usuario1', 'clave1');
-INSERT INTO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
+INSERT INTEGERO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
 VALUES (234567, 'usuario2', 'clave2');
-INSERT INTO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
+INSERT INTEGERO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
 VALUES (345678, 'usuario3', 'clave3');
-INSERT INTO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
+INSERT INTEGERO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
 VALUES (456789, 'usuario4', 'clave4');
 ```
 - REPRESENTANTE LEGAL
 ```
-INSERT INTO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
+INSERT INTEGERO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
 VALUES (1, 'Juan', 'Perez', 'Gomez', '12345678', 'MAS', '1990-05-15', 'A', 1);
-INSERT INTO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
+INSERT INTEGERO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
 VALUES (2, 'María', 'González', 'Lopez', '87654321', 'FEM', '1985-08-20', 'A', 2);
-INSERT INTO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
+INSERT INTEGERO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
 VALUES (3, 'Pedro', 'Ramirez', 'Santos', '98765432', 'MAS', '1980-12-10', 'I', 3);
-INSERT INTO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
+INSERT INTEGERO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
 VALUES (4, 'Luisa', 'Mendoza', 'Perez', '76543210', 'FEM', '1975-04-05', 'A', 4);
 ```
