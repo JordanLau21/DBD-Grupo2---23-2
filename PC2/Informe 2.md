@@ -230,11 +230,8 @@ TAB: Periodicidad de la Jornada
 TAB: Periodicidad de Pago
 |Código|Semantica|
 |------|---------|
-|XXXX||
-|||
-
-
-
+|MENS|Mensual|
+|QUIN|Quincenal|
 
 #### Entidad: CARGO
 Semantica: Función de la cual una persona tiene la responsabilidad en la organización
