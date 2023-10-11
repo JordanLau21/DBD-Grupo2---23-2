@@ -212,6 +212,10 @@ Lookup Tables
 |id_estado_contrato|INTEGER|XXX||||Identificador del estado del actual contrato del empleado|
 |descricpion_estado_contrato|CHAR|X(3)|NOT NULL|||Representa el estado del contrato del empleado|
 
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+|id_tipo_contrato|INTEGER|XXX||||Identificador del tipo de contrato del empleado|
+|descricpion_tipo_contrato|CHAR|X(3)|NOT NULL|||Representa el tipo de contrato del empleado|
 
 
 #### Entidad: CARGO
