@@ -33,6 +33,24 @@ Semantica:
 | Día de Pago | CHAR   ||||
 
 
+#### Nombre entidad: CONTRATO
+Semantica: 
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| id_contrato |INT|99|2 dìgitos||
+| Tipo de Jornada | CHAR   ||||
+| Sueldo Base | CHAR   ||||
+| Fecha de Contrato | CHAR   ||||
+| Fecha Término de Contrato | CHAR   ||||
+| Estado de Contrato | CHAR   ||||
+| Tipo de Contrato | CHAR   ||||
+| Horario Semanal | CHAR   ||||
+| Periodicidad de la Jornada | CHAR   ||||
+| Líquido Teórico | CHAR   ||||
+| Periodicidad de Pago | CHAR   ||||
+
+
 #### Nombre entidad: SOLICITUD
 Semantica: Entidad que representa las solicitudes hechas por los empleados
 
