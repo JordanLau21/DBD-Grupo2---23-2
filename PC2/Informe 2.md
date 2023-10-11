@@ -275,7 +275,7 @@ TAB1:
 | 22 | VALOR 2|
 
 
-## LOOKUPTALBES
+## LOOKUP TABLES
 - Empleado / Contrato
 
 
