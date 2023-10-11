@@ -321,10 +321,21 @@ TAB:
 | TO2 | Descuento |
 | TO3 | Aporte |
 
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| Id_TipoOperacion| INTEGER | 999999 | 6 dígitos | - | - | Identificador único de tipo de operacion|
+| descripcion_TipoOperacion| CHAR(3) | XXX | NOT NULL | - | - | Descripcion de tipo de operacion |
+
+
 | Codigo | estadoConcepto |
 |----------|----------|
 | EC1 | Activo |
 | EC2 | Inactivo |
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  | 
+|----------|----------|----------|----------|----------|----------|----------|
+| Id_estadoConcepto| INTEGER | 999999 | 6 dígitos | - | - | Identificador único de estado del concepto|
+| descripcion_estadoConcepto| CHAR(3) | XXX | NOT NULL | - | - | Descripcion del estado de concepto|
 
 
 #### Nombre entidad: EMPRESA
