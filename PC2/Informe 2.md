@@ -310,8 +310,8 @@ Semantica:  Representa un concepto que INTEGERerviene en el calculo de la boleta
 |----------|----------|----------|----------|----------|----------|----------|
 | Id_concepto | INTEGER | 999999 | 6 dígitos | - | - | Identificador único de boleta|
 | nombreConcepto | CHAR | X(30) | NOT NULL | - | - | Identificador unico de planilla a la que pertenece esta boleta |
-| tipoOperacion | CHAR | XXX | TAB | - | - | Identificador único de empleado al que le pertenece esta boleta |
-| estadoConcepto | CHAR | XXX | TAB| - | - | Total de ingresos del empleado en el periodo |
+| Id_TipoOperacion | CHAR | XXX | TAB | - | - | Identificador único de empleado al que le pertenece esta boleta |
+| Id_estadoConcepto | CHAR | XXX | TAB| - | - | Total de ingresos del empleado en el periodo |
 | valor | NUMERIC | 9.99 | >=0 | - | - | Total neto que se le pagará al empleado |
 
 TAB:
