@@ -102,6 +102,70 @@ Semantica: Persona que trabaja en la empresa a cambio de una remuneración
 | Frecuencia de Pago | CHAR   |XXXX|TAB|||Frecuencia de pago al empleado de la empresa|
 | Día de Pago | DAY   |XX|Válido en días calendario|||Día de cada mes en el que se efectuará el pago al empleado de la empresa|
 
+TAB: Sexo
+|Código|Semantica|
+|------|---------|
+|MAS|Masculino|
+|FEM|Femenino|
+|OTR|Otro|
+
+TAB: Estado Civil
+|Código|Semantica|
+|------|---------|
+|S|Soltero(a)|
+|C|Casado(a)|
+|D|Divorciado(a)|
+|V|Viudo(a)|
+
+TAB: Grupo Sanguíneo
+|Código|Semantica|
+|------|---------|
+|A|ABO|
+|R|RH|
+
+TAB: Régimen Pensionario
+|Código|Semantica|
+|------|---------|
+|AFP|Administradoras de Fondo de Pensiones|
+|ONP|Oficina de Normalización Previsional|
+
+TAB: Situación de Discapacidad
+|Código|Semantica|
+|------|---------|
+|PD|Posee discapacidad|
+|NP|No posee discapacidad|
+
+TAB: Seguro de Salud
+|Código|Semantica|
+|------|---------|
+|PUB|Seguro de Salud Público|
+|PRI|Seguro de Salud Privado|
+
+TAB: Tipo de Pago
+|Código|Semantica|
+|------|---------|
+|EFEC|Efectivo|
+|BANC|Transferencia Bancaria|
+|CHEQ|Cheque|
+
+TAB: Medio de Pago
+|Código|Semantica|
+|------|---------|
+|A|BBVA|
+|B|BCP|
+|C|Interbank|
+|D|Scotiabank|
+|E|Banco Falabella|
+|F|Banco Ripley|
+|G|Banco Pichincha|
+
+TAB: Frecuencia de Pago
+|Código|Semantica|
+|------|---------|
+|MENS|Mensual|
+|QUIN|Quincenal|
+
+
 #### Entidad: CONTRATO
 Semantica: Acuerdo firmado por el empleado y la empresa en que se esécifican los términos acordados entre ambas partes
 
