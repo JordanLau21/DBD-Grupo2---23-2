@@ -445,11 +445,10 @@ Satisface la Primera Forma Normal
 
 Satisface la Segundo Forma Normal
 3) TERCERA FORMA NORMAL (3FN)
-
+- Hay dependencia transitiva: Medio de Pago y Cuenta Bancaria dependen directamente de Tipo de Pago
 
 
 - Entidad: CONTRATO
-
 # 4. CREACIÓN DE TABLAS
 - Tabla: EMPRESA
 ```
