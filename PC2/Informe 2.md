@@ -206,6 +206,14 @@ TAB: Periodicidad de Pago
 |MENS|Mensual|
 |QUIN|Quincenal|
 
+Lookup Tables
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+|id_estado_contrato|INTEGER|XXX||||Identificador del estado del actual contrato del empleado|
+|descricpion_estado_contrato|CHAR|X(3)|NOT NULL|||Representa el estado del contrato del empleado|
+
+
+
 #### Entidad: CARGO
 Semantica: Función de la cual una persona tiene la responsabilidad en la organización
 
