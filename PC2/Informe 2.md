@@ -12,12 +12,14 @@ Semantica: Entidad que representa las solicitudes hechas por los empleados
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
 |id_solicitud| INTEGER | 9999999| 7 dígitos | - | - | Diferencia las solicitudes hechas por los empleados|
-| id_tipo_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Doferencia el tipo de solicitud del empleado |
-| id_est_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Diferencia el estado de la solicitud de un empleado |
 | fec_solicitud | DATE | AAAAMMDD | Válido en calendario | - | - | Fecha de cuando se hizo la solicitud |
 | hora_solicitud | TIME | HH:MM:SS | Válido en tiempo | - | - | Hora en la que se hizo la solicitud |
 | monto | NUMERIC  | 999999.99 | >= 0| En soles | - | Monto que pide de adelanto el empleado | 
 | descripcion | VARCHAR | X(32) | NOT NULL | - | - | Descropción de la solicitud del empleado |
+| id_tipo_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Doferencia el tipo de solicitud del empleado |
+| id_est_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Diferencia el estado de la solicitud de un empleado |
+| id_empleado |INTEGER|999999|6 dígitos|||Identificar al empleado a nivel de la empresa|
+| id_empresa | NUMERIC | 9999 | 4 dígitos | - | - | Identificador de la empresa |
 
 #### Nombre entidad: ESTADO SOLICITUD
 Semantica: Entidad que representa el estado de las solicitudes hechas por los empleados
@@ -27,12 +29,6 @@ Semantica: Entidad que representa el estado de las solicitudes hechas por los em
 | id_est_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Diferencia el estado de la solicitud de un empleado |
 | descripcion_solicitud | CHAR | X(3) | TAB | - | - | Representa el estado de la solicitud de un empleado |
 
-TAB:
-| Codigo | estado_solicitud |
-|----------|----------|
-| es1 | Denegado |
-| es2 | En espera |
-| es3 | Aceptado | 
 
 #### Nombre entidad: TIPO SOLICITUD
 Semantica: Entidad que representa el tipo de las solicitudes hechas por los empleados
@@ -41,17 +37,6 @@ Semantica: Entidad que representa el tipo de las solicitudes hechas por los empl
 |----------|----------|----------|----------|----------|----------|----------|
 | id_tipo_solicitud | INTEGER | 99999 | 5 dígitos | - | - | Diferencia el tipo de solicitud del empleado |
 | descripcion_tipo_solicitud | CHAR | X(3) | TAB | - | - | Representa el tipo de solicitud del empleado |
-
-TAB:
-
-| Codigo | tipo_solicitud |
-|----------|----------|
-| ts1 | Licencia |
-| ts2 | Reclamo |
-| ts3 | Vacaciones|
-| ts4 | Aumento |
-| ts5 | Adelanto |
-| ts6 | Configuración de información |
 
 
 
