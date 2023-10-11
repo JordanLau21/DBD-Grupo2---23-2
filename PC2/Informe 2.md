@@ -454,20 +454,18 @@ Satisface la Segundo Forma Normal
 - Tabla: EMPRESA
 ```
 CREATE TABLE EMPRESA (
-    id_empresa NUMERIC(4) PRIMARY KEY,
-    razon_social VARCHAR(200) NOT NULL,
-    ruc VARCHAR(20) NOT NULL,
-    rubro VARCHAR(35) NOT NULL,
-    estado CHAR(1) CHECK (estado IN ('A', 'I')),
-    id_cuenta_empresa NUMERIC(6) FOREING KEY,
+    id_empresa INTEGER PRIMARY KEY,
+    razon_social VARCHAR(200) UNIQUE NOT NULL,
+    ruc VARCHAR(20) UNIQUE NOT NULL,
+    rubro VARCHAR(35) UNIQUE NOT NULL
 );
 ```
 - Tabla: CUENTA EMPRESA
 ```
 CREATE TABLE CUENTA_EMPRESA (
     id_cuenta_empresa INTEGER PRIMARY KEY,
-    usuario VARCHAR(32) NOT NULL,
-    contraseña VARCHAR(32) NOT NULL
+    usuario VARCHAR(32) UNIQUE NOT NULL,
+    contraseña VARCHAR(32) UNIQUE NOT NULL
 );
 ```
 - Tabla: REPRESENTANTE LEGAL
