@@ -626,6 +626,61 @@ CREATE TABLE CONCEPTO_NOMINA (
 
 
 # 5. POBLAMIENTO DE DATOS
+- SOLICITUD
+```
+INSERT INTO SOLICITUD (id_solicitud, fec_solicitud_hora_solicitud, monto, descripcion, id_tipo_solicitud, id_est_solicitud, id_empleado, id_empresa)
+VALUES (4257930, 20250110, 10:01:15,100, 'QUIERO ADEALNTO YA QUE ME QUEDE SIN DINERO', 15896, 42579,795645, 6534)
+INSERT INTO SOLICITUD (id_solicitud, fec_solicitud_hora_solicitud, monto, descripcion, id_tipo_solicitud, id_est_solicitud, id_empleado, id_empresa)
+VALUES (4154573, 46476214, 12:41:45,0, 'LICENCIA POR ASUNTO FAMILIAR', 42566, 41258,755445, 6154)
+INSERT INTO SOLICITUD (id_solicitud, fec_solicitud_hora_solicitud, monto, descripcion, id_tipo_solicitud, id_est_solicitud, id_empleado, id_empresa)
+VALUES (4220340, 75680110, 08:41:14,0, 'QUIERO VACACIONES POR QUE ME LO MERESCO', 12597, 42546,712545, 7934)
+INSERT INTO SOLICITUD (id_solicitud, fec_solicitud_hora_solicitud, monto, descripcion, id_tipo_solicitud, id_est_solicitud, id_empleado, id_empresa)
+VALUES (6846475, 20242546, 04:11:15,0, 'LICENCIA DEBIDO A QUE QUIERO RECUPERAR A MI ESPOSA', 42368, 42649,765645, 6128)
+```
+- ESTADO SOLICITUD
+```
+INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
+VALUES (42579, 'EN ESPERA')
+INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
+VALUES (41258, 'ACEPTADO')
+INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
+VALUES (42546, 'DENEGADO')
+INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
+VALUES (42649, 'ACEPTADO')
+```
+- TIPO SOLICITUD
+```
+INSERT INTO TIPO_SOLICITUD (id_tipo_solicitud, descripcion_tipo_solicitud)
+VALUES (15896, 'ADELANTO')
+INSERT INTO TIPO_SOLICITUD (id_tipo_solicitud, descripcion_tipo_solicitud)
+VALUES (42566, 'LICENCIA')
+INSERT INTO TIPO_SOLICITUD (id_tipo_solicitud, descripcion_tipo_solicitud)
+VALUES (12597, 'VACACIONES')
+INSERT INTO TIPO_SOLICITUD (id_tipo_solicitud, descripcion_tipo_solicitud)
+VALUES (42368, 'LICENCIA')
+```
+- CUENTA
+```
+INSERT INTO CUENTA (id_cuenta, usuario, contraseña, id_estado_cuenta)
+VALUES (425687, 'Jordex14' , 'vivaeldubstep', 12459)
+INSERT INTO TIPO_SOLICITUD (id_cuenta, usuario, contraseña, id_estado_cuenta)
+VALUES (475847, 'Lezzarth' , 'odiopuno', 12539)
+INSERT INTO TIPO_SOLICITUD (id_cuenta, usuario, contraseña, id_estado_cuenta)
+VALUES (425687, 'Kettenkrad' , 'vivaelperu', 42286)
+INSERT INTO TIPO_SOLICITUD (id_cuenta, usuario, contraseña, id_estado_cuenta)
+VALUES (425687, 'JairoKazuo' , 'megustaelplatano', 45647)
+```
+- ESTADO CUENTA
+```
+INSERT INTO ESTADO_CUENTA (id_estado_cuenta, descripcion_estado_cuenta)
+VALUES (12459, 'ACTIVO')
+INSERT INTO ESTADO_CUENTA (id_estado_cuenta, descripcion_estado_cuenta)
+VALUES (12539, 'ACTIVO')
+INSERT INTO ESTADO_CUENTA (id_estado_cuenta, descripcion_estado_cuenta)
+VALUES (42286, 'INACTIVO')
+INSERT INTO ESTADO_CUENTA (id_estado_cuenta, descripcion_estado_cuenta)
+VALUES (45647, 'ACTIVO')
+```
 - CUENTA EMPRESA
 ```
 INSERT INTO CUENTA_EMPRESA (usuario, contraseña)
