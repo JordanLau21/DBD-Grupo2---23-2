@@ -463,7 +463,7 @@ Satisface la Segundo Forma Normal
 
 # 4. CREACIÓN DE TABLAS
 - Tabla: SOLICITUD
----
+```
 CREATE TABLE SOLICITUD(
     id_solicitud INTEGER PRIMARY KEY,
     monto INTEGER,
@@ -474,36 +474,37 @@ CREATE TABLE SOLICITUD(
     id_empresa INTEGER NOT NULL,
     id_empleado INTEGER NOT NULL
 );
----
+```
 - Tabla: ESTADO_SOLICITUD
----
+```
 CREATE TABLE ESTADO_SOLICITUD(
     id_est_solicitud INTEGER PRIMARY KEY,
     descripcion_est_solicitud CHAR(3)
 );
----
+```
 - Tabla: TIPO_SOLICITUD
----
+```
 CREATE TABLE TIPO_SOLICITUD(
     id_tipo_solicitud INTEGER PRIMARY KEY,
     descripcion_tipo_solicitud CHAR(3)
 );
----
+```
 - Tabla: CUENTA
----
+```
 CREATE TABLE CUENTA(
     id_cuenta INTEGER PRIMARY KEY,
     usuario VARCHAR(32) NOT NULL,
     contraseña VARCHAR(32) NOT NULL,
     id_estado_cuenta INTEGER NOT NULL
 );
----
+```
 - Tabla: ESTADO_CUENTA
----
+```
 CREATE TABLE ESTADO_CUENTA(
     id_estado_cuenta INTEGER PRIMARY KEY,
     descripcion_estado_cuenta CHAR(3) NOT NULL
 );
+```
 - Tabla: CUENTA EMPRESA
 ```
 CREATE TABLE CUENTA_EMPRESA (
@@ -550,21 +551,28 @@ CREATE TABLE REPRESENTANTE_LEGAL (
 -tabla: CARGO
 ```
 CREATE TABLE CARGO (
-    id_cargo INTEGER(2) PRIMARY KEY,
+    id_cargo INT GENERATED ALWAYS AS IDENTITY,
     nombre_cargo VARCHAR(40) NOT NULL,
     descripcion VARCHAR(100) NOT NULL,
     requerimientos VARCHAR(100) NOT NULL,
-    id_empresa INTEGER(6)FOREING KEY,
+    PRIMARY KEY(id_cargo),
+    CONSTRAINT fk_empresa
+  		FOREIGN KEY(id_empresa)
+  		REFERENCES EMPRESA(id_empresa)
+  		ON DELETE SET NULL
 );
 ```
 -tabla: AREA
 ```
 CREATE TABLE AREA (
-    id_area INTEGER(2) PRIMARY KEY,
+    id_area INT GENERATED ALWAYS AS IDENTITY,
     nombre_area VARCHAR(20) NOT NULL,
     descripcion VARCHAR(100) NOT NULL,
-    estado CHAR(1) CHECK (estado IN ('A', 'I')),
-   
+    PRIMARY KEY(id_area),
+    CONSTRAINT fk_empresa
+  		FOREIGN KEY(id_empresa)
+  		REFERENCES EMPRESA(id_empresa)
+  		ON DELETE SET NULL  
 );
 ```
 
