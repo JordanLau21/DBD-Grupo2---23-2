@@ -34,7 +34,7 @@ Semantica: Persona que trabaja en la empresa a cambio de una remuneración
 
 
 #### Nombre entidad: CONTRATO
-Semantica: 
+Semantica: Acuerdo firmado por el empleado y la empresa en que se esécifican los términos acordados entre ambas partes
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
