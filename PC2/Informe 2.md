@@ -205,21 +205,21 @@ Semantica: Función de la cual una persona tiene la responsabilidad en la organi
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| IdCargo |INT|99|2 dìgitos|-|-||
-| NombreDeCargo | CHAR   |X(40)|NOT NULL|-|-||
-| Descripcion | CHAR  |X(100)|NOT NULL|-|-||
-| Requerimientos| CHAR  |X(100)|NOT NULL|-|-||
-| IdEmpresa | INT  |999999|6 dìgitos|-|-||
+| IdCargo |NUMERIC|99|2 dìgitos|-|-||
+| NombreDeCargo | VARCHAR   |X(40)|NOT NULL|-|-||
+| Descripcion | VARCHAR  |X(100)|NOT NULL|-|-||
+| Requerimientos| VARCHAR  |X(100)|NOT NULL|-|-||
+| IdEmpresa | NUMERIC  |999999|6 dìgitos|-|-||
 
 #### Entidad: AREA
 Semantica: Son las diversas actividades màs importantes de la empresa
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| IdArea |INT|99|2 dìgitos|-|-||
-| NombreArea | CHAR   |X(20)|NOT NULL|-|-||
-| DescripcionArea | CHAR  |X(100)|NOT NULL|-|-||
-| EstadoDeArea| CHAR  |X(10)|NOT NULL|-|-||
+| IdArea |NUMERIC|99|2 dìgitos|-|-||
+| NombreArea | VARCHAR   |X(20)|NOT NULL|-|-||
+| DescripcionArea | VARCHAR  |X(100)|NOT NULL|-|-||
+| EstadoDeArea| VARCHAR  |X(10)|NOT NULL|-|-||
 
 #### Nombre entidad: ASISTENCIAS
 Semantica: Entidad representa el registros de las asistencias, licencias, vacaciones.
