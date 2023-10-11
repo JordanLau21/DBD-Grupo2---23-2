@@ -239,9 +239,9 @@ Semantica: Función de la cual una persona tiene la responsabilidad en la organi
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
 | IdCargo |INT|99|2 dìgitos||
-| NombreDeCargo | CHAR   ||||
-| Descripcion | CHAR  ||||
-| Requerimientos| CHAR  |X(100)|||
+| NombreDeCargo | CHAR   |X(40)|NOT NULL||
+| Descripcion | CHAR  |X(100)|NOT NULL||
+| Requerimientos| CHAR  |X(100)|NOT NULL||
 | IdEmpresa | INT  |999999|6 dìgitos||
 
 #### Entidad: AREA
