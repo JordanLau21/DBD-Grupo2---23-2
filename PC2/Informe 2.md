@@ -140,6 +140,7 @@ TAB: Medio de Pago
 |E|Banco Falabella|
 |F|Banco Ripley|
 |G|Banco Pichincha|
+|H|No|
 
 TAB: Frecuencia de Pago
 |Código|Semantica|
