@@ -67,8 +67,8 @@ Semantica: Persona que trabaja en la empresa a cambio de una remuneración
 | Nombre | CHAR   |X(60)|NOT NULL|||Nombre del empleado de la empresa|
 | Apellido Paterno | CHAR  |X(60)|NOT NULL|||Apellido paterno del empleado de la empresa|
 | Apellido Materno| CHAR  |X(60)|NOT NULL|||Apellido materno del empleado de la empresa|
-| Tipo Documento | INTEGER|XXXXXXX|TAB|||Tipo de documento con el que se identifica el empleado de la empresa|
-| Nro Documento | CHAR   |99999999|8 dígitos|||Número de documento del empleado de la empresa|
+| Tipo Documento | CHAR|XXXXXXX|TAB|||Tipo de documento con el que se identifica el empleado de la empresa|
+| Nro Documento | INTEGER|99999999|8 dígitos|||Número de documento del empleado de la empresa|
 | Sexo | CHAR   |XXX|TAB|||Sexo del empleado de la empresa|
 | Fecha de Nacimiento | DATE   |AAAAMMDD|Válida en Calendario|||Fecha de nacimiento del empleado de la empresa|
 | Edad | INTEGER   |99|>18|Años|Fecha de Nacimiento|Edad del empleado de la empresa|
