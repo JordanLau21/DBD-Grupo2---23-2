@@ -41,6 +41,7 @@ Semantica: Entidad que representa el tipo de las solicitudes hechas por los empl
 |----------|----------|----------|----------|----------|----------|----------|
 | id_tipo_solicitud | INT | 99999 | 5 dígitos | - | - | Diferencia el tipo de solicitud del empleado |
 | descripcion_tipo_solicitud | CHAR | X(3) | TAB | - | - | Representa el tipo de solicitud del empleado |
+
 TAB:
 | Codigo | tipo_solicitud |
 |----------|----------|
