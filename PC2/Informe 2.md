@@ -430,7 +430,8 @@ TAB:
 1) PRIMERA FORMA NORMAL (1FN)
 - Todos los dominios subyacentes contienen solo valores escalares.
 - No presenta atributos multivaluados
-#Satisface la Primera Forma Normal  
+
+Satisface la Primera Forma Normal  
 
 2) SEGUNDA FORMA NORMAL (2FN)
 
