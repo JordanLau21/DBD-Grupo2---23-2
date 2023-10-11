@@ -444,6 +444,7 @@ Satisface la Primera Forma Normal
 - No hay dependencias parciales
 
 Satisface la Segundo Forma Normal
+
 3) TERCERA FORMA NORMAL (3FN)
 - Hay dependencia transitiva: Medio de Pago y Cuenta Bancaria dependen directamente de Tipo de Pago
 
