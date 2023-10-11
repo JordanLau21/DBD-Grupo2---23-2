@@ -30,7 +30,7 @@ Semantica:
 | Medio de Pago | CHAR   |||||Medio de pago al empleado de la empresa|
 | Cuenta Bancaria | CHAR   |||||Cuenta bancario del empleado de la empresa, en caso posea|
 | Frecuencia de Pago | CHAR   |XXXX|TAB|||Frecuencia de pago al empleado de la empresa|
-| Día de Pago | DAY   |XX|Válido en días calendario||Día de cada mes en el que se efectuará el pago al empleado de la empresa|
+| Día de Pago | DAY   |XX|Válido en días calendario|||Día de cada mes en el que se efectuará el pago al empleado de la empresa|
 
 
 #### Nombre entidad: CONTRATO
