@@ -20,17 +20,17 @@ Semantica:
 | Teléfono de Oficina | INT   |9999999|7 Dígitos|||Teléfono de oficino del empleado de la empresa|
 | e-mail personal | CHAR   |X*@X*.X*|Dirección correcta según RFC8398|||Correo personal del empleado de la empresa|
 | e-mail corporativo | CHAR   |X*@X*.X*|Dirección correcta según RFC8398|||Correo corporativo del empleado de la empresa|
-| Dirección | CHAR   |||||Domicilio vigente del empleado de la empresa|
-| Grupo Sanguíneo | CHAR   |||||Grupo Sanguíneo del empleado de la empresa|
-| Régimen Pensionario | CHAR   |||||Régimen pensionario del empleado de la empresa|
-| Situación de Discapacidad | CHAR   |||||Indica si el empleado de la empresa sufre (tipo) o no una discapacidad|
-| Seguro de Salud | CHAR   |||||Seguro de salud del empleado de la empresa|
-| Fecha de Ingreso | CHAR   |||||Fecha de ingreso a la empresa del empleado|
-| Tipo de Pago | CHAR   |||||Tipo de pago al empleado de la empresa|
+| Dirección | CHAR   |X(150)|NOT NULL|||Domicilio vigente del empleado de la empresa|
+| Grupo Sanguíneo | CHAR   |XX|TAB|||Grupo Sanguíneo del empleado de la empresa|
+| Régimen Pensionario | CHAR   |XXX|TAB|||Régimen pensionario del empleado de la empresa|
+| Situación de Discapacidad | CHAR   |XX|TAB|||Indica si el empleado de la empresa sufre o no una discapacidad|
+| Seguro de Salud | CHAR   |XXX|TAB|||Seguro de salud del empleado de la empresa|
+| Fecha de Ingreso | CHAR   |DATE|AAAAMMDD|Válida en Calendario||Fecha de ingreso a la empresa del empleado|
+| Tipo de Pago | CHAR   |XXX|TAB|||Tipo de pago al empleado de la empresa|
 | Medio de Pago | CHAR   |||||Medio de pago al empleado de la empresa|
 | Cuenta Bancaria | CHAR   |||||Cuenta bancario del empleado de la empresa, en caso posea|
-| Frecuencia de Pago | CHAR   |||||Frecuencia de pago al empleado de la empresa|
-| Día de Pago | CHAR   |||||Día de cada mes en el que se efectuará el pago al empleado de la empresa|
+| Frecuencia de Pago | CHAR   |XXXX|TAB|||Frecuencia de pago al empleado de la empresa|
+| Día de Pago | DAY   |XX|Válido en días calendario|||Día de cada mes en el que se efectuará el pago al empleado de la empresa|
 
 
 #### Nombre entidad: CONTRATO
