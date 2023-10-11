@@ -469,7 +469,7 @@ CREATE TABLE EMPRESA (
     ruc VARCHAR(20) NOT NULL,
     rubro VARCHAR(35) NOT NULL,
     estado CHAR(1) CHECK (estado IN ('A', 'I')),
-    id_cuenta_empresa NUMERIC(6)
+    id_cuenta_empresa NUMERIC(6) FOREING KEY,
 );
 ```
 - Tabla: CUENTA EMPRESA
@@ -491,7 +491,7 @@ CREATE TABLE REPRESENTANTE_LEGAL (
     Sexo CHAR(3),
     Fecha_de_Nacimiento DATE,
     estado CHAR(1) CHECK (estado IN ('A', 'I')),
-    id_empresa NUMERIC(4)
+    id_empresa NUMERIC(4) FOREING KEY,
 );
 ```
 -tabla: CARGO
