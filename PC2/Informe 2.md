@@ -33,7 +33,7 @@ Semantica: Persona que trabaja en la empresa a cambio de una remuneración
 | Día de Pago | DAY   |XX|Válido en días calendario|||Día de cada mes en el que se efectuará el pago al empleado de la empresa|
 
 
-#### Nombre entidad: CONTRATO
+#### Entidad: CONTRATO
 Semantica: Acuerdo firmado por el empleado y la empresa en que se esécifican los términos acordados entre ambas partes
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
