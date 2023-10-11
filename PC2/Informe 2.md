@@ -46,6 +46,18 @@ imagen
 ## REGLAS DE NEGOCIO
 
 # 2. MODELAMIENTO LÓGICO
+## DICCIONARIO DE DATOS
+#### Nombre entidad: CARGO
+Semantica: Función de la cual una persona tiene la responsabilidad en la organización
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| IdCargo |INT|99|2 dìgitos||
+| NombreDeCargo | CHAR   ||||
+| Descripcion | CHAR  ||||
+| Requerimientos| CHAR  ||||
+| IdEmpresa | INT  |999999|6 dìgitos||
+
 ## RELACIONES
 tabla 
 ## DICCIONARIO DE DATOS DE RELACIONES N-N (MUCHOS A MUCHOS)
