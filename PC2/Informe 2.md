@@ -9,7 +9,7 @@ Semantica:
 | Nombre | CHAR   |X(60)|NOT NULL|||Nombre del empleado de la empresa|
 | Apellido Paterno | CHAR  |X(60)|NOT NULL|||Apellido paterno del empleado de la empresa|
 | Apellido Materno| CHAR  |X(60)|NOT NULL|||Apellido materno del empleado de la empresa|
-| Tipo Documento | CHAR   ||TAB|||Tipo de documento con el que se identifica el empleado de la empresa|
+| Tipo Documento | INT   |XXXXXXX|TAB|||Tipo de documento con el que se identifica el empleado de la empresa|
 | Nro Documento | CHAR   |99999999|8 dígitos|||Número de documento del empleado de la empresa|
 | Sexo | CHAR   ||TAB|||Sexo del empleado de la empresa|
 | Fecha de Nacimiento | DATE   |AAAAMMDD|Válida en Calendario|||Fecha de nacimiento del empleado de la empresa|
