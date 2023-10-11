@@ -615,38 +615,38 @@ CREATE TABLE CONCEPTO_NOMINA (
 
 
 # 5. POBLAMIENTO DE DATOS
-- EMPRESAS
-```
-INSERT INTEGERO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
-VALUES (1, 'Tecnosoluciones Perú S.A.C.', '20123456789', 'Tecnología', 'A', 123456);
-INSERT INTEGERO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
-VALUES (2, 'Sabores Peruanos E.I.R.L.', '20456789123', 'Alimentación', 'A', 234567);
-INSERT INTEGERO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
-VALUES (3, 'Construcciones Andinas S.A.', '20789012345', 'Construcción', 'A', 345678);
-INSERT INTEGERO EMPRESA (id_empresa, razon_social, ruc, rubro, estado, id_cuenta_empresa)
-VALUES (4, 'Jurídicos Legales y Asociados S.C.R.L.', '21012345678', 'Servicios Legales', 'A', 456789);
-```
 - CUENTA EMPRESA
 ```
-INSERT INTEGERO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
-VALUES (123456, 'usuario1', 'clave1');
-INSERT INTEGERO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
-VALUES (234567, 'usuario2', 'clave2');
-INSERT INTEGERO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
-VALUES (345678, 'usuario3', 'clave3');
-INSERT INTEGERO CUENTA_EMPRESA (id_cuenta_empresa, usuario, contraseña)
-VALUES (456789, 'usuario4', 'clave4');
+INSERT INTO CUENTA_EMPRESA (usuario, contraseña)
+VALUES ('usuario1', 'clave1');
+INSERT INTO CUENTA_EMPRESA (usuario, contraseña)
+VALUES ('usuario2', 'clave2');
+INSERT INTO CUENTA_EMPRESA (usuario, contraseña)
+VALUES ('usuario3', 'clave3');
+INSERT INTO CUENTA_EMPRESA (usuario, contraseña)
+VALUES ('usuario4', 'clave4');
+```
+- EMPRESAS
+```
+INSERT INTO EMPRESA (razon_social, ruc, rubro, id_cuenta_empresa)
+VALUES ('Tecnosoluciones Perú S.A.C.', '20123456789', 'Tecnología', 1);
+INSERT INTO EMPRESA (razon_social, ruc, rubro, id_cuenta_empresa)
+VALUES ('Sabores Peruanos E.I.R.L.', '20456789123', 'Alimentación', 2);
+INSERT INTO EMPRESA (razon_social, ruc, rubro, id_cuenta_empresa)
+VALUES ('Construcciones Andinas S.A.', '20789012345', 'Construcción', 3);
+INSERT INTO EMPRESA (razon_social, ruc, rubro, id_cuenta_empresa)
+VALUES ('Jurídicos Legales y Asociados S.C.R.L.', '21012345678', 'Servicios Legales', 4);
 ```
 - REPRESENTANTE LEGAL
 ```
-INSERT INTEGERO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
-VALUES (1, 'Juan', 'Perez', 'Gomez', '12345678', 'MAS', '1990-05-15', 'A', 1);
-INSERT INTEGERO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
-VALUES (2, 'María', 'González', 'Lopez', '87654321', 'FEM', '1985-08-20', 'A', 2);
-INSERT INTEGERO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
-VALUES (3, 'Pedro', 'Ramirez', 'Santos', '98765432', 'MAS', '1980-12-10', 'I', 3);
-INSERT INTEGERO REPRESENTANTE_LEGAL (id_representante, Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, estado, id_empresa)
-VALUES (4, 'Luisa', 'Mendoza', 'Perez', '76543210', 'FEM', '1975-04-05', 'A', 4);
+INSERT INTO REPRESENTANTE_LEGAL (Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, id_empresa)
+VALUES ('Juan', 'Perez', 'Gomez', '12345678', 'MAS', '1990-05-15', 1);
+INSERT INTO REPRESENTANTE_LEGAL (Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, id_empresa)
+VALUES ('María', 'González', 'Lopez', '87654321', 'FEM', '1985-08-20', 2);
+INSERT INTO REPRESENTANTE_LEGAL (Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, id_empresa)
+VALUES ('Pedro', 'Ramirez', 'Santos', '98765432', 'MAS', '1980-12-10', 3);
+INSERT INTO REPRESENTANTE_LEGAL (Nombre, Apellido_Paterno, Apellido_Materno, Nro_Documento, Sexo, Fecha_de_Nacimiento, id_empresa)
+VALUES ('Luisa', 'Mendoza', 'Perez', '76543210', 'FEM', '1975-04-05', 4);
 ```
 CARGO
 ```
