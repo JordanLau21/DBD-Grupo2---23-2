@@ -278,7 +278,7 @@ TAB1:
 ## LOOKUP TABLES
 - Empleado / Contrato
 
-
+![Lookup tables Empleado/Contrato](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/f9472d4e3d0748ac521d621c6ce73774cb519ceb/image.png)
 
 # 3. VALIDACIÓN DEL ESQUEMA UTILIZADO LAS FORMAS NORMALES
 
