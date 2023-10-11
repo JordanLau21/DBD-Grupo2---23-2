@@ -5,7 +5,7 @@ Semantica:
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
-| id_empleado |INT|99|2 dìgitos||
+| id_empleado |INT|999999|6 dígitos|Identificar al empleado a nivel de la empresa|
 | Nombre | CHAR   ||||
 | Apellido Paterno | CHAR  ||||
 | Apellido Materno| CHAR  ||||
