@@ -294,6 +294,7 @@ Semantica:  Representa un concepto que interviene en el calculo de la boleta
 | tipoOperacion | CHAR | XXX | TAB | - | - | Identificador único de empleado al que le pertenece esta boleta |
 | estadoConcepto | CHAR | XXX | TAB| - | - | Total de ingresos del empleado en el periodo |
 | valor | FLOAT | 9.99 | >=0 | - | - | Total neto que se le pagará al empleado |
+
 TAB:
 | Codigo | tipoOperacion |
 |----------|----------|
