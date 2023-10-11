@@ -3,6 +3,24 @@
 #### Nombre entidad: EMPLEADO
 Semantica: 
 
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| id_empleado |INT|99|2 dìgitos||
+| Nombre | CHAR   ||||
+| Apellido Paterno | CHAR  ||||
+| Apellido Materno| CHAR  ||||
+| Tipo Documento | CHAR   ||||
+| Nro Documento | CHAR   ||||
+| Edad | INT  |999999|6 dìgitos||
+| Estado Civil | CHAR   ||||
+| País de Nacimiento | CHAR   ||||
+| Celular | CHAR   ||||
+| Teléfono de Oficina | CHAR   ||||
+| e-mail personal | CHAR   ||||
+| e-mail corporativo | CHAR   ||||
+| Dirección | CHAR   ||||
+| Grupo Sanguíneo | CHAR   ||||
+
 
 
 
