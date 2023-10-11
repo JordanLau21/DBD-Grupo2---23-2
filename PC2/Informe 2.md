@@ -200,6 +200,42 @@ Semantica: Acuerdo firmado por el empleado y la empresa en que se esécifican lo
 | Líquido Teórico | FLOAT   |99999.99|>0|||Líquito teórico que percibe el empleado por parte de la empresa|
 | Periodicidad de Pago | CHAR   |XXXX|TAB|||Periodicidad de pago realizado por la empresa al empleado|
 
+TAB: Tipo de Jornada
+|Código|Semantica|
+|------|---------|
+|ORDI|Ordinaria|
+|PARC|Parcial|
+|EXCE|Excenta|
+
+TAB: Estado de Contrato
+|Código|Semantica|
+|------|---------|
+|VIG|Vigente|
+|FIN|Finalizado|
+|RES|Rescindido|
+
+TAB: Tipo de Contrato
+|Código|Semantica|
+|------|---------|
+|IND|Indefinido|
+|OBR|Obra|
+|PLF|Plazo Fijo|
+
+TAB: Periodicidad de la Jornada
+|Código|Semantica|
+|------|---------|
+|MENS|Mensual|
+|DIAR|Diaria|
+
+TAB: Periodicidad de Pago
+|Código|Semantica|
+|------|---------|
+|XXXX||
+|||
+
+
+
+
 #### Entidad: CARGO
 Semantica: Función de la cual una persona tiene la responsabilidad en la organización
 
