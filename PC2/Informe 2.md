@@ -225,10 +225,10 @@ Semantica: Función de la cual una persona tiene la responsabilidad en la organi
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
 | IdCargo |NUMERIC|99|2 dìgitos|-|-|Identifica y diferencia  a los diferentes cargos del personal |
-| NombreDeCargo | VARCHAR   |X(40)|NOT NULL|-|-||
-| Descripcion | VARCHAR  |X(100)|NOT NULL|-|-||
-| Requerimientos| VARCHAR  |X(100)|NOT NULL|-|-||
-| IdEmpresa | NUMERIC  |999999|6 dìgitos|-|-||
+| NombreDeCargo | VARCHAR   |X(40)|NOT NULL|-|-|Nombre del cargo de cada elemento del personal|
+| Descripcion | VARCHAR  |X(100)|NOT NULL|-|-|Descripción general del cargo|
+| Requerimientos| VARCHAR  |X(100)|NOT NULL|-|-|Requerimientos necesarios minimos del cargo|
+| IdEmpresa | NUMERIC  |999999|6 dìgitos|-|-|Identifica y diferencia a la empresa|
 
 #### Entidad: AREA
 Semantica: Son las diversas actividades màs importantes de la empresa
