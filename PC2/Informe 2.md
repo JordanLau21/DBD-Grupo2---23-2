@@ -485,17 +485,17 @@ CREATE TABLE REPRESENTANTE_LEGAL (
 -tabla: CARGO
 ```
 CREATE TABLE CARGO (
-    id_cargo NUMERIC(2) PRIMARY KEY,
+    id_cargo INTEGER(2) PRIMARY KEY,
     nombre_cargo VARCHAR(40) NOT NULL,
     descripcion VARCHAR(100) NOT NULL,
     requerimientos VARCHAR(100) NOT NULL,
-    id_empresa NUMERIC(6)FOREING KEY,
+    id_empresa INTEGER(6)FOREING KEY,
 );
 ```
 -tabla: AREA
 ```
 CREATE TABLE AREA (
-    id_area NUMERIC(2) PRIMARY KEY,
+    id_area INTEGER(2) PRIMARY KEY,
     nombre_area VARCHAR(20) NOT NULL,
     descripcion VARCHAR(100) NOT NULL,
     estado CHAR(1) CHECK (estado IN ('A', 'I')),
