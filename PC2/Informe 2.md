@@ -422,34 +422,10 @@ TAB: Sexo
 | Compuesta | MOVIMIENTO DE PLANILLA-BOLETA | N-1 | - | NO |
 | Tiene | MOVIMIENTO DE PLANILLA-CONCEPTO NOMINA | N-1 | - | NO |
 | Tiene | PLANILLA-BOLETA | 1-N | - | NO |
-| Encuentran | CONTRATO-PLANILLA | N-N |  | SÍ |
 | Compuesta | ASISTENCIAS-BOLETA | N-1 | - | NO |
 | Tiene | ASISTENCIAS-CONCEPTO NOMINA | N-1 | - | NO |
 | Tiene | EMPLEADO-CUENTA | 1-1 | - | NO |
 | Contiene | EMPLEADO-FAMILIAR EMPLEADO | 1-N | - | NO |
-
-### DICCIONARIO DE DATOS DE RELACIONES N-N (MUCHOS A MUCHOS)
-#### Nombre entidad: MOVIMIENTO PLANILLA
-Semantica:  Representa los movimientos de planilla registrados dentro de la empresa
-
-| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
-|----------|----------|----------|----------|----------|----------|----------|
-| id_mov_plan | NUMERIC | 9999 | 4 dígitos | - | - | Identificador de un registro del movimiento planilla en particular|
-| fecha_inicio | DATE | AAAAMMDD | Valiido en fecha | - | - | Fecha del registro de dicho movimiento planilla |
-| fecha_final | DATE | AAAAMMDD | Valiido en fecha | - | - | Fecha final del registro de movimiento planilla |
-| descripcion | VARCHAR | X(100) | Not Null | - | - | Descripcion sobre el movimiento de planilla registrado |
-| monto | DECIMAL(4,2) | 9999.99 | Válido en tiempo | - | - | Monto en soles, que se le asignara a dicho registro |
-| estado | CHAR  | X(1) | TAB |- | - | Estado de dicho registro | 
-| id_concepto | NUMERIC | 99 | 2 digitos | Not Null | - | Identificador del concepto de nomina que esta registrando |
-| id_boleta | NUMERIC  | 9999 | 4 digitos | Not Null | - | Identificador de la boleta de pago en donde se esta registrando | 
-
-TAB:
-| Codigo | estado |
-|----------|----------|
-| A | Activo |
-| I | Inactivo |
-
-## LOOKUP TABLES
 
 
 
