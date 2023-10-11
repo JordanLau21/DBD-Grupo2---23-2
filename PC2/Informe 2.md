@@ -294,7 +294,61 @@ Semantica:  Representa un concepto que interviene en el calculo de la boleta
 | estadoConcepto | CHAR | >=0 | soles| - | - | Total de ingresos del empleado en el periodo |
 | valor | CHAR | FLOAT | >=0 |soles | totalIngresos - totalDescuentos | Total neto que se le pagará al empleado |
 
+#### Nombre entidad: EMPRESA
+Semantica:  Representa a la entidad que almacenara informacion de la empresa
 
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| id_empresa | NUMERIC | 9999 | 4 dígitos | - | - | Identificador de la empresa |
+| razon_social | VARCHAR | X(200) | NOT NULL | - | - | Nombre de la empresa registrada en el Registro de Entidades Contratantes |
+| ruc | VARCHAR | X(20) | Not Null | - | - | Corresponde al Registro Único de Contribuyentes, el número que identifica a la empresa ante la SUNAT |
+| rubro | VARCHAR | X(35) | Not Null | - | - | Descripcion sobre el movimiento de planilla registrado |
+| estado | CHAR  | X(1) | TAB |- | - | Corresponde al estado de empresa contratante, informado por la misma | 
+| id_cuenta_empresa | INT | 999999 | 6 dígitos | - | - | Diferencia al usuario de otros usuarios |
+
+TAB:
+| Codigo | estado |
+|----------|----------|
+| A | Activo |
+| I | Inactivo |
+
+#### Nombre entidad: CUENTA EMPRESA
+Semantica: Representa el respectivo usuario con el cual dicho empleado iniciará sesión en el sistema de planillas
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|---------|-------|
+| id_cuenta_empresa | INT | 999999 | 6 dígitos | - | - | Diferencia al usuario de otros usuarios |
+| usuario | VARCHAR | X(32) | NOT NULL | - | - | Nombre creado por el usuario |
+| contraseña | VARCHAR | X(32) | NOT NULL | - | - | Permite dar exclusividad al usuario |
+
+#### Nombre entidad: REPRESENTANTE LEGAL
+Semantica:  Persona que representa a una empresa vinculada a un sector.
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+| id_representante | NUMERIC | 9999 | 4 dígitos | - | - | Identificador del representante legal |
+| Nombre | CHAR   | X(60) | NOT NULL | - | - | Nombre del representante legal |
+| Apellido Paterno | CHAR  | X(60) | NOT NULL | - | - | Apellido paterno del representante legal de la empresa |
+| Apellido Materno| CHAR | X(60) | NOT NULL | - | - | Apellido materno del representante legal de la empresa |
+| Nro Documento | CHAR | 99999999 | 8 dígitos | - | - | Número de documento del representante legal de la empresa |
+| Sexo | CHAR   | XXX | TAB | - | - | Sexo del representante legal de la empresa |
+| Fecha de Nacimiento | DATE   | AAAAMMDD | Válida en Calendario | - | - | Fecha de nacimiento del representante legal de la empresa |
+| estado | CHAR  | X(1) | TAB | - | - | Corresponde al estado del representante legal de la empresa | 
+| id_empresa | NUMERIC | 9999 | 4 dígitos | - | - | Identificador de la empresa |
+
+TAB:
+
+TAB: Sexo
+|Código|Semantica|
+|------|---------|
+|MAS|Masculino|
+|FEM|Femenino|
+|OTR|Otro|
+
+| Codigo | estado |
+|----------|----------|
+| A | Activo |
+| I | Inactivo |
 
 
 ## RELACIONES
@@ -329,9 +383,6 @@ TAB:
 |----------|----------|
 | A | Activo |
 | I | Inactivo |
-
-
-
 
 ## LOOKUP TABLES
 - Empleado / Contrato
