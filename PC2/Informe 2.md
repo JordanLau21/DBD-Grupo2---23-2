@@ -18,8 +18,8 @@ Semantica:
 | País de Nacimiento | CHAR   |X(30)|NOT NULL|||País de Nacimiento del empleado de la empresa|
 | Celular | INT   |999999999|9 Dígitos|||Celular del empleado de la empresa|
 | Teléfono de Oficina | INT   |9999999|7 Dígitos|||Teléfono de oficino del empleado de la empresa|
-| e-mail personal | CHAR   |||||Correo personal del empleado de la empresa|
-| e-mail corporativo | CHAR   |||||Correo corporativo del empleado de la empresa|
+| e-mail personal | CHAR   |X*@X*.X*|Dirección correcta según RFC8398|||Correo personal del empleado de la empresa|
+| e-mail corporativo | CHAR   |X*@X*.X*|Dirección correcta según RFC8398|||Correo corporativo del empleado de la empresa|
 | Dirección | CHAR   |||||Domicilio vigente del empleado de la empresa|
 | Grupo Sanguíneo | CHAR   |||||Grupo Sanguíneo del empleado de la empresa|
 | Régimen Pensionario | CHAR   |||||Régimen pensionario del empleado de la empresa|
