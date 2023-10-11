@@ -41,6 +41,35 @@ imagen
 
 # 2. MODELAMIENTO LÓGICO
 ## DICCIONARIO DE DATOS
+#### Nombre entidad: SOLICITUD
+Semantica: Entidad que representa las solicitudes hechas por los empleados
+
+| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
+|----------|----------|----------|----------|----------|----------|----------|
+|id_solicitud| INT | 9999999| 7 dígitos | - | - | Diferencia las solicitudes hechas por los empleados|
+| tipo_solicitud | CHAR | X(32) | TAB | - | - | Representa el tipo de solicitud del empleado |
+| est_solicitud | CHAR | X(32) | TAB | - | - | Representa el estado de la solicitud |
+| fec_solicitud | DATE | AAAAMMDD | Válido en calendario | - | - | Fecha de cuando se hizo la solicitud |
+| hora_solicitud | TIME | HH:MM:SS | Válido en tiempo | - | - | Hora en la que se hizo la solicitud |
+| monto | FLOAT  | 999999.99 | >= 0| En soles | - | Monto que pide de adelanto el empleado | 
+| descripcion | VARCHAR | X(32) | NOT NULL | - | - | Descropción de la solicitud del empleado |
+
+TAB:
+| Codigo | tipo_solicitud |
+|----------|----------|
+| ts1 | Licencia |
+| ts2 | Reclamo |
+| ts3 | Vacaciones|
+| ts4 | Aumento |
+| ts5 | Adelanto |
+| ts6 | Configuración de información |
+
+TAB:
+| Codigo | estado_solicitud |
+|----------|----------|
+| es1 | Denegado |
+| es2 | En espera |
+| es3 | Aceptado |
 #### Entidad: EMPLEADO
 Semantica: Persona que trabaja en la empresa a cambio de una remuneración
 
