@@ -241,7 +241,7 @@ Semantica: Función de la cual una persona tiene la responsabilidad en la organi
 | IdCargo |INT|99|2 dìgitos||
 | NombreDeCargo | CHAR   ||||
 | Descripcion | CHAR  ||||
-| Requerimientos| CHAR  ||||
+| Requerimientos| CHAR  |X(100)|||
 | IdEmpresa | INT  |999999|6 dìgitos||
 
 #### Entidad: AREA
