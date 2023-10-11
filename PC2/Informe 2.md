@@ -434,7 +434,8 @@ TAB:
 Satisface la Primera Forma Normal  
 
 2) SEGUNDA FORMA NORMAL (2FN)
-- 
+- Satisface la Primera Forma Normal
+- Los atributos no clave dependen por completo del Primary Key (
 
 3) TERCERA FORMA NORMAL (3FN)
 
