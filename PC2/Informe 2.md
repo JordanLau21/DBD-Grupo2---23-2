@@ -434,6 +434,7 @@ TAB:
 Satisface la Primera Forma Normal  
 
 2) SEGUNDA FORMA NORMAL (2FN)
+- 
 
 3) TERCERA FORMA NORMAL (3FN)
 
