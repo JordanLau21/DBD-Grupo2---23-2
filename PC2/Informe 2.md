@@ -18,19 +18,19 @@ Semantica:
 | País de Nacimiento | CHAR   |X(30)|NOT NULL|||País de Nacimiento del empleado de la empresa|
 | Celular | INT   |999999999|9 Dígitos|||Celular del empleado de la empresa|
 | Teléfono de Oficina | INT   |9999999|7 Dígitos|||Teléfono de oficino del empleado de la empresa|
-| e-mail personal | CHAR   |||||
-| e-mail corporativo | CHAR   |||||
-| Dirección | CHAR   |||||
-| Grupo Sanguíneo | CHAR   |||||
-| Régimen Pensionario | CHAR   |||||
-| Situación de Discapacidad | CHAR   |||||
-| Seguro de Salud | CHAR   |||||
-| Fecha de Ingreso | CHAR   |||||
-| Tipo de Pago | CHAR   |||||
-| Medio de Pago | CHAR   |||||
-| Cuenta Bancaria | CHAR   |||||
-| Frecuencia de Pago | CHAR   |||||
-| Día de Pago | CHAR   |||||
+| e-mail personal | CHAR   ||||Correo personal del empleado de la empresa|
+| e-mail corporativo | CHAR   ||||Correo corporativo del empleado de la empresa|
+| Dirección | CHAR   ||||Domicilio vigente del empleado de la empresa|
+| Grupo Sanguíneo | CHAR   ||||Grupo Sanguíneo del empleado de la empresa|
+| Régimen Pensionario | CHAR   ||||Régimen pensionario del empleado de la empresa|
+| Situación de Discapacidad | CHAR   ||||Indica si el empleado de la empresa sufre (tipo) o no una discapacidad|
+| Seguro de Salud | CHAR   ||||Seguro de salud del empleado de la empresa|
+| Fecha de Ingreso | CHAR   ||||Fecha de ingreso a la empresa del empleado|
+| Tipo de Pago | CHAR   ||||Tipo de pago al empleado de la empresa|
+| Medio de Pago | CHAR   ||||Medio de pago al empleado de la empresa|
+| Cuenta Bancaria | CHAR   ||||Cuenta bancario del empleado de la empresa, en caso posea|
+| Frecuencia de Pago | CHAR   ||||Frecuencia de pago al empleado de la empresa|
+| Día de Pago | CHAR   ||||Día de cada mes en el que se efectuará el pago al empleado de la empresa|
 
 
 #### Nombre entidad: CONTRATO
