@@ -13,7 +13,7 @@ Semantica:
 | Nro Documento | CHAR   |99999999|8 dígitos|||Número de documento del empleado de la empresa|
 | Sexo | CHAR   ||TAB|||Sexo del empleado de la empresa|
 | Fecha de Nacimiento | DATE   |AAAAMMDD|Válida en Calendario|||Fecha de nacimiento del empleado de la empresa|
-| Edad | INT  |99|>18 Años|Fecha de Nacimiento|Edad del empleado de la empresa|
+| Edad | INT  |99|>18|Años|Fecha de Nacimiento|Edad del empleado de la empresa|
 | Estado Civil | CHAR   ||||||
 | País de Nacimiento | CHAR   |||||
 | Celular | CHAR   |||||
