@@ -27,8 +27,8 @@ Semantica:
 | Seguro de Salud | CHAR   |XXX|TAB|||Seguro de salud del empleado de la empresa|
 | Fecha de Ingreso | CHAR   |DATE|AAAAMMDD|Válida en Calendario||Fecha de ingreso a la empresa del empleado|
 | Tipo de Pago | CHAR   |XXX|TAB|||Tipo de pago al empleado de la empresa|
-| Medio de Pago | CHAR   |||||Medio de pago al empleado de la empresa|
-| Cuenta Bancaria | CHAR   |||||Cuenta bancario del empleado de la empresa, en caso posea|
+| Medio de Pago | CHAR   |XXXX|TAB|||Medio de pago al empleado de la empresa|
+| Cuenta Bancaria | INT   |XXXXXXXXXXXXXXX||||Cuenta bancario del empleado de la empresa, en caso posea|
 | Frecuencia de Pago | CHAR   |XXXX|TAB|||Frecuencia de pago al empleado de la empresa|
 | Día de Pago | DAY   |XX|Válido en días calendario|||Día de cada mes en el que se efectuará el pago al empleado de la empresa|
 
