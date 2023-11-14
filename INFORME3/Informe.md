@@ -10,7 +10,7 @@ CREATE TABLE Empleado(<br>
 	apellido_paterno VARCHAR(20) NOT NULL,<br>
 	apellido_materno VARCHAR(20) NOT NULL,<br>
 	fecha_nacimiento DATE NOT NULL,<br>
-	edad INT NOT NULL,--DERIVADA
+	edad INT NOT NULL,
 	telefono NUMERIC(9) NOT NULL,
 	email VARCHAR(50) NOT NULL,
 	direccion VARCHAR(200) NOT NULL,
