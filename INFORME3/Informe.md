@@ -173,7 +173,7 @@ FOREIGN KEY (codEstudiante) REFERENCES Usuario(codUsuario),
 
 | Código Interfaz | I000  |
 |-----------------|--------------------------------------------------|
-|Imagen|*colocar imagen*|
+|Imagen Interfaz|*colocar imagen*|
 
 
 
