@@ -3,6 +3,17 @@
 # MODELAMIENTO RELACIONAL 
 
 # CREACION DE TABLAS
+CREATE TABLE Empresa(
+
+);
+
+CREATE TABLE Regimen_pensionario(
+	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,<br>
+	tipo_regimen CHAR(3) NOT NULL,<br>
+	administradora VARCHAR(20) NOT NULL<br>
+);
+
+
 
 CREATE TABLE Empleado(<br>
 	id_empleado INTEGER PRIMARY KEY NOT NULL,<br>
