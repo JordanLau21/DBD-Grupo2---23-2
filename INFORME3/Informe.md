@@ -5,6 +5,7 @@
 # CREACION DE TABLAS
 
 CREATE TABLE Empleado(  
+
 	id_empleado INTEGER PRIMARY KEY NOT NULL,
 	nombre VARCHAR(20) NOT NULL,
 	apellido_paterno VARCHAR(20) NOT NULL,
