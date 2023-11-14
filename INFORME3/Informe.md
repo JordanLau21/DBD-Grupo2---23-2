@@ -46,7 +46,8 @@ CREATE TABLE Empleado(<br>
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)<br>
 );
 
-
+CREATE TABLE Area(<br>
+);
 
 
 
