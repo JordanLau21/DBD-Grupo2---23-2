@@ -7,7 +7,7 @@ CREATE TABLE Empresa(
 
 );
 
-CREATE TABLE Regimen_pensionario(
+CREATE TABLE Regimen_pensionario(<br>
 	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,<br>
 	tipo_regimen CHAR(3) NOT NULL,<br>
 	administradora VARCHAR(20) NOT NULL<br>
