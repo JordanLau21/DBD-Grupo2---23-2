@@ -4,8 +4,7 @@
 
 # CREACION DE TABLAS
 
-CREATE TABLE Empleado(  
-
+CREATE TABLE Empleado(<br>
 	id_empleado INTEGER PRIMARY KEY NOT NULL,
 	nombre VARCHAR(20) NOT NULL,
 	apellido_paterno VARCHAR(20) NOT NULL,
