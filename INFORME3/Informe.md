@@ -134,9 +134,9 @@ codTurno CHAR(5) NOT NULL,
 FOREIGN KEY (codEstudiante) REFERENCES Usuario(codUsuario),
 );
 
-# Asignacion de codigos por requerimientos y Prototipos de interfaces de usuario
+# ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 
-# Sentencias SQL por cada prototipo
+# SENTENCIAS SQL POR CADA PROTOTIPO
 ## 1.
 Codigo Requerimiento: R-001
 Codigo interfaz: I-001
