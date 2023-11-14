@@ -5,11 +5,11 @@
 # CREACION DE TABLAS
 
 CREATE TABLE Empleado(<br>
-	id_empleado INTEGER PRIMARY KEY NOT NULL,
-	nombre VARCHAR(20) NOT NULL,
-	apellido_paterno VARCHAR(20) NOT NULL,
-	apellido_materno VARCHAR(20) NOT NULL,
-	fecha_nacimiento DATE NOT NULL,
+	id_empleado INTEGER PRIMARY KEY NOT NULL,<br>
+	nombre VARCHAR(20) NOT NULL,<br>
+	apellido_paterno VARCHAR(20) NOT NULL,<br>
+	apellido_materno VARCHAR(20) NOT NULL,<br>
+	fecha_nacimiento DATE NOT NULL,<br>
 	edad INT NOT NULL,--DERIVADA
 	telefono NUMERIC(9) NOT NULL,
 	email VARCHAR(50) NOT NULL,
