@@ -78,6 +78,33 @@ CREATE TABLE Detalle_pago(<br>
 	cuenta NUMERIC(14) NOT NULL<br>
 );
 
+CREATE TABLE Contrato(<br>
+	id_contrato INTEGER PRIMARY KEY NOT NULL,<br>
+	fecha_firma_contrato DATE NOT NULL,<br>
+	fecha_inicio_laboral DATE NOT NULL,<br>
+	fecha_termino_contrato DATE NOT NULL,<br>
+	sueldo_base FLOAT NOT NULL,<br>
+	liquido_teorico FLOAT NOT NULL,<br>
+	id_area INTEGER NOT NULL,<br>
+	FOREIGN KEY  (id_area) REFERENCES Area(id_area),<br>
+	id_cargo INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_cargo) REFERENCES Cargo(id_cargo),<br>
+	id_empleado INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado),<br>
+	id_estado_contrato INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_estado_contrato) REFERENCES Estado_contrato(id_estado_contrato),<br>
+	id_tipo_contrato INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_tipo_contrato) REFERENCES Tipo_contrato(id_tipo_contrato),<br>
+	id_tipo_jornada INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_tipo_jornada) REFERENCES Tipo_jornada(id_tipo_jornada),<br>
+	id_detalle_pago INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_detalle_pago) REFERENCES Detalle_pago(id_detalle_pago)<br>
+);
+
+
+
+
+
 
 
 
