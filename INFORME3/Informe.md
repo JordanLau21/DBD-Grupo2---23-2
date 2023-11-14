@@ -172,8 +172,8 @@ FOREIGN KEY (codEstudiante) REFERENCES Usuario(codUsuario),
 ## Codificación Prototipo de Interfaz
 
 | Código Interfaz | I000  |
-|Imagen|
-|colocar imagen|
+|-----------------|--------------------------------------------------|
+|Imagen|*colocar imagen*|
 
 
 
