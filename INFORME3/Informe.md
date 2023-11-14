@@ -186,8 +186,8 @@ Codigo interfaz: I-001
 Imagen Inferzas
 
 | Código Interfaz | R000  |
-|-----------------|--------------------------------------------------|
 | Imagen Interfaz | I000  |
+|-----------------|--------------------------------------------------|
 |Imagen Interfaz|*colocar imagen*|
 |Sentencias SQL|*colocar sql*|
 
