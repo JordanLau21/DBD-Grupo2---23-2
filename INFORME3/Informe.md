@@ -3,6 +3,36 @@
 # MODELAMIENTO RELACIONAL 
 
 # CREACION DE TABLAS
+
+CREATE TABLE Empleado(
+	id_empleado INTEGER PRIMARY KEY NOT NULL,
+	nombre VARCHAR(20) NOT NULL,
+	apellido_paterno VARCHAR(20) NOT NULL,
+	apellido_materno VARCHAR(20) NOT NULL,
+	fecha_nacimiento DATE NOT NULL,
+	edad INT NOT NULL,--DERIVADA
+	telefono NUMERIC(9) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	direccion VARCHAR(200) NOT NULL,
+	dni NUMERIC(8) NOT NULL,
+	id_estado_civil INTEGER NOT NULL,
+	FOREIGN KEY (id_estado_civil) REFERENCES Estado_civil(id_estado_civil),
+	id_sexo INTEGER NOT NULL,
+	FOREIGN KEY (id_sexo) REFERENCES Sexo(id_sexo),
+	id_regimen_pensionario INTEGER NOT NULL,
+	FOREIGN KEY (id_regimen_pensionario) REFERENCES Regimen_pensionario(id_regimen_pensionario),
+	id_seguro_medico INTEGER NOT NULL,
+	FOREIGN KEY (id_seguro_medico) REFERENCES Seguro_medico(id_seguro_medico),
+	id_situacion_discapacidad INTEGER NOT NULL,
+	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),
+	id_empresa INTEGER NOT NULL,
+	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
+);
+
+
+
+
+
 CREATE TABLE Usuario (
 codUsuario CHAR(9) PRIMARY KEY NOT NULL,
 contrasena VARCHAR(30) NOT NULL,
