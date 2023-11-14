@@ -180,14 +180,25 @@ FOREIGN KEY (codEstudiante) REFERENCES Usuario(codUsuario),
 
 
 # SENTENCIAS SQL POR CADA PROTOTIPO
-## 1.
+
 Codigo Requerimiento: R-001
 Codigo interfaz: I-001
 Imagen Inferzas
 
+| Código Interfaz | R000  |
+|-----------------|--------------------------------------------------|
+| Imagen Interfaz | I000  |
+|Imagen Interfaz|*colocar imagen*|
+|Sentencias SQL|*colocar sql*|
+
+
+
+
 | Codigo Requerimiento | R-001 |  
 |----------|----------|
 | Codigo Interfaz | I-001|   
+
+
 
 | Imagen interfaz |  
 |----------|
