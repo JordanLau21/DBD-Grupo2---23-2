@@ -46,9 +46,37 @@ CREATE TABLE Empleado(<br>
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)<br>
 );
 
-CREATE TABLE Area(<br>
+CREATE TABLE Area(
+
 );
 
+CREATE TABLE Cargo(
+
+);
+
+CREATE TABLE Estado_contrato(<br>
+	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,<br>
+	estado_contrato VARCHAR(10) NOT NULL <br>
+);
+
+CREATE TABLE Tipo_contrato(<br>
+	id_tipo_contrato INTEGER PRIMARY KEY NOT NULL,<br>
+	tipo_contrato VARCHAR(15) NOT NULL<br>
+);
+
+CREATE TABLE Tipo_jornada(<br>
+	id_tipo_jornada INTEGER PRIMARY KEY NOT NULL,<br>
+	tipo_jornada VARCHAR(15) NOT NULL<br>
+);
+
+CREATE TABLE Detalle_pago(<br>
+	id_detalle_pago INTEGER PRIMARY KEY NOT NULL,<br>
+	frecuencia_pago VARCHAR(30) NOT NULL,<br>
+  	dia_pago_mes INT NOT NULL,<br>
+	medio_pago VARCHAR(30) NOT NULL,<br>
+	entidad_financiera VARCHAR(30) NOT NULL,<br>
+	cuenta NUMERIC(14) NOT NULL<br>
+);
 
 
 
