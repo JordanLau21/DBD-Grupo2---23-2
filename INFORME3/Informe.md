@@ -161,6 +161,11 @@ CODIFICACIÓN DE REQUERIMIENTOS
 |Descripción|El administrador podrá renovar el contrato del empleado bajo las mismas condiciones o cambiar los datos que hayan sido modificados, como por ejemplo, el cargo, área, sueldo, etc.|
 
 
+| Código | R011  |
+|----------|----------|
+|Nombre|Visualizar los usuarios desvinculados|
+|Objetivo|Desvincular a un empleado activo o visualizar a los empleados desvinculados.|
+|Descripción|El administrador podrá desvincular usuarios activos, por término de contrato, además de poder visualizar los empleados desvinculados anteriormente.|
 
 
 
