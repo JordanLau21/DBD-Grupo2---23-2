@@ -23,34 +23,31 @@ CREATE TABLE Situacion_discapacidad(<br>
 	tipo_discapacidad VARCHAR(10) NOT NULL<br>
 );
 
-
-
-
-
 CREATE TABLE Empleado(<br>
 	id_empleado INTEGER PRIMARY KEY NOT NULL,<br>
 	nombre VARCHAR(20) NOT NULL,<br>
 	apellido_paterno VARCHAR(20) NOT NULL,<br>
 	apellido_materno VARCHAR(20) NOT NULL,<br>
 	fecha_nacimiento DATE NOT NULL,<br>
-	edad INT NOT NULL,
-	telefono NUMERIC(9) NOT NULL,
-	email VARCHAR(50) NOT NULL,
-	direccion VARCHAR(200) NOT NULL,
-	dni NUMERIC(8) NOT NULL,
-	id_estado_civil INTEGER NOT NULL,
-	FOREIGN KEY (id_estado_civil) REFERENCES Estado_civil(id_estado_civil),
-	id_sexo INTEGER NOT NULL,
-	FOREIGN KEY (id_sexo) REFERENCES Sexo(id_sexo),
-	id_regimen_pensionario INTEGER NOT NULL,
-	FOREIGN KEY (id_regimen_pensionario) REFERENCES Regimen_pensionario(id_regimen_pensionario),
-	id_seguro_medico INTEGER NOT NULL,
-	FOREIGN KEY (id_seguro_medico) REFERENCES Seguro_medico(id_seguro_medico),
-	id_situacion_discapacidad INTEGER NOT NULL,
-	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),
-	id_empresa INTEGER NOT NULL,
-	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
+	edad INT NOT NULL,<br>
+	telefono NUMERIC(9) NOT NULL,<br>
+	email VARCHAR(50) NOT NULL,<br>
+	direccion VARCHAR(200) NOT NULL,<br>
+	dni NUMERIC(8) NOT NULL,<br>
+	estado_civil VARCHAR(15) NOT NULL,<br>
+	sexo VARCHAR(10) NOT NULL,<br>
+	id_regimen_pensionario INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_regimen_pensionario) REFERENCES Regimen_pensionario(id_regimen_pensionario),<br>
+	id_seguro_medico INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_seguro_medico) REFERENCES Seguro_medico(id_seguro_medico),<br>
+	id_situacion_discapacidad INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),<br>
+	id_empresa INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)<br>
 );
+
+
+
 
 
 
