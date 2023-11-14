@@ -13,6 +13,18 @@ CREATE TABLE Regimen_pensionario(<br>
 	administradora VARCHAR(20) NOT NULL<br>
 );
 
+CREATE TABLE Seguro_medico(<br>
+	id_seguro_medico INTEGER PRIMARY KEY NOT NULL,<br>
+	tipo_seguro VARCHAR(10) NOT NULL<br>
+);
+
+CREATE TABLE Situacion_discapacidad(<br>
+	id_situacion_discapacidad INTEGER PRIMARY KEY NOT NULL,<br>
+	tipo_discapacidad VARCHAR(10) NOT NULL<br>
+);
+
+
+
 
 
 CREATE TABLE Empleado(<br>
