@@ -138,6 +138,8 @@ FOREIGN KEY (codEstudiante) REFERENCES Usuario(codUsuario),
 
 CODIFICACIÓN DE REQUERIMIENTOS
 
+
+
 | Código | R008  |
 |----------|----------|
 |Nombre|Crear Empleado y Usuario|
@@ -145,11 +147,18 @@ CODIFICACIÓN DE REQUERIMIENTOS
 |Descripción|A través de la subida de datos del empleado, se crea un usuario que le permitirá a este poder ver su sistema de planillas.|
 
 
-
-|  Codigo  | R-001 |  
+| Código | R009  |
 |----------|----------|
-|
+|Nombre|Visualizar los usuarios vigentes o activos|
+|Objetivo|Visualizar los usuarios activos en el sistema de planillas.|
+|Descripción|El administrador podrá visualizar los usuarios cuyo estado es activo en el momento, es decir, los empleados que tienen contrato vigente con la empresa.|
 
+
+| Código | R010  |
+|----------|----------|
+|Nombre|Renovar contrato de empleado|
+|Objetivo|Renovar el contrato de un empleado.|
+|Descripción|El administrador podrá renovar el contrato del empleado bajo las mismas condiciones o cambiar los datos que hayan sido modificados, como por ejemplo, el cargo, área, sueldo, etc.|
 
 
 
