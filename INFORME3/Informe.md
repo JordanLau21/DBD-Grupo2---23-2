@@ -347,7 +347,7 @@ CREATE TABLE Estado_contrato(
 	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,
 	estado_contrato VARCHAR(10) NOT NULL 
 );
-
+```
 ### Tipo de Contrato
 ```
 CREATE TABLE Tipo_contrato(
@@ -363,6 +363,8 @@ CREATE TABLE Tipo_jornada(
 	tipo_jornada VARCHAR(15) NOT NULL
 );
 ```
+### Detalle de Pago
+```
 CREATE TABLE Detalle_pago(
 	id_detalle_pago INTEGER PRIMARY KEY NOT NULL,
 	frecuencia_pago VARCHAR(30) NOT NULL,
@@ -371,7 +373,9 @@ CREATE TABLE Detalle_pago(
 	entidad_financiera VARCHAR(30) NOT NULL,
 	cuenta NUMERIC(14) NOT NULL
 );
-
+```
+### Contrato
+```
 CREATE TABLE Contrato(
 	id_contrato INTEGER PRIMARY KEY NOT NULL,
 	fecha_firma_contrato DATE NOT NULL,
