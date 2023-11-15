@@ -340,7 +340,53 @@ from planilla p, empleado e, contrato c, concepto_nomina cn, boleta b, movimient
 where b.id_boleta =<1> and c.id_tipo_contrato=tp.id_tipo_contrato and c.id_empleado=e.id_empleado;--duda
 ```
 
+### P1.1: Editar Información de la empresa
+```
+SELECT 
+    Empresa.ruc AS RUC, 
+    Empresa.razon_social AS Razón_Social,
+	CONCAT(RepresentanteLegal.nombres, ' ', RepresentanteLegal.apellido_paterno, ' ', RepresentanteLegal.apellido_materno) AS Representante,
+    Empresa.direccion AS Dirección,
+	Empresa.estado AS Estado    
+FROM Empresa
+LEFT JOIN RepresentanteLegal ON Empresa.id_empresa = RepresentanteLegal.id_empresa
+WHERE Empresa.id_empresa = 3;
+```
+### P1.2: Editar Información de la empresa
+```
+SELECT 
+    Empresa.id_empresa, 
+    Empresa.ruc, 
+    Empresa.regimen, 
+    Empresa.estado, 
+    Empresa.razon_social, 
+    Empresa.direccion, 
+    Empresa.giro, 
+    Empresa.ciudad, 
+    Empresa.logo,
+    RepresentanteLegal.id_representante,
+    RepresentanteLegal.nombres,
+    RepresentanteLegal.apellido_paterno,
+    RepresentanteLegal.apellido_materno,
+    RepresentanteLegal.dni
+FROM Empresa
+LEFT JOIN RepresentanteLegal ON Empresa.id_empresa = RepresentanteLegal.id_empresa
+WHERE Empresa.id_empresa = 3;
 
+-- Actualizar información de la empresa
+UPDATE Empresa
+SET 
+    direccion = 'Jr. Nueva Dirección 789',
+    estado = 'Inactiva'
+WHERE id_empresa = 3;
+
+-- Añadir algún representante
+INSERT INTO RepresentanteLegal (nombres, apellido_paterno, apellido_materno, dni, estado, id_empresa)
+VALUES ('Roberto Carlos', 'Flores', 'Velarde', '76071011', 'Activo', 3);
+
+-- Borrar algún representante
+DELETE FROM RepresentanteLegal WHERE id_representante = 5;
+```
 
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 
