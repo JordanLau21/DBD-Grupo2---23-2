@@ -466,6 +466,18 @@ INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad
 ('2', 'Parcial'),
 ('3', 'Total');
 ```
+###Empleado 
+```
+INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa) VALUES
+(1,'Daniel','Sifuentes Grados',TO_DATE('1993-05-11', 'YYYY-MM-DD'),30,964701287,'daniel.sifuentes@harlamsyo.pe',47756342,'Soltero','Masculino',2,1,1,1),
+
+
+;
+
+
+
+```
+
 
 ### Empresa
 ```
