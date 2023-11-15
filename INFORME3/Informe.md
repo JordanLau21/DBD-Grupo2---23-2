@@ -665,7 +665,25 @@ JOIN
 WHERE
     e.id_empresa = 1
 ```
+### P2.2: Crear Nuevo Cargo
+```
+INSERT INTO Cargo (id_cargo, nombre_cargo, codigo_cargo, descripcion_cargo, requerimientos, estado, id_empresa)
+VALUES (16, 'Jefe RRHH', 'jefe_rrhh', 'Gestor y controller del área de recursos humanos, considerando remuneraciones, selección y gestión por procesos', 'Técnico o Ingeniería a fin (DO, RRHH), Metódico', 'Activo', 1);
 
+SELECT
+    ROW_NUMBER() OVER (ORDER BY c.id_cargo) AS "N°",
+    c.nombre_cargo AS "Descripción",
+    c.estado AS "Estado",
+    a.nombre_area AS "Área"
+FROM
+    Cargo c
+JOIN
+    Empresa e ON c.id_empresa = e.id_empresa
+JOIN
+    Area a ON c.id_empresa = a.id_empresa
+WHERE
+    e.id_empresa = 1
+```
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 
 ## Codificación de Requerimientos
