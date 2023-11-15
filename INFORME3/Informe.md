@@ -7,16 +7,14 @@
 ```
 CREATE TABLE Empresa(
 	id_empresa INTEGER PRIMARY KEY NOT NULL,
-	ruc INTEGER NOT NULL,
+	ruc VARCHAR(50) NOT NULL,
 	regimen VARCHAR(25) NOT NULL,
-	estado VARCHAR(20) NOT NULL,
+	estado VARCHAR(20) NOT NULL, 
 	razon_social VARCHAR(50) NOT NULL,
 	direccion VARCHAR(200) NOT NULL,
 	giro VARCHAR(50) NOT NULL,
 	ciudad VARCHAR(25) NOT NULL,
-	logo VARCHAR(200) NOT NULL
-        id_cuenta INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)<br>
+	logo VARCHAR(200) NOT NULL 
 );
 ```
 
@@ -27,11 +25,11 @@ CREATE TABLE RepresentanteLegal(
 	nombres VARCHAR(20) NOT NULL,
 	apellido_paterno VARCHAR(50) NOT NULL,
 	apellido_materno VARCHAR(50) NOT NULL,
-	dni INTEGER NOT NULL,
-	estado BOOLEAN NOT NULL,
+	dni VARCHAR(20) NOT NULL,
+	estado VARCHAR(20) NOT NULL, 
 	id_empresa INTEGER NOT NULL,
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
-);
+); 
 ```
 
 CREATE TABLE Regimen_pensionario(<br>
@@ -85,7 +83,7 @@ CREATE TABLE Cargo(
 	estado VARCHAR(20) NOT NULL,
 	id_empresa INTEGER NOT NULL,
 	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa)
-); 
+);
 ```
 ### Area
 ```
