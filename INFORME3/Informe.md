@@ -684,6 +684,29 @@ JOIN
 WHERE
     e.id_empresa = 1
 ```
+
+### P3.1: Crear Nueva Area
+```
+SELECT e.razon_social AS empresa, a.nombre_area AS area, COUNT(c.id_cargo) AS empleados
+FROM Empresa e
+INNER JOIN Area a ON e.id_empresa = a.id_empresa
+LEFT JOIN Cargo c ON a.id_empresa = c.id_empresa
+WHERE e.razon_social = 'Ferrer SpA'
+GROUP BY e.razon_social, a.nombre_area;
+```
+### P3.2: Crear Nueva Area
+```
+INSERT INTO Area (id_area, nombre_area, descripcion_area, id_empresa)
+VALUES 
+(16, 'Investigación y Desarrollo', 'Área encargada de la investigación y creación de nuevos productos.', 9);
+SELECT e.razon_social AS empresa, a.nombre_area AS area, COUNT(c.id_cargo) AS empleados
+FROM Empresa e
+INNER JOIN Area a ON e.id_empresa = a.id_empresa
+LEFT JOIN Cargo c ON a.id_empresa = c.id_empresa
+WHERE e.razon_social = 'Ferrer SpA'
+GROUP BY e.razon_social, a.nombre_area;
+```
+
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 
 ## Codificación de Requerimientos
