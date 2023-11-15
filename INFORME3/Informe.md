@@ -183,7 +183,7 @@ AND id_empleado = <1>
 
 ### BOTON NUEVA SOLICITUD
 CREATE SEQUENCE id_solicitud START WITH 1
-INSERT INTO "Solicitud" VALUES (NEXTVAL(id_solicitud),2, <1>, <2>, date, time,<3>,<4>,<5>)
+INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),2, <1>, <2>, date, time,<3>,<4>,<5>)
 
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 
