@@ -241,6 +241,8 @@ CREATE TABLE Boleta(
 );
 
 
+
+
 ### Empresa
 ```
 CREATE TABLE Empresa(
@@ -270,45 +272,53 @@ CREATE TABLE RepresentanteLegal(
 ); 
 ```
 
-CREATE TABLE Regimen_pensionario(<br>
-	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,<br>
-	tipo_regimen CHAR(3) NOT NULL,<br>
-	administradora VARCHAR(20) NOT NULL<br>
+### Régimen Pensionario
+```
+CREATE TABLE Regimen_pensionario(
+	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,
+	tipo_regimen CHAR(3) NOT NULL,
+	administradora VARCHAR(20) NOT NULL
 );
-
-CREATE TABLE Seguro_medico(<br>
-	id_seguro_medico INTEGER PRIMARY KEY NOT NULL,<br>
-	tipo_seguro VARCHAR(10) NOT NULL<br>
+```
+### Seguro Médico
+```
+CREATE TABLE Seguro_medico(
+	id_seguro_medico INTEGER PRIMARY KEY NOT NULL,<
+	tipo_seguro VARCHAR(10) NOT NULL
 );
-
-CREATE TABLE Situacion_discapacidad(<br>
-	id_situacion_discapacidad INTEGER PRIMARY KEY NOT NULL,<br>
-	tipo_discapacidad VARCHAR(10) NOT NULL<br>
+```
+### Situación de Discapacidad
+```
+CREATE TABLE Situacion_discapacidad(
+	id_situacion_discapacidad INTEGER PRIMARY KEY NOT NULL,
+	tipo_discapacidad VARCHAR(10) NOT NULL
 );
-
-CREATE TABLE Empleado(<br>
-	id_empleado INTEGER PRIMARY KEY NOT NULL,<br>
-	nombres VARCHAR(20) NOT NULL,<br>
-	apellidos VARCHAR(50) NOT NULL,<br>
-	fecha_nacimiento DATE NOT NULL,<br>
-	edad INT NOT NULL,<br>
-	telefono NUMERIC(9) NOT NULL,<br>
-	email VARCHAR(50) NOT NULL,<br>
-	direccion VARCHAR(200) NOT NULL,<br>
-	dni NUMERIC(8) NOT NULL,<br>
-	estado_civil VARCHAR(15) NOT NULL,<br>
-	sexo VARCHAR(10) NOT NULL,<br>
-	id_regimen_pensionario INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_regimen_pensionario) REFERENCES Regimen_pensionario(id_regimen_pensionario),<br>
-	id_seguro_medico INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_seguro_medico) REFERENCES Seguro_medico(id_seguro_medico),<br>
-	id_situacion_discapacidad INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),<br>
-	id_empresa INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)<br>
-        id_cuenta INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)<br>
+```
+### Empleado
+```
+CREATE TABLE Empleado(
+	id_empleado INTEGER PRIMARY KEY NOT NULL,
+	nombres VARCHAR(20) NOT NULL,
+	apellidos VARCHAR(50) NOT NULL,
+	fecha_nacimiento DATE NOT NULL,
+	edad INT NOT NULL,
+	telefono NUMERIC(9) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	dni NUMERIC(8) NOT NULL,
+	estado_civil VARCHAR(15) NOT NULL,
+	sexo VARCHAR(10) NOT NULL,
+	id_regimen_pensionario INTEGER NOT NULL,
+	FOREIGN KEY (id_regimen_pensionario) REFERENCES Regimen_pensionario(id_regimen_pensionario),
+	id_seguro_medico INTEGER NOT NULL,
+	FOREIGN KEY (id_seguro_medico) REFERENCES Seguro_medico(id_seguro_medico),
+	id_situacion_discapacidad INTEGER NOT NULL,
+	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),
+	id_empresa INTEGER NOT NULL,
+	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
+        id_cuenta INTEGER NOT NULL,
+	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)
 );
+```
 
 ### Cargo
 ```
