@@ -145,6 +145,73 @@ CREATE TABLE Solicitud(<br>
 	id_estado_cuenta INTEGER PRIMARY KEY NOT NULL,<br>
         estado_cuenta VARCHAR(30) NOT NULL,<br>
  );
+
+### planilla
+```
+CREATE TABLE Planilla
+(
+  id_planilla NUMERIC(6) NOT NULL,
+  periodo VARCHAR(10) NOT NULL,
+  dias_laborables NUMERIC(3) not null,
+  fecha_inicio DATE not null,
+  fecha_fin DATE not null,
+  fecha_calculo date,
+  monto_emitido NUMERIC(12,5),
+  periodicidad VARCHAR(10) not null,
+  fecha_creacion date not null,
+  hora_creacion time not null,
+  PRIMARY KEY (id_planilla)
+);
+```
+### boleta
+```
+CREATE TABLE Boleta
+(
+  id_boleta NUMERIC(9,2) NOT NULL,
+  TotalDescuentos NUMERIC(9,2) NOT NULL,
+  TotalNeto NUMERIC(9,2) NOT NULL,
+  TotalIngresos NUMERIC(9,2) NOT NULL,
+  TotalAportes numeric(9,2) NOT NULL,
+  id_contrato numeric(6)NOT NULL,
+  id_planilla numeric(6) NOT NULL,
+  PRIMARY KEY (id_boleta),
+  FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
+  FOREIGN KEY (id_planilla) REFERENCES Planilla(id_planilla)
+);
+```
+### tipo_operacion
+```
+create table tipo_operacion 
+(
+	id_tipo_operacion VARCHAR(3) not null,
+	descripcion_operacion VARCHAR(20) not null,
+	primary key (id_tipo_operacion)
+);
+```
+
+### estado_concepto
+```
+create table estado_concepto 
+(
+	id_estado VARCHAR(3) not null,
+	descripcion_estado VARCHAR(20) not null,
+	primary key (id_estado)
+);
+```
+### concepto_nomina
+```
+CREATE TABLE concepto_nomina
+(
+  id_nomina serial NOT NULL,
+  nombre_nomina VARCHAR(50) NOT NULL,
+  valor_nomina numeric(3,2) NOT NULL,
+  id_tipo_operacion varchar(6) CHECK (id_tipo_operacion IN ('TO1', 'TO2', 'TO3')),
+  id_estado varchar(6) CHECK (id_estado IN ('EC1', 'EC2') ),
+  PRIMARY KEY (id_nomina),
+  FOREIGN KEY (id_tipo_operacion) REFERENCES tipo_operacion(id_tipo_operacion),
+  FOREIGN KEY (id_estado) REFERENCES estado_concepto(id_estado)
+);
+```
  
 
 # CONSULTAS O QUERYS
