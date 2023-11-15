@@ -176,8 +176,6 @@ CREATE TABLE Solicitud(<br>
 	id_cuenta INTEGER PRIMARY KEY NOT NULL,<br>
         usuario VARCHAR(50) NOT NULL,<br>
 	contraseña VARCHAR(50) NOT NULL,<br>
-        id_contrato INTEGER NOT NULL,<br>
-	FOREIGN KEY  (id_contrato) REFERENCES Contrato(id_contrato),<br>
         id_estado_cuenta INTEGER NOT NULL,<br>
 	FOREIGN KEY  (id_estado_cuenta) REFERENCES Estado_cuenta(id_estado_cuenta),<br>
  );
