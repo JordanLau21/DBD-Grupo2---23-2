@@ -462,10 +462,10 @@ CREATE TABLE Planilla
 CREATE TABLE Boleta
 (
   id_boleta NUMERIC(9,2) NOT NULL,
-  TotalDescuentos NUMERIC(9,2) NOT NULL,
-  TotalNeto NUMERIC(9,2) NOT NULL,
-  TotalIngresos NUMERIC(9,2) NOT NULL,
-  TotalAportes numeric(9,2) NOT NULL,
+  total_descuentos NUMERIC(9,2) NOT NULL,
+  total_neto NUMERIC(9,2) NOT NULL,
+  total_ingresos NUMERIC(9,2) NOT NULL,
+  total_aportes numeric(9,2) NOT NULL,
   id_contrato numeric(6)NOT NULL,
   id_planilla numeric(6) NOT NULL,
   PRIMARY KEY (id_boleta),
