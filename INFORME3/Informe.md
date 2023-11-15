@@ -522,6 +522,36 @@ UPDATE Cuenta SET contraseña = <1> WHERE contraseña = < 3 > AND <1> = <2>;
 SELECT usuario, contraseña from Cuenta
 WHERE usuario = <1> AND contraseña = <2>
 
+### REGISTRAR EMPLEADOS Y USUARIO
+```
+CREATE SEQUENCE Empleado_seq(
+	START WITH 12625
+	INCREMENT 101
+	MAXVALUE 63125
+);
+CREATE SEQUENCE Cuenta_seq(
+	START WITH 23625
+	INCREMENT 101
+	MAXVALUE 89451
+);
+
+
+INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa,id_cuenta) VALUES (NEXTVAL('Empleado_seq'),<1>,<2>,<3>,<4>,<5>,<6>,<7>,,<9>,<10>,<11>,<12>,<13>,<14>,NEXTVAL('Cuenta_seq');
+<11>:
+SELECT tipo_regimen FROM Regimen_pensionario;
+<12>:
+SELECT tipo_seguro FROM Seguro_medico;
+<13>:
+SELECT tipo_discapacidad FROM Situacion_discapacidad;
+<14>:
+SELECT razon_social FROM Empresa;
+```
+
+
+
+
+
+
 ### PANTALLA SOLICITUDES (ADMINISTRADOR)
 SELECT em.nombres, em.apellidos, so.fec_solicitud, ti.descripcion FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
 WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
