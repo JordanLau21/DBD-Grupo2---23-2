@@ -513,9 +513,24 @@ INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad
 ('3', 'Total');
 ```
 ###Empleado 
+
 ```
 INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa) VALUES
-(1,'Daniel','Sifuentes Grados',TO_DATE('1993-05-11', 'YYYY-MM-DD'),30,964701287,'daniel.sifuentes@harlamsyo.pe',47756342,'Soltero','Masculino',2,1,1,1),
+(1,'DANIEL','SIFUENTES GRADOS',TO_DATE('1993-05-11', 'YYYY-MM-DD'),30,964701287,'daniel.sifuentes@harlamsyo.pe',47756342,'Soltero','Masculino',2,1,1,1),
+(2,'EDUARDO SAUL','ESCOBEDO VILLANUEVA',TO_DATE('18-04-1979', 'YYYY-MM-DD'),44,991961400,'',40157917,'Casado','Masculino',2,2,1,1),
+(3,'JAPHET CHARLIE JESUS','TORRES HUARINGA',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(4,'JHON ERIK','CAMPO VELÁSQUEZ',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(5,'KEVYN ANTHONY','PLASENCIA BLANCO',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(6,'FRANCISCO ROBERTO','GRADOS PAREDES',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(7,'JORGE LUIS','HOLGUIN ALARCON',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(8,'RONALD HERBERT','PRUDENCIO ALIAGA',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(9,'YESSICA ISABEL','FLORES VELARDE',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(10,'OMAR ADRIAN','ANAYA AYALA',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(11,'CLAUDIA JOSELIN','CAMONES ALEGRIA',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(12,'GAYMO LUIS','PEREZ MUÑOZ',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(13,'JORGE OSWALDO','ARGUEDAS PUCUTAY',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(14,'JORGE LUIS','DIAZ LEYTON',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(15,'KAREN EDITH','POMA CAMACHO DE SALAZAR',TO_DATE('--', 'YYYY-MM-DD'),,,'',,'','',,,,),
 
 
 ;
