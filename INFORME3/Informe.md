@@ -65,9 +65,16 @@ CREATE TABLE Empleado(<br>
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)<br>
 );
 
-CREATE TABLE Area(
-
-);
+CREATE TABLE Cargo(<br>
+	id_cargo INTEGER PRIMARY KEY NOT NULL,<br>
+	nombre_cargo VARCHAR(50) NOT NULL,<br>
+	codigo_cargo VARCHAR(50) NOT NULL,<br>
+	descripcion_cargo TEXT NOT NULL,<br>
+	requerimientos TEXT NOT NULL,<br>
+	estado VARCHAR(20) NOT NULL,<br>
+	id_empresa INTEGER NOT NULL,<br>
+	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa)<br>
+); 
 
 CREATE TABLE Cargo(
 
