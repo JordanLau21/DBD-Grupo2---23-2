@@ -537,8 +537,9 @@ select id_planilla, fecha_inicio, periodicidad from planilla;
 
 #### Detalle planilla ** falta :,c
 ```
-select p.id_planilla,e.nombre,c.fecha_de_contrato ca.nombre_de_cargo from planilla p,contrato c, empleado e, cargo ca
-where p.id_planilla = , e.id_empleado = c.id_contrato, c.id_cargo = ca.id_cargo;
+SELECT * FROM Empleado em, Contrato co, Detallepago de, Planilla pla, Estado_contrato est WHERE em.id_contrato=co.id_contrato AND de.id_detalle=co.id_detalle
+pla.periodicidad=de.frecuencia_pago AND pla.mes=EXTRACT(MONTH FROM co.fecha_inicio) AND pla.anio=EXTRACT(YEAR FROM co.fecha_inicio)
+AND est.estado='Activo';
 ```
 
 #### Crear planilla
