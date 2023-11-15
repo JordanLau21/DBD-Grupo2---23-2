@@ -293,6 +293,57 @@ AND id_empleado = <1>
 CREATE SEQUENCE id_solicitud START WITH 1
 INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),2, <1>, <2>, date, time,<3>,<4>,<5>)
 
+
+
+#### Planillas primera pagina
+```
+select id_planilla, fecha_inicio, periodicidad from planilla;
+```
+
+
+#### Detalle planilla ** falta :,c
+```
+select p.id_planilla,e.nombre,c.fecha_de_contrato ca.nombre_de_cargo from planilla p,contrato c, empleado e, cargo ca
+where p.id_planilla = , e.id_empleado = c.id_contrato, c.id_cargo = ca.id_cargo;
+```
+
+#### Crear planilla
+```
+insert into planilla (periodo, fecha_inicio, fecha_fin, fecha_creacion, hora_creacion) values (<1>,<2>,<3>,current_date,current_time);
+```
+
+
+#### Crear planilla, verificar empleado empleados
+```
+select e.id_empleado, e.nombre, c.fecha_de_contrato, ca.nombre  from empleado e, contrato c, detalle_pago d,cargo ca 
+where c.fecha_de_contrato < current_date and c.fecha_termino_contrato > current_date and d.frecuencia_pago= <1> --periodicidad
+```
+
+#### Boletas de pago. primera pagina
+```
+select id_planilla, fecha_calculo, periodo, monto_emitido from planilla where fecha_calculo is not null
+and monto_emitido is not null;
+```
+
+--generar pago es crear boletas es el calculo, el proceso bach falta :c
+
+#### Detalle boletas - planilla(monto a cada empleado)
+```
+select e.nombres, e.apellido_materno, e.apellido_paterno, b.total_neto, b.id_boleta  from planilla p, empleado e,boleta b 
+where p.id_planilla =<1> and p.id_planilla=b.id_planilla; --la tabla
+select id_planilla, fecha_calculo,monto_emitido, periodo from planilla where planilla =<1>;--la parte de arriba,falta count
+```
+
+
+#### Detalle de una boleta (montos de cada empleado)
+```
+select e.nombres, e.apellido_materno, e.apellido_paterno, e.dni, b.total_neto, b.total_ingresos, b.total_descuentos, b.total_aportes, tc.tipo_contrato,c sueldo_base 
+from planilla p, empleado e, contrato c, concepto_nomina cn, boleta b, movimiento_planilla mp,tipo_contrato tc
+where b.id_boleta =<1> and c.id_tipo_contrato=tp.id_tipo_contrato and c.id_empleado=e.id_empleado;--duda
+```
+
+
+
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 
 ## Codificación de Requerimientos
