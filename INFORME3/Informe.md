@@ -1,4 +1,4 @@
-# MODELAMIENTO CONCEPTUAL
+![imagen](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966578/3cd3aad7-8014-4c33-9e74-01598a5698b9)# MODELAMIENTO CONCEPTUAL
 
 # MODELAMIENTO RELACIONAL 
 
@@ -515,19 +515,19 @@ INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad
 INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa) VALUES
 (1,'DANIEL','SIFUENTES GRADOS',TO_DATE('1993-05-11', 'YYYY-MM-DD'),30,964701287,'daniel.sifuentes@harlamsyo.pe',47756342,'Soltero','Masculino',2,1,1,1),
 (2,'EDUARDO SAUL','ESCOBEDO VILLANUEVA',TO_DATE('18-04-1979', 'YYYY-MM-DD'),44,991961400,'',40157917,'Casado','Masculino',2,2,1,1),
-(3,'JAPHET CHARLIE JESUS','TORRES HUARINGA',TO_DATE('29-05-1985', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(4,'JHON ERIK','CAMPO VELÁSQUEZ',TO_DATE('13-04-1991', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(5,'KEVYN ANTHONY','PLASENCIA BLANCO',TO_DATE('11-07-1995', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(6,'FRANCISCO ROBERTO','GRADOS PAREDES',TO_DATE('04-10-1987', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(7,'JORGE LUIS','HOLGUIN ALARCON',TO_DATE('04-06-2001', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(8,'RONALD HERBERT','PRUDENCIO ALIAGA',TO_DATE('12-12-1994', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(9,'YESSICA ISABEL','FLORES VELARDE',TO_DATE('17-11-1990', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(10,'OMAR ADRIAN','ANAYA AYALA',TO_DATE('05-01-1992', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(11,'CLAUDIA JOSELIN','CAMONES ALEGRIA',TO_DATE('22-06-1983', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(12,'GAYMO LUIS','PEREZ MUÑOZ',TO_DATE('30-05-1992', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(13,'JORGE OSWALDO','ARGUEDAS PUCUTAY',TO_DATE('10-08-1991', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(14,'JORGE LUIS','DIAZ LEYTON',TO_DATE('17-09-1982', 'YYYY-MM-DD'),,,'',,'','',,,,),
-(15,'KAREN EDITH','POMA CAMACHO DE SALAZAR',TO_DATE('22-07-1983', 'YYYY-MM-DD'),,,'',,'','',,,,),
+(3,'JAPHET CHARLIE JESUS','TORRES HUARINGA',TO_DATE('29-05-1985', 'YYYY-MM-DD'),38,926270930,'',,'','',,,,),
+(4,'JHON ERIK','CAMPO VELÁSQUEZ',TO_DATE('13-04-1991', 'YYYY-MM-DD'),32,931854954,'campovelas@gmail.com',,'','',,,,),
+(5,'KEVYN ANTHONY','PLASENCIA BLANCO',TO_DATE('11-07-1995', 'YYYY-MM-DD'),28,998400448,'kevpb95@gmail.com',,'','',,,,),
+(6,'FRANCISCO ROBERTO','GRADOS PAREDES',TO_DATE('04-10-1987', 'YYYY-MM-DD'),36,918099146,'gradosparadesfrank@gmail.com',,'','',,,,),
+(7,'JORGE LUIS','HOLGUIN ALARCON',TO_DATE('04-06-2001', 'YYYY-MM-DD'),22,938197568,'jorholguinalarcon@gmail.com',,'','',,,,),
+(8,'RONALD HERBERT','PRUDENCIO ALIAGA',TO_DATE('12-12-1994', 'YYYY-MM-DD'),29,920852657,'ronaldhpa12@hotmail.com',,'','',,,,),
+(9,'YESSICA ISABEL','FLORES VELARDE',TO_DATE('17-11-1990', 'YYYY-MM-DD'),33,989686976,'yessicflores@gmail.com',,'','',,,,),
+(10,'OMAR ADRIAN','ANAYA AYALA',TO_DATE('05-01-1992', 'YYYY-MM-DD'),31,992423368,'anayaayala@gmail.com',,'','',,,,),
+(11,'CLAUDIA JOSELIN','CAMONES ALEGRIA',TO_DATE('22-06-1983', 'YYYY-MM-DD'),40,993904334,'',,'','',,,,),
+(12,'GAYMO LUIS','PEREZ MUÑOZ',TO_DATE('30-05-1992', 'YYYY-MM-DD'),31,970897522,'',,'','',,,,),
+(13,'JORGE OSWALDO','ARGUEDAS PUCUTAY',TO_DATE('10-08-1991', 'YYYY-MM-DD'),31,981378149,'larguedas1010@gmail.com',,'','',,,,),
+(14,'JORGE LUIS','DIAZ LEYTON',TO_DATE('17-09-1982', 'YYYY-MM-DD'),41,997935493,'leyton17_14@hotmail.com',,'','',,,,),
+(15,'KAREN EDITH','POMA CAMACHO DE SALAZAR',TO_DATE('22-07-1983', 'YYYY-MM-DD'),40,936131832,'karenpomakp30@gmail.com',,'','',,,,),
 
 
 ;
