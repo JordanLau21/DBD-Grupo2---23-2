@@ -3,8 +3,28 @@
 # MODELAMIENTO RELACIONAL 
 
 # CREACION DE TABLAS
-CREATE TABLE Empresa(
+CREATE TABLE Empresa(<br>
+	id_empresa INTEGER PRIMARY KEY NOT NULL,<br>
+	ruc INTEGER NOT NULL,<br>
+	regimen VARCHAR(25) NOT NULL,<br>
+	estado VARCHAR(20) NOT NULL,<br>
+	razon_social VARCHAR(50) NOT NULL,<br>
+	direccion VARCHAR(200) NOT NULL,<br>
+	giro VARCHAR(50) NOT NULL,<br>
+	ciudad VARCHAR(25) NOT NULL,<br>
+	logo VARCHAR(200) NOT NULL<br>
+);
 
+
+CREATE TABLE RepresentanteLegal(<br>
+	id_representante INTEGER PRIMARY KEY NOT NULL,<br>
+	nombres VARCHAR(20) NOT NULL,<br>
+	apellido_paterno VARCHAR(50) NOT NULL,<br>
+	apellido_materno VARCHAR(50) NOT NULL,<br>
+	dni INTEGER NOT NULL,<br>
+	estado BOOLEAN NOT NULL,<br>
+	id_empresa INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)<br>
 );
 
 CREATE TABLE Regimen_pensionario(<br>
