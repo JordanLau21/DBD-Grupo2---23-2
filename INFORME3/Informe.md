@@ -100,38 +100,6 @@ CREATE TABLE Contrato(<br>
 	id_detalle_pago INTEGER NOT NULL,<br>
 	FOREIGN KEY (id_detalle_pago) REFERENCES Detalle_pago(id_detalle_pago)<br>
 );
-
-
-
-
-
-
-
-
-
-CREATE TABLE Usuario (
-codUsuario CHAR(9) PRIMARY KEY NOT NULL,
-contrasena VARCHAR(30) NOT NULL,
-primerNombre VARCHAR(20) NOT NULL,
-segundoNombre VARCHAR(20),
-apellidoPaterno VARCHAR(20) NOT NULL,
-apellidoMaterno VARCHAR(20) NOT NULL,
-fechaNacimiento DATE NOT NULL,
-correoUsuario VARCHAR(50) UNIQUE NOT NULL,
-telefonoUsuario NUMERIC(9) UNIQUE NOT NULL
-);
-
-CREATE TABLE Estudiante (
-codEstudiante CHAR(9) PRIMARY KEY NOT NULL,
-especialidad CHAR(2) NOT NULL,
-cicloRelativo NUMERIC(2) NOT NULL,
-numeroCreditos NUMERIC(2) NOT NULL,
-matriculaHabilitada CHAR(1) NOT NULL,
-promedioPonderado NUMBER(5,2) NOT NULL,
-matriculaHecha CHAR(1) NOT NULL,
-codCondicionMatric CHAR(1) NOT NULL,
-codTurno CHAR(5) NOT NULL,
-FOREIGN KEY (codEstudiante) REFERENCES Usuario(codUsuario),
 );
 ## JORDAN LAUREANO
 # CARGA DE DATOS
