@@ -15,6 +15,8 @@ CREATE TABLE Empresa(
 	giro VARCHAR(50) NOT NULL,
 	ciudad VARCHAR(25) NOT NULL,
 	logo VARCHAR(200) NOT NULL
+        id_cuenta INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)<br>
 );
 ```
 
@@ -68,6 +70,8 @@ CREATE TABLE Empleado(<br>
 	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),<br>
 	id_empresa INTEGER NOT NULL,<br>
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)<br>
+        id_cuenta INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)<br>
 );
 
 ### Cargo
@@ -176,10 +180,6 @@ CREATE TABLE Solicitud(<br>
 	FOREIGN KEY  (id_contrato) REFERENCES Contrato(id_contrato),<br>
         id_estado_cuenta INTEGER NOT NULL,<br>
 	FOREIGN KEY  (id_estado_cuenta) REFERENCES Estado_cuenta(id_estado_cuenta),<br>
-        id_empleado INTEGER NOT NULL,<br>
-	FOREIGN KEY  (id_empleado) REFERENCES Empleado( id_empleado),<br>
-        id_empresa INTEGER NOT NULL,<br>
-	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa),<br>
  );
 
  CREATE TABLE Estado_cuenta(<br>
