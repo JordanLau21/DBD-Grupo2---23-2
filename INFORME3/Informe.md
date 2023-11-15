@@ -149,6 +149,42 @@ CREATE TABLE Solicitud(<br>
 
 # CONSULTAS O QUERYS
 
+### VALIDAR DATOS 
+SELECT usuario, contraseña from Cuenta
+WHERE usuario = <1> AND contraseña = <2>
+
+### OLVIDAR CONTRASEÑA
+SELECT nombres, apellidos, dni FROM Empleado WHERE nombres = <1> AND apellidos = <2> AND dni = < 3 >
+
+### CAMBIAR CONTRASEÑA E INICIAR SESION
+UPDATE Cuenta SET contraseña = <1> WHERE contraseña = < 3 > AND <1> = <2>;
+SELECT usuario, contraseña from Cuenta
+WHERE usuario = <1> AND contraseña = <2>
+
+### PANTALLA SOLICITUDES (ADMINISTRADOR)
+SELECT em.nombres, em.apellidos, so.fec_solicitud, ti.descripcion FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
+AND ti.id_tipo_solicitud = so.id_tipo_solicitud
+
+### BOTON DETALLES 
+SELECT so.id_solicitud, em.nombres, em.apellidos, em.dni, so.fec_solicitud, so.hora_solicitud, ti.descripcion, so.detalles, es.descripcion
+FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
+AND ti.id_tipo_solicitud = so.id_tipo_solicitud
+
+### BOTON ESTADO 
+UPDATE Solicitud SET id_estado_solicitud = <1> WHERE id_estado_solicitud = 2 AND id_solicitud = <2>
+
+### PANTALLA SOLICITUDES (EMPLEADOS)
+SELECT so.id_solicitud, so.fec_solicitud, ti.descripcion, es.descripcion
+FROM Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE ti.id_tipo_solicitud = so.id_tipo_solicitud AND es.id_estado_solicitud = so.id_estado_solicitud
+AND id_empleado = <1>
+
+### BOTON NUEVA SOLICITUD
+CREATE SEQUENCE id_solicitud START WITH 1
+INSERT INTO "Solicitud" VALUES (NEXTVAL(id_solicitud),2, <1>, <2>, date, time,<3>,<4>,<5>)
+
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 
 ## Codificación de Requerimientos
