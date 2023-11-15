@@ -76,8 +76,12 @@ CREATE TABLE Cargo(<br>
 	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa)<br>
 ); 
 
-CREATE TABLE Cargo(
-
+CREATE TABLE Area(<br>
+    id_area INTEGER PRIMARY KEY NOT NULL,<br>
+    nombre_area VARCHAR(50) NOT NULL,<br>
+	descripcion_area TEXT NOT NULL,<br>
+    id_empresa INTEGER NOT NULL,<br>
+    FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)<br>
 );
 
 CREATE TABLE Estado_contrato(<br>
