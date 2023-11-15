@@ -461,7 +461,7 @@ CREATE TABLE Planilla
 ```
 CREATE TABLE Boleta
 (
-  id_boleta NUMERIC(9,2) NOT NULL,
+  id_boleta NUMERIC(6) NOT NULL,
   total_descuentos NUMERIC(9,2) NOT NULL,
   total_neto NUMERIC(9,2) NOT NULL,
   total_ingresos NUMERIC(9,2) NOT NULL,
