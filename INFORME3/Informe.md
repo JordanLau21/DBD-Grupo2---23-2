@@ -208,23 +208,23 @@ Semantica: Entidad que representa el tipo de las solicitudes hechas por los empl
 
 # CARGA DE DATOS
 
-Lookup Tables (Luis):
+Lookup Tables (Luis): <br>
 INSERT INTO Regimen_pensionario (id_regimen_pensionario, tipo_regimen, administradora) VALUES 
-('1', 'ONP','Estado');
+('1', 'ONP','Estado');<br>
 INSERT INTO Regimen_pensionario (id_regimen_pensionario, tipo_regimen, administradora) VALUES 
-('2', 'AFP','');
---Seguro medico
-INSERT INTO Seguro_medico (id_seguro_medico, tipo_seguro) VALUES ('1', 'EPS');
-INSERT INTO Seguro_medico (id_seguro_medico, tipo_seguro) VALUES ('2', 'SIS');
-INSERT INTO Seguro_medico (id_seguro_medico, tipo_seguro) VALUES ('3', 'EsSalud');
-INSERT INTO Seguro_medico (id_seguro_medico, tipo_seguro) VALUES ('4', 'Privado');
---Situacion de discapacidad
+('2', 'AFP','');<br>
+<br>
+INSERT INTO Seguro_medico (id_seguro_medico, tipo_seguro) VALUES ('1', 'EPS');<br>
+INSERT INTO Seguro_medico (id_seguro_medico, tipo_seguro) VALUES ('2', 'SIS');<br>
+INSERT INTO Seguro_medico (id_seguro_medico, tipo_seguro) VALUES ('3', 'EsSalud');<br>
+INSERT INTO Seguro_medico (id_seguro_medico, tipo_seguro) VALUES ('4', 'Privado');<br>
+<br>
 INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad) VALUES
-('1', 'Ninguna');
+('1', 'Ninguna');<br>
 INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad) VALUES
-('2', 'Parcial');
+('2', 'Parcial');<br>
 INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad) VALUES
-('3', 'Total');
+('3', 'Total');<br>
 
 
 
