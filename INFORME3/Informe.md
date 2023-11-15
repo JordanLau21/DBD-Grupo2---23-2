@@ -133,6 +133,7 @@ codCondicionMatric CHAR(1) NOT NULL,
 codTurno CHAR(5) NOT NULL,
 FOREIGN KEY (codEstudiante) REFERENCES Usuario(codUsuario),
 );
+## JORDAN LAUREANO
 # CARGA DE DATOS
 
 # CONSULTAS O QUERYS
