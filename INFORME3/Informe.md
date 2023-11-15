@@ -26,8 +26,7 @@ CREATE TABLE Situacion_discapacidad(<br>
 CREATE TABLE Empleado(<br>
 	id_empleado INTEGER PRIMARY KEY NOT NULL,<br>
 	nombre VARCHAR(20) NOT NULL,<br>
-	apellido_paterno VARCHAR(20) NOT NULL,<br>
-	apellido_materno VARCHAR(20) NOT NULL,<br>
+	apellidos VARCHAR(50) NOT NULL,<br>
 	fecha_nacimiento DATE NOT NULL,<br>
 	edad INT NOT NULL,<br>
 	telefono NUMERIC(9) NOT NULL,<br>
