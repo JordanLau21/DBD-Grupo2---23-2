@@ -1283,7 +1283,30 @@ VALUES
 	INSERT INTO Movimiento_planilla VALUES (18,'18/06/2040',50,5,2);
 	INSERT INTO Movimiento_planilla VALUES (19,'18/06/2041',50,6,3);
 	INSERT INTO Movimiento_planilla VALUES (20,'18/06/2042',50,6,1);
-### 
+###
+INSERT INTO Movimiento_planilla VALUES (1,'18/06/2023',1000,1,15);
+INSERT INTO Movimiento_planilla VALUES (2,'18/06/2024',200,1,5);
+INSERT INTO Movimiento_planilla VALUES (3,'18/06/2025',300,1,6);
+INSERT INTO Movimiento_planilla VALUES (4,'18/06/2026',500,2,15);
+INSERT INTO Movimiento_planilla VALUES (5,'18/06/2027',300,2,5);
+INSERT INTO Movimiento_planilla VALUES (6,'18/06/2028',400,2,6);
+INSERT INTO Movimiento_planilla VALUES (7,'18/06/2029',102.5,1,8);
+INSERT INTO Movimiento_planilla VALUES (8,'18/06/2030',100,1,13);
+INSERT INTO Movimiento_planilla VALUES (9,'18/06/2031',250,3,5);
+INSERT INTO Movimiento_planilla VALUES (10,'18/06/2032',350,3,6);
+INSERT INTO Movimiento_planilla VALUES (11,'18/06/2033',500,3,15);
+INSERT INTO Movimiento_planilla VALUES (12,'18/06/2034',1000,3,22);
+INSERT INTO Movimiento_planilla VALUES (15,'18/06/2037',200,4,5);
+INSERT INTO Movimiento_planilla VALUES (16,'18/06/2038',300,4,6);
+INSERT INTO Movimiento_planilla VALUES (17,'18/06/2039',500,1,22);
+INSERT INTO Movimiento_planilla VALUES (18,'18/06/2040',300,1,23);
+
+INSERT INTO Asistencia VALUES (1,'18/06/2023','12/07/2023',24,'Lo que pasa es que',1,1);
+INSERT INTO Asistencia VALUES (2,'18/06/2024','14/07/2024',26,'No cambia nada',1,2);
+INSERT INTO Asistencia VALUES (3,'18/06/2025','12/07/2025',24,'Lo que pasa es que',1,3);
+INSERT INTO Asistencia VALUES (4,'18/06/2026','12/07/2026',24,'No cambia nada',1,4);
+INSERT INTO Asistencia VALUES (5,'18/06/2027','12/07/2027',24,'Lo que pasa es que',2,1);
+INSERT INTO Asistencia VALUES (6,'18/06/2028','12/07/2028',24,'No cambia nada',2,2);
 # FUNCIONALIDAD PRIMARIA ELEGIDA (POR MÓDULO)
 
 
