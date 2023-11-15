@@ -151,7 +151,7 @@ CREATE TABLE Solicitud(<br>
         detalles VARCHAR(100) NOT NULL,<br>
         fec_solicitud DATE NOT NULL,<br>
         hora_solicitud TIME WITHOUT TIME ZONE NOT NULL,<br>
-        monto INTEGER,<br>
+        monto NUMERIC(8),<br>
         id_estado_solicitud INTEGER NOT NULL,<br>
 	FOREIGN KEY  (id_estado_solicitud) REFERENCES Estado_solicitud(id_estado_solicitud),<br>
         id_tipo_solicitud INTEGER NOT NULL,<br>
