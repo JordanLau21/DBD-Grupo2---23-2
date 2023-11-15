@@ -914,6 +914,64 @@ VALUES
 (14, 'Diseño Gráfico', 'Área especializada en la creación y diseño gráfico.', 7),
 (15, 'Consultoría', 'Área dedicada a brindar asesoramiento y consultoría a clientes.', 8);
 ```
+### Estado de Contrato 
+```
+INSERT INTO Estado_contrato (id_estado_contrato, estado_contrato) VALUES ('1', 'Vigente'),
+('2', 'Finalizado'),
+('3', 'Rescindido');
+```
+### Tipo de Contrato
+```
+INSERT INTO Tipo_contrato (id_tipo_contrato, tipo_contrato) VALUES ('1', 'Indefinido'),
+('2', 'Plazo Definido'),
+('3', 'Obra o Proyecto');
+```
+### Tipo de Jornada
+```
+INSERT INTO Tipo_jornada (id_tipo_jornada, tipo_jornada) VALUES ('1', 'Ordinaria'),
+('2', 'Parcial'),
+('3', 'Excenta');
+```
+### Detalle de Pago
+```
+INSERT INTO Detalle_pago (id_detalle_pago, frecuencia_pago, dia_pago_mes, medio_pago, entidad_financiera, cuenta) VALUES ('1','Mensual',00,'Efectivo','-',0),
+('2','Mensual',00,'Cheque','',0),
+('3','Mensual',00,'Transferencia Bancaria','',1234567890),
+('4','Quincenal',00,'Efectivo','-',0),
+('5','Quincenal',00,'Cheque','',0),
+('6','Quincenal',00,'Transferencia Bancaria','',1234567890),
+('7','Por obra o proyecto',00,'Efectivo','-',0),
+('8','Quincenal',00,'Cheque','',0),
+('9','Quincenal',00,'Transferencia Bancaria','',1234567890);
+```
+### Contrato
+```
+INSERT INTO Contrato (id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico,id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_detalle_pago) VALUES
+(1,'2023-01-15','2023-02-01','2023-07-31',991.9614,991.96130080387,1,2,1,1,1,1,1),
+(2,'2023-01-15','2023-02-01','2023-07-31',926.27093,926.270837372916,1,2,2,1,1,1,3),
+(3,'2023-01-15','2023-02-01','2023-07-31',931.854954,931.854860814514,2,2,3,1,1,1,3),
+(4,'2023-01-15','2023-02-01','2023-07-31',998.400448,998.400348159965,3,1,4,1,1,1,3),
+(5,'2023-01-15','2023-02-01','2023-07-31',918.099146,918.099054190095,3,1,5,1,1,1,3),
+(6,'2023-01-15','2023-02-01','2023-07-31',938.197568,938.197474180253,4,1,6,1,1,1,3),
+(7,'2023-01-15','2023-02-01','2023-07-31',920.852657,920.852564914744,4,3,7,1,2,1,3),
+(8,'2023-01-15','2023-02-01','2023-07-31',989.686976,925.836110771228,4,3,8,1,2,1,3),
+(9,'2023-01-15','2023-02-01','2023-07-31',992.423368,992.423268757673,4,2,9,1,2,1,3),
+(10,'2023-01-15','2023-02-01','2023-07-31',993.904334,993.904234609577,1,2,10,1,1,1,1),
+(11,'2023-01-15','2023-02-01','2023-07-31',970.897522,970.897424910258,1,2,11,1,1,1,1),
+(12,'2023-01-15','2023-02-01','2023-07-31',981.378149,981.378050862195,2,2,12,1,2,1,1),
+(13,'2023-01-15','2023-02-01','2023-07-31',997.935493,997.935393206461,2,2,13,1,2,1,1),
+(14,'2023-01-15','2023-02-01','2023-07-31',936.131832,905.933940374348,2,1,14,2,2,1,1),
+(15,'2023-01-15','2023-02-01','2023-07-31',982.894578,982.894479710552,3,3,15,2,1,1,1);
+```
+
+
+
+
+
+
+
+
+
 ### Solicitudes
 ```
 INSERT INTO Solicitud VALUES(1,1,1,'Deseo ir a ver a mi abuela ya que se encuentra mal de salud, solo por 1 día','2010/05/14','14:45:14',null,1,1);
