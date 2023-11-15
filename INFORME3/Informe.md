@@ -410,6 +410,28 @@ INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad
 INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad) VALUES
 ('3', 'Total');<br>
 
+### Estado de Solicitud
+```
+INSERT INTO Estado_solicutud VALUES (1, 'Aceptado');
+INSERT INTO Estado_solicutud VALUES (2, 'En Espera');
+INSERT INTO Estado_solicutud VALUES (3, 'Rechazado');
+```
+
+### Tipo de Solicitud
+```
+INSERT INTO Tipo_solicitud VALUES (1,'Licencia'):
+INSERT INTO Tipo_solicitud VALUES (2,'Reclamo'):
+INSERT INTO Tipo_solicitud VALUES (3,'Aumento'):
+INSERT INTO Tipo_solicitud VALUES (4,'Vacaciones'):
+INSERT INTO Tipo_solicitud VALUES (5,'Configuración de Información'):
+INSERT INTO Tipo_solicitud VALUES (6,'Adelanto'):
+```
+### Estado de Cuenta
+```
+INSERT INTO Estado_cuenta VALUES (1, 'Vigente');
+INSERT INTO Estado_cuenta VALUES (2, 'Desvinculado');
+```
+
 ### tipo_operacion
 ```
 insert into tipo_operacion (id_tipo_operacion,descripcion_operacion) 
