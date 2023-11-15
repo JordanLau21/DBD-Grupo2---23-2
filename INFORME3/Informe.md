@@ -379,6 +379,47 @@ INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad
 INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad) VALUES
 ('3', 'Total');<br>
 
+### tipo_operacion
+```
+insert into tipo_operacion (id_tipo_operacion,descripcion_operacion) 
+values ('TO1'.'Ingreso'), ('TO2','Descuento'), ('TO3','aportes');
+```
+### estado_concepto
+```
+insert into estado_concepto (id_estado,descripcion_estado) 
+values ('EC1'.'Activo'), ('EC2','Inactivo');
+```
+
+### concepto_nomina
+```
+INSERT INTO concepto_nomina ("id_nomina", "nombre_nomina", "valor_nomina", "id_tipo_operacion", "id_estado") 
+VALUES
+	('1', 'Dias Subsidiados Laborados', '0', 'TO1', 'EC1'),
+	('2', 'Dias Vacaciones', '0', 'TO1', 'EC1'),
+	('3', 'Dias No Laborados', '0', 'TO2', 'EC1'),
+	('4', 'Horas ordinarias', '0', 'TO1', 'EC1'),
+	('5', 'Horas Extras 25%', '0', 'TO1', 'EC1'),
+	('6', 'Horas Extras 35%', '0', 'TO1', 'EC1'),
+	('7', 'Sueldo Básico a pagar', '0', 'TO1', 'EC1'),
+	('8', 'Asig.Familiar', '0', 'TO1', 'EC1'),
+	('9', 'Horas Extras 25%', '0', 'TO1', 'EC1'),
+	('10', 'Horas Extras 35%', '0', 'TO1', 'EC1'),
+	('11', 'Vacaciones', '0', 'TO1', 'EC1'),
+	('12', 'OTROS INGRESOS', '0', 'TO1', 'EC1'),
+	('13', 'DSCTOS. INASISTENCIA', '0', 'TO2', 'EC1'),
+	('14', 'GratifIcacion', '0', 'TO1', 'EC1'),
+	('15', 'Bono Extraord. Essalud', '0', 'TO3', 'EC1'),
+	('16', 'Total Gratif. Diciembre', '0', 'TO1', 'EC1'),
+	('17', 'ONP 13%', '0', 'TO3', 'EC1'),
+	('18', 'AFP Obligatorio 10%', '0', 'TO3', 'EC1'),
+	('19', 'AFP Comisión', '0', 'TO3', 'EC1'),
+	('20', 'AFP Seguro', '0', 'TO3', 'EC1'),
+	('21', 'Renta 5ta.', '0', 'TO2', 'EC1'),
+	('22', 'Adelanto', '0', 'TO1', 'EC1'),
+	('23', 'OTROS DESCUENTOS', '0', 'TO2', 'EC1'),
+	('24', 'REINTEGRO', '0', 'TO1', 'EC1'),
+	('25', 'Essalud 9%', '0.09', 'TO3', 'EC1');
+```
 
 
 
