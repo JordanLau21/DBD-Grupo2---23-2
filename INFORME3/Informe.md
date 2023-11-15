@@ -628,6 +628,23 @@ VALUES ('Roberto Carlos', 'Flores', 'Velarde', '76071011', 'Activo', 3);
 -- Borrar algún representante
 DELETE FROM RepresentanteLegal WHERE id_representante = 5;
 ```
+### P2.1: Crear Nuevo Cargo
+```
+-- Mostrar la lista de cargos de una empresa en específica
+SELECT
+    ROW_NUMBER() OVER (ORDER BY c.id_cargo) AS "N°",
+    c.nombre_cargo AS "Descripción",
+    c.estado AS "Estado",
+    a.nombre_area AS "Área"
+FROM
+    Cargo c
+JOIN
+    Empresa e ON c.id_empresa = e.id_empresa
+JOIN
+    Area a ON c.id_empresa = a.id_empresa
+WHERE
+    e.id_empresa = 1
+```
 
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 
