@@ -597,10 +597,10 @@ select id_planilla, fecha_inicio, periodicidad from planilla;
 ```
 
 
-#### Detalle planilla ** falta :,c
+#### Detalle planilla 
 ```
-SELECT * FROM Empleado em, Contrato co, Detallepago de, Planilla pla, Estado_contrato est WHERE em.id_contrato=co.id_contrato AND de.id_detalle=co.id_detalle
-pla.periodicidad=de.frecuencia_pago AND pla.mes=EXTRACT(MONTH FROM co.fecha_inicio) AND pla.anio=EXTRACT(YEAR FROM co.fecha_inicio)
+SELECT * FROM Empleado em, contrato co, detallepago de, planilla pla, estado_contrato est WHERE em.id_contrato=co.id_contrato AND de.id_detalle=co.id_detalle
+pla.periodicidad=de.frecuencia_pago AND pla.fecha_inicio>c.fecha_inicio and pla.fecha_fin<=c.fecha_fin
 AND est.estado='Activo';
 ```
 
