@@ -209,6 +209,7 @@ Semantica: Entidad que representa el tipo de las solicitudes hechas por los empl
 # CARGA DE DATOS
 
 Lookup Tables (Luis): <br>
+<br>
 INSERT INTO Regimen_pensionario (id_regimen_pensionario, tipo_regimen, administradora) VALUES 
 ('1', 'ONP','Estado');<br>
 INSERT INTO Regimen_pensionario (id_regimen_pensionario, tipo_regimen, administradora) VALUES 
