@@ -571,9 +571,14 @@ select id_planilla, fecha_calculo,monto_emitido, periodo from planilla where pla
 
 #### Detalle de una boleta (montos de cada empleado)
 ```
-select e.nombres, e.apellido_materno, e.apellido_paterno, e.dni, b.total_neto, b.total_ingresos, b.total_descuentos, b.total_aportes, tc.tipo_contrato,c sueldo_base 
+select e.nombres, e.apellido_materno, e.apellido_paterno, e.dni, b.total_neto, b.total_ingresos,
+b.total_descuentos, b.total_aportes, tc.tipo_contrato,c.sueldo_base 
 from planilla p, empleado e, contrato c, concepto_nomina cn, boleta b, movimiento_planilla mp,tipo_contrato tc
-where b.id_boleta =<1> and c.id_tipo_contrato=tp.id_tipo_contrato and c.id_empleado=e.id_empleado;--duda
+where b.id_boleta =<1> and c.id_tipo_contrato=tp.id_tipo_contrato and c.id_empleado=e.id_empleado and b.id_planilla=p.id_planilla; --ingresos, descuentos y aportes
+
+select cn.nombre_nomina,mv.monto from movimiento_planilla mp, concepto nomina cn, boleta b, planilla p, contrato c
+where b.id_boleta =<1> and p.fecha_inicio<mv.fecha and p.fecha_fin>=mv.fecha and b.id_planilla=p.id_planilla 
+and c.id_contrato=b.id_contrato and c.id_contrato=mp.id_contrato; -- detalles de movimiento de planilla
 ```
 
 ### P1.1: Editar Información de la empresa
