@@ -856,6 +856,29 @@ VALUES
 (14, 'Diseño Gráfico', 'Área especializada en la creación y diseño gráfico.', 7),
 (15, 'Consultoría', 'Área dedicada a brindar asesoramiento y consultoría a clientes.', 8);
 ```
+### Solicitudes
+```
+INSERT INTO "Solicitud" VALUES(1,1,1,'Deseo ir a ver a mi abuela ya que se encuentra mal de salud, solo por 1 día','2010/05/14','14:45:14',null,1,1);
+INSERT INTO "Solicitud" VALUES(2,1,4,'Solicito unas vacaciones en el mes siguiente','2011/06/18','02:24:41',null,2,1);
+INSERT INTO "Solicitud" VALUES(3,3,3,'Deseo un aumento de 1000 dolares debido a mis ultimas horas extras del mes pasado','2011/08/12','16:21:24',1000,3,2);
+INSERT INTO "Solicitud" VALUES(4,1,5,'Solicito cambiar mi apellido ya que está mal escrito','2012/08/20','18:47:47',null,4,4);
+INSERT INTO "Solicitud" VALUES(5,1,1,'Solicito una licencia para asistir al matrimonio de mi hermana','2013/11/21','22:32:35',null,5,4);
+INSERT INTO "Solicitud" VALUES(6,1,4,'Solicito unas vaciones por temas de salud mental','2014/02/14','12:23:41',null,6,4);
+INSERT INTO "Solicitud" VALUES(7,3,1,'Solicito una licencia por motivos de asistir a un congreso en provincia','2015/04/13','10:50:50',null,7,2);
+INSERT INTO "Solicitud" VALUES(8,1,2,'No se me ha pagado el mes pasado','2015/12/17','07:41:08',null,8,2);
+INSERT INTO "Solicitud" VALUES(9,1,4,'Solicito vacaciones dentro de 2 meses','2015/12/10','08:14:17',null,9,2);
+INSERT INTO "Solicitud" VALUES(10,1,3,'Debido a mis ultimos logro en la empresa, solicito un aumento de 2000 dolares','2016/05/18','04:45:10',2000,10,2);
+INSERT INTO "Solicitud" VALUES(11,3,4,'Solicito vacaciones en el mes de febrero','2016,08/11','16:01:54',null,11,3);
+INSERT INTO "Solicitud" VALUES(12,1,6,'Solicito un adelanto por motivos de pagar la renta de mi casa','2016/09/10','15:17:41',500,12,3);
+INSERT INTO "Solicitud" VALUES(13,1,4,'Solicito vacaciones por motivos personales','2016/10/25','19:08:41',null,13,3);
+INSERT INTO "Solicitud" VALUES(14,3,1,'Solicito una licencia para asistir al día del padre en la escuela de mi hija','2018/04/28','17:05:16',null,14,3);
+INSERT INTO "Solicitud" VALUES(15,3,6,'Solicito un adelanto de 200 dolares para pagar la matricula de mi sobrino','2020/08/27','16:14:46',200,15,3);
+INSERT INTO "Solicitud" VALUES(16,1,4,'Solicito vacaciones en el mes de noviembre','2020/10/14','18:53:31',null,12,3);
+INSERT INTO "Solicitud" VALUES(17,1,2,'Solcito un cambio de área de trabajo','2021/05/10','11:47:15',null,10,2);
+INSERT INTO "Solicitud" VALUES(18,3,3,'Debido a el aumento de la pensión alimenticia de mis hijos, solicito un aumento de 1200 dolares','2022/04/12','22:42:16',1200,4,4);
+INSERT INTO "Solicitud" VALUES(19,1,2,'Solicito un cambio de jefe debido a que el mío me maltrata laboralmente','2023/05/14','01:41:52',null,14,3);
+INSERT INTO "Solicitud" VALUES(20,1,6,'Solicito un adelante de 1600 dolares por motivos de pagar pensión alimenticia de mis hijos','2023/08/16','16:14:16',1600,2,1)
+```
 ### Estado de Solicitud
 ```
 INSERT INTO Estado_solicutud VALUES (1, 'Aceptado');
