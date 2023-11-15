@@ -1140,7 +1140,7 @@ INSERT INTO planilla ("id_planilla", "periodo", "dias_laborables", "fecha_inicio
 
 ### Boleta
 ```
-INSERT INTO "planilla" ("id_boleta", "total_descuentos", "total_neto", "total_ingresos", "total_aportes", "id_contrato", "id_planilla") VALUES
+INSERT INTO boleta ("id_boleta", "total_descuentos", "total_neto", "total_ingresos", "total_aportes", "id_contrato", "id_planilla") VALUES
 	('356', '98.94', '4084.85', '4183.79', '864.00', '1', '195681'),
 	('357', '6.65', '3684.94', '3691.59', '867.00', '2', '195681'),
 	('358', '119.71', '2956.4', '3076.11', '853.00', '3', '195681'),
