@@ -3,29 +3,34 @@
 # MODELAMIENTO RELACIONAL 
 
 # CREACION DE TABLAS
-CREATE TABLE Empresa(<br>
-	id_empresa INTEGER PRIMARY KEY NOT NULL,<br>
-	ruc INTEGER NOT NULL,<br>
-	regimen VARCHAR(25) NOT NULL,<br>
-	estado VARCHAR(20) NOT NULL,<br>
-	razon_social VARCHAR(50) NOT NULL,<br>
-	direccion VARCHAR(200) NOT NULL,<br>
-	giro VARCHAR(50) NOT NULL,<br>
-	ciudad VARCHAR(25) NOT NULL,<br>
-	logo VARCHAR(200) NOT NULL<br>
+### Empresa
+```
+CREATE TABLE Empresa(
+	id_empresa INTEGER PRIMARY KEY NOT NULL,
+	ruc INTEGER NOT NULL,
+	regimen VARCHAR(25) NOT NULL,
+	estado VARCHAR(20) NOT NULL,
+	razon_social VARCHAR(50) NOT NULL,
+	direccion VARCHAR(200) NOT NULL,
+	giro VARCHAR(50) NOT NULL,
+	ciudad VARCHAR(25) NOT NULL,
+	logo VARCHAR(200) NOT NULL
 );
+```
 
-
-CREATE TABLE RepresentanteLegal(<br>
-	id_representante INTEGER PRIMARY KEY NOT NULL,<br>
-	nombres VARCHAR(20) NOT NULL,<br>
-	apellido_paterno VARCHAR(50) NOT NULL,<br>
-	apellido_materno VARCHAR(50) NOT NULL,<br>
-	dni INTEGER NOT NULL,<br>
-	estado BOOLEAN NOT NULL,<br>
-	id_empresa INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)<br>
+### Representante Legal
+```
+CREATE TABLE RepresentanteLegal(
+	id_representante INTEGER PRIMARY KEY NOT NULL,
+	nombres VARCHAR(20) NOT NULL,
+	apellido_paterno VARCHAR(50) NOT NULL,
+	apellido_materno VARCHAR(50) NOT NULL,
+	dni INTEGER NOT NULL,
+	estado BOOLEAN NOT NULL,
+	id_empresa INTEGER NOT NULL,
+	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 );
+```
 
 CREATE TABLE Regimen_pensionario(<br>
 	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,<br>
@@ -65,24 +70,29 @@ CREATE TABLE Empleado(<br>
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)<br>
 );
 
-CREATE TABLE Cargo(<br>
-	id_cargo INTEGER PRIMARY KEY NOT NULL,<br>
-	nombre_cargo VARCHAR(50) NOT NULL,<br>
-	codigo_cargo VARCHAR(50) NOT NULL,<br>
-	descripcion_cargo TEXT NOT NULL,<br>
-	requerimientos TEXT NOT NULL,<br>
-	estado VARCHAR(20) NOT NULL,<br>
-	id_empresa INTEGER NOT NULL,<br>
-	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa)<br>
+### Cargo
+```
+CREATE TABLE Cargo(
+	id_cargo INTEGER PRIMARY KEY NOT NULL,
+	nombre_cargo VARCHAR(50) NOT NULL,
+	codigo_cargo VARCHAR(50) NOT NULL,
+	descripcion_cargo TEXT NOT NULL,
+	requerimientos TEXT NOT NULL,
+	estado VARCHAR(20) NOT NULL,
+	id_empresa INTEGER NOT NULL,
+	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa)
 ); 
-
-CREATE TABLE Area(<br>
-    id_area INTEGER PRIMARY KEY NOT NULL,<br>
-    nombre_area VARCHAR(50) NOT NULL,<br>
-	descripcion_area TEXT NOT NULL,<br>
-    id_empresa INTEGER NOT NULL,<br>
-    FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)<br>
+```
+### Area
+```
+CREATE TABLE Area(
+    id_area INTEGER PRIMARY KEY NOT NULL,
+    nombre_area VARCHAR(50) NOT NULL,
+	descripcion_area TEXT NOT NULL,
+    id_empresa INTEGER NOT NULL,
+    FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 );
+```
 
 CREATE TABLE Estado_contrato(<br>
 	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,<br>
