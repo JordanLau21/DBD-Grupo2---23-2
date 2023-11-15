@@ -448,7 +448,7 @@ Semantica: Entidad que representa el tipo de las solicitudes hechas por los empl
 # CARGA DE DATOS
 ### Régimen Pensionario
 ```
-INSERT INTO Regimen_pensionario (id_regimen_pensionario, tipo_regimen,) VALUES
+INSERT INTO Regimen_pensionario (id_regimen_pensionario, tipo_regimen) VALUES
 ('1', 'ONP'),
 ('2', 'AFP');
 ```
