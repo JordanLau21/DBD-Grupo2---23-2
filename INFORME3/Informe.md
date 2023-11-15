@@ -549,8 +549,7 @@ SELECT razon_social FROM Empresa;
 
 ### MOSTRAR USUARIOS VIGENTES
 ```
-SELECT Empleado.dni,Empleado.nombre_empleado,Empleado.apellido_paterno,Empleado.apellid_materno,
-Contrato.fecha_inicio_contrato,Contrato.fecha_termino_contrato
+SELECT Empleado.dni,Empleado.nombre_empleado,Empleado.apellido_paterno,Empleado.apellid_materno, Contrato.fecha_inicio_contrato,Contrato.fecha_termino_contrato
 FROM Empleado INNER JOIN Contrato 
 ON Empleado.id_empleado=Contrato.id_empleado INNER JOIN Cuenta 
 ON Contrato.id_contrato = Cuenta.id_contrato WHERE Cuenta.id_estado_cuenta=1;
@@ -559,7 +558,10 @@ ON Contrato.id_contrato = Cuenta.id_contrato WHERE Cuenta.id_estado_cuenta=1;
 
 ### MOSTRAR USUARIOS DESVINCULADOS
 ```
-
+SELECT Empleado.dni,Empleado.nombre_empleado,Empleado.apellido_paterno,Empleado.apellid_materno, Contrato.fecha_inicio_contrato,Contrato.fecha_termino_contrato
+FROM Empleado INNER JOIN Contrato 
+ON Empleado.id_empleado=Contrato.id_empleado INNER JOIN Cuenta 
+ON Contrato.id_contrato = Cuenta.id_contrato WHERE Cuenta.id_estado_cuenta=2;
 
 ```
 
