@@ -341,52 +341,60 @@ CREATE TABLE Area(
 );
 ```
 
-CREATE TABLE Estado_contrato(<br>
-	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,<br>
-	estado_contrato VARCHAR(10) NOT NULL <br>
+### Estado de Contrato
+```
+CREATE TABLE Estado_contrato(
+	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,
+	estado_contrato VARCHAR(10) NOT NULL 
 );
 
-CREATE TABLE Tipo_contrato(<br>
-	id_tipo_contrato INTEGER PRIMARY KEY NOT NULL,<br>
-	tipo_contrato VARCHAR(15) NOT NULL<br>
+### Tipo de Contrato
+```
+CREATE TABLE Tipo_contrato(
+	id_tipo_contrato INTEGER PRIMARY KEY NOT NULL,
+	tipo_contrato VARCHAR(15) NOT NULL
+);
+```
+
+### Tipo de Jornada
+```
+CREATE TABLE Tipo_jornada(
+	id_tipo_jornada INTEGER PRIMARY KEY NOT NULL,
+	tipo_jornada VARCHAR(15) NOT NULL
+);
+```
+CREATE TABLE Detalle_pago(
+	id_detalle_pago INTEGER PRIMARY KEY NOT NULL,
+	frecuencia_pago VARCHAR(30) NOT NULL,
+  	dia_pago_mes INT NOT NULL,
+	medio_pago VARCHAR(30) NOT NULL,
+	entidad_financiera VARCHAR(30) NOT NULL,
+	cuenta NUMERIC(14) NOT NULL
 );
 
-CREATE TABLE Tipo_jornada(<br>
-	id_tipo_jornada INTEGER PRIMARY KEY NOT NULL,<br>
-	tipo_jornada VARCHAR(15) NOT NULL<br>
+CREATE TABLE Contrato(
+	id_contrato INTEGER PRIMARY KEY NOT NULL,
+	fecha_firma_contrato DATE NOT NULL,
+	fecha_inicio_laboral DATE NOT NULL,
+	fecha_termino_contrato DATE NOT NULL,
+	sueldo_base FLOAT NOT NULL,
+	liquido_teorico FLOAT NOT NULL,
+	id_area INTEGER NOT NULL,
+	FOREIGN KEY  (id_area) REFERENCES Area(id_area),
+	id_cargo INTEGER NOT NULL,
+	FOREIGN KEY (id_cargo) REFERENCES Cargo(id_cargo),
+	id_empleado INTEGER NOT NULL,
+	FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado),
+	id_estado_contrato INTEGER NOT NULL,
+	FOREIGN KEY (id_estado_contrato) REFERENCES Estado_contrato(id_estado_contrato),
+	id_tipo_contrato INTEGER NOT NULL,
+	FOREIGN KEY (id_tipo_contrato) REFERENCES Tipo_contrato(id_tipo_contrato),
+	id_tipo_jornada INTEGER NOT NULL,
+	FOREIGN KEY (id_tipo_jornada) REFERENCES Tipo_jornada(id_tipo_jornada),
+	id_detalle_pago INTEGER NOT NULL,
+	FOREIGN KEY (id_detalle_pago) REFERENCES Detalle_pago(id_detalle_pago)
 );
-
-CREATE TABLE Detalle_pago(<br>
-	id_detalle_pago INTEGER PRIMARY KEY NOT NULL,<br>
-	frecuencia_pago VARCHAR(30) NOT NULL,<br>
-  	dia_pago_mes INT NOT NULL,<br>
-	medio_pago VARCHAR(30) NOT NULL,<br>
-	entidad_financiera VARCHAR(30) NOT NULL,<br>
-	cuenta NUMERIC(14) NOT NULL<br>
-);
-
-CREATE TABLE Contrato(<br>
-	id_contrato INTEGER PRIMARY KEY NOT NULL,<br>
-	fecha_firma_contrato DATE NOT NULL,<br>
-	fecha_inicio_laboral DATE NOT NULL,<br>
-	fecha_termino_contrato DATE NOT NULL,<br>
-	sueldo_base FLOAT NOT NULL,<br>
-	liquido_teorico FLOAT NOT NULL,<br>
-	id_area INTEGER NOT NULL,<br>
-	FOREIGN KEY  (id_area) REFERENCES Area(id_area),<br>
-	id_cargo INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_cargo) REFERENCES Cargo(id_cargo),<br>
-	id_empleado INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado),<br>
-	id_estado_contrato INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_estado_contrato) REFERENCES Estado_contrato(id_estado_contrato),<br>
-	id_tipo_contrato INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_tipo_contrato) REFERENCES Tipo_contrato(id_tipo_contrato),<br>
-	id_tipo_jornada INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_tipo_jornada) REFERENCES Tipo_jornada(id_tipo_jornada),<br>
-	id_detalle_pago INTEGER NOT NULL,<br>
-	FOREIGN KEY (id_detalle_pago) REFERENCES Detalle_pago(id_detalle_pago)<br>
-);
+```
 ## JORDAN LAUREANO
 
 CREATE TABLE Solicitud(<br>
