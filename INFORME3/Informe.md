@@ -978,7 +978,7 @@ INSERT INTO Estado_cuenta VALUES (2, 'Desvinculado');
 ```
 ### Planilla
 ```
-INSERT INTO "planilla" ("id_planilla", "periodo", "dias_laborables", "fecha_inicio", "fecha_fin", "fecha_calculo", "monto_emitido", "periodicidad", "fecha_creacion", "hora_creacion") VALUES
+INSERT INTO planilla ("id_planilla", "periodo", "dias_laborables", "fecha_inicio", "fecha_fin", "fecha_calculo", "monto_emitido", "periodicidad", "fecha_creacion", "hora_creacion") VALUES
 	('195683', '11QI12023', '15', '2023-11-16', '2023-11-30', '2023-11-30', '45960.81', 'quincenal', '2023-11-16', '03:21:22:00'),
 	('195682', '11QI22023', '15', '2023-11-01', '2023-11-15', '2023-11-15', '34694.15', 'quincenal', '2023-11-01', '08:24:14:00'),
 	('195681', '11ME12023', '30', '2023-11-01', '2023-11-30', '2023-11-30', '31978.75', 'mensual', '2023-11-01', '18:40:02:00'),
