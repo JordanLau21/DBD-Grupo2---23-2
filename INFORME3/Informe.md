@@ -749,6 +749,39 @@ LEFT JOIN Cargo c ON a.id_empresa = c.id_empresa
 WHERE e.razon_social = 'Ferrer SpA'
 GROUP BY e.razon_social, a.nombre_area;
 ```
+-- MOVIMIENTO DE PLANILLA
+
+SELECT em.dni,em.nombre,em.apellidos,car.nombre,co.fecha_inicio,co.fecha_final FROM Contrato co,Empleado em,Cargo car 
+WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo AND <1> >=EXTRACT(YEAR FROM co.fecha_inicio) AND <2> <= EXTRACT(YEAR FROM co.fecha_final));
+
+WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo AND ((<2> >=EXTRACT(YEAR FROM co.fecha_inicio) AND <1> >= EXTRACT(MONTH FROM co.fecha_inicio)) OR (<2> <=EXTRACT(YEAR FROM co.fecha_final) EXTRACT(YEAR FROM co.fecha_final)));
+
+SELECT em.dni,em.nombre,em.apellidos, FROM Empleado em WHERE em.id_empleado=<1>; --relativo al codigo del empleado
+
+SELECT co.nombre,mo.valor FROM Empleado em,concepto_nominal co, Movimiento_planilla mo, tipo_operacion ti 
+WHERE co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion AND ti.id_tipo_operacion=1 AND em.id_empleado=<1>;
+
+SELECT co.nombre,mo.valor FROM Empleado em,concepto_nominal co, Movimiento_planilla mo, tipo_operacion ti 
+WHERE co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion AND ti.id_tipo_operacion=2 AND em.id_empleado=<1>;
+
+create sequence secuencia_mov start WITH 1;
+INSERT INTO Movimiento_planilla VALUES (NEXTVAL(secuencia_mov),CURRENT_DATE,<1>,<2>,<3>,<4>);
+INSERT INTO Movimiento_planilla VALUES (NEXTVAL(secuencia_mov),CURRENT_DATE,<1>,<2>,<3>,<4>);
+
+UPDATE Movimiento_planilla mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
+
+DELETE FROM Movimiento_planilla mov WHERE mov.id_movimiento=<1>;
+
+-- REGISTRO DE ASISTENCIA
+
+SELECT em.dni,em.nombre,em.apellidos,car.nombre,co.fecha_inicio,co.fecha_final FROM Contrato co,Empleado em,Cargo car 
+WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo AND em.dni = <1> AND ORDER BY em.dni;
+
+SELECT em.dni,em.nombre,em.apellidos, FROM Empleado em WHERE em.id_empleado=<1>; --relativo al codigo del empleado
+
+INSERT INTO Asistencia VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>);
+
+DELETE FROM Asistencia as WHERE as.id_asistencia=<1>;
 
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 
