@@ -101,6 +101,52 @@ CREATE TABLE Contrato(<br>
 );
 ## JORDAN LAUREANO
 
+CREATE TABLE Solicitud(<br>
+	id_solicitud INTEGER PRIMARY KEY NOT NULL,<br>
+        detalles VARCHAR(100) NOT NULL,<br>
+        fec_solicitud DATE NOT NULL,<br>
+        hora_solicitud TIME WITHOUT TIME ZONE NOT NULL,<br>
+        monto INTEGER,<br>
+        id_estado_solicitud INTEGER NOT NULL,<br>
+	FOREIGN KEY  (id_estado_solicitud) REFERENCES Estado_solicitud(id_estado_solicitud),<br>
+        id_tipo_solicitud INTEGER NOT NULL,<br>
+	FOREIGN KEY  (id_tipo_solicitud) REFERENCES Tipo_solicitud(id_tipo_solicitud),<br>
+        id_empleado INTEGER NOT NULL,<br>
+	FOREIGN KEY  (id_empleado) REFERENCES Empleado( id_empleado),<br>
+        id_empresa INTEGER NOT NULL,<br>
+	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa),<br>
+ );
+
+ CREATE TABLE Estado_solicitud(<br>
+	id_estado_solicitud INTEGER PRIMARY KEY NOT NULL,<br>
+        descripcion VARCHAR(15) NOT NULL,<br>
+ );
+
+  CREATE TABLE Tipo_solicitud(<br>
+	id_tipo_solicitud INTEGER PRIMARY KEY NOT NULL,<br>
+        descripcion VARCHAR(50) NOT NULL,<br>
+ );
+
+ CREATE TABLE Cuenta(<br>
+	id_cuenta INTEGER PRIMARY KEY NOT NULL,<br>
+        usuario VARCHAR(50) NOT NULL,<br>
+	contraseña VARCHAR(50) NOT NULL,<br>
+        id_contrato INTEGER NOT NULL,<br>
+	FOREIGN KEY  (id_contrato) REFERENCES Contrato(id_contrato),<br>
+        id_estado_cuenta INTEGER NOT NULL,<br>
+	FOREIGN KEY  (id_estado_cuenta) REFERENCES Estado_cuenta(id_estado_cuenta),<br>
+        id_empleado INTEGER NOT NULL,<br>
+	FOREIGN KEY  (id_empleado) REFERENCES Empleado( id_empleado),<br>
+        id_empresa INTEGER NOT NULL,<br>
+	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa),<br>
+ );
+
+ CREATE TABLE Estado_cuenta(<br>
+	id_estado_cuenta INTEGER PRIMARY KEY NOT NULL,<br>
+        estado_cuenta VARCHAR(30) NOT NULL,<br>
+ );
+ 
+
 # CONSULTAS O QUERYS
 
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
