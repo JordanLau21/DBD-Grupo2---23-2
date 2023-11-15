@@ -100,7 +100,6 @@ CREATE TABLE Contrato(<br>
 	FOREIGN KEY (id_detalle_pago) REFERENCES Detalle_pago(id_detalle_pago)<br>
 );
 ## JORDAN LAUREANO
-# CARGA DE DATOS
 
 # CONSULTAS O QUERYS
 
