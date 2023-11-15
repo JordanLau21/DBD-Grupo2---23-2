@@ -522,7 +522,7 @@ UPDATE Cuenta SET contraseña = <1> WHERE contraseña = < 3 > AND <1> = <2>;
 SELECT usuario, contraseña from Cuenta
 WHERE usuario = <1> AND contraseña = <2>
 
-### REGISTRAR EMPLEADOS Y USUARIO
+### REGISTRAR EMPLEADOS
 ```
 CREATE SEQUENCE Empleado_seq(
 	START WITH 12625
