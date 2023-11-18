@@ -779,6 +779,30 @@ DELETE FROM Asistencia as WHERE as.id_asistencia=<1>;
 
 ## Codificación de Requerimientos
 
+| Código | R001  |
+|----------|----------|
+|Nombre|Autenticación de Usuario|
+|Objetivo|Validar el correo del usuario (empleado o administrador) para que de esta manera pueda acceder a su cuenta y poder hacer sus gestiones.|
+|Descripción|El usuario ingresará su nombre de usuario y su contraseña el cual se verificará segun lo registrado en la base de datos del sistema de planillas.|
+
+| Código | R002  |
+|----------|----------|
+|Nombre|Olvido de contraseña|
+|Objetivo|Validar veracidad de usuario para cambiar la contraseña que el usuario ha olvidado.|
+|Descripción|El usuario ingresará sus datos personales para asi poder validar la veracidad de su persona, para que así tenga la potestad de poder cambiarla.|
+
+| Código | R003 |
+|----------|----------|
+|Nombre| Cambiar contraseña e iniciar sesión|
+|Objetivo|Cambiar la contraseña que el usuario ha olvidado e iniciar sesión.|
+|Descripción|Una vez verificado la veracidad del usuario, se le enviará un mensaje de texto a su celular registrado en la base de datos para que asi este pueda cambiar la contraseña anterior y poder iniciar sesión en su cuenta.|
+
+| Código | R004  |
+|----------|----------|
+|Nombre| Ver solicitudes (Administrador) |
+|Objetivo|Verficiar todas las solicitudes que el administrador tiene pendientes de aceptar o rechazar.|
+|Descripción|Una vez que el administrador ingrese a la parte de solicitudes, este podrá visualizar todas las solicitudes que se han hecho hasta el momento, donde tendrá acceso a verfiicar los detalles de la solicitud y tendrá la potestad de aprobar o rechazar la solicitud.|
+
 
 
 | Código | R008  |
