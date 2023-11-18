@@ -173,7 +173,6 @@ CREATE TABLE Empleado(
 	edad INT NOT NULL,
 	telefono NUMERIC(9) NOT NULL,
 	email VARCHAR(50) NOT NULL,
-	direccion VARCHAR(200) NOT NULL,
 	dni NUMERIC(8) NOT NULL,
 	estado_civil VARCHAR(15) NOT NULL,
 	sexo VARCHAR(10) NOT NULL,
