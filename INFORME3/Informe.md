@@ -324,31 +324,7 @@ CREATE TABLE Situacion_discapacidad(
 	tipo_discapacidad VARCHAR(10) NOT NULL
 );
 ```
-### Empleado
-```
-CREATE TABLE Empleado(
-	id_empleado INTEGER PRIMARY KEY NOT NULL,
-	nombres VARCHAR(20) NOT NULL,
-	apellidos VARCHAR(50) NOT NULL,
-	fecha_nacimiento DATE NOT NULL,
-	edad INT NOT NULL,
-	telefono NUMERIC(9) NOT NULL,
-	email VARCHAR(50) NOT NULL,
-	dni NUMERIC(8) NOT NULL,
-	estado_civil VARCHAR(15) NOT NULL,
-	sexo VARCHAR(10) NOT NULL,
-	id_regimen_pensionario INTEGER NOT NULL,
-	FOREIGN KEY (id_regimen_pensionario) REFERENCES Regimen_pensionario(id_regimen_pensionario),
-	id_seguro_medico INTEGER NOT NULL,
-	FOREIGN KEY (id_seguro_medico) REFERENCES Seguro_medico(id_seguro_medico),
-	id_situacion_discapacidad INTEGER NOT NULL,
-	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),
-	id_empresa INTEGER NOT NULL,
-	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
-        id_cuenta INTEGER NOT NULL,
-	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)
-);
-```
+
 ### Cargo
 ```
 CREATE TABLE Cargo(
