@@ -11,7 +11,6 @@
 CREATE TABLE Regimen_pensionario(
 	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,
 	tipo_regimen CHAR(3) NOT NULL,
-	administradora VARCHAR(20) NOT NULL
 );
 ```
 ### SEGURO MÉDICO
@@ -307,7 +306,6 @@ CREATE TABLE RepresentanteLegal(
 CREATE TABLE Regimen_pensionario(
 	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,
 	tipo_regimen CHAR(3) NOT NULL,
-	administradora VARCHAR(20) NOT NULL
 );
 ```
 ### Seguro Médico
