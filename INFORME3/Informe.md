@@ -6,37 +6,51 @@
 ## CODIGO COMPLETO
 /*Primero creamos las tablas independientes (que no tienen foreign keys)*/
 
+### REGIMEN PENSIONARIO
+```
 CREATE TABLE Regimen_pensionario(
 	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,
 	tipo_regimen CHAR(3) NOT NULL,
 	administradora VARCHAR(20) NOT NULL
 );
-
+```
+### SEGURO MÉDICO
+```
 CREATE TABLE Seguro_medico(
 	id_seguro_medico INTEGER PRIMARY KEY NOT NULL,
 	tipo_seguro VARCHAR(10) NOT NULL
 );
-
+```
+### SITUACIÓN DISCAPACITADO
+```
 CREATE TABLE Situacion_discapacidad(
 	id_situacion_discapacidad INTEGER PRIMARY KEY NOT NULL,
 	tipo_discapacidad VARCHAR(10) NOT NULL
 );
-
+```
+### ESTADO CONTRATO
+```
 CREATE TABLE Estado_contrato(
 	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,
 	estado_contrato VARCHAR(10) NOT NULL
 );
-
+```
+### TIPO CONTRATO
+```
 CREATE TABLE Tipo_contrato(
 	id_tipo_contrato INTEGER PRIMARY KEY NOT NULL,
 	tipo_contrato VARCHAR(15) NOT NULL
 );
-
+```
+### TIPO JORNADA
+```
 CREATE TABLE Tipo_jornada(
 	id_tipo_jornada INTEGER PRIMARY KEY NOT NULL,
 	tipo_jornada VARCHAR(15) NOT NULL
 );
-
+```
+### DETALLE PAGO
+```
 CREATE TABLE Detalle_pago(
 	id_detalle_pago INTEGER PRIMARY KEY NOT NULL,
 	frecuencia_pago VARCHAR(30) NOT NULL,
@@ -45,17 +59,23 @@ CREATE TABLE Detalle_pago(
 	entidad_financiera VARCHAR(30) NOT NULL,
 	cuenta NUMERIC(14) NOT NULL
 );
-
+```
+### ESTADO SOLICITUD
+```
 CREATE TABLE Estado_solicitud(
 	id_estado_solicitud INTEGER PRIMARY KEY NOT NULL,
 	descripcion VARCHAR(15) NOT NULL,
 );
-
+```
+### TIPO SOLICITUD
+```
 CREATE TABLE Tipo_solicitud(
 	id_tipo_solicitud INTEGER PRIMARY KEY NOT NULL,
 	descripcion VARCHAR(50) NOT NULL,
 );
-
+```
+### PLANILLA
+```
 CREATE TABLE Planilla
 (
   id_planilla INTEGER NOT NULL,
@@ -70,24 +90,32 @@ CREATE TABLE Planilla
   hora_creacion time not null,
   PRIMARY KEY (id_planilla)
 );
-
+```
+### TIPO OPERACIÓN
+```
 create table tipo_operacion (
 	id_tipo_operacion INTEGER not null,
 	descripcion_operacion VARCHAR(20) not null,
 	primary key (id_tipo_operacion)
 );
-
+```
+### ESTADO CONCEPTO
+```
 create table estado_concepto (
 	id_estado INTEGER not null,
 	descripcion_estado VARCHAR(20) not null,
 	primary key (id_estado)
 );
-
+```
+### ESTADO CUENTA
+```
 CREATE TABLE Estado_cuenta(
 	id_estado_cuenta INTEGER PRIMARY KEY NOT NULL,
 	estado_cuenta VARCHAR(30) NOT NULL,
 );
-
+```
+### CUENTA
+```
 CREATE TABLE Cuenta(
 	id_cuenta INTEGER PRIMARY KEY NOT NULL,
 	usuario VARCHAR(50) NOT NULL,
@@ -95,7 +123,9 @@ CREATE TABLE Cuenta(
 	id_estado_cuenta INTEGER NOT NULL,
 	FOREIGN KEY (id_estado_cuenta) REFERENCES Estado_cuenta(id_estado_cuenta),
 );
-
+```
+### EMPRESA
+```
 CREATE TABLE Empresa(
 	id_empresa INTEGER PRIMARY KEY NOT NULL,
 	ruc INTEGER NOT NULL,
@@ -109,7 +139,9 @@ CREATE TABLE Empresa(
         id_cuenta INTEGER NOT NULL,<br>
 	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)<br>
 );
-
+```
+### CARGO
+```
 CREATE TABLE Cargo(
 	id_cargo INTEGER PRIMARY KEY NOT NULL,
 	nombre_cargo VARCHAR(50) NOT NULL,
@@ -119,8 +151,10 @@ CREATE TABLE Cargo(
 	estado VARCHAR(20) NOT NULL,
 	id_empresa INTEGER NOT NULL,
 	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa)
-); 
-
+);
+```
+### ÁREA
+```
 CREATE TABLE Area(
     id_area INTEGER PRIMARY KEY NOT NULL,
     nombre_area VARCHAR(50) NOT NULL,
@@ -128,7 +162,9 @@ CREATE TABLE Area(
     id_empresa INTEGER NOT NULL,
     FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 );
-
+```
+### EMPLEADO
+```
 CREATE TABLE Empleado(
 	id_empleado INTEGER PRIMARY KEY NOT NULL,
 	nombres VARCHAR(20) NOT NULL,
@@ -152,18 +188,9 @@ CREATE TABLE Empleado(
 	id_cuenta INTEGER NOT NULL,
 	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)
 );
-
-CREATE TABLE RepresentanteLegal(
-	id_representante INTEGER PRIMARY KEY NOT NULL,
-	nombres VARCHAR(20) NOT NULL,
-	apellido_paterno VARCHAR(50) NOT NULL,
-	apellido_materno VARCHAR(50) NOT NULL,
-	dni INTEGER NOT NULL,
-	estado BOOLEAN NOT NULL,
-	id_empresa INTEGER NOT NULL,
-	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
-);
-
+```
+### SOLICITUD
+```
 CREATE TABLE Solicitud(
 	id_solicitud INTEGER PRIMARY KEY NOT NULL,
 	detalles VARCHAR(100) NOT NULL,
@@ -179,7 +206,9 @@ CREATE TABLE Solicitud(
 	id_empresa INTEGER NOT NULL,
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 );
-
+```
+### CONTRATO
+```
 CREATE TABLE Contrato(
 	id_contrato INTEGER PRIMARY KEY NOT NULL,
 	fecha_firma_contrato DATE NOT NULL,
@@ -202,7 +231,9 @@ CREATE TABLE Contrato(
 	id_detalle_pago INTEGER NOT NULL,
 	FOREIGN KEY (id_detalle_pago) REFERENCES Detalle_pago(id_detalle_pago)
 );
-
+```
+### ASISTENCIA
+```
 CREATE TABLE Asistencia(
 	id_asistencia INTEGER PRIMARY KEY,
 	fecha_inicio DATE,
@@ -216,7 +247,9 @@ CREATE TABLE Asistencia(
 	FOREIGN KEY (id_nomina) REFERENCES Concepto_Nomina(id_nomina),
 	FOREIGN KEY (id_boleta) REFERENCES Boleta(id_boleta)
 );
-
+```
+### MOVIMIENTO PLANILLA
+```
 CREATE TABLE Movimiento_planilla(
 	id_movimiento INTEGER PRIMARY KEY,
 	fecha DATE,
@@ -226,7 +259,9 @@ CREATE TABLE Movimiento_planilla(
 	FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
 	FOREIGN KEY (id_nomina) REFERENCES Concepto_Nomina(id_nomina)
 );
-
+```
+### BOLETA
+```
 CREATE TABLE Boleta(
   id_boleta INTEGER NOT NULL,
   TotalDescuentos NUMERIC(9,2) NOT NULL,
@@ -239,9 +274,8 @@ CREATE TABLE Boleta(
   FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
   FOREIGN KEY (id_planilla) REFERENCES Planilla(id_planilla)
 );
-
-
-### Empresa
+```
+### EMPRESA
 ```
 CREATE TABLE Empresa(
 	id_empresa INTEGER PRIMARY KEY NOT NULL,
@@ -255,8 +289,7 @@ CREATE TABLE Empresa(
 	logo VARCHAR(200) NOT NULL 
 );
 ```
-
-### Representante Legal
+### REPRESENTANTE LEGAL
 ```
 CREATE TABLE RepresentanteLegal(
 	id_representante INTEGER PRIMARY KEY NOT NULL,
@@ -399,47 +432,6 @@ CREATE TABLE Contrato(
 	FOREIGN KEY (id_detalle_pago) REFERENCES Detalle_pago(id_detalle_pago)
 );
 ```
-## JORDAN LAUREANO
-
-CREATE TABLE Solicitud(<br>
-	id_solicitud INTEGER PRIMARY KEY NOT NULL,<br>
-        detalles VARCHAR(100) NOT NULL,<br>
-        fec_solicitud DATE NOT NULL,<br>
-        hora_solicitud TIME WITHOUT TIME ZONE NOT NULL,<br>
-        monto NUMERIC(7,2),<br>
-        id_estado_solicitud INTEGER NOT NULL,<br>
-	FOREIGN KEY  (id_estado_solicitud) REFERENCES Estado_solicitud(id_estado_solicitud),<br>
-        id_tipo_solicitud INTEGER NOT NULL,<br>
-	FOREIGN KEY  (id_tipo_solicitud) REFERENCES Tipo_solicitud(id_tipo_solicitud),<br>
-        id_empleado INTEGER NOT NULL,<br>
-	FOREIGN KEY  (id_empleado) REFERENCES Empleado( id_empleado),<br>
-        id_empresa INTEGER NOT NULL,<br>
-	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa),<br>
- );
-
- CREATE TABLE Estado_solicitud(<br>
-	id_estado_solicitud INTEGER PRIMARY KEY NOT NULL,<br>
-        descripcion VARCHAR(15) NOT NULL,<br>
- );
-
-  CREATE TABLE Tipo_solicitud(<br>
-	id_tipo_solicitud INTEGER PRIMARY KEY NOT NULL,<br>
-        descripcion VARCHAR(50) NOT NULL,<br>
- );
-
- CREATE TABLE Cuenta(<br>
-	id_cuenta INTEGER PRIMARY KEY NOT NULL,<br>
-        usuario VARCHAR(50) NOT NULL,<br>
-	contraseña VARCHAR(50) NOT NULL,<br>
-        id_estado_cuenta INTEGER NOT NULL,<br>
-	FOREIGN KEY  (id_estado_cuenta) REFERENCES Estado_cuenta(id_estado_cuenta),<br>
- );
-
- CREATE TABLE Estado_cuenta(<br>
-	id_estado_cuenta INTEGER PRIMARY KEY NOT NULL,<br>
-        estado_cuenta VARCHAR(30) NOT NULL,<br>
- );
-
 ### planilla
 ```
 CREATE TABLE Planilla
@@ -591,20 +583,20 @@ INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),2, <1>, <2>, date, time,<3>,
 
 
 
-#### Planillas primera pagina
+### PLANILLAS PRIMERA PAGINA
 ```
 select id_planilla, fecha_inicio, periodicidad from planilla;
 ```
 
 
-#### Detalle planilla 
+### DETALLE PLANILLA
 ```
 SELECT * FROM Empleado em, contrato co, detallepago de, planilla pla, estado_contrato est WHERE em.id_contrato=co.id_contrato AND de.id_detalle=co.id_detalle
 pla.periodicidad=de.frecuencia_pago AND pla.fecha_inicio>c.fecha_inicio and pla.fecha_fin<=c.fecha_fin
 AND est.estado='Activo';
 ```
 
-#### Crear planilla
+### CREAR PLANILLA
 ```
 insert into planilla (periodo, fecha_inicio, fecha_fin, fecha_creacion, hora_creacion) values (<1>,<2>,<3>,current_date,current_time);
 ```
@@ -749,8 +741,8 @@ LEFT JOIN Cargo c ON a.id_empresa = c.id_empresa
 WHERE e.razon_social = 'Ferrer SpA'
 GROUP BY e.razon_social, a.nombre_area;
 ```
--- MOVIMIENTO DE PLANILLA
-
+### MOVIMIENTO DE PLANILLA
+```
 SELECT em.dni,em.nombre,em.apellidos,car.nombre,co.fecha_inicio,co.fecha_final FROM Contrato co,Empleado em,Cargo car 
 WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo AND <1> >=EXTRACT(YEAR FROM co.fecha_inicio) AND <2> <= EXTRACT(YEAR FROM co.fecha_final));
 
@@ -771,9 +763,9 @@ INSERT INTO Movimiento_planilla VALUES (NEXTVAL(secuencia_mov),CURRENT_DATE,<1>,
 UPDATE Movimiento_planilla mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
 
 DELETE FROM Movimiento_planilla mov WHERE mov.id_movimiento=<1>;
-
--- REGISTRO DE ASISTENCIA
-
+```
+### REGISTRO DE ASISTENCIA
+```
 SELECT em.dni,em.nombre,em.apellidos,car.nombre,co.fecha_inicio,co.fecha_final FROM Contrato co,Empleado em,Cargo car 
 WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo AND em.dni = <1> AND ORDER BY em.dni;
 
@@ -782,7 +774,7 @@ SELECT em.dni,em.nombre,em.apellidos, FROM Empleado em WHERE em.id_empleado=<1>;
 INSERT INTO Asistencia VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>);
 
 DELETE FROM Asistencia as WHERE as.id_asistencia=<1>;
-
+```
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 
 ## Codificación de Requerimientos
