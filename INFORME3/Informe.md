@@ -3,8 +3,6 @@
 # MODELAMIENTO RELACIONAL 
 
 # CREACION DE TABLAS
-## CODIGO COMPLETO
-/*Primero creamos las tablas independientes (que no tienen foreign keys)*/
 
 ### REGIMEN PENSIONARIO
 ```
@@ -301,21 +299,21 @@ CREATE TABLE RepresentanteLegal(
 ); 
 ```
 
-### Régimen Pensionario
+### RÉGIMEN PENSIONARIO
 ```
 CREATE TABLE Regimen_pensionario(
 	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,
 	tipo_regimen CHAR(3) NOT NULL,
 );
 ```
-### Seguro Médico
+### SEGURO MÉDICO
 ```
 CREATE TABLE Seguro_medico(
 	id_seguro_medico INTEGER PRIMARY KEY NOT NULL,<
 	tipo_seguro VARCHAR(10) NOT NULL
 );
 ```
-### Situación de Discapacidad
+### SITUACIÓN DE DISCAPACIDAD
 ```
 CREATE TABLE Situacion_discapacidad(
 	id_situacion_discapacidad INTEGER PRIMARY KEY NOT NULL,
@@ -323,7 +321,7 @@ CREATE TABLE Situacion_discapacidad(
 );
 ```
 
-### Cargo
+### CARGO
 ```
 CREATE TABLE Cargo(
 	id_cargo INTEGER PRIMARY KEY NOT NULL,
@@ -336,7 +334,7 @@ CREATE TABLE Cargo(
 	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa)
 );
 ```
-### Area
+### ÁREA
 ```
 CREATE TABLE Area(
     id_area INTEGER PRIMARY KEY NOT NULL,
@@ -347,14 +345,14 @@ CREATE TABLE Area(
 );
 ```
 
-### Estado de Contrato
+### ESTADO DE CONTRATO
 ```
 CREATE TABLE Estado_contrato(
 	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,
 	estado_contrato VARCHAR(10) NOT NULL 
 );
 ```
-### Tipo de Contrato
+### TIPO DE CONTRATO
 ```
 CREATE TABLE Tipo_contrato(
 	id_tipo_contrato INTEGER PRIMARY KEY NOT NULL,
@@ -362,14 +360,14 @@ CREATE TABLE Tipo_contrato(
 );
 ```
 
-### Tipo de Jornada
+### TIPO DE CONTRATO
 ```
 CREATE TABLE Tipo_jornada(
 	id_tipo_jornada INTEGER PRIMARY KEY NOT NULL,
 	tipo_jornada VARCHAR(15) NOT NULL
 );
 ```
-### Detalle de Pago
+### DETALLE DE PAGO
 ```
 CREATE TABLE Detalle_pago(
 	id_detalle_pago INTEGER PRIMARY KEY NOT NULL,
@@ -380,7 +378,7 @@ CREATE TABLE Detalle_pago(
 	cuenta NUMERIC(14) NOT NULL
 );
 ```
-### Contrato
+### CONTRATO
 ```
 CREATE TABLE Contrato(
 	id_contrato INTEGER PRIMARY KEY NOT NULL,
@@ -405,7 +403,7 @@ CREATE TABLE Contrato(
 	FOREIGN KEY (id_detalle_pago) REFERENCES Detalle_pago(id_detalle_pago)
 );
 ```
-### planilla
+### PLANILLA
 ```
 CREATE TABLE Planilla
 (
@@ -422,7 +420,7 @@ CREATE TABLE Planilla
   PRIMARY KEY (id_planilla)
 );
 ```
-### boleta
+### BOLETA
 ```
 CREATE TABLE Boleta
 (
@@ -438,7 +436,7 @@ CREATE TABLE Boleta
   FOREIGN KEY (id_planilla) REFERENCES Planilla(id_planilla)
 );
 ```
-### tipo_operacion
+### TIPO DE OPERACION
 ```
 create table tipo_operacion 
 (
@@ -448,7 +446,7 @@ create table tipo_operacion
 );
 ```
 
-### estado_concepto
+### ESTADO DE CONCEPTO
 ```
 create table estado_concepto 
 (
@@ -457,7 +455,7 @@ create table estado_concepto
 	primary key (id_estado)
 );
 ```
-### concepto_nomina
+### CONCEPTO DE NOMINA
 ```
 CREATE TABLE concepto_nomina
 (
