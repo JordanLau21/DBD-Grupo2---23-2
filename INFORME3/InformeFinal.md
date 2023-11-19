@@ -47,8 +47,6 @@ CREATE TABLE Empleado(
 	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),
 	id_empresa INTEGER NOT NULL,
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa),
-	id_asignacion_familiar INTEGER NOT NULL,
-	FOREIGN KEY (id_asignacion_familiar) REFERENCES Asignacion_familiar(id_asignacion_familiar),
 	id_cuenta INTEGER NOT NULL,
 	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)
 );
