@@ -572,6 +572,16 @@ CREATE TABLE concepto_nomina
 
 | Código | R011  |
 |----------|----------|
+|Nombre  |Ver datos de empleados vigentes o exempleados|
+|Objetivo  |Visualizar los datos de un empleado o exempleado, su contrato y la forma de pago que recibe o recibió.|
+| Descripción   |Se podrá ver los datos que se ingresaron del empleado o exempleado en su momento.|
+| Actor primario    |Administrador|
+| Actor secundario    |Empleado|
+| Precondiciones    |El empleado debe haber estado o estar ligado a la empresa a través de la firma de un contrato.|
+
+
+| Código | R012  |
+|----------|----------|
 |Nombre  |Ver usuarios desvinculados o inactivos|
 |Objetivo  |Desvincular a un empleado activo o visualizar a los empleados desvinculados.|
 | Descripción   |El administrador podrá desvincular usuarios activos, por término de contrato, además de poder visualizar los empleados desvinculados anteriormente.|
