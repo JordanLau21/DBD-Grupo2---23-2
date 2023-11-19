@@ -702,15 +702,15 @@ los nombres de los niveles de división |
 ### Módulo Empleados
 | Código Interfaz | I010  |
 |----------|----------|
-|Imagen interfaz|![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047.png)|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2047.png)|
 
 | Código Interfaz | I011  |
 |----------|----------|
-|Imagen interfaz|![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048.png)|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2048.png)|
 
 | Código Interfaz | I012  |
 |----------|----------|
-|Imagen interfaz|![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes.png)|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/vigentes.png)|
 
 | Código Interfaz | I013  |
 |----------|----------|
