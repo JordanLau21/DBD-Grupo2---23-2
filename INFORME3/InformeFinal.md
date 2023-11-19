@@ -885,10 +885,11 @@ AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/be19dad0-9762-4c6e-b408-1a7d59ecf00b)
 ### Sentecias SQL:
 ### Eventos:
-* **Mostrar empleados filtrados:** Se mostrara en pantalla el listado de contratos activos 
+* **Mostrar empleados filtrados:** Se mostrara en pantalla el listado de contratos dentro de dicho periodo.
 ```
-SELECT em.dni,em.nombre,em.apellidos,car.nombre,co.fecha_inicio,co.fecha_final FROM Contrato co,Empleado em,Cargo car 
-WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo AND em.dni = <1> AND ORDER BY em.dni;
+SELECT em.dni,em.nombres,em.apellidos,car.nombre_cargo,co.fecha_inicio_laboral,co.fecha_termino_contrato 
+FROM Contrato co,Empleado em,Cargo car,Planilla pe WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo 
+AND pe.periodo = <1> AND co.fecha_inicio_laboral<=pe.fecha_inicio AND pe.fecha_fin<=co.fecha_termino_contrato; 
 ```
 ## CASO 9
 ### Código Requerimiento : R - 007
@@ -899,25 +900,21 @@ WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo AND em.dni = <1
 ### Eventos: 
 * **Mostrar datos de empleado:** Se mostrara en pantalla los datos del empleado 
 ```
-SELECT em.dni,em.nombre,em.apellidos, FROM Empleado em WHERE em.id_empleado=<1>
+SELECT em.dni,em.nombres ,em.apellidos FROM Empleado em WHERE em.id_empleado=<1>;
 ```
-* **Mostrar listado de ingresos:** Se mostrara en pantalla los datos del empleado 
+* **Mostrar listado de ingresos:** Se mostrara en el lado izquierdo el listado de ingresos
 ```
-SELECT co.nombre,mo.valor FROM Empleado em,concepto_nominal co, Movimiento_planilla mo, tipo_operacion ti 
+SELECT co.nombre_nomina, mo.monto FROM Empleado em,Concepto_nomina co, Movimiento_planilla mo, Tipo_operacion ti 
 WHERE co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion AND ti.id_tipo_operacion=1 AND em.id_empleado=<1>;
 ```
 * **Mostrar listado de descuentos:** Se mostrara en pantalla los datos del empleado 
 ```
-SELECT co.nombre,mo.valor FROM Empleado em,concepto_nominal co, Movimiento_planilla mo, tipo_operacion ti 
+SELECT co.nombre_nomina, mo.monto FROM Empleado em,Concepto_nomina co, Movimiento_planilla mo, tipo_operacion ti 
 WHERE co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion AND ti.id_tipo_operacion=2 AND em.id_empleado=<1>;
-```
-* **Actualizar concepto registrado:** Se mostrara en pantalla los datos del empleado 
-```
-UPDATE Movimiento_planilla mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
 ```
 * **Eliminar concepto registrado:** Se mostrara en pantalla los datos del empleado 
 ```
-DELETE FROM Movimiento_planilla mov WHERE mov.id_movimiento=<1>;
+DELETE FROM Movimiento_planilla mov WHERE mov.id_movimiento=<2>;
 ```
 ## CASO 9
 ### Código Requerimiento : R - 007
@@ -928,7 +925,11 @@ DELETE FROM Movimiento_planilla mov WHERE mov.id_movimiento=<1>;
 ### Eventos:
 * **Registrar un concepto:** Se mostrara en pantalla los datos del empleado 
 ```
-INSERT INTO Movimiento_planilla VALUES (NEXTVAL(secuencia_mov),CURRENT_DATE,<1>,<2>,<3>,<4>);
+INSERT INTO Movimiento_planilla VALUES (<1>,CURRENT_DATE,<2>,<3>,<4>,<5>);
+```
+* **Actualizar concepto registrado:** Se mostrara en pantalla los datos del empleado 
+```
+UPDATE Movimiento_planilla mov SET mov.valor=<3> WHERE mov.id_movimiento=<2>;
 ```
 ## CASO 9
 ### Código Requerimiento : R - 007
@@ -939,17 +940,9 @@ INSERT INTO Movimiento_planilla VALUES (NEXTVAL(secuencia_mov),CURRENT_DATE,<1>,
 ### Eventos: 
 * **Mostrar datos de empleado:** Se mostrara en pantalla los datos del empleado 
 ```
-SELECT em.dni,em.nombre,em.apellidos, FROM Empleado em WHERE em.id_empleado=<1>;
+SELECT em.dni,em.nombres, em.apellidos FROM Empleado em WHERE em.id_empleado=<1>;
 ```
-* **Registrar un concepto asistencia:** Se mostrara en pantalla los datos del empleado 
-```
-INSERT INTO Asistencia VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>);
-```
-* **Actualizar concepto registrado:** Se mostrara en pantalla los datos del empleado 
-```
-UPDATE Asistencia mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
-```
-* **Eliminar concepto registrado:** Se mostrara en pantalla los datos del empleado 
+* **Eliminar concepto registrado:** Se eliminara el concepto elegido 
 ```
 DELETE FROM Asistencia as WHERE as.id_asistencia=<1>;
 ```
@@ -963,6 +956,10 @@ DELETE FROM Asistencia as WHERE as.id_asistencia=<1>;
 * **Registrar un concepto asistencia:** Se mostrara en pantalla los datos del empleado 
 ```
 INSERT INTO Asistencia VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>);
+```
+* **Actualizar concepto registrado:** M
+```
+UPDATE Asistencia mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
 ```
 # CARGA DE DATOS
 - Régimen Pensionario
