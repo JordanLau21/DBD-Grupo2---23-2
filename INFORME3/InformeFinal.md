@@ -676,6 +676,23 @@ SELECT nombres, apellidos, dni FROM Empleado WHERE nombres = <1> AND apellidos =
 ```
 Donde los valores del 1 al 3 se capturarán de la interfaz de olvido de contraseña según se muestran en la imagen.
 
+## CASO 3
+### Código Requerimiento : R - 003
+### Codigo interfaz : I - 001 y I - 003
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/810c4a06-7a8c-4d2c-b7a1-5d30d1d41951)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/3458369c-f54b-4d9d-b303-b1efa3316e2b)
+
+### Sentecias SQL:
+### Eventos: 
+* **Cambiar contraseña e inicio de sesión:** Una vez verificados los datos, el usuario ingresa una nueva contraseña para que asi esta sea cambiada por la anterior y así iniciar sesión con su nueva contraseña ya actualizada.
+```
+UPDATE Cuenta SET contraseña= <3> WHERE contraseña= <2> AND usuario = <1>;
+SELECT usuario, contraseña from Cuenta
+WHERE usuario = <1> AND contraseña = <3>
+```
+Donde los valores del 1 al 4 se capturarán de las interfaces de inicio de sesión e ingresar nueva contraseña según se muestran en la imagen.
+
 # CARGA DE DATOS
 - Régimen Pensionario
 ```
