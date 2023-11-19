@@ -839,6 +839,87 @@ INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, <4>, <5> , null , 2 , <
 id_empleado <7>: Se obtiene de la base de datos en la cual esta registrada la cuenta. <br>
 id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cuenta.
 
+
+## CASO 5
+### Código Requerimiento : R - 005
+### Codigo interfaz : I - 005
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/0c2419cd-b212-4a4b-ad4b-6db2404b5ff4)
+
+### Sentecias SQL:
+### Eventos:
+
+## CASO 5
+### Código Requerimiento : R - 005
+### Codigo interfaz : I - 005
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/1eb1b037-b250-46ea-a22f-efd9f6674668)
+### Sentecias SQL:
+### Eventos:
+
+## CASO 5
+### Código Requerimiento : R - 005
+### Codigo interfaz : I - 005
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/1eb1b037-b250-46ea-a22f-efd9f6674668)
+### Sentecias SQL:
+### Eventos:
+
+## CASO 9
+### Código Requerimiento : R - 007
+### Codigo interfaz : I - 006
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/16303985-92b0-44c7-88db-628451c05ac0)
+### Sentecias SQL:
+### Eventos: 
+* **Mostrar datos de empleado:** Se mostrara en pantalla los datos del empleado 
+```
+SELECT em.dni,em.nombre,em.apellidos, FROM Empleado em WHERE em.id_empleado=<1>
+```
+* **Mostrar listado de ingresos:** Se mostrara en pantalla los datos del empleado 
+```
+SELECT co.nombre,mo.valor FROM Empleado em,concepto_nominal co, Movimiento_planilla mo, tipo_operacion ti 
+WHERE co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion AND ti.id_tipo_operacion=1 AND em.id_empleado=<1>;
+```
+* **Mostrar listado de descuentos:** Se mostrara en pantalla los datos del empleado 
+```
+SELECT co.nombre,mo.valor FROM Empleado em,concepto_nominal co, Movimiento_planilla mo, tipo_operacion ti 
+WHERE co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion AND ti.id_tipo_operacion=2 AND em.id_empleado=<1>;
+```
+* **Registrar un concepto:** Se mostrara en pantalla los datos del empleado 
+```
+INSERT INTO Movimiento_planilla VALUES (NEXTVAL(secuencia_mov),CURRENT_DATE,<1>,<2>,<3>,<4>);
+```
+* **Actualizar concepto registrado:** Se mostrara en pantalla los datos del empleado 
+```
+UPDATE Movimiento_planilla mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
+```
+* **Eliminar concepto registrado:** Se mostrara en pantalla los datos del empleado 
+```
+DELETE FROM Movimiento_planilla mov WHERE mov.id_movimiento=<1>;
+```
+### Código Requerimiento : R - 007
+### Codigo interfaz : I - 006
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/2c1e3766-31e9-46ff-be3a-4078c5646f89)
+### Sentecias SQL:
+### Eventos: 
+* **Mostrar datos de empleado:** Se mostrara en pantalla los datos del empleado 
+```
+SELECT em.dni,em.nombre,em.apellidos, FROM Empleado em WHERE em.id_empleado=<1>;
+```
+* **Registrar un concepto asistencia:** Se mostrara en pantalla los datos del empleado 
+```
+INSERT INTO Asistencia VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>);
+```
+* **Actualizar concepto registrado:** Se mostrara en pantalla los datos del empleado 
+```
+UPDATE Asistencia mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
+```
+* **Eliminar concepto registrado:** Se mostrara en pantalla los datos del empleado 
+```
+DELETE FROM Asistencia as WHERE as.id_asistencia=<1>;
+
 # CARGA DE DATOS
 - Régimen Pensionario
 ```
