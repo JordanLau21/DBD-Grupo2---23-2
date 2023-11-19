@@ -955,6 +955,9 @@ Para <13> y <14>:
 En caso de elegir como Medio de Pago(<12>) el Efectivo, esos 2 campos tomarán el valor de NULL.
 
 
+- Botón Finalizar: Se termina el registro del empleado al sistema.
+
+
 ## CASO 10
 ### Código de Requerimiento: R010
 ### Código de Interfaz: 
