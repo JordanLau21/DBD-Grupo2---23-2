@@ -620,42 +620,43 @@ CREATE TABLE concepto_nomina
 
 
 ## Codificación de prototipos de interfaz
+### Modulo de Autenticacion usuario
 
-### Código interfaz : I - 001
-### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/d7d6c0aa-c02f-4200-87cc-1d6e70440dea)
+| Código Interfaz | I001  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/d7d6c0aa-c02f-4200-87cc-1d6e70440dea)|
 
-### Código interfaz : I - 002
-### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/4395cef4-7cd5-4763-9eae-496070e14a8b)
+| Código Interfaz | I002  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/4395cef4-7cd5-4763-9eae-496070e14a8b)|
 
-### Código interfaz : I - 003
-### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/55c797cf-4b38-4916-b329-e9324ca90ae9)
+| Código Interfaz | I003  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/55c797cf-4b38-4916-b329-e9324ca90ae9)|
 
-### Código interfaz : I - 004
-### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cedbba2c-b6e4-4d28-b269-7b2a81b25f96)
+| Código Interfaz | I004  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cedbba2c-b6e4-4d28-b269-7b2a81b25f96)|
 
-### Código interfaz : I - 005
-### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/81ef464d-ee97-45ff-b727-ca5feda8a432)
+| Código Interfaz | I005  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/81ef464d-ee97-45ff-b727-ca5feda8a432)|
 
-### Código interfaz : I - 006
-### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/ff159860-6d4b-40f0-a78c-5097e51c67f3)
+| Código Interfaz | I006 |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/ff159860-6d4b-40f0-a78c-5097e51c67f3)|
 
-### Código interfaz : I - 007
-### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/7bf03a59-db93-4534-b5fb-f8785dbbf529)
+| Código Interfaz | I007  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/7bf03a59-db93-4534-b5fb-f8785dbbf529)|
 
-### Código interfaz : I - 008
-### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/5b79c089-1e91-4107-b80f-e39e4c91b1b3)
+| Código Interfaz | I008  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/5b79c089-1e91-4107-b80f-e39e4c91b1b3)|
 
-### Código interfaz : I - 009
-### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/fddb795c-32ef-4ba5-8e68-a186cec548b2)
+| Código Interfaz | I009  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/fddb795c-32ef-4ba5-8e68-a186cec548b2)|
 
 ### Código interfaz: I - 010
 ### Imagen interfaz:
@@ -684,7 +685,9 @@ CREATE TABLE concepto_nomina
 ### Código interfaz: I - 016
 ### Imagen interfaz:
 ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Pago.png)
+
 ### Modulo Registro planilla y asistencia
+
 | Código Interfaz | I001  |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/f2922732-04e4-4511-9671-e6ec9c6f7428)|
