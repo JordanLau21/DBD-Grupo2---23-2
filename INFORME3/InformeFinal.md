@@ -773,19 +773,28 @@ los nombres de los niveles de división |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/e1d3112f-ff1f-4da1-bba0-7f6a896d76c3)|
 
-### Modulo Organización
-
 | Código Interfaz | I023 |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/90ad6945-27fa-4ba9-ae3b-0834c678f18f)|
 
-| Código Interfaz | I024 |
-|----------|----------|
-|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/f0448f24-d0f6-49c5-bf13-b5eba89cb90d)|
+### Modulo Organización
 
-| Código Interfaz | I0025 |
+| Código Interfaz | I0024 |
 |----------|----------|
-|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/a7cbff3d-56c7-4d1f-a379-54c24f06a12e)|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/11706603-daf8-4bf6-a205-64642d575810)|
+
+| Código Interfaz | I025 |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/6f5db071-c391-4555-b269-fd976d83b30e)|
+
+
+| Código Interfaz | I0026 |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/fd8e50cd-3869-4591-8925-d29dbe954bd3)|
+
+| Código Interfaz | I0027 |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/6b60b026-9c40-4f48-9504-939b2ff779a8)|
 
 
 # SENTENCIA SQL POR CADA PROTOTIPO
