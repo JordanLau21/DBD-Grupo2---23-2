@@ -190,10 +190,10 @@ where b.id_boleta = <2> and c.id_tipo_contrato=tp.id_tipo_contrato and c.id_empl
 ```
 Visualizar montos específicos por cada concepto:
 ```
-select cn.nombre_nomina,mp.monto from movimiento_planilla mp, concepto_nomina cn, boleta b, planilla p, contrato c
+select * from movimiento_planilla mp, concepto_nomina cn, boleta b, planilla p, contrato c
 where b.id_boleta = <2> and p.fecha_inicio<mp.fecha and p.fecha_fin>=mp.fecha and b.id_planilla=p.id_planilla 
-and c.id_contrato=b.id_contrato and c.id_contrato=mp.id_contrato and mp.monto>0;
--- 2: id de la boleta
+and c.id_contrato=b.id_contrato and c.id_contrato=mp.id_contrato and mp.id_nomina=cn.id_nomina and mp.monto>0;
+-- 2: id_boleta
 ```
 
 
