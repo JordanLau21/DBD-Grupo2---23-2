@@ -1047,7 +1047,19 @@ El <1> será el nombre o apellido del empleado que se quiere buscar.
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados_1.png)
 ### Sentecias SQL:
 ### Eventos:
+1. Carga de Página: Se llenará la lista de empleados desvinculados:
 
+```
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta 
+ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=2;
+```
+
+2. Búsqueda de Empleado
+```
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta 
+ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1 AND ((Empleado.nombre=<1>) OR (Empleado.apellidos=<1>));
+```
+El <1> será el nombre o apellido del empleado que se quiere buscar.
 
 
 
