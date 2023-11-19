@@ -477,7 +477,7 @@ CREATE TABLE concepto_nomina
 ```
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 ## Codificacion de Requerimientos
-
+### Modulo Autenticacion de usuario
 | Código | R001  |
 |----------|----------|
 |Nombre  |Autenticación de Usuario|
@@ -504,7 +504,7 @@ CREATE TABLE concepto_nomina
 | Actor primario    | Un administrador de RRHH u otro empleado de la empresa  |
 | Actor secundario    | -  |
 | Precondiciones    | Los datos que ingrese el usuario deben estar en la base de datos del sistema  |
-
+### Modulo Solicitudes
 | Código | R004  |
 |----------|----------|
 |Nombre  |Ver solicitudes (Administrador)|
@@ -549,7 +549,7 @@ CREATE TABLE concepto_nomina
 | Actor primario    | Un empleado de la empresa  |
 | Actor secundario    | -  |
 | Precondiciones    | -  |
-
+### Modulo Empleados
 | Código | R009  |
 |----------|----------|
 |Nombre  |Registrar Empleado en Sistema|
@@ -599,7 +599,24 @@ CREATE TABLE concepto_nomina
 | Actor secundario    ||
 | Precondiciones    ||
 
+### Modulo Registro de Movimientos y Asistencias
+| Código | R012  |
+|----------|----------|
+|Nombre  |Registrar movimiento de planilla|
+|Objetivo  |Registrar los movimientos que modifiquen el pago habitual de los empleados|
+| Descripción   |El administrador podrá registrar los movimientos que influyan en el pago de los empleados, como por ejemplo: horas extras, descuentos por cafetería, bonificación extraordinaria, minutos de tardanza, etc, por periodo de planilla|
+| Actor primario    |Un administrador de RRHH|
+| Actor secundario    |-|
+| Precondiciones    |Informe de los movimientos de ingresos y descuentos por parte de la empresa|
 
+| Código | R012  |
+|----------|----------|
+|Nombre  |Registrar licencias, inasistencias y vacaciones|
+|Objetivo  |Registrar las licencias, inasistencias y vacaciones a partir del periodo de planilla activo|
+| Descripción   |Se podrán registrar inasistencias, licencias y otros conceptos mas de cada empleado dentro de su periodo de planilla activo.|
+| Actor primario    |Administrador de RRHH|
+| Actor secundario    |-|
+| Precondiciones    |Informe de las licencias, inasistencias y vacaciones del empleado|
 
 
 ## Codificación de prototipos de interfaz
