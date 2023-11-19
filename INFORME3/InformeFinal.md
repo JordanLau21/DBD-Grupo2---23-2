@@ -630,6 +630,21 @@ CREATE TABLE concepto_nomina
 ### Imagen interfaz:
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/fddb795c-32ef-4ba5-8e68-a186cec548b2)
 
+### Código interfaz: I - 010
+### Imagen interfaz:
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047.png)
+
+### Código interfaz: I - 011
+### Imagen interfaz:
+![image]()
+
+### Código interfaz: I - 012
+### Imagen interfaz:
+![image]()
+
+
+
+
 ### Código interfaz : I - 001
 ### Imagen interfaz:
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/1a4a3448-f46c-4251-8139-8eeef1f57d1d)
