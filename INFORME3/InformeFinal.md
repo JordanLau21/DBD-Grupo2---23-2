@@ -889,7 +889,7 @@ AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 ```
 SELECT em.dni,em.nombre,em.apellidos,car.nombre,co.fecha_inicio,co.fecha_final FROM Contrato co,Empleado em,Cargo car 
 WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo AND em.dni = <1> AND ORDER BY em.dni;
-
+```
 ## CASO 9
 ### Código Requerimiento : R - 007
 ### Codigo interfaz : I - 006
