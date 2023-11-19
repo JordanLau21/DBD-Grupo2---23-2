@@ -854,7 +854,19 @@ id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cue
 ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047.png)
 ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048.png)
 ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2049.png)
+### Sentecias SQL:
+### Eventos:
+1. Llenado de Datos del Empleado: Se mostrarán los campos con datos del usuario que se tiene que ingresar manualmente o elegir entre las opciones para los lookup tables (Régimen Pensionario, Seguro Médico, Situación de Discapacidad)
+Datos del Empleado:
+SELECT tipo_regimen FROM Regimen_pensionario;
+SELECT tipo_seguro FROM Seguro_medico;
+SELECT tipo_discapacidad FROM Situacion_discapacidad;
 
+INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,cantidad_menores_cargo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa,id_cuenta) VALUES (<>,<>,<>,<>,<>,<>,<>,<>,<>,<>,<>,<>,<>,<>,<>)
+
+3. 
+
+ 
 
 
 ## CASO 10
@@ -862,6 +874,8 @@ id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cue
 ### Código de Interfaz: 
 ### Imagen Interfaz: 
 ![image]()
+### Sentecias SQL:
+### Eventos:
 
 
 ## CASO 11
@@ -869,6 +883,8 @@ id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cue
 ### Código de Interfaz: 
 ### Imagen Interfaz: 
 ![image]()
+### Sentecias SQL:
+### Eventos:
 
 
 
