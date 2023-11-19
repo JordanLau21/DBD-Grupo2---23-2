@@ -24,6 +24,40 @@ CREATE TABLE Situacion_discapacidad(
 	tipo_discapacidad VARCHAR(10) NOT NULL
 );
 ```
+### ASIGNACIÓN FAMILIAR
+```
+CREATE TABLE Asignacion_familiar(
+	id_asignacion_familiar INTEGER PRIMARY KEY NOT NULL,
+	cant_menor_cargo INT NOT NULL
+);
+```
+
+
+### EMPLEADO
+```
+CREATE TABLE Empleado(
+	id_empleado INTEGER PRIMARY KEY NOT NULL,
+	nombre VARCHAR(20) NOT NULL,
+	apellidos VARCHAR(50) NOT NULL,
+	fecha_nacimiento DATE NOT NULL,
+	edad INT NOT NULL,
+	telefono NUMERIC(9) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	dni NUMERIC(8) NOT NULL,
+	estado_civil VARCHAR(15) NOT NULL,
+	sexo VARCHAR(10) NOT NULL,
+	id_regimen_pensionario INTEGER,
+	FOREIGN KEY (id_regimen_pensionario) REFERENCES Regimen_pensionario(id_regimen_pensionario),
+	id_seguro_medico INTEGER,
+	FOREIGN KEY (id_seguro_medico) REFERENCES Seguro_medico(id_seguro_medico),
+	id_situacion_discapacidad INTEGER,
+	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),
+	id_empresa INTEGER,
+	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa),
+	id_asignacion_familiar INTEGER,
+	FOREIGN KEY (id_asignacion_familiar) REFERENCES Asignacion_familiar(id_asignacion_familiar)
+);
+```
 ### ESTADO CONTRATO
 ```
 CREATE TABLE Estado_contrato(
@@ -157,31 +191,6 @@ CREATE TABLE Area(
 	descripcion_area TEXT NOT NULL,
     id_empresa INTEGER NOT NULL,
     FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
-);
-```
-### EMPLEADO
-```
-CREATE TABLE Empleado(
-	id_empleado INTEGER PRIMARY KEY NOT NULL,
-	nombres VARCHAR(20) NOT NULL,
-	apellidos VARCHAR(50) NOT NULL,
-	fecha_nacimiento DATE NOT NULL,
-	edad INT NOT NULL,
-	telefono NUMERIC(9) NOT NULL,
-	email VARCHAR(50) NOT NULL,
-	dni NUMERIC(8) NOT NULL,
-	estado_civil VARCHAR(15) NOT NULL,
-	sexo VARCHAR(10) NOT NULL,
-	id_regimen_pensionario INTEGER NOT NULL,
-	FOREIGN KEY (id_regimen_pensionario) REFERENCES Regimen_pensionario(id_regimen_pensionario),
-	id_seguro_medico INTEGER NOT NULL,
-	FOREIGN KEY (id_seguro_medico) REFERENCES Seguro_medico(id_seguro_medico),
-	id_situacion_discapacidad INTEGER NOT NULL,
-	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),
-	id_empresa INTEGER NOT NULL,
-	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
-	id_cuenta INTEGER NOT NULL,
-	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)
 );
 ```
 ### SOLICITUD
