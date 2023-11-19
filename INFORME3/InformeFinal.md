@@ -679,6 +679,98 @@ SELECT nombres, apellidos, dni FROM Empleado WHERE nombres = <1> AND apellidos =
 Donde los valores del 1 al 3 se capturarán de la interfaz de olvido de contraseña según se muestran en la imagen.
 
 # CARGA DE DATOS
+- Régimen Pensionario
+```
+INSERT INTO Regimen_pensionario (id_regimen_pensionario, tipo_regimen) VALUES
+('1', 'ONP'),
+('2', 'AFP');
+```
+- Seguro Médico
+```
+INSERT INTO Seguro_medico (id_seguro_medico, tipo_seguro) VALUES
+('1', 'EPS'),
+('2', 'SIS'),
+('3', 'EsSalud'),
+('4', 'Privado');
+```
+- Situación de Discapacidad
+```
+INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad) VALUES ('1', 'Ninguna'),
+('2', 'Parcial'),
+('3', 'Total');
+```
+- Empleado
+```
+INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,id_regimen_pensionario,
+					  id_seguro_medico,id_situacion_discapacidad,id_empresa,,id_cuenta) VALUES
+(1,'DANIEL','SIFUENTES GRADOS',TO_DATE('1993-05-11', 'YYYY-MM-DD'),30,964701287,'daniel.sifuentes@harlamsyo.pe',47756342,'Soltero','Masculino',2,1,1,1,1),
+(2,'EDUARDO SAUL','ESCOBEDO VILLANUEVA',TO_DATE('1979-04-18', 'YYYY-MM-DD'),44,991961400,'',40157917,'Casado','Masculino',2,2,1,1,2),
+(3,'JAPHET CHARLIE JESUS','TORRES HUARINGA',TO_DATE('1985-05-29', 'YYYY-MM-DD'),38,926270930,'',43044175,'Casado','Masculino',2,3,1,2,3),
+(4,'JHON ERIK','CAMPO VELÁSQUEZ',TO_DATE('1991-04-13', 'YYYY-MM-DD'),32,931854954,'campovelas@gmail.com',47231764,'Soltero','Masculino',2,3,1,4,4),
+(5,'KEVYN ANTHONY','PLASENCIA BLANCO',TO_DATE('1991-04-13', 'YYYY-MM-DD'),28,998400448,'kevpb95@gmail.com',75363683,'Soltero','Masculino',1,3,1,4,5),
+(6,'FRANCISCO ROBERTO','GRADOS PAREDES',TO_DATE('1987-10-04', 'YYYY-MM-DD'),36,918099146,'gradosparadesfrank@gmail.com',44569138,'Casado','Masculino',1,3,1,4,6),
+(7,'JORGE LUIS','HOLGUIN ALARCON',TO_DATE('2001-06-04', 'YYYY-MM-DD'),22,938197568,'jorholguinalarcon@gmail.com',72756436,'Soltero','Masculino',2,3,2,2,7),
+(8,'RONALD HERBERT','PRUDENCIO ALIAGA',TO_DATE('1994-12-12', 'YYYY-MM-DD'),29,920852657,'ronaldhpa12@hotmail.com',72079266,'Casado','Masculino',2,3,1,2,8),
+(9,'YESSICA ISABEL','FLORES VELARDE',TO_DATE('1990-11-17', 'YYYY-MM-DD'),33,989686976,'yessicflores@gmail.com',46698999,'Casado','Femenino',2,3,1,2,9),
+(10,'OMAR ADRIAN','ANAYA AYALA',TO_DATE('1992-01-05', 'YYYY-MM-DD'),31,992423368,'anayaayala@gmail.com',46850431,'Casado','Masculino',2,3,1,2,10),
+(11,'CLAUDIA JOSELIN','CAMONES ALEGRIA',TO_DATE('1983-06-22', 'YYYY-MM-DD'),40,993904334,'',42201690,'Viudo','Femenino',2,4,2,3,11),
+(12,'GAYMO LUIS','PEREZ MUÑOZ',TO_DATE('1992-05-30', 'YYYY-MM-DD'),31,970897522,'',71902155,'Casado','Masculino',2,4,1,3,12),
+(13,'JORGE OSWALDO','ARGUEDAS PUCUTAY',TO_DATE('1991-08-10', 'YYYY-MM-DD'),31,981378149,'larguedas1010@gmail.com',71395354,'Casado','Masculino',1,3,1,3,13),
+(14,'JORGE LUIS','DIAZ LEYTON',TO_DATE('1982-09-17', 'YYYY-MM-DD'),41,997935493,'leyton17_14@hotmail.com',41473747,'Divorciado','Masculino',2,4,1,3,14),
+(15,'KAREN EDITH','POMA CAMACHO DE SALAZAR',TO_DATE('1983-07-22', 'YYYY-MM-DD'),40,936131832,'karenpomakp30@gmail.com',42685693,'Divorciado','Femenino',1,3,1,3,15)
+;
+```
+- Estado de Contrato
+```
+INSERT INTO Estado_contrato (id_estado_contrato, estado_contrato) VALUES ('1', 'Vigente'),
+('2', 'Finalizado'),
+('3', 'Rescindido');
+```
+- Tipo de Contrato
+```
+INSERT INTO Tipo_contrato (id_tipo_contrato, tipo_contrato) VALUES ('1', 'Indefinido'),
+('2', 'Plazo Definido'),
+('3', 'Obra o Proyecto');
+```
+- Tipo de Jornada
+```
+INSERT INTO Tipo_jornada (id_tipo_jornada, tipo_jornada) VALUES ('1', 'Ordinaria'),
+('2', 'Parcial'),
+('3', 'Excenta');
+```
+- Frecuencia de Pago
+```
+INSERT INTO Frecuencia_pago(id_frecuencia_pago,frecuencia_pago) VALUES (1,'Mensual'),
+(2,'Quincenal'),
+(3,'Por obra o proyecto');
+```
+- Medio de Pago
+```
+INSERT INTO Medio_pago(id_medio_pago,medio_pago,entidad_financiera,cuenta) VALUES (1,'Efectivo',NULL,NULL),
+(2,'Cheque','',NULL),
+(3,'Transferencia Bancaria','',0);
+```
+- Contrato
+```
+INSERT INTO Contrato (id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico,
+					  id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_frecuencia_pago,id_medio_pago) 
+					  VALUES 
+(1,'2023-01-15','2023-02-01','2023-07-31',991.9614,991.96130080387,1,2,1,1,1,1,1,3),
+(2,'2023-01-15','2023-02-01','2023-07-31',926.27093,926.270837372916,1,2,2,1,1,1,1,3),
+(3,'2023-01-15','2023-02-01','2023-07-31',931.854954,931.854860814514,2,2,3,1,1,1,1,3),
+(4,'2023-01-15','2023-02-01','2023-07-31',998.400448,998.400348159965,3,1,4,1,1,1,2,3),
+(5,'2023-01-15','2023-02-01','2023-07-31',918.099146,918.099054190095,3,1,5,1,1,1,2,1),
+(6,'2023-01-15','2023-02-01','2023-07-31',938.197568,938.197474180253,4,1,6,1,1,1,1,1),
+(7,'2023-01-15','2023-02-01','2023-07-31',920.852657,920.852564914744,4,3,7,1,2,1,1,3),
+(8,'2023-01-15','2023-02-01','2023-07-31',989.686976,925.836110771228,4,3,8,1,2,1,1,3),
+(9,'2023-01-15','2023-02-01','2023-07-31',992.423368,992.423268757673,4,2,9,1,2,1,1,3),
+(10,'2023-01-15','2023-02-01','2023-07-31',993.904334,993.904234609577,1,2,10,1,1,1,1,3),
+(11,'2023-01-15','2023-02-01','2023-07-31',970.897522,970.897424910258,1,2,11,1,1,1,1,3),
+(12,'2023-01-15','2023-02-01','2023-07-31',981.378149,981.378050862195,2,2,12,1,2,1,1,2),
+(13,'2023-01-15','2023-02-01','2023-07-31',997.935493,997.935393206461,2,2,13,1,2,1,1,3),
+(14,'2023-01-15','2023-02-01','2023-07-31',936.131832,905.933940374348,2,1,14,2,2,1,1,1),
+(15,'2023-01-15','2023-02-01','2023-07-31',982.894578,982.894479710552,3,3,15,2,1,1,2,3);
+```
 
 - ESTADO SOLICITUD
 ```
