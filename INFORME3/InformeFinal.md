@@ -926,7 +926,7 @@ id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cue
 
 ## CASO 9
 ### Código de Requerimiento: R009
-### Código de Interfaz: I010, I011, I012
+### Código de Interfaz: I010, I011
 ### Imagen Interfaz: 
 ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047_1.png)
 ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048_1.png)
