@@ -746,22 +746,8 @@ los nombres de los niveles de división |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/vigentes.png)|
 
+
 | Código Interfaz | I013  |
-|----------|----------|
-|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Datos%20Empleado.png)|
-
-| Código Interfaz | I014  |
-|----------|----------|
-|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Datos%20Contrato.png)|
-
-
-| Código Interfaz | I015  |
-|----------|----------|
-|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Datos%20Pago.png)|
-
-
-
-| Código Interfaz | I016  |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados.png)|
 
