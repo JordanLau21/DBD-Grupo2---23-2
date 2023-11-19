@@ -9,8 +9,8 @@
 - Alumno:
 - Link:
 ### Modulo(s):
-- Alumno:
-- Link:
+- Alumno: Yucra Serpa, Jean Herberth
+- Link: 
 ### Modulo(s): PLanilla
 - Alumno: Calderon Perez, Anthony Alexis
 - Link: https://unipe-my.sharepoint.com/:v:/g/personal/anthony_calderon_p_uni_pe/EeIhMnLY75tLllOkAoOvBAAB37qSCiBpXWNc-gXoQ2B36Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&e=6fGCRD
