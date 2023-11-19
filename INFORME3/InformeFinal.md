@@ -1432,6 +1432,48 @@ Esta funcionalidad permitirá cumplir con los requerimientos de Pantalla Solicit
 | 2    | En el caso de la cuenta de un empleado, este al darle a la opción de solicitudes, tendrá vista del historial de todas las solcitudes que ha hecho anteriormente con acceso a los detalles y el estado de sus solicitude. Además Tendrá la opción de hacer una nueva solicitud. <br> ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/827564fb-52fd-4bef-97ad-6e3913cd6e3a) | 
 | 3  | En el caso de que un empleado desee hacer una solicitud, primero obtendrá la vista del tipo de solicitud que desee hacer, dependiendo de las opciones que elija, le saldrán 2 posibles opciones, una con la opción de ingresar un monto (Adelanto, Aumento y Reclamo) y otra sin mencionada opción (Licencia, Vacaciones, Configuración de Información). Una vez seleccionado el tipo de solciitud, el empleado deberá fundamentar las razones de su solicitud en la parte de detalles y en el caso haya escogido una de los tipos de solicitudes que incluye monto, deberá ingresar o no una cantidad dependiendo de la solicitud. Todos estos datos se aplicaran en un INSERT apenas se de click en el boton "Enviar". <br> ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cd8350c8-9c33-4a84-8078-f187bfdc14a6) ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/51a0b9e3-706b-475e-9c97-10c301819f0e) ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/033bbdec-0212-4606-be2c-bd42878956a3) | 
 
+## MÓDULO : REGISTRO DE MOVIMIENTOS PLANILLA
+**Funcionalidad primaria elegida:** Registrar todos los movimientos de planilla y conceptos de asistencia de un contrato activo de un empleado en especifico <br>
+**Sustentación:** 
+* Para poder calcular el pago neto (monto real que recibira el empleado) dentro de una boleta de un pago de cierto contrato, es necesario registrar diferentes conceptos que alteren el valor del pago bruto.
+Por ese motivo es que se creo este modulo, donde se puede registrar todos los movimientos de planilla, que van a ser usados al momento de realizar el calculo dentro de una boleta. 
+* Si quisiera registrar o saber que empleados, ya tuvieron descanso vacacional, descanso medico, entre otros. Este modulo permite, el registro y reporte de dichos conceptos asociandolo a un contrato activo de un empleado.
+<br>
+
+Esta funcionalidad permitirá cumplir con los requerimientos de Pantalla Movimientos de Planilla (Administrador) (R004), Asistencias (Administrador)(R005), con las interfaces I-004, I-005, I-006, I-007, I-008 e I-009.
+
+Dividiremos en dos actividades:
+
+### Registro de Movimiento de Planilla
+| Actividad     | Descripcion        | 
+|:-------------:|:---------------:|
+| 1 | Al darle click en la opción “Registro de Planilla”  y seleccionar "Movimientos de planilla"
+se le mostrara la pantalla I-003 donde podrá visualizar todos los empleados con contrato activo. Pero si selecciona un periodo en especifico se filtrara la lista de empleados mostrados,
+por aquellos que su contrato sigue vigente dentro de dicho periodo. Esto se dara por medio de una consulta a las tablas donde se limitara a mostrar a los empleados donde el periodo
+se encuentre entre la fecha de inicio y fin de dicho contrato.|
+| imagen 1 | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/4e801377-7e27-4c34-9a35-3daf7510e4f5)| 
+| 2 | Si le da click a "Agregar", en cualquiera de los empleados. Se le mostrara la pantalla I-003 donde visualizara los movimientos planilla registrados dentro del contrato de dicho empleado.
+En la parte inferior se mostraran los ingresos y descuentos registrados en el contrato de dicho empleado. Estos se visualizaran por dos consultas que mostraran los movimientos de planilla de 
+dicho empleado ya sea si es ingreso o descuento. Se mostrara el nombre y valor de dicho movimiento registrado. Y en la parte inferior se mostrara la suma de estas| 
+| imagen 2 | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/0120f1d2-cb7b-4baa-9943-de19613b9874)|
+| 3 | Al dar click en  "Agregar", sea de ingresos o descuentos. Se abrira la pantalla I-001, donde podra elegir concepto a registrar y valor que se le esta otorgando, el cual 
+despues aparecera en la pantalla. Tomar en cuenta que la fecha se asignara de manera automatica| 
+| imagen 3 | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/0e38498a-bc0a-4caa-8a21-d60bd80718f1)|
+
+### Registro de conceptos asistencia
+| Actividad     | Descripcion        | 
+|:-------------:|:---------------:|
+| 1 | Al darle click en la opción “Registro de Planilla”  y seleccionar "Inasistencias, Licencias, etc", se le mostrara la pantalla I-001 donde visualizara todos los empleados con contrato activo.
+Tambien puede usar la opcion de filtrar por periodo | 
+| imagen 1 |![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/640cef28-9b81-45f8-bc39-99f080a73be1) |
+| 2 | Si le da click a "Asignar", en cualquiera de los empleados. Se le mostrara la pantalla I-003 donde visualizara los conceptos asistencia registrado en dicho contrato.
+En la parte inferior se mostraran los conceptos de asistencias registrado en dicho contrato. Estos se visualizaran por una consulta a base de datos las asistencias registradas en dicho contrato. 
+Se mostrara el nombre y valor de dicho concepto registrado.| 
+| imagen 2 | |
+| 3 | Al dar click en  "Agregar", sea de ingresos o descuentos. Se abrira la pantalla I-001, donde podra elegir el concepto a registrar, las fechas de inicio y final, y si lo requiere un comentario.
+Despues de clickear en "Agregar" se agregara dicho concepto en dicha lista| 
+| imagen 3 | |
+
 
 # STACK TECNOLÓGICO
 ## Frontend
