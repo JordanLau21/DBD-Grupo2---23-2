@@ -10,7 +10,7 @@
 - Link: https://unipe-my.sharepoint.com/:v:/g/personal/roberto_flores_v_uni_pe/EUHWXCuzE9hHojJso_wCmsEBH8xcQPt-dFF-v8qeHz4QHg?e=hg8BeQ
 ### Modulo(s):
 - Alumno: Yucra Serpa, Jean Herberth
-- Link: 
+- Link: https://unipe-my.sharepoint.com/:u:/g/personal/jean_yucra_s_uni_pe/EU2vmd9sPWBNhcu7I56-T8MBL4Ho0xUm5KwDEtqbOR_PUg?e=SLBiyN
 ### Modulo(s): PLanilla
 - Alumno: Calderon Perez, Anthony Alexis
 - Link: https://unipe-my.sharepoint.com/:v:/g/personal/anthony_calderon_p_uni_pe/EeIhMnLY75tLllOkAoOvBAAB37qSCiBpXWNc-gXoQ2B36Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&e=6fGCRD
