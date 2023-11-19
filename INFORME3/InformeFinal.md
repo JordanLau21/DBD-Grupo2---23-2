@@ -785,7 +785,7 @@ los nombres de los niveles de división |
 
 | Código Interfaz | I016  |
 |----------|----------|
-|Imagen interfaz|![image]()|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados.png)|
 
 ### Código interfaz: I - 017
 ### Imagen interfaz:
