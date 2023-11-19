@@ -1252,7 +1252,29 @@ WHERE
 INSERT INTO Cargo (id_cargo, nombre_cargo, codigo_cargo, descripcion_cargo, requerimientos, estado, id_empresa)
 VALUES (16, 'Jefe RRHH', 'jefe_rrhh', 'Gestor y controller del área de recursos humanos, considerando remuneraciones, selección y gestión por procesos', 'Técnico o Ingeniería a fin (DO, RRHH), Metódico', 'Activo', 1);
 ```
-
+## CASO 17
+### Código Requerimiento : R - 0017
+### Codigo interfaz : I - 026, I - 027
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/015aa01e-dabd-4fac-bf00-7e711b7566a1)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/784ecdcf-e8df-4c70-a22a-99575bb1a739)
+### Sentecias SQL:
+### Eventos: 
+* **Mostrar dividsión de la empresa:** Se mostrara en pantalla las areas que tiene la empresa y la cantidad de empleados según el área
+```
+SELECT e.razon_social AS empresa, a.nombre_area AS area
+FROM Empresa e
+INNER JOIN Area a ON e.id_empresa = a.id_empresa
+LEFT JOIN Cargo c ON a.id_empresa = c.id_empresa
+WHERE e.razon_social = 'GRUPO ROMERO SAC'
+GROUP BY e.razon_social, a.nombre_area;
+```
+* **Crear nueva Area:** Se creará una nueva área de IDI 
+```
+INSERT INTO Area (id_area, nombre_area, descripcion_area, id_empresa)
+VALUES 
+(16, 'Investigación y Desarrollo', 'Área encargada de la investigación y creación de nuevos productos.', 9);
+```
 | Codigo Requerimiento    |    R018    | 
 |:-------------|:---------------|
 | Codigo Interfaz    |    I - 028    | 
