@@ -471,26 +471,24 @@ CREATE TABLE concepto_nomina
 # ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
 ## Codificacion de Requerimientos
 
-| <!-- -->      | <!-- -->        | 
-|:-------------:|:---------------:|
-| **Codigo**        | **R001**        | 
-| **Nombre**     |        | 
-|  **Objetivo**       |       | 
-|  **Descripción**       |       | 
+| Código | R001  |
+|----------|----------|
+|Objetivo  |Verificar la identidad del usuario mediante un correo y una contraseña ingresada de manera correcta|
+| Descripción   | El usuario ingresará su correo y contraseña respectiva para poder acceder al sistema de planillas; dicho sistema se encargará de verificar si los datos ingresados son correctos   |
+| Actor primario    | Un administrador de RRHH o otro empleado de la empresa  |
+| Actor secundario    | -  |
+| Precondiciones    | Los datos que ingrese el usuario deben estar en la base de datos del sistema  |
 
-| <!-- -->      | <!-- -->        | 
-|:-------------:|:---------------:|
-| **Codigo**        | **R002**        | 
-| **Nombre**     |        | 
-|  **Objetivo**       |       | 
-|  **Descripción**       |       | 
+| Paso     | Acción   |
+|----------|----------|
+|1|El usuario ingresa al sistema de planillas|
+|2|El usuario ingresa su respectivo correo y contraseña |
+|3|El sistema verifica si el correo ingresado está en su base de datos |
+|4|El sistema verifica si la contraseña ingresada está en su base de datos |
+|5|El sistema verifica el tipo de usuario (administrador u empleado) |
+|6|Caso terminado |
 
-| <!-- -->      | <!-- -->        | 
-|:-------------:|:---------------:|
-| **Codigo**        | **R003**        | 
-| **Nombre**     |        | 
-|  **Objetivo**       |       | 
-|  **Descripción**       |       | 
+
 
 ## Codificación de prototipos de interfaz
 
@@ -601,3 +599,15 @@ frameworks populares como Spring y Hibernate proporcionan una infraestructura
 sólida y estructurada para el desarrollo de aplicaciones empresariales.
 ## Databases
 ### PostgreeSQL 
+PostgreSQL es una base de datos muy versátil que se puede utilizar para una amplia gama de aplicaciones.   
+Es una buena opción para aplicaciones web, aplicaciones empresariales, aplicaciones de análisis de datos y más.  
+Los beneficios de usar PostgreSQL son muchos y variados. Algunos de los más importantes incluyen:
+Fiabilidad: PostgreSQL es una base de datos muy fiable y estable. Ha demostrado su capacidad para manejar grandes volúmenes de datos y cargas de trabajo intensivas.  
+Robustez de funciones: PostgreSQL tiene una amplia gama de características y funciones que lo hacen adecuado para una amplia gama de aplicaciones.  
+Rendimiento: PostgreSQL es un sistema de gestión de bases de datos muy eficiente. Puede escalar para manejar grandes volúmenes de datos y cargas de trabajo intensivas.  
+Seguridad: PostgreSQL es una base de datos segura. Soporta una amplia gama de funciones de seguridad que ayudan a proteger los datos.  
+Coste: PostgreSQL es una base de datos de código abierto, lo que significa que es gratuita de usar y distribuir.  
+## Diagrama de interracion de los componentes
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/a3f2988d-7664-427d-9cea-24418da0ea2d)
+
+# Primera Version de sus aplicacion (BONUS)
