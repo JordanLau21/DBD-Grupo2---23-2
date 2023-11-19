@@ -1279,6 +1279,21 @@ INSERT INTO Cuenta VALUES(12,'GAYMO LUIS','71902155',1);
 INSERT INTO Cuenta VALUES(13,'JORGE OSWALDO','71395354',1);
 INSERT INTO Cuenta VALUES(14,'JORGE LUIS','41473747',1);
 INSERT INTO Cuenta VALUES(15,'KAREN EDITH','42685693',1);
+INSERT INTO Cuenta VALUES(16,'Grupo Romero SAC','42685693',1);
+INSERT INTO Cuenta VALUES(17,'Construcciones del Sur SAC','42685693',1);
+INSERT INTO Cuenta VALUES(18,'Inversiones Hidalgos EIRL','42685693',1);
+INSERT INTO Cuenta VALUES(19,'Centro Médico San Lucas SRL','42685693',1);
+INSERT INTO Cuenta VALUES(20,'Innovaciones Empresariales SAC','42685693',1);
+INSERT INTO Cuenta VALUES(21,'Desarrollos Tecnológicos SAC','42685693',1);
+INSERT INTO Cuenta VALUES(22,'Ventas Express SAC','42685693',1);
+INSERT INTO Cuenta VALUES(23,'Consultoría Total SRL','42685693',1);
+INSERT INTO Cuenta VALUES(24,'Gestión Empresarial I EIRL','42685693',1);
+INSERT INTO Cuenta VALUES(25,'Desarrollos Web Innovadores SAC','42685693',1);
+INSERT INTO Cuenta VALUES(26,'Servicios Ágiles K SRL','42685693',1);
+INSERT INTO Cuenta VALUES(27,'Tecnología Innovadora L SAC','42685693',1);
+INSERT INTO Cuenta VALUES(28,'Desarrollos Software M SAC','42685693',1);
+INSERT INTO Cuenta VALUES(29,'Consultoría Avanzada N SRL','42685693',1);
+INSERT INTO Cuenta VALUES(30,'Innovación Empresarial O SAC','42685693',1);
 ```
 
 - ESTADO DE CUENTAS
@@ -1287,6 +1302,88 @@ INSERT INTO Estado_cuenta VALUES (1, 'Vigente');
 INSERT INTO Estado_cuenta VALUES (2, 'Desvinculado');
 ```
 
+- EMPRESAS
+```
+INSERT INTO Empresa (id_empresa, ruc, regimen, estado, razon_social, direccion, giro, ciudad, logo, id_cuenta)
+VALUES 
+(1, '20123456789', 'Régimen General', 'Activa', 'Grupo Romero SAC', 'Av. Principal 123', 'Tecnología', 'Lima', 'https://empresa-a.com/logo.png',16),
+(2, '20567890123', 'Régimen Especial', 'Inactiva', 'Construcciones del Sur SAC', 'Calle Secundaria 456', 'Servicios', 'Arequipa', 'https://empresa-b.com/logo.png',17),
+(3, '20987654321', 'Régimen Simplificado', 'Activa', 'Inversiones Hidalgos EIRL', 'Jr. Importante 789', 'Manufactura', 'Trujillo', 'https://empresa-c.com/logo.png',18),
+(4, '20345678901', 'Régimen General', 'Activa', 'Centro Médico San Lucas SRL', 'Av. Central 456', 'Comercial', 'Piura', 'https://empresa-d.com/logo.png',19),
+(5, '20678901234', 'Régimen Especial', 'Inactiva', 'Innovaciones Empresariales SAC', 'Calle Innovación 789', 'Consultoría', 'Cusco', 'https://empresa-e.com/logo.png',20),
+(6, '20234567890', 'Régimen Simplificado', 'Activa', 'Desarrollos Tecnológicos SAC', 'Av. Progreso 567', 'Desarrollo', 'Iquitos', 'https://empresa-f.com/logo.png',21),
+(7, '20198765432', 'Régimen General', 'Activa', 'Ventas Express SAC', 'Jr. Modelo 234', 'Ventas', 'Chiclayo', 'https://empresa-g.com/logo.png',22),
+(8, '20901234567', 'Régimen Especial', 'Inactiva', 'Consultoría Total SRL', 'Av. Demo 789', 'Servicios Financieros', 'Tacna', 'https://empresa-h.com/logo.png',23),
+(9, '20678901234', 'Régimen Simplificado', 'Activa', 'Gestión Empresarial I EIRL', 'Calle Prueba 890', 'Consultoría', 'Huancayo', 'https://empresa-i.com/logo.png',24),
+(10, '20345678901', 'Régimen General', 'Activa', 'Desarrollos Web Innovadores SAC', 'Av. Ejemplo 567', 'Desarrollo Web', 'Pucallpa', 'https://empresa-j.com/logo.png',25),
+(11, '20901234567', 'Régimen Especial', 'Inactiva', 'Servicios Ágiles K SRL', 'Jr. ABC 123', 'Servicios', 'Ayacucho', 'https://empresa-k.com/logo.png',26),
+(12, '20567890123', 'Régimen Simplificado', 'Activa', 'Tecnología Innovadora L SAC', 'Av. Innovadora 890', 'Tecnología', 'Puno', 'https://empresa-l.com/logo.png',27),
+(13, '20123456789', 'Régimen General', 'Activa', 'Desarrollos Software M SAC', 'Calle Software 456', 'Desarrollo de Software', 'Tarapoto', 'https://empresa-m.com/logo.png',28),
+(14, '20987654321', 'Régimen Especial', 'Inactiva', 'Consultoría Avanzada N SRL', 'Av. Avanzada 123', 'Consultoría', 'Ica', 'https://empresa-n.com/logo.png',29),
+(15, '20234567890', 'Régimen Simplificado', 'Activa', 'Innovación Empresarial O SAC', 'Jr. XYZ 789', 'Innovación', 'Chimbote', 'https://empresa-o.com/logo.png',30);
+```
+
+- CARGOS
+```
+INSERT INTO Cargo (id_cargo, nombre_cargo, codigo_cargo, descripcion_cargo, requerimientos, estado, id_empresa)
+VALUES 
+(1, 'Gerente de Ventas', 'GC001', 'Responsable de supervisar el equipo de ventas.', 'Experiencia en liderazgo y ventas', 'Activo', 1),
+(2, 'Analista de Marketing', 'MK002', 'Encargado de análisis de mercado y estrategias de marketing.', 'Conocimientos en análisis de datos y marketing digital', 'Activo', 1),
+(3, 'Jefe de Recursos Humanos', 'RH001', 'Gestión del personal y desarrollo de estrategias de RRHH.', 'Experiencia en gestión de equipos y conocimientos legales', 'Inactivo', 2),
+(4, 'Contador Financiero', 'CF002', 'Encargado de la contabilidad y finanzas de la empresa.', 'Conocimientos en contabilidad y manejo de herramientas financieras', 'Activo', 2),
+(5, 'Desarrollador de Software Senior', 'DS001', 'Desarrollo de software y liderazgo de equipos de programación.', 'Experiencia en desarrollo de software y habilidades técnicas avanzadas', 'Activo', 3),
+(6, 'Diseñador Gráfico', 'DG002', 'Creación de diseños gráficos para campañas de marketing.', 'Habilidades en diseño gráfico y creatividad', 'Inactivo', 3),
+(7, 'Supervisor de Producción', 'SP001', 'Supervisión y control de la producción.', 'Experiencia en producción y habilidades de liderazgo', 'Activo', 4),
+(8, 'Especialista en Ventas Online', 'VO002', 'Desarrollo de estrategias de ventas en plataformas online.', 'Conocimientos en marketing digital y ventas online', 'Inactivo', 4),
+(9, 'Asistente de Recursos Humanos', 'ARH001', 'Apoyo en labores administrativas del área de RRHH.', 'Conocimientos básicos en gestión de personal', 'Activo', 5),
+(10, 'Técnico en Soporte IT', 'TI002', 'Brindar soporte técnico en sistemas y tecnologías de la información.', 'Experiencia en atención al cliente y conocimientos en IT', 'Activo', 5),
+(11, 'Analista de Datos', 'AD001', 'Análisis de datos para la toma de decisiones.', 'Experiencia en análisis de datos y manejo de herramientas estadísticas', 'Inactivo', 6),
+(12, 'Ejecutivo de Cuentas', 'EC002', 'Gestión de cuentas y relaciones con clientes.', 'Habilidades de comunicación y ventas', 'Activo', 6),
+(13, 'Ingeniero de Software', 'IS001', 'Desarrollo y diseño de software.', 'Experiencia en desarrollo de software y conocimientos técnicos avanzados', 'Activo', 7),
+(14, 'Community Manager', 'CM002', 'Gestión de redes sociales y comunidades online.', 'Conocimientos en redes sociales y habilidades de comunicación', 'Inactivo', 7),
+(15, 'Asesor Financiero', 'AF001', 'Asesoramiento en temas financieros y de inversión.', 'Experiencia en asesoramiento financiero y conocimientos en inversiones', 'Activo', 8);
+```
+
+- AREAS
+```
+INSERT INTO Area (id_area, nombre_area, descripcion_area, id_empresa)
+VALUES 
+(1, 'Ventas', 'Área encargada de las estrategias y procesos de ventas.', 1),
+(2, 'Recursos Humanos', 'Área responsable de la gestión del personal y desarrollo de recursos humanos.', 1),
+(3, 'Finanzas', 'Área encargada de la gestión financiera y contable de la empresa.', 2),
+(4, 'Desarrollo de Software', 'Área dedicada al desarrollo de soluciones y productos de software.', 2),
+(5, 'Producción', 'Área responsable de la producción y fabricación de productos.', 3),
+(6, 'Marketing', 'Área encargada de las estrategias de marketing y publicidad.', 3),
+(7, 'Soporte Técnico', 'Área dedicada a brindar soporte técnico a clientes y sistemas.', 4),
+(8, 'Servicio al Cliente', 'Área centrada en la atención y satisfacción del cliente.', 4),
+(9, 'Logística', 'Área encargada de la gestión y optimización de la cadena de suministro.', 5),
+(10, 'Innovación', 'Área enfocada en la investigación y desarrollo de nuevas ideas y productos.', 5),
+(11, 'Calidad', 'Área responsable del control y aseguramiento de la calidad de productos y procesos.', 6),
+(12, 'Comunicación', 'Área encargada de la comunicación interna y externa de la empresa.', 6),
+(13, 'Tecnologías de la Información', 'Área dedicada a la gestión y mantenimiento de sistemas y tecnologías.', 7),
+(14, 'Diseño Gráfico', 'Área especializada en la creación y diseño gráfico.', 7),
+(15, 'Consultoría', 'Área dedicada a brindar asesoramiento y consultoría a clientes.', 8);
+```
+- REPRESENTANTE LEGAL
+```
+INSERT INTO RepresentanteLegal (id_representante, nombres, apellido_paterno, apellido_materno, dni, estado, id_empresa)
+VALUES 
+(1, 'Juan', 'González', 'Pérez', '12345678A', 'Activo', 1),
+(2, 'María', 'Rodríguez', 'López', '98765432B', 'Activo', 1),
+(3, 'Carlos', 'Martínez', 'Gómez', '54321678C', 'Inactivo', 2),
+(4, 'Ana', 'Fernández', 'Díaz', '87654321D', 'Activo', 2),
+(5, 'Pedro', 'Sánchez', 'Ruiz', '34567891E', 'Activo', 3),
+(6, 'Laura', 'García', 'Hernández', '23456789F', 'Inactivo', 3),
+(7, 'Diego', 'Pérez', 'Gómez', '78901234G', 'Activo', 4),
+(8, 'Sofía', 'Díaz', 'Martínez', '65432109H', 'Inactivo', 4),
+(9, 'Elena', 'López', 'González', '21098765I', 'Activo', 5),
+(10, 'Andrés', 'Gómez', 'Fernández', '10987654J', 'Activo', 5),
+(11, 'Luis', 'Hernández', 'Sánchez', '87654321K', 'Inactivo', 6),
+(12, 'Marta', 'Ruiz', 'Pérez', '54321098L', 'Activo', 6),
+(13, 'Pablo', 'González', 'López', '32109876M', 'Activo', 7),
+(14, 'Lucía', 'Martínez', 'Díaz', '89012345N', 'Inactivo', 7),
+(15, 'Carmen', 'Sánchez', 'Gómez', '67890123O', 'Activo', 8);
+```
 
 # FUNCIONALIDAD PRIMARIA ELEGIDA (POR MODULO)
 ## MÓDULO : AUTENTICACIÓN DE USUARIO Y OLVIDO DE CONTRASEÑA
