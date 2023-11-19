@@ -856,17 +856,25 @@ id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cue
 ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2049.png)
 ### Sentecias SQL:
 ### Eventos:
-1. Llenado de Datos del Empleado: Se mostrarán los campos con datos del usuario que se tiene que ingresar manualmente o elegir entre las opciones para los lookup tables (Régimen Pensionario, Seguro Médico, Situación de Discapacidad)
-Datos del Empleado:
+1. Llenado de Datos del Empleado: Se mostrarán los campos con datos del usuario que se tiene que ingresar manualmente o elegir entre las que cuentan con opciones (Régimen Pensionario, Seguro Médico, Situación de Discapacidad, Empresa)
+
 SELECT tipo_regimen FROM Regimen_pensionario;
 SELECT tipo_seguro FROM Seguro_medico;
 SELECT tipo_discapacidad FROM Situacion_discapacidad;
+SELECT razon_social FROM Empresa;
 
-INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,cantidad_menores_cargo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa,id_cuenta) VALUES (<>,<>,<>,<>,<>,<>,<>,<>,<>,<>,<>,<>,<>,<>,<>)
+INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,cantidad_menores_cargo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa,id_cuenta) VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>,<8>,<9>,<10>,<11>,<12>,<13>,<14>)
+Donde los valores del 1 al 14, se capturan de la interfaz de usuario, como se muestra en la imagen.
 
-3. 
 
- 
+2. Llenado de Datos del Contrato del Empleado: Se mostrarán los campos con datos del contrato del empleado que se tiene que ingresar manualmente o elegir entre las opciones de los lookup tables (Área,Cargo,Estado de Contrato, Tipo de Contrato,Tipo de Jornada)
+
+SELECT nombre_cargo FROM Cargo;
+SELECT nombre_area FROM Area;
+SELECT estado_contrato FROM Estado_contrato;
+SELECT tipo_contrato FROM Tipo_contrato;
+SELECT tipo_jornada FROM Tipo_jornada;
+
 
 
 ## CASO 10
