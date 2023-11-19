@@ -600,7 +600,7 @@ CREATE TABLE concepto_nomina
 | Precondiciones    |El empleado debe haber estado a la empresa a través de la firma de un contrato.|
 
 ### Modulo Registro de Movimientos y Asistencias
-| Código | R012  |
+| Código | R014  |
 |----------|----------|
 |Nombre  |Registrar movimiento de planilla|
 |Objetivo  |Registrar los movimientos que modifiquen el pago habitual de los empleados|
@@ -609,7 +609,7 @@ CREATE TABLE concepto_nomina
 | Actor secundario    |-|
 | Precondiciones    |Informe de los movimientos de ingresos y descuentos por parte de la empresa|
 
-| Código | R012  |
+| Código | R015  |
 |----------|----------|
 |Nombre  |Registrar licencias, inasistencias y vacaciones|
 |Objetivo  |Registrar las licencias, inasistencias y vacaciones a partir del periodo de planilla activo|
@@ -735,31 +735,31 @@ los nombres de los niveles de división |
 
 ### Modulo Registro planilla y asistencia
 
-| Código Interfaz | I001  |
+| Código Interfaz | I017  |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/f2922732-04e4-4511-9671-e6ec9c6f7428)|
-| Código Interfaz | I001  |
+| Código Interfaz | I018 |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/c5bd74eb-a33b-4336-bc63-74629cc82879)|
 
-| Código Interfaz | I001  |
+| Código Interfaz | I019  |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/5f72cdb3-f8ac-4f3a-a7b0-694cb0690038)
 |
 
-| Código Interfaz | I001  |
+| Código Interfaz | I020  |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/940378ab-3cd2-4e36-97fc-4e2398048ef0)|
 
-| Código Interfaz | I001  |
+| Código Interfaz | I021  |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/0bfa8910-a4ee-41b5-840d-1b61cfba25cd)|
 
-| Código Interfaz | I001  |
+| Código Interfaz | I022  |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/fcc7d905-811f-4b5f-86e5-7e73c010f6ea)|
 
-| Código Interfaz | I001  |
+| Código Interfaz | I023  |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/ee805bb3-fba9-4f43-9159-47c04acfc201)|
 
