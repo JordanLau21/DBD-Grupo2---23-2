@@ -1,5 +1,5 @@
 # MODELAMIENTO CONCEPTUAL
-
+s
 # MODELAMIENTO RELACIONAL 
 ![image (3)](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/5d57cebf-c501-4cef-8590-e74b2b579b6d)
 # CREACION DE TABLAS
