@@ -552,12 +552,12 @@ CREATE TABLE concepto_nomina
 
 | Código | R009  |
 |----------|----------|
-|Nombre  |Crear empleado (usuario)|
-|Objetivo  |Introducir los datos de un empleado con contrato vigente con la empresa, de manera que se cree un usuario para este.|
-| Descripción   |A través de la subida de datos del empleado, se crea un usuario que le permitirá a este poder ver su sistema de planillas.|
+|Nombre  |Registrar Empleado en Sistema|
+|Objetivo  |Introducir los datos de un empleado con contrato vigente con la empresa al sistema de planillas.|
+| Descripción   |A través de la subida de datos del empleado, este podrá visualizar sus planillas.|
 | Actor primario    |Administrador|
-| Actor secundario    |Empleados|
-| Precondiciones    |El empleado debe tener un contrato firmado con la empresa.|
+| Actor secundario    |Empleado|
+| Precondiciones    |El empleado debe tener un contrato firmado y vigente con la empresa.|
 
 
 | Código | R010  |
