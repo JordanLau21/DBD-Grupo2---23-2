@@ -567,17 +567,6 @@ CREATE TABLE concepto_nomina
 | Actor secundario    |Empleados|
 | Precondiciones    |El usuario tiene contrato vigente con la empresa.|
 
-
-| Código | R011  |
-|----------|----------|
-|Nombre  |Ver datos de empleados vigentes o actuales de la empresa.|
-|Objetivo  |Visualizar los datos de un empleado, su contrato y la forma de pago que recibe.|
-| Descripción   |Se podrá ver los datos que se ingresaron del empleado en el momento de su registro en el sistema.|
-| Actor primario    |Administrador|
-| Actor secundario    |Empleado|
-| Precondiciones    |El empleado debe estar ligado a la empresa a través de la firma de un contrato.|
-
-
 | Código | R012  |
 |----------|----------|
 |Nombre  |Ver usuarios desvinculados o inactivos|
@@ -587,15 +576,6 @@ CREATE TABLE concepto_nomina
 | Actor secundario    |Empleados|
 | Precondiciones    |El empleado no tiene contrato vigente con la empresa.|
 
-
-| Código | R013  |
-|----------|----------|
-|Nombre  |Ver datos de exempleados de la empresa.|
-|Objetivo  |Visualizar los datos de un exempleado, el contrato y la forma de pago que recibió.|
-| Descripción   |Se podrá ver los datos que se ingresaron del exempleado cuando estaba registrado en el sistema.|
-| Actor primario    |Administrador|
-| Actor secundario    |Empleado|
-| Precondiciones    |El empleado debe haber estado a la empresa a través de la firma de un contrato.|
 
 ### Modulo Administración de la Empresa
 
