@@ -663,6 +663,19 @@ WHERE usuario = <1> AND contraseña = <2>
 ```
 Donde los valores del 1 al 2 se capturarán de la interfaz de inicio de sesión según se muestran en la imagen.
 
+## CASO 2
+### Código Requerimiento : R - 002
+### Codigo interfaz : I - 002
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/31d8b522-39de-4136-b0b7-3cddb2861812)
+### Sentecias SQL:
+### Eventos: 
+* **Olvidar contraseña:** Se insertan datos en la interfaz para asi corroborar dichos datos con los datos registrados en la base de datos.
+```
+SELECT nombres, apellidos, dni FROM Empleado WHERE nombres = <1> AND apellidos = <2> AND dni = < 3 >
+```
+Donde los valores del 1 al 3 se capturarán de la interfaz de olvido de contraseña según se muestran en la imagen.
+
 # CARGA DE DATOS
 
 - ESTADO SOLICITUD
