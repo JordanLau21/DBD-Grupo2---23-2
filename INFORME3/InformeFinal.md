@@ -858,15 +858,14 @@ id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cue
 ### Eventos:
 1. Llenado de Datos del Empleado: Se mostrarán los campos con datos del usuario que se tiene que ingresar manualmente o elegir entre las que cuentan con opciones (Régimen Pensionario, Seguro Médico, Situación de Discapacidad, Empresa)
 
-- Llenado de Campos
-SELECT tipo_regimen FROM Regimen_pensionario;
+- Llenado de CamposSELECT tipo_regimen FROM Regimen_pensionario;
 SELECT tipo_seguro FROM Seguro_medico;
 SELECT tipo_discapacidad FROM Situacion_discapacidad;
 SELECT razon_social FROM Empresa;
-
+```
 INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,cantidad_menores_cargo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa,id_cuenta) VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>,<8>,<9>,<10>,<11>,<12>,<13>,<14>)
+```
 Donde los valores del 1 al 14, se capturan de la interfaz de usuario, como se muestra en la imagen.
-
 - Botón Siguiente 
 Se pasa a la siguiente pestaña, para ingresar los datos del contrato del empleado.
 
