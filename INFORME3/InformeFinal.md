@@ -872,14 +872,16 @@ Donde los valores del 1 al 14, se capturan de la interfaz de usuario, como se mu
 Se pasa a la siguiente pestaña, para ingresar los datos del contrato del empleado.
 
 2. Llenado de Datos del Contrato del Empleado: Se mostrarán los campos con datos del contrato del empleado que se tiene que ingresar manualmente o elegir entre las opciones de los lookup tables (Área,Cargo,Estado de Contrato, Tipo de Contrato,Tipo de Jornada)
-
+- Llenado de Campos
 SELECT nombre_cargo FROM Cargo;
 SELECT nombre_area FROM Area;
 SELECT estado_contrato FROM Estado_contrato;
 SELECT tipo_contrato FROM Tipo_contrato;
 SELECT tipo_jornada FROM Tipo_jornada;
 
-INSERT INTO Contrato()
+INSERT INTO Contrato(id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico,id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_frecuencia_pago,id_medio_pago) VALUES
+(<1>,<2>,<3>,<4>,<5>,<6>,<7>,1,<8>,<9>,<10>,<11>,<12>,<13>,<14>);
+El 1 que está entre <7> y <8>, es el id del estado de contrato, este represente un contrato VIGENTE, el cuál será el único estado de contrato que se permitirá a la hora de Registrar empleados en el sistema, ya una vez registrado se podrá cambiar en base a la actualidad del empleado.
 
 
 ## CASO 10
