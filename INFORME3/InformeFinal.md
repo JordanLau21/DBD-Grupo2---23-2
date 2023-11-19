@@ -582,15 +582,15 @@ CREATE TABLE concepto_nomina
 
 | Código | R011  |
 |----------|----------|
-|Nombre  |Ver usuarios vigentes o activos|
-|Objetivo  ||
-| Descripción   ||
-| Actor primario    ||
-| Actor secundario    ||
-| Precondiciones    ||
+|Nombre  |Ver usuarios desvinculados o inactivos|
+|Objetivo  |Desvincular a un empleado activo o visualizar a los empleados desvinculados.|
+| Descripción   |El administrador podrá desvincular usuarios activos, por término de contrato, además de poder visualizar los empleados desvinculados anteriormente.|
+| Actor primario    |Administrador|
+| Actor secundario    |Empleados|
+| Precondiciones    |El empleado no tiene contrato vigente con la empresa.|
 
 
-| Código | R011  |
+| Código | R012  |
 |----------|----------|
 |Nombre  |Ver usuarios vigentes o activos|
 |Objetivo  ||
