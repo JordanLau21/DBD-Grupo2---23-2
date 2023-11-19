@@ -881,7 +881,9 @@ SELECT tipo_jornada FROM Tipo_jornada;
 
 INSERT INTO Contrato(id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico,id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_frecuencia_pago,id_medio_pago) VALUES
 (<1>,<2>,<3>,<4>,<5>,<6>,<7>,1,<8>,<9>,<10>,<11>,<12>,<13>,<14>);
-El 1 que está entre <7> y <8>, es el id del estado de contrato, este represente un contrato VIGENTE, el cuál será el único estado de contrato que se permitirá a la hora de Registrar empleados en el sistema, ya una vez registrado se podrá cambiar en base a la actualidad del empleado.
+El 1 que está entre <7> y <8>, es el id del estado de contrato, este representa un estado de contrato VIGENTE, el cuál será el único estado de contrato que se permitirá a la hora de Registrar empleados en el sistema, ya una vez registrado se podrá cambiar en base a la actualidad del empleado.
+Para <13> y <14>:
+En caso de elegir como Medio de Pago(<12>) el Efectivo, se dejarán vacias esos 2 campos.
 
 
 ## CASO 10
