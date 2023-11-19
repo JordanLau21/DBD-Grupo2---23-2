@@ -1,4 +1,3 @@
-
 # MODELAMIENTO RELACIONAL 
 ![image (3)](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/5d57cebf-c501-4cef-8590-e74b2b579b6d)
 # CREACION DE TABLAS
@@ -598,28 +597,9 @@ CREATE TABLE concepto_nomina
 | Actor secundario    |Empleado|
 | Precondiciones    |El empleado debe haber estado a la empresa a través de la firma de un contrato.|
 
-### Modulo Registro de Movimientos y Asistencias
-| Código | R014  |
-|----------|----------|
-|Nombre  |Registrar movimiento de planilla|
-|Objetivo  |Registrar los movimientos que modifiquen el pago habitual de los empleados|
-| Descripción   |El administrador podrá registrar los movimientos que influyan en el pago de los empleados, como por ejemplo: horas extras, descuentos por cafetería, bonificación extraordinaria, minutos de tardanza, etc, por periodo de planilla|
-| Actor primario    |Un administrador de RRHH|
-| Actor secundario    |-|
-| Precondiciones    |Informe de los movimientos de ingresos y descuentos por parte de la empresa|
-
-| Código | R015  |
-|----------|----------|
-|Nombre  |Registrar licencias, inasistencias y vacaciones|
-|Objetivo  |Registrar las licencias, inasistencias y vacaciones a partir del periodo de planilla activo|
-| Descripción   |Se podrán registrar inasistencias, licencias y otros conceptos mas de cada empleado dentro de su periodo de planilla activo.|
-| Actor primario    |Administrador de RRHH|
-| Actor secundario    |-|
-| Precondiciones    |Informe de las licencias, inasistencias y vacaciones del empleado|
-
 ### Modulo Administración de la Empresa
 
-| Código | R0014 |
+| Código | R014 |
 |----------|----------|
 |Nombre  |Editar información de la empresa|
 |Objetivo  |Editar información de la empresa en la plataforma|
@@ -716,6 +696,24 @@ los nombres de los niveles de división |
 | Actor secundario    | -  |
 | Precondiciones    | -  |
 
+### Modulo Registro de Movimientos y Asistencias
+| Código | R024  |
+|----------|----------|
+|Nombre  |Registrar movimiento de planilla|
+|Objetivo  |Registrar los movimientos que modifiquen el pago habitual de los empleados|
+| Descripción   |El administrador podrá registrar los movimientos que influyan en el pago de los empleados, como por ejemplo: horas extras, descuentos por cafetería, bonificación extraordinaria, minutos de tardanza, etc, por periodo de planilla|
+| Actor primario    |Un administrador de RRHH|
+| Actor secundario    |-|
+| Precondiciones    |Informe de los movimientos de ingresos y descuentos por parte de la empresa|
+
+| Código | R025  |
+|----------|----------|
+|Nombre  |Registrar licencias, inasistencias y vacaciones|
+|Objetivo  |Registrar las licencias, inasistencias y vacaciones a partir del periodo de planilla activo|
+| Descripción   |Se podrán registrar inasistencias, licencias y otros conceptos mas de cada empleado dentro de su periodo de planilla activo.|
+| Actor primario    |Administrador de RRHH|
+| Actor secundario    |-|
+| Precondiciones    |Informe de las licencias, inasistencias y vacaciones del empleado|
 ## Codificación de prototipos de interfaz
 ### Modulo de Autenticacion usuario
 
@@ -786,9 +784,6 @@ los nombres de los niveles de división |
 | Código Interfaz | I016  |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados.png)|
-
-### Código interfaz: I - 017
-### Imagen interfaz:
 
 ### Modulo Registro planilla y asistencia
 
@@ -1078,43 +1073,7 @@ ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1 AND ((Emp
 ```
 El <1> será el nombre o apellido del empleado que se quiere buscar.
 
-
 ## CASO 11
-### Código de Requerimiento: 
-### Código de Interfaz: 
-### Imagen Interfaz: 
-![image]()
-### Sentecias SQL:
-### Eventos:
-
-
-
-## CASO 5
-### Código Requerimiento : R - 005
-### Codigo interfaz : I - 005
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/0c2419cd-b212-4a4b-ad4b-6db2404b5ff4)
-
-### Sentecias SQL:
-### Eventos:
-
-## CASO 5
-### Código Requerimiento : R - 005
-### Codigo interfaz : I - 005
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/1eb1b037-b250-46ea-a22f-efd9f6674668)
-### Sentecias SQL:
-### Eventos:
-
-## CASO 5
-### Código Requerimiento : R - 005
-### Codigo interfaz : I - 005
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/1eb1b037-b250-46ea-a22f-efd9f6674668)
-### Sentecias SQL:
-### Eventos:
-
-## CASO 9
 ### Código Requerimiento : R - 007
 ### Codigo interfaz : I - 006
 ### Imagen interfaz : 
@@ -1127,7 +1086,7 @@ SELECT so.id_solicitud, em.nombres, em.apellidos, so.fec_solicitud, ti.descripci
 WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
 AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 ```
-## CASO 9
+## CASO 12
 ### Código Requerimiento : R - 007
 ### Codigo interfaz : I - 006
 ### Imagen interfaz : 
@@ -1140,7 +1099,7 @@ SELECT em.dni,em.nombres,em.apellidos,car.nombre_cargo,co.fecha_inicio_laboral,c
 FROM Contrato co,Empleado em,Cargo car,Planilla pe WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo 
 AND pe.periodo = <1> AND co.fecha_inicio_laboral<=pe.fecha_inicio AND pe.fecha_fin<=co.fecha_termino_contrato; 
 ```
-## CASO 9
+## CASO 13
 ### Código Requerimiento : R - 007
 ### Codigo interfaz : I - 006
 ### Imagen interfaz : 
@@ -1165,7 +1124,7 @@ WHERE co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion AN
 ```
 DELETE FROM Movimiento_planilla mov WHERE mov.id_movimiento=<2>;
 ```
-## CASO 9
+## CASO 14
 ### Código Requerimiento : R - 007
 ### Codigo interfaz : I - 006
 ### Imagen interfaz : 
@@ -1180,7 +1139,7 @@ INSERT INTO Movimiento_planilla VALUES (<1>,CURRENT_DATE,<2>,<3>,<4>,<5>);
 ```
 UPDATE Movimiento_planilla mov SET mov.valor=<3> WHERE mov.id_movimiento=<2>;
 ```
-## CASO 9
+## CASO 15
 ### Código Requerimiento : R - 007
 ### Codigo interfaz : I - 006
 ### Imagen interfaz : 
@@ -1201,7 +1160,7 @@ co.id_tipo_operacion=ti.id_tipo_operacion AND em.id_empleado=1;
 ```
 DELETE FROM Asistencia asi WHERE asi.id_asistencia=<1>;
 ```
-## CASO 9
+## CASO 16
 ### Código Requerimiento : R - 007
 ### Codigo interfaz : I - 006
 ### Imagen interfaz : 
@@ -1216,7 +1175,7 @@ INSERT INTO Asistencia VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>);
 ```
 UPDATE Asistencia mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
 ```
-## CASO 14
+## CASO 17
 ### Código Requerimiento : R - 0014
 ### Codigo interfaz : I - 021, I - 022
 ### Imagen interfaz : 
