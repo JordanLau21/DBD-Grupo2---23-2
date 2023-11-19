@@ -500,7 +500,7 @@ CREATE TABLE concepto_nomina
 ### Imagen interfaz:
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/f534d16e-2300-4c33-9915-7ebe273bca1a)
 
-# SENTECIA SQL POR CADA PROTOTIPO
+# SENTENCIA SQL POR CADA PROTOTIPO
 ## Caso 1
 ### Código Requerimiento : R - 005
 ### Codigo interfaz : I - 021
