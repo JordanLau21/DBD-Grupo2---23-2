@@ -550,16 +550,6 @@ CREATE TABLE concepto_nomina
 | Actor secundario    | -  |
 | Precondiciones    | -  |
 
-| Paso     | Acción   |
-|----------|----------|
-|1|El usuario ingresa al sistema de planillas|
-|2|El usuario ingresa su respectivo correo y contraseña |
-|3|El sistema verifica si el correo ingresado está en su base de datos |
-|4|El sistema verifica si la contraseña ingresada está en su base de datos |
-|5|El sistema verifica el tipo de usuario (administrador u empleado) |
-|6|Caso terminado |
-
-
 | Código | R009  |
 |----------|----------|
 |Nombre  |Crear empleado (usuario)|
@@ -618,7 +608,7 @@ CREATE TABLE concepto_nomina
 
 ### Código interfaz : I - 004
 ### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/06744cac-ddc3-4582-bbb7-4ce6d4e6ed6e)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cedbba2c-b6e4-4d28-b269-7b2a81b25f96)
 
 ### Código interfaz : I - 005
 ### Imagen interfaz:
@@ -697,14 +687,41 @@ Donde los valores del 1 al 4 se capturarán de las interfaces de inicio de sesi�
 ### Código Requerimiento : R - 004
 ### Codigo interfaz : I - 004
 ### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/93b46bbe-2473-4176-bbee-5990438e8c2c)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/8ef6f6c8-3aa2-4e65-9a17-ab0490e4a21f)
 ### Sentecias SQL:
 ### Eventos: 
 * **Ver solicitudes:** Se mostrará en la pantalla todas la solicitudes pendientes y ya respondidas para que asi el administrador pueda responderla.
 ```
-SELECT em.nombres, em.apellidos, so.fec_solicitud, ti.descripcion FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+SELECT so.id_solicitud, em.nombres, em.apellidos, so.fec_solicitud, ti.descripcion FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
 WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
 AND ti.id_tipo_solicitud = so.id_tipo_solicitud
+```
+
+## CASO 5
+### Código Requerimiento : R - 005
+### Codigo interfaz : I - 005
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/1eb1b037-b250-46ea-a22f-efd9f6674668)
+### Sentecias SQL:
+### Eventos: 
+* **Boton Detalles:** Se mostrará los detalles de la solicitud hecha por el empleado el cual tendrá acceso tanto administrador como empleado, el atractivo principal de este boton es conocer los fundamentos del empleado acerca de su solicitud.
+```
+SELECT so.id_solicitud, em.nombres, em.apellidos, em.dni, so.fec_solicitud, so.hora_solicitud, ti.descripcion, so.detalles, es.descripcion
+FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
+AND ti.id_tipo_solicitud = so.id_tipo_solicitud
+```
+
+## CASO 6
+### Código Requerimiento : R - 006
+### Codigo interfaz : I - 004
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cb3c7535-2422-40b9-b160-5b1b487cace6)
+### Sentecias SQL:
+### Eventos: 
+* **Boton Estado:** El boton sirve para que el administrador pueda cambiar el estado de espera de la solicitud a Aceptado o Rechazado.
+```
+UPDATE Solicitud SET id_estado_solicitud = <1> WHERE id_estado_solicitud = 2 AND id_solicitud = <2>
 ```
 
 # CARGA DE DATOS
