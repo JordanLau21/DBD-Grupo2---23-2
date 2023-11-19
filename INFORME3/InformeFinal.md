@@ -701,8 +701,7 @@ INSERT INTO Situacion_discapacidad (id_situacion_discapacidad, tipo_discapacidad
 ```
 - Empleado
 ```
-INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,id_regimen_pensionario,
-					  id_seguro_medico,id_situacion_discapacidad,id_empresa,,id_cuenta) VALUES
+INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa,,id_cuenta) VALUES
 (1,'DANIEL','SIFUENTES GRADOS',TO_DATE('1993-05-11', 'YYYY-MM-DD'),30,964701287,'daniel.sifuentes@harlamsyo.pe',47756342,'Soltero','Masculino',2,1,1,1,1),
 (2,'EDUARDO SAUL','ESCOBEDO VILLANUEVA',TO_DATE('1979-04-18', 'YYYY-MM-DD'),44,991961400,'',40157917,'Casado','Masculino',2,2,1,1,2),
 (3,'JAPHET CHARLIE JESUS','TORRES HUARINGA',TO_DATE('1985-05-29', 'YYYY-MM-DD'),38,926270930,'',43044175,'Casado','Masculino',2,3,1,2,3),
