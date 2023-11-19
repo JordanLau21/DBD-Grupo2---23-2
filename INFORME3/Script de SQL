@@ -54,14 +54,18 @@ CREATE TABLE Tipo_jornada(
 	tipo_jornada VARCHAR(15) NOT NULL
 );
 
-CREATE TABLE Detalle_pago(
-	id_detalle_pago INTEGER PRIMARY KEY NOT NULL,
-	frecuencia_pago VARCHAR(30) NOT NULL,
-	dia_pago_mes INT NOT NULL,
-	medio_pago VARCHAR(30) NOT NULL,
-	entidad_financiera VARCHAR(30) NOT NULL,
-	cuenta NUMERIC(14) NOT NULL
+CREATE TABLE Frecuencia_pago(
+	id_frecuencia_pago INTEGER PRIMARY KEY NOT NULL,
+	frecuencia_pago VARCHAR(50) NOT NULL
 );
+
+CREATE TABLE Medio_pago(
+	id_medio_pago INTEGER PRIMARY KEY NOT NULL,
+	medio_pago VARCHAR(50) NOT NULL,
+	entidad_financiera VARCHAR(50),
+	cuenta NUMERIC
+);
+
 
 CREATE TABLE Estado_solicitud(
 	id_estado_solicitud INTEGER PRIMARY KEY NOT NULL,
