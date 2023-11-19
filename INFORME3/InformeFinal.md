@@ -669,6 +669,10 @@ CREATE TABLE concepto_nomina
 ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Pago.png)
 
 
+
+
+
+
 ### Código interfaz : I - 001
 ### Imagen interfaz:
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/1a4a3448-f46c-4251-8139-8eeef1f57d1d)
