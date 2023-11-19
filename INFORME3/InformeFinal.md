@@ -1806,7 +1806,8 @@ Esta funcionalidad permitirá cumplir con los requerimientos de Pantalla Solicit
 *Además sirve como registro de empleados y exempleados, con sus datos y detalle de pago de cada uno.<br>
 <br>
 Esta funcionalidad permitirá cumplir con los requerimientos de Pantalla Ingreso de Datos del Empleado (Administrador) (R009), Visualización de usuarios vigentes o activos (R010), visualización de usuarios desvinculados o desactivados (R012) los cuales se encuentran relacionados con las interfaces I010, I011, I012 e I013.
-Dividiremos en 3 actividades
+Dividiremos en 3 actividades:
+
 ### Registro de Empleado
 | Actividad     | Descripcion        | 
 |:-------------:|:---------------:|
