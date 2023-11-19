@@ -872,14 +872,9 @@ INSERT INTO Contrato (id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fech
 
 - ESTADO SOLICITUD
 ```
-INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
-VALUES (42579, 'EN ESPERA')
-INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
-VALUES (41258, 'ACEPTADO')
-INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
-VALUES (42546, 'DENEGADO')
-INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
-VALUES (42649, 'ACEPTADO')
+INSERT INTO Estado_solicutud VALUES (1, 'Aceptado');
+INSERT INTO Estado_solicutud VALUES (2, 'En Espera');
+INSERT INTO Estado_solicutud VALUES (3, 'Rechazado');
 ```
 
 # FUNCIONALIDAD PRIMARIA ELEGIDA (POR MODULO)
