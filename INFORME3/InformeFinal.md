@@ -962,7 +962,7 @@ En caso de elegir como Medio de Pago(<12>) el Efectivo, esos 2 campos tomarán e
 ### Código de Requerimiento: R010
 ### Código de Interfaz: I012
 ### Imagen Interfaz: 
-![image]()
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes_1.png)
 ### Sentecias SQL:
 ### Eventos:
 
