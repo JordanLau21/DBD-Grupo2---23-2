@@ -652,7 +652,23 @@ CREATE TABLE concepto_nomina
 ### Imagen interfaz:
 ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2049.png)
 
+### Código interfaz: I - 013
+### Imagen interfaz:
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes.png)
 
+### Código interfaz: I - 014
+### Imagen interfaz:
+![image]()
+
+
+### Código interfaz: I - 015
+### Imagen interfaz:
+![image]()
+
+
+### Código interfaz: I - 016
+### Imagen interfaz:
+![image]()
 
 
 ### Código interfaz : I - 001
