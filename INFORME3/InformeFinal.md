@@ -751,9 +751,7 @@ INSERT INTO Medio_pago(id_medio_pago,medio_pago,entidad_financiera,cuenta) VALUE
 ```
 - Contrato
 ```
-INSERT INTO Contrato (id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico,
-					  id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_frecuencia_pago,id_medio_pago) 
-					  VALUES 
+INSERT INTO Contrato (id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico,id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_frecuencia_pago,id_medio_pago) VALUES 
 (1,'2023-01-15','2023-02-01','2023-07-31',991.9614,991.96130080387,1,2,1,1,1,1,1,3),
 (2,'2023-01-15','2023-02-01','2023-07-31',926.27093,926.270837372916,1,2,2,1,1,1,1,3),
 (3,'2023-01-15','2023-02-01','2023-07-31',931.854954,931.854860814514,2,2,3,1,1,1,1,3),
