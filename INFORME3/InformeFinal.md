@@ -1196,6 +1196,62 @@ INSERT INTO Estado_solicitud VALUES (2, 'En Espera');
 INSERT INTO Estado_solicitud VALUES (3, 'Rechazado');
 ```
 
+- SOLICITUDES
+```
+INSERT INTO Solicitud VALUES(1,1,1,'Deseo ir a ver a mi abuela ya que se encuentra mal de salud, solo por 1 día','2010/05/14','14:45:14',null,1,1);
+INSERT INTO Solicitud VALUES(2,1,4,'Solicito unas vacaciones en el mes siguiente','2011/06/18','02:24:41',null,2,1);
+INSERT INTO Solicitud VALUES(3,3,3,'Deseo un aumento de 1000 dolares debido a mis ultimas horas extras del mes pasado','2011/08/12','16:21:24',1000,3,2);
+INSERT INTO Solicitud VALUES(4,1,5,'Solicito cambiar mi apellido ya que está mal escrito','2012/08/20','18:47:47',null,4,4);
+INSERT INTO Solicitud VALUES(5,1,1,'Solicito una licencia para asistir al matrimonio de mi hermana','2013/11/21','22:32:35',null,5,4);
+INSERT INTO Solicitud VALUES(6,1,4,'Solicito unas vaciones por temas de salud mental','2014/02/14','12:23:41',null,6,4);
+INSERT INTO Solicitud VALUES(7,3,1,'Solicito una licencia por motivos de asistir a un congreso en provincia','2015/04/13','10:50:50',null,7,2);
+INSERT INTO Solicitud VALUES(8,1,2,'No se me ha pagado el mes pasado','2015/12/17','07:41:08',null,8,2);
+INSERT INTO Solicitud VALUES(9,1,4,'Solicito vacaciones dentro de 2 meses','2015/12/10','08:14:17',null,9,2);
+INSERT INTO Solicitud VALUES(10,1,3,'Debido a mis ultimos logro en la empresa, solicito un aumento de 2000 dolares','2016/05/18','04:45:10',2000,10,2);
+INSERT INTO Solicitud VALUES(11,3,4,'Solicito vacaciones en el mes de febrero','2016,08/11','16:01:54',null,11,3);
+INSERT INTO Solicitud VALUES(12,1,6,'Solicito un adelanto por motivos de pagar la renta de mi casa','2016/09/10','15:17:41',500,12,3);
+INSERT INTO Solicitud VALUES(13,1,4,'Solicito vacaciones por motivos personales','2016/10/25','19:08:41',null,13,3);
+INSERT INTO Solicitud VALUES(14,3,1,'Solicito una licencia para asistir al día del padre en la escuela de mi hija','2018/04/28','17:05:16',null,14,3);
+INSERT INTO Solicitud VALUES(15,3,6,'Solicito un adelanto de 200 dolares para pagar la matricula de mi sobrino','2020/08/27','16:14:46',200,15,3);
+INSERT INTO Solicitud VALUES(16,1,4,'Solicito vacaciones en el mes de noviembre','2020/10/14','18:53:31',null,12,3);
+INSERT INTO Solicitud VALUES(17,1,2,'Solcito un cambio de área de trabajo','2021/05/10','11:47:15',null,10,2);
+INSERT INTO Solicitud VALUES(18,3,3,'Debido a el aumento de la pensión alimenticia de mis hijos, solicito un aumento de 1200 dolares','2022/04/12','22:42:16',1200,4,4);
+INSERT INTO Solicitud VALUES(19,1,2,'Solicito un cambio de jefe debido a que el mío me maltrata laboralmente','2023/05/14','01:41:52',null,14,3);
+INSERT INTO Solicitud VALUES(20,1,6,'Solicito un adelante de 1600 dolares por motivos de pagar pensión alimenticia de mis hijos','2023/08/16','16:14:16',1600,2,1);
+INSERT INTO solicitud VALUES (21,'No se me han pagado los 200 dolares de mi anterior jornada', '2022/08/24','14:02:45',200,1,2,1,1);
+INSERT INTO solicitud VALUES (22,'Solciito vacaciones por motivos de salud', '2021/04/10','16:32:41',null,3,4,1,1);
+INSERT INTO solicitud VALUES (23,'Solciito licencia de 2 dias para visitar a mi padrino', '2021/02/28','02:36:12',null,1,1,2,1);
+INSERT INTO solicitud VALUES (24,'Solciito aumento de 500 soles en mi sueldo', '2023/01/14','18:37:44',500,3,3,8,2);
+INSERT INTO solicitud VALUES (25,'Pido una configuración de información acerca de mi estado civil', '2022/11/26','19:14:07',null,1,5,4,4);
+INSERT INTO solicitud VALUES (26,'Solicito un adelanto de 400 dolares por motivos de que me iré de viaje el fin de semana', '2023/10/18','16:32:41',400,1,6,7,2);
+INSERT INTO solicitud VALUES (27,'Solicito un cambio de sucursal por motivos de lejanía con la empresa', '2020/10/15','10:52:11',null,1,2,5,4);
+INSERT INTO solicitud VALUES (28,'Mi hija esta mal de salud, solicito una licencia de 1 semana para cuidar de ella', '2020/12/02','17:02:19',null,1,1,5,4);
+INSERT INTO solicitud VALUES (29,'La tarde de ayer sufrí un accidente, solicito un vacaciones por recuperación', '2021/08/24','20:18:01',null,1,4,7,2);
+INSERT INTO solicitud VALUES (30,'Solici', '2022/10/20','14:12:45',null,3,4,1,1);
+INSERT INTO solicitud VALUES (31,'Me dio covid y necesito reposo, solicito licencia por enfermedad', '2020/04/17','16:22:31',null,1,1,8,2);
+INSERT INTO solicitud VALUES (32,'Solicito que se me pague mi sueldo de la jornada pasada', '2021/07/19','16:32:41',null,3,2,2,1);
+INSERT INTO solicitud VALUES (33,'Solicito un aumento de 900 dolares por motivos de reparación de civil', '2020/07/15','16:32:41',900,1,6,3,2);
+INSERT INTO solicitud VALUES (34,'Solciito vacaciones por para oqleasn', '2022/05/10','12:42:41',null,3,4,11,3);
+INSERT INTO solicitud VALUES (35,'Solciito vacaciones por motivos de salud', '2022/01/10','16:31:42',null,3,4,1,1);
+INSERT INTO solicitud VALUES (36,'No puedo seguir en esta chamba, solicito un cambio de sueldo', '2021/04/10','16:32:41',null,3,4,12,3);
+INSERT INTO solicitud VALUES (37,'No se me han pagado los 400 dolares de mi anterior jornada', '2021/11/16','18:02:35',400,1,2,15,3);
+INSERT INTO solicitud VALUES (38,'Solciito vacaciones por motivos de salud', '2023/08/10','18:39:13',null,3,4,11,3);
+INSERT INTO solicitud VALUES (39,'Solciito licencia de 4 dias para visitar a mi hijastro', '2021/02/28','02:36:12',null,3,1,5,4);
+INSERT INTO solicitud VALUES (40,'Solicito aumento de 100 soles en mi sueldo', '2020/10/04','19:38:44',500,1,3,10,2);
+INSERT INTO solicitud VALUES (41,'Pido una configuración de información acerca de mi estado civil', '2020/01/28','19:20:17',null,1,5,10,2);
+INSERT INTO solicitud VALUES (42,'Solicito un adelanto de 450 dolares por motivos de que me iré de viaje', '2023/10/18','14:32:41',450,3,6,5,4);
+INSERT INTO solicitud VALUES (43,'Solicito un cambio de sucursal por motivos de lejanía con la empresa', '2021/10/20','10:32:11',null,3,2,10,2);
+INSERT INTO solicitud VALUES (44,'Mi hijo esta mal de salud, solicito una licencia de 1 semana', '2023/10/02','17:02:19',null,1,1,2,1);
+INSERT INTO solicitud VALUES (45,'La tarde de ayer sufrí un accidente, solicito un vacaciones', '2020/11/24','20:25:01',null,1,4,1,1);
+INSERT INTO solicitud VALUES (46,'Soliciaskjnkz', '2021/02/20','18:12:45',null,3,4,1,1);
+INSERT INTO solicitud VALUES (47,'Me dio covid y necesito reposo, solicito licencia', '2020/08/18','16:22:31',null,1,1,1,1);
+INSERT INTO solicitud VALUES (48,'Solicito que se me pague mi sueldo de la jornada pasada', '2021/04/24','16:32:41',null,3,2,2,1);
+INSERT INTO solicitud VALUES (49,'Solicito un aumento de 124 dolares por motivos de reparación de civil', '2022/08/15','16:32:41',124,1,6,5,4);
+INSERT INTO solicitud VALUES (50,'Solciito vacaciones psauiyor para oqleasn', '2021/08/10','12:42:41',null,3,4,1,1);
+INSERT INTO solicitud VALUES (51,'Solciito vacaciones por motivos de salud', '2020/01/10','16:31:42',null,3,4,10,2);
+INSERT INTO solicitud VALUES (52,'Si quieren que siga en esta chamba, solicito un cambio de sueldo', '2022/10/18','16:32:41',null,3,4,1,1)
+```
+
 # FUNCIONALIDAD PRIMARIA ELEGIDA (POR MODULO)
 ## MÓDULO : AUTENTICACIÓN DE USUARIO Y OLVIDO DE CONTRASEÑA
 **Funcionalidad primaria elegida:** Gestionar el proceso de inicio de sesión para los trabajadores de la empresa registrada (empleados y administradores) <br>
