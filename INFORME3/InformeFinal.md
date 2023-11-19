@@ -724,6 +724,22 @@ AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 UPDATE Solicitud SET id_estado_solicitud = <1> WHERE id_estado_solicitud = 2 AND id_solicitud = <2>
 ```
 
+## CASO 7
+### Código Requerimiento : R - 007
+### Codigo interfaz : I - 006
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/e433215f-d373-4566-aa33-7e8741907696)
+### Sentecias SQL:
+### Eventos: 
+* **Pantalla Solicitudes (Empleados):** Se mostrará el historial de todo el registro de solicitudes anteriores del empleado junto con los actuales que se encuentran en espera.
+```
+SELECT so.id_solicitud, so.fec_solicitud, ti.descripcion, es.descripcion
+FROM Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE ti.id_tipo_solicitud = so.id_tipo_solicitud AND es.id_estado_solicitud = so.id_estado_solicitud
+AND id_empleado = <1>
+```
+El id_empleado <1> se obtiene de la base de datos donde esta registrada la cuenta del mismo empleado.
+
 # CARGA DE DATOS
 - Régimen Pensionario
 ```
