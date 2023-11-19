@@ -660,6 +660,62 @@ los nombres de los niveles de división |
 | Actor secundario    | -  |
 | Precondiciones    | Tener acceso a una cuenta. haber iniciado sesión en la plataforma, contar con los permisos necesarios y disponer de la información actualizada |
 
+
+| Código | R018  |
+|----------|----------|
+|Nombre  | Planillas|
+|Objetivo  |Visualizar todas las planillas que están registradas en la base de datos|
+| Descripción   | El administrador puede visualizar todas las planillas de los distintos periodos de trabajo  |
+| Actor primario    | Administrador de RRHH |
+| Actor secundario    | -  |
+| Precondiciones    | -  |
+
+| Código | R019  |
+|----------|----------|
+|Nombre  | Empleados en una planilla|
+|Objetivo  |Visualizar todos los empleados en una planilla en específica|
+| Descripción   | El administrador puede visualizar todos los trabajadores en una planilla, además se brindan datos adicionales sobre la planilla |
+| Actor primario    | Administrador de RRHH |
+| Actor secundario    | -  |
+| Precondiciones    | -  |
+
+| Código | R020  |
+|----------|----------|
+|Nombre  |Crear una planilla|
+|Objetivo  |Generar una nueva planilla |
+| Descripción   | Se creará una nueva planilla que servirá para realizar a los trabajadores, esta planilla está delimitada por algunos parametros como el periodo y la periodicidad, además se pueden visualizar los empleados que estarán incluidos en esta nueva planilla |
+| Actor primario    | Administrador de RRHH |
+| Actor secundario    | -  |
+| Precondiciones    | -  |
+
+
+| Código | R021  |
+|----------|----------|
+|Nombre  | Planillas pagadas|
+|Objetivo  |Visualizar las planillas que ya fueron pagadas |
+| Descripción   | El administrador puede visualizar las planillas que ya fueron pagadas, visualizando otros datos como el monto resultante que se le pago a todos los trabajadores en esa planilla |
+| Actor primario    | Administrador de RRHH |
+| Actor secundario    | -  |
+| Precondiciones    | -  |
+
+| Código | R022  |
+|----------|----------|
+|Nombre  | Boletas |
+|Objetivo | Visualizar los pagos a empleados y detalles de boleta |
+| Descripción   | El administrador puede visualizar los montos de pago a cada empleado por planilla, además puede visualizar cada una de las boletas generadas a partir de una planilla. Se muuestra tambien los detalles de cada boleta |
+| Actor primario    | Administrador de RRHH |
+| Actor secundario    | -  |
+| Precondiciones    | -  |
+
+| Código | R023  |
+|----------|----------|
+|Nombre  | Generar pago |
+|Objetivo | Generar el pago para trabajdores en planilla |
+| Descripción   | El administrador puede generar las boletas de pago por una planilla, visualizando previamente algunas variables en pantalla |
+| Actor primario    | Administrador de RRHH |
+| Actor secundario    | -  |
+| Precondiciones    | -  |
+
 ## Codificación de prototipos de interfaz
 ### Modulo de Autenticacion usuario
 
@@ -795,6 +851,39 @@ los nombres de los niveles de división |
 | Código Interfaz | I0027 |
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/6b60b026-9c40-4f48-9504-939b2ff779a8)|
+
+
+| Codigo Interfaz    |    I - 028    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planilla.png) |
+
+| Codigo Interfaz    |    I - 029    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/6f0a906384f58d77b59138e88a0e7fa806bd3db7/pnt/Detalleplanilla1.png) |
+
+| Codigo Interfaz    |    I - 030    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/generar%20planilla.png) |
+
+| Codigo Interfaz    |    I - 031    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/visualizarcolaboradoresnuevaplanilla.png) |
+
+| Codigo Interfaz    |    I - 032    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planillaspagadas.png) |
+
+| Codigo Interfaz    |    I - 033    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/detalleplanillaspagadas.png) |
+
+| Codigo Interfaz    |    I - 034    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/12ab224f3729055d81bb78c5a342c2ea6f54dd7e/pnt/detalleboleta1.png) |
+
+| Codigo Interfaz    |    I - 035    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/generarnuevasboletas.png) |
 
 
 # SENTENCIA SQL POR CADA PROTOTIPO
