@@ -1,1 +1,603 @@
+# MODELAMIENTO CONCEPTUAL
 
+# MODELAMIENTO RELACIONAL 
+
+# CREACION DE TABLAS
+### REGIMEN PENSIONARIO
+```
+CREATE TABLE Regimen_pensionario(
+	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,
+	tipo_regimen CHAR(3) NOT NULL,
+);
+```
+### SEGURO MÉDICO
+```
+CREATE TABLE Seguro_medico(
+	id_seguro_medico INTEGER PRIMARY KEY NOT NULL,
+	tipo_seguro VARCHAR(10) NOT NULL
+);
+```
+### SITUACIÓN DISCAPACITADO
+```
+CREATE TABLE Situacion_discapacidad(
+	id_situacion_discapacidad INTEGER PRIMARY KEY NOT NULL,
+	tipo_discapacidad VARCHAR(10) NOT NULL
+);
+```
+### ESTADO CONTRATO
+```
+CREATE TABLE Estado_contrato(
+	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,
+	estado_contrato VARCHAR(10) NOT NULL
+);
+```
+### TIPO CONTRATO
+```
+CREATE TABLE Tipo_contrato(
+	id_tipo_contrato INTEGER PRIMARY KEY NOT NULL,
+	tipo_contrato VARCHAR(15) NOT NULL
+);
+```
+### TIPO JORNADA
+```
+CREATE TABLE Tipo_jornada(
+	id_tipo_jornada INTEGER PRIMARY KEY NOT NULL,
+	tipo_jornada VARCHAR(15) NOT NULL
+);
+```
+### DETALLE PAGO
+```
+CREATE TABLE Detalle_pago(
+	id_detalle_pago INTEGER PRIMARY KEY NOT NULL,
+	frecuencia_pago VARCHAR(30) NOT NULL,
+	dia_pago_mes INT NOT NULL,
+	medio_pago VARCHAR(30) NOT NULL,
+	entidad_financiera VARCHAR(30) NOT NULL,
+	cuenta NUMERIC(14) NOT NULL
+);
+```
+### ESTADO SOLICITUD
+```
+CREATE TABLE Estado_solicitud(
+	id_estado_solicitud INTEGER PRIMARY KEY NOT NULL,
+	descripcion VARCHAR(15) NOT NULL,
+);
+```
+### TIPO SOLICITUD
+```
+CREATE TABLE Tipo_solicitud(
+	id_tipo_solicitud INTEGER PRIMARY KEY NOT NULL,
+	descripcion VARCHAR(50) NOT NULL,
+);
+```
+### PLANILLA
+```
+CREATE TABLE Planilla
+(
+  id_planilla INTEGER NOT NULL,
+  periodo VARCHAR(10) NOT NULL,
+  dias_laborables NUMERIC(3) not null,
+  fecha_inicio DATE not null,
+  fecha_fin DATE not null,
+  fecha_calculo date,
+  monto_emitido NUMERIC(12,5),
+  periodicidad VARCHAR(10) not null,
+  fecha_creacion date not null,
+  hora_creacion time not null,
+  PRIMARY KEY (id_planilla)
+);
+```
+### TIPO OPERACIÓN
+```
+create table tipo_operacion (
+	id_tipo_operacion INTEGER not null,
+	descripcion_operacion VARCHAR(20) not null,
+	primary key (id_tipo_operacion)
+);
+```
+### ESTADO CONCEPTO
+```
+create table estado_concepto (
+	id_estado INTEGER not null,
+	descripcion_estado VARCHAR(20) not null,
+	primary key (id_estado)
+);
+```
+### ESTADO CUENTA
+```
+CREATE TABLE Estado_cuenta(
+	id_estado_cuenta INTEGER PRIMARY KEY NOT NULL,
+	estado_cuenta VARCHAR(30) NOT NULL,
+);
+```
+### CUENTA
+```
+CREATE TABLE Cuenta(
+	id_cuenta INTEGER PRIMARY KEY NOT NULL,
+	usuario VARCHAR(50) NOT NULL,
+	contraseña VARCHAR(50) NOT NULL,
+	id_estado_cuenta INTEGER NOT NULL,
+	FOREIGN KEY (id_estado_cuenta) REFERENCES Estado_cuenta(id_estado_cuenta),
+);
+```
+### EMPRESA
+```
+CREATE TABLE Empresa(
+	id_empresa INTEGER PRIMARY KEY NOT NULL,
+	ruc INTEGER NOT NULL,
+	regimen VARCHAR(25) NOT NULL,
+	estado VARCHAR(20) NOT NULL,
+	razon_social VARCHAR(50) NOT NULL,
+	direccion VARCHAR(200) NOT NULL,
+	giro VARCHAR(50) NOT NULL,
+	ciudad VARCHAR(25) NOT NULL,
+	logo VARCHAR(200) NOT NULL
+        id_cuenta INTEGER NOT NULL,<br>
+	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)<br>
+);
+```
+### CARGO
+```
+CREATE TABLE Cargo(
+	id_cargo INTEGER PRIMARY KEY NOT NULL,
+	nombre_cargo VARCHAR(50) NOT NULL,
+	codigo_cargo VARCHAR(50) NOT NULL,
+	descripcion_cargo TEXT NOT NULL,
+	requerimientos TEXT NOT NULL,
+	estado VARCHAR(20) NOT NULL,
+	id_empresa INTEGER NOT NULL,
+	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa)
+);
+```
+### ÁREA
+```
+CREATE TABLE Area(
+    id_area INTEGER PRIMARY KEY NOT NULL,
+    nombre_area VARCHAR(50) NOT NULL,
+	descripcion_area TEXT NOT NULL,
+    id_empresa INTEGER NOT NULL,
+    FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
+);
+```
+### EMPLEADO
+```
+CREATE TABLE Empleado(
+	id_empleado INTEGER PRIMARY KEY NOT NULL,
+	nombres VARCHAR(20) NOT NULL,
+	apellidos VARCHAR(50) NOT NULL,
+	fecha_nacimiento DATE NOT NULL,
+	edad INT NOT NULL,
+	telefono NUMERIC(9) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	dni NUMERIC(8) NOT NULL,
+	estado_civil VARCHAR(15) NOT NULL,
+	sexo VARCHAR(10) NOT NULL,
+	id_regimen_pensionario INTEGER NOT NULL,
+	FOREIGN KEY (id_regimen_pensionario) REFERENCES Regimen_pensionario(id_regimen_pensionario),
+	id_seguro_medico INTEGER NOT NULL,
+	FOREIGN KEY (id_seguro_medico) REFERENCES Seguro_medico(id_seguro_medico),
+	id_situacion_discapacidad INTEGER NOT NULL,
+	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),
+	id_empresa INTEGER NOT NULL,
+	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
+	id_cuenta INTEGER NOT NULL,
+	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)
+);
+```
+### SOLICITUD
+```
+CREATE TABLE Solicitud(
+	id_solicitud INTEGER PRIMARY KEY NOT NULL,
+	detalles VARCHAR(100) NOT NULL,
+	fec_solicitud DATE NOT NULL,
+	hora_solicitud TIME WITHOUT TIME ZONE NOT NULL,
+	monto NUMERIC(5,2),
+	id_estado_solicitud INTEGER NOT NULL,
+	FOREIGN KEY (id_estado_solicitud) REFERENCES Estado_solicitud(id_estado_solicitud),
+	id_tipo_solicitud INTEGER NOT NULL,
+	FOREIGN KEY (id_tipo_solicitud) REFERENCES Tipo_solicitud(id_tipo_solicitud),
+	id_empleado INTEGER NOT NULL,
+	FOREIGN KEY (id_empleado) REFERENCES Empleado( id_empleado),
+	id_empresa INTEGER NOT NULL,
+	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
+);
+```
+### CONTRATO
+```
+CREATE TABLE Contrato(
+	id_contrato INTEGER PRIMARY KEY NOT NULL,
+	fecha_firma_contrato DATE NOT NULL,
+	fecha_inicio_laboral DATE NOT NULL,
+	fecha_termino_contrato DATE NOT NULL,
+	sueldo_base FLOAT NOT NULL,
+	liquido_teorico FLOAT NOT NULL,
+	id_area INTEGER NOT NULL,
+	FOREIGN KEY (id_area) REFERENCES Area(id_area),
+	id_cargo INTEGER NOT NULL,
+	FOREIGN KEY (id_cargo) REFERENCES Cargo(id_cargo),
+	id_empleado INTEGER NOT NULL,
+	FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado),
+	id_estado_contrato INTEGER NOT NULL,
+	FOREIGN KEY (id_estado_contrato) REFERENCES Estado_contrato(id_estado_contrato),
+	id_tipo_contrato INTEGER NOT NULL,
+	FOREIGN KEY (id_tipo_contrato) REFERENCES Tipo_contrato(id_tipo_contrato),
+	id_tipo_jornada INTEGER NOT NULL,
+	FOREIGN KEY (id_tipo_jornada) REFERENCES Tipo_jornada(id_tipo_jornada),
+	id_detalle_pago INTEGER NOT NULL,
+	FOREIGN KEY (id_detalle_pago) REFERENCES Detalle_pago(id_detalle_pago)
+);
+```
+### ASISTENCIA
+```
+CREATE TABLE Asistencia(
+	id_asistencia INTEGER PRIMARY KEY,
+	fecha_inicio DATE,
+	fecha_final DATE,
+	comentario VARCHAR(200),
+	valor NUMERIC(100),
+	id_contrato INTEGER,
+	id_nomina INTEGER,
+	id_boleta INTEGER,
+	FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
+	FOREIGN KEY (id_nomina) REFERENCES Concepto_Nomina(id_nomina),
+	FOREIGN KEY (id_boleta) REFERENCES Boleta(id_boleta)
+);
+```
+### MOVIMIENTO PLANILLA
+```
+CREATE TABLE Movimiento_planilla(
+	id_movimiento INTEGER PRIMARY KEY,
+	fecha DATE,
+	monto NUMERIC(10,2),
+	id_contrato INTEGER,
+	id_nomina INTEGER,
+	FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
+	FOREIGN KEY (id_nomina) REFERENCES Concepto_Nomina(id_nomina)
+);
+```
+### BOLETA
+```
+CREATE TABLE Boleta(
+  id_boleta INTEGER NOT NULL,
+  TotalDescuentos NUMERIC(9,2) NOT NULL,
+  TotalNeto NUMERIC(9,2) NOT NULL,
+  TotalIngresos NUMERIC(9,2) NOT NULL,
+  TotalAportes numeric(9,2) NOT NULL,
+  id_contrato INTEGER NOT NULL,
+  id_planilla INTEGER NOT NULL,
+  PRIMARY KEY (id_boleta),
+  FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
+  FOREIGN KEY (id_planilla) REFERENCES Planilla(id_planilla)
+);
+```
+### EMPRESA
+```
+CREATE TABLE Empresa(
+	id_empresa INTEGER PRIMARY KEY NOT NULL,
+	ruc VARCHAR(50) NOT NULL,
+	regimen VARCHAR(25) NOT NULL,
+	estado VARCHAR(20) NOT NULL, 
+	razon_social VARCHAR(50) NOT NULL,
+	direccion VARCHAR(200) NOT NULL,
+	giro VARCHAR(50) NOT NULL,
+	ciudad VARCHAR(25) NOT NULL,
+	logo VARCHAR(200) NOT NULL 
+);
+```
+### REPRESENTANTE LEGAL
+```
+CREATE TABLE RepresentanteLegal(
+	id_representante INTEGER PRIMARY KEY NOT NULL,
+	nombres VARCHAR(20) NOT NULL,
+	apellido_paterno VARCHAR(50) NOT NULL,
+	apellido_materno VARCHAR(50) NOT NULL,
+	dni VARCHAR(20) NOT NULL,
+	estado VARCHAR(20) NOT NULL, 
+	id_empresa INTEGER NOT NULL,
+	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
+); 
+```
+
+### RÉGIMEN PENSIONARIO
+```
+CREATE TABLE Regimen_pensionario(
+	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,
+	tipo_regimen CHAR(3) NOT NULL,
+);
+```
+### SEGURO MÉDICO
+```
+CREATE TABLE Seguro_medico(
+	id_seguro_medico INTEGER PRIMARY KEY NOT NULL,<
+	tipo_seguro VARCHAR(10) NOT NULL
+);
+```
+### SITUACIÓN DE DISCAPACIDAD
+```
+CREATE TABLE Situacion_discapacidad(
+	id_situacion_discapacidad INTEGER PRIMARY KEY NOT NULL,
+	tipo_discapacidad VARCHAR(10) NOT NULL
+);
+```
+
+### CARGO
+```
+CREATE TABLE Cargo(
+	id_cargo INTEGER PRIMARY KEY NOT NULL,
+	nombre_cargo VARCHAR(50) NOT NULL,
+	codigo_cargo VARCHAR(50) NOT NULL,
+	descripcion_cargo TEXT NOT NULL,
+	requerimientos TEXT NOT NULL,
+	estado VARCHAR(20) NOT NULL,
+	id_empresa INTEGER NOT NULL,
+	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa)
+);
+```
+### ÁREA
+```
+CREATE TABLE Area(
+    id_area INTEGER PRIMARY KEY NOT NULL,
+    nombre_area VARCHAR(50) NOT NULL,
+	descripcion_area TEXT NOT NULL,
+    id_empresa INTEGER NOT NULL,
+    FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
+);
+```
+
+### ESTADO DE CONTRATO
+```
+CREATE TABLE Estado_contrato(
+	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,
+	estado_contrato VARCHAR(10) NOT NULL 
+);
+```
+### TIPO DE CONTRATO
+```
+CREATE TABLE Tipo_contrato(
+	id_tipo_contrato INTEGER PRIMARY KEY NOT NULL,
+	tipo_contrato VARCHAR(15) NOT NULL
+);
+```
+
+### TIPO DE CONTRATO
+```
+CREATE TABLE Tipo_jornada(
+	id_tipo_jornada INTEGER PRIMARY KEY NOT NULL,
+	tipo_jornada VARCHAR(15) NOT NULL
+);
+```
+### DETALLE DE PAGO
+```
+CREATE TABLE Detalle_pago(
+	id_detalle_pago INTEGER PRIMARY KEY NOT NULL,
+	frecuencia_pago VARCHAR(30) NOT NULL,
+  	dia_pago_mes INT NOT NULL,
+	medio_pago VARCHAR(30) NOT NULL,
+	entidad_financiera VARCHAR(30) NOT NULL,
+	cuenta NUMERIC(14) NOT NULL
+);
+```
+### CONTRATO
+```
+CREATE TABLE Contrato(
+	id_contrato INTEGER PRIMARY KEY NOT NULL,
+	fecha_firma_contrato DATE NOT NULL,
+	fecha_inicio_laboral DATE NOT NULL,
+	fecha_termino_contrato DATE NOT NULL,
+	sueldo_base FLOAT NOT NULL,
+	liquido_teorico FLOAT NOT NULL,
+	id_area INTEGER NOT NULL,
+	FOREIGN KEY  (id_area) REFERENCES Area(id_area),
+	id_cargo INTEGER NOT NULL,
+	FOREIGN KEY (id_cargo) REFERENCES Cargo(id_cargo),
+	id_empleado INTEGER NOT NULL,
+	FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado),
+	id_estado_contrato INTEGER NOT NULL,
+	FOREIGN KEY (id_estado_contrato) REFERENCES Estado_contrato(id_estado_contrato),
+	id_tipo_contrato INTEGER NOT NULL,
+	FOREIGN KEY (id_tipo_contrato) REFERENCES Tipo_contrato(id_tipo_contrato),
+	id_tipo_jornada INTEGER NOT NULL,
+	FOREIGN KEY (id_tipo_jornada) REFERENCES Tipo_jornada(id_tipo_jornada),
+	id_detalle_pago INTEGER NOT NULL,
+	FOREIGN KEY (id_detalle_pago) REFERENCES Detalle_pago(id_detalle_pago)
+);
+```
+### PLANILLA
+```
+CREATE TABLE Planilla
+(
+  id_planilla NUMERIC(6) NOT NULL,
+  periodo VARCHAR(10) NOT NULL,
+  dias_laborables NUMERIC(3) not null,
+  fecha_inicio DATE not null,
+  fecha_fin DATE not null,
+  fecha_calculo date,
+  monto_emitido NUMERIC(12,5),
+  periodicidad VARCHAR(10) not null,
+  fecha_creacion date not null,
+  hora_creacion time not null,
+  PRIMARY KEY (id_planilla)
+);
+```
+### BOLETA
+```
+CREATE TABLE Boleta
+(
+  id_boleta NUMERIC(6) NOT NULL,
+  total_descuentos NUMERIC(9,2) NOT NULL,
+  total_neto NUMERIC(9,2) NOT NULL,
+  total_ingresos NUMERIC(9,2) NOT NULL,
+  total_aportes numeric(9,2) NOT NULL,
+  id_contrato numeric(6)NOT NULL,
+  id_planilla numeric(6) NOT NULL,
+  PRIMARY KEY (id_boleta),
+  FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
+  FOREIGN KEY (id_planilla) REFERENCES Planilla(id_planilla)
+);
+```
+### TIPO DE OPERACION
+```
+create table tipo_operacion 
+(
+	id_tipo_operacion VARCHAR(3) not null,
+	descripcion_operacion VARCHAR(20) not null,
+	primary key (id_tipo_operacion)
+);
+```
+
+### ESTADO DE CONCEPTO
+```
+create table estado_concepto 
+(
+	id_estado VARCHAR(3) not null,
+	descripcion_estado VARCHAR(20) not null,
+	primary key (id_estado)
+);
+```
+### CONCEPTO DE NOMINA
+```
+CREATE TABLE concepto_nomina
+(
+  id_nomina serial NOT NULL,
+  nombre_nomina VARCHAR(50) NOT NULL,
+  valor_nomina numeric(3,2) NOT NULL,
+  id_tipo_operacion varchar(6) CHECK (id_tipo_operacion IN ('TO1', 'TO2', 'TO3')),
+  id_estado varchar(6) CHECK (id_estado IN ('EC1', 'EC2') ),
+  PRIMARY KEY (id_nomina),
+  FOREIGN KEY (id_tipo_operacion) REFERENCES tipo_operacion(id_tipo_operacion),
+  FOREIGN KEY (id_estado) REFERENCES estado_concepto(id_estado)
+);
+```
+# ASIGNACIÓN DE CÓDIGOS POR REQUERIMIENTOS Y PROTOTIPOS DE INTERFACES
+## Codificacion de Requerimientos
+
+| <!-- -->      | <!-- -->        | 
+|:-------------:|:---------------:|
+| **Codigo**        | **R001**        | 
+| **Nombre**     |        | 
+|  **Objetivo**       |       | 
+|  **Descripción**       |       | 
+
+| <!-- -->      | <!-- -->        | 
+|:-------------:|:---------------:|
+| **Codigo**        | **R002**        | 
+| **Nombre**     |        | 
+|  **Objetivo**       |       | 
+|  **Descripción**       |       | 
+
+| <!-- -->      | <!-- -->        | 
+|:-------------:|:---------------:|
+| **Codigo**        | **R003**        | 
+| **Nombre**     |        | 
+|  **Objetivo**       |       | 
+|  **Descripción**       |       | 
+
+## Codificación de prototipos de interfaz
+
+### Código interfaz : I - 001
+### Imagen interfaz:
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/1a4a3448-f46c-4251-8139-8eeef1f57d1d)
+
+### Código interfaz : I - 002
+### Imagen interfaz:
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/f534d16e-2300-4c33-9915-7ebe273bca1a)
+
+# SENTECIA SQL POR CADA PROTOTIPO
+## Caso 1
+### Código Requerimiento : R - 005
+### Codigo interfaz : I - 021
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/9e1545da-ecb9-4aee-a0ff-15451ec76e8b)
+### Sentecias SQL:
+### Eventos: 
+* **Botón Registrar:** Se agregará un nuevo registro a la tabla de clientes.  
+INSERT INTO CLIENTE(DNI, NOMBRE, DIRECCION, CORREO, TELEFONO) VALUES (<1>, <2>, <3>, <4>, <5>);  
+Donde los valores del 1 al 5 se capturarán de la interfaz de usuario según se muestran en la imagen.
+
+# CARGA DE DATOS
+
+- ESTADO SOLICITUD
+```
+INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
+VALUES (42579, 'EN ESPERA')
+INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
+VALUES (41258, 'ACEPTADO')
+INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
+VALUES (42546, 'DENEGADO')
+INSERT INTO ESTADO_SOLICITUD (id_est_solicitud, descripcion_solicitud)
+VALUES (42649, 'ACEPTADO')
+```
+
+# FUNCIONALIDAD PRIMARIA ELEGIDA (POR MODULO)
+## MODULO : REGISTRO DE MOVIMIENTOS DE PLANILLA Y CONCEPTOS ASISTENCIA
+
+| Actividad     | Descripcion        | 
+|:-------------:|:---------------:|
+| 1       | **R003**        | 
+| 2    |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/0d4639f7-f270-4fb3-ace6-7f7a4a0e024f) | 
+
+# STACL TECNOLÓGICO
+## Frontend
+Para la parte del Frontend se dispone de las herramientas de HTML, CSS, Javascript, además
+utilizaremos framework de Angular y tailwind CSS.
+### ANGULAR: 
+Es un framework modular y escalable que se adapta a nuestras necesidades.  
+La importancia de usar Angular radica en su capacidad para simplificar el desarrollo de
+nuestra aplicación web sistema de matrícula. Nos proporciona un conjunto de herramientas y
+bibliotecas integradas que facilitan la creación de componentes reutilizables, el manejo del
+enrutamiento, la gestión de formularios y la comunicación con servidores, entre otros
+aspectos. Los beneficios de usar este framework son:
+- Modularidad: Angular promueve la creación de componentes independientes y
+reutilizables, lo que facilita la mantenibilidad y escalabilidad de las aplicaciones.
+- Productividad: Angular proporciona un conjunto de herramientas y características
+que agilizan el proceso de desarrollo, como la generación automática de código, la
+validación de formularios y las pruebas unitarias integradas.
+- Rendimiento: Angular utiliza técnicas de optimización, como el cambio detector,
+que minimiza la cantidad de actualizaciones innecesarias en la interfaz de usuario, lo
+que mejora el rendimiento de las aplicaciones.
+- Comunidad activa: Angular cuenta con una gran comunidad de desarrolladores, lo
+que significa que hay abundante documentación, tutoriales y recursos disponibles para
+ayudar en el aprendizaje y solución de problemas.
+### Tailwind CSS: 
+Es un framework de CSS que se enfoca en proporcionar clases utilitarias predefinidas para facilitar la construcción de interfaces de usuario. A diferencia de otros
+frameworks CSS, Tailwind CSS no impone un estilo predeterminado, sino que ofrece una
+gran cantidad de clases que se pueden combinar para diseñar y personalizar la apariencia de
+un sitio web de manera rápida y eficiente.
+Algunos beneficios de utilizar Tailwind CSS son:
+- Flexibilidad: Tailwind CSS ofrece una gran variedad de clases utilitarias que
+abarcan desde el espaciado y el tamaño de texto hasta los colores y los diseños
+flexibles. Esto permite una gran flexibilidad en el diseño de la interfaz de usuario sin
+la necesidad de escribir CSS personalizado.
+- Productividad: Al utilizar clases predefinidas, los desarrolladores pueden construir
+rápidamente interfaces de usuario sin tener que preocuparse por escribir estilos CSS
+desde cero. Esto acelera el desarrollo y reduce el tiempo de codificación.
+- Diseño consistente: Tailwind CSS promueve la consistencia en el diseño al
+proporcionar una paleta de colores y clases predefinidas. Esto ayuda a mantener una
+apariencia coherente en toda la aplicación.
+- Personalización: Aunque Tailwind CSS ofrece muchas clases utilitarias, también
+permite la personalización a través de la configuración de temas y la creación de
+clases propias. Esto permite adaptar el framework a las necesidades específicas de
+cada proyecto.
+## Backend 
+El lenguaje de programación Java es ampliamente utilizado en el desarrollo de software y
+ofrece una serie de beneficios que lo hacen atractivo para los desarrolladores y las empresas.
+A continuación, se presentan algunos de los principales beneficios de utilizar Java:
+- Orientado a objetos: Java es un lenguaje de programación orientado a objetos, lo que
+facilita el diseño y la organización de los programas. El enfoque orientado a objetos
+permite crear código modular, reutilizable y fácilmente mantenible, lo que facilita el
+desarrollo y la evolución del software a largo plazo.
+- Seguridad: La seguridad es una preocupación importante en muchas aplicaciones,
+especialmente en entornos empresariales y en Internet. Java cuenta con una serie de
+características y mecanismos de seguridad integrados que protegen contra amenazas
+como la ejecución de código malicioso y el acceso no autorizado a recursos del
+sistema. Además, Java tiene una sólida comunidad de desarrolladores y una amplia
+biblioteca estándar que proporciona herramientas para abordar la seguridad de manera
+efectiva.
+- Gran cantidad de bibliotecas y frameworks: Java cuenta con una amplia gama de
+bibliotecas y frameworks que permiten a los desarrolladores acelerar el desarrollo de
+aplicaciones. Estas bibliotecas cubren áreas como la interfaz de usuario, el acceso a
+bases de datos, el procesamiento de datos, la seguridad y muchas más. Los
+frameworks populares como Spring y Hibernate proporcionan una infraestructura
+sólida y estructurada para el desarrollo de aplicaciones empresariales.
+## Databases
+### PostgreeSQL 
