@@ -24,13 +24,7 @@ CREATE TABLE Situacion_discapacidad(
 	tipo_discapacidad VARCHAR(10) NOT NULL
 );
 ```
-### ASIGNACIÓN FAMILIAR
-```
-CREATE TABLE Asignacion_familiar(
-	id_asignacion_familiar INTEGER PRIMARY KEY NOT NULL,
-	cant_menor_cargo INT NOT NULL
-);
-```
+
 ### EMPLEADO
 ```
 CREATE TABLE Empleado(
@@ -44,6 +38,7 @@ CREATE TABLE Empleado(
 	dni NUMERIC(8) NOT NULL,
 	estado_civil VARCHAR(15) NOT NULL,
 	sexo VARCHAR(10) NOT NULL,
+	cantidad_menores_cargo INT NOT NULL,
 	id_regimen_pensionario INTEGER NOT NULL,
 	FOREIGN KEY (id_regimen_pensionario) REFERENCES Regimen_pensionario(id_regimen_pensionario),
 	id_seguro_medico INTEGER NOT NULL,
@@ -53,7 +48,9 @@ CREATE TABLE Empleado(
 	id_empresa INTEGER NOT NULL,
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa),
 	id_asignacion_familiar INTEGER NOT NULL,
-	FOREIGN KEY (id_asignacion_familiar) REFERENCES Asignacion_familiar(id_asignacion_familiar)
+	FOREIGN KEY (id_asignacion_familiar) REFERENCES Asignacion_familiar(id_asignacion_familiar),
+	id_cuenta INTEGER NOT NULL,
+	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)
 );
 ```
 ### ESTADO CONTRATO
