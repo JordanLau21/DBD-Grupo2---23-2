@@ -482,11 +482,75 @@ CREATE TABLE concepto_nomina
 
 | Código | R001  |
 |----------|----------|
+|Nombre  |Autenticación de Usuario|
 |Objetivo  |Verificar la identidad del usuario mediante un correo y una contraseña ingresada de manera correcta|
 | Descripción   | El usuario ingresará su correo y contraseña respectiva para poder acceder al sistema de planillas; dicho sistema se encargará de verificar si los datos ingresados son correctos   |
 | Actor primario    | Un administrador de RRHH o otro empleado de la empresa  |
 | Actor secundario    | -  |
 | Precondiciones    | Los datos que ingrese el usuario deben estar en la base de datos del sistema  |
+
+| Código | R002  |
+|----------|----------|
+|Nombre  |Olvido de contraseña|
+|Objetivo  |Validar veracidad de usuario para cambiar la contraseña que el usuario ha olvidado.|
+| Descripción   | El usuario ingresará sus datos personales para asi poder validar la veracidad de su persona, para que así tenga la potestad de poder cambiarla.   |
+| Actor primario    | Un administrador de RRHH u otro empleado de la empresa  |
+| Actor secundario    | -  |
+| Precondiciones    | Los datos que ingrese el usuario deben estar en la base de datos del sistema  |
+
+| Código | R003 |
+|----------|----------|
+|Nombre  |Cambiar contraseña e iniciar sesión|
+|Objetivo  |Cambiar la contraseña que el usuario ha olvidado e iniciar sesión.|
+| Descripción   | Una vez verificado la veracidad del usuario, se le enviará un mensaje de texto a su celular registrado en la base de datos (el codigo será 1234) para que asi este pueda cambiar la contraseña anterior y poder iniciar sesión en su cuenta.  |
+| Actor primario    | Un administrador de RRHH u otro empleado de la empresa  |
+| Actor secundario    | -  |
+| Precondiciones    | Los datos que ingrese el usuario deben estar en la base de datos del sistema  |
+
+| Código | R004  |
+|----------|----------|
+|Nombre  |Ver solicitudes (Administrador)|
+|Objetivo  |Verficiar todas las solicitudes que el administrador tiene pendientes de aceptar o rechazar.|
+| Descripción   | Una vez que el administrador ingrese a la parte de solicitudes, este podrá visualizar todas las solicitudes que se han hecho hasta el momento, donde tendrá acceso a verfiicar los detalles de la solicitud y tendrá la potestad de aprobar o rechazar la solicitud.   |
+| Actor primario    | Un administrador de RRHH |
+| Actor secundario    | -  |
+| Precondiciones    | Esta vista solo la puede obtener alguien con un correo de administración  |
+
+| Código | R005  |
+|----------|----------|
+|Nombre  |Detalle de Solicitud|
+|Objetivo  |Verificar la sustentación de la solicitud hecha por los empleados.|
+| Descripción   | El administrador y los empleados podrán ver los detalles de las solicitudes hechas para así, en el caso de los administradores, poder evaluarlas y darles una respuesta o, en el caso de los empleados, poder verificar los detalles de la solciitud.   |
+| Actor primario    | Un administrador de RRHH u otro empleado |
+| Actor secundario    | -  |
+| Precondiciones    | Los datos que ingrese el usuario deben estar en la base de datos del sistema  |
+
+| Código | R006  |
+|----------|----------|
+|Nombre  |Respuesta Solicitud|
+|Objetivo  |Modificar el estado de una solciitud en espera a Aceptado o Rechazado.|
+| Descripción   | Una vez pasada la solicitud por el jefe del empleado y este habiendo dado su respuesta, el administrador podrá cambiar el estado de la solicitud a Aceptado o Rechazado dependiendo de los criterios que tenga el jefe del empleado y el mismo administrador   |
+| Actor primario    | Un administrador de RRHH  |
+| Actor secundario    | Jefe del empleado solicitante |
+| Precondiciones    | Debe haber una solicitud para poder dar respuesta |
+
+| Código | R007  |
+|----------|----------|
+|Nombre  |Pantalla Solicitudes (Empleado) |
+|Objetivo  |Verificar el registro de solicitudes hechas por el empleado.|
+| Descripción   | El usuario podrá verificar el historial de sus solicitudes anteriores hechas con detalles y estado incluidos. |
+| Actor primario    | Un empleado de la empresa  |
+| Actor secundario    | -  |
+| Precondiciones    | Para ver el historial, el empleado debe haber hecho obligatoriamente una solciitud anteriormente |
+
+| Código | R008  |
+|----------|----------|
+|Nombre  |Nueva Solicitud|
+|Objetivo  |Generar una nueva solcitud.|
+| Descripción   | El usuario podrá generar una nueva solicitud en la cual dependiendo del tipo de solicitud le apareceran 2 diferentes pantallas, una con opción de ingresar un monto (Reclamo, Aumento, Adelanto) y otra sin esa opción (Licencia, Vacaciones, Configuración de Información).   |
+| Actor primario    | Un empleado de la empresa  |
+| Actor secundario    | -  |
+| Precondiciones    | -  |
 
 | Paso     | Acción   |
 |----------|----------|
