@@ -1044,7 +1044,7 @@ El <1> será el nombre o apellido del empleado que se quiere buscar.
 ### Código de Requerimiento: R012
 ### Código de Interfaz: I013
 ### Imagen Interfaz: 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados_1.png)
 ### Sentecias SQL:
 ### Eventos:
 
