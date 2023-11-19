@@ -109,7 +109,7 @@ CREATE TABLE Estado_cuenta(
 CREATE TABLE concepto_nomina(
   id_nomina INTEGER NOT NULL,
   nombre_nomina VARCHAR(50) NOT NULL,
-  valor_nomina numeric(3,2) NOT NULL,
+  valor_nomina numeric(10,2) NOT NULL,
   id_tipo_operacion INTEGER NOT NULL,
   id_estado INTEGER NOT NULL,
   PRIMARY KEY (id_nomina),
@@ -297,7 +297,7 @@ INSERT INTO Estado_cuenta VALUES (1, 'Vigente');
 INSERT INTO Estado_cuenta VALUES (2, 'Desvinculado');
 
 insert into tipo_operacion (id_tipo_operacion,descripcion_operacion) 
-values (1,'Ingreso'), (2,'Descuento'), (3,'aportes');
+values (1,'Ingreso'), (2,'Descuento'), (3,'Aportes'), (4,'Neutro');
 
 insert into estado_concepto (id_estado,descripcion_estado) 
 values (1,'Activo'), (2,'Inactivo');
@@ -328,7 +328,8 @@ VALUES
 	('22', 'Adelanto', '0', '1', '1'),
 	('23', 'OTROS DESCUENTOS', '0', '2', '1'),
 	('24', 'REINTEGRO', '0', '1', '1'),
-	('25', 'Essalud 9%', '0.09', '3', '1');
+	('25', 'Essalud 9%', '0.09', '3', '1')
+	('26', 'Sueldo minimo', '1025', '4', '1');
 	
 INSERT INTO Cuenta VALUES(1,'DANIEL','47756342',1);
 INSERT INTO Cuenta VALUES(2,'EDUARDO SAUL','40157917',1);
@@ -571,3 +572,6 @@ INSERT INTO Boleta ("id_boleta", "totalneto", "totalingresos", "totaldescuentos"
 ('398', '2709.14', '2883.08', '173.94', '687.00', '13', '195675'),
 ('399', '1979.53', '1997.37', '17.84', '928.00', '14', '195675'),
 ('400', '2865.48', '3022.6', '157.12', '753.00', '15', '195675')
+
+
+ALTER TABLE public.concepto_nomina ALTER COLUMN valor_nomina TYPE numeric(10, 2) USING valor_nomina::numeric;
