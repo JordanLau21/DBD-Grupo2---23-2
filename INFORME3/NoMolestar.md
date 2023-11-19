@@ -84,7 +84,7 @@
 
 | Codigo Interfaz    |    I - 00G    | 
 |:-------------:|:---------------:|
-| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/detalleboleta.png) |
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/12ab224f3729055d81bb78c5a342c2ea6f54dd7e/pnt/detalleboleta1.png) |
 
 | Codigo Interfaz    |    I - 00H    | 
 |:-------------:|:---------------:|
@@ -159,28 +159,54 @@ where fecha_calculo is not null and monto_emitido is not null;
 | Codigo Requerimiento    |    R00E    | 
 |:-------------|:---------------|
 | Codigo Interfaz    |    I - 00F, I - 00G    | 
-| Imagen interfaz   | ![image]() |
-
+| Imagen interfaz   I-00F  | ![image](https://github.com/nnthony/bookish-doodle/blob/6545e6397d88a3a2bbade4d4f3435bd855b81231/pnt/R-detallePlanillaPagada.png) |
+| Imagen interfaz   I-00G  | ![image](https://github.com/nnthony/bookish-doodle/blob/d2b5a087137a916cfb148ce51a930d75a2aaaf8f/pnt/R-DetallEBoleta1.png) |
 **Sentencia SQL**
 
--:
+Conteo de boletas en la planilla:
+```
+select distinct count(*)  from planilla p, empleado e,boleta b, contrato c
+where p.id_planilla = <1> and p.id_planilla=b.id_planilla and c.id_contrato=b.id_contrato and c.id_empleado=e.id_empleado;
+-- 1: id de la planilla
+```
+Visualizar datos adicionales de planilla:
+```
+select id_planilla, fecha_calculo,monto_emitido, periodo, periodicidad  from planilla where id_planilla = <1>;
+-- 1: id de la planilla
+```
+Visualizar empleados a los que se le pagó en el periodo de planilla:
+```
+select distinct e.nombres, e.apellidos, b.totalneto, b.id_boleta  from planilla p, empleado e,boleta b, contrato c
+where p.id_planilla = <1> and p.id_planilla=b.id_planilla and c.id_contrato=b.id_contrato and c.id_empleado=e.id_empleado;
+-- 1: id de la planilla
+```
+Visualizar generales de boleta:
+```
+select distinct e.nombres, e.apellidos, e.dni, b.total_neto, b.total_ingresos, b.total_descuentos, b.total_aportes, tc.tipo_contrato,c.sueldo_base 
+from planilla p, empleado e, contrato c, concepto_nomina cn, boleta b, movimiento_planilla mp,tipo_contrato tc
+where b.id_boleta = <2> and c.id_tipo_contrato=tp.id_tipo_contrato and c.id_empleado=e.id_empleado and b.id_planilla=p.id_planilla;
+-- 2: id de la boleta
+```
+Visualizar montos específicos por cada concepto:
+```
+select cn.nombre_nomina,mp.monto from movimiento_planilla mp, concepto_nomina cn, boleta b, planilla p, contrato c
+where b.id_boleta = <2> and p.fecha_inicio<mp.fecha and p.fecha_fin>=mp.fecha and b.id_planilla=p.id_planilla 
+and c.id_contrato=b.id_contrato and c.id_contrato=mp.id_contrato and mp.monto>0;
+-- 2: id de la boleta
 ```
 
-```
 
 
-
-
-| Codigo Requerimiento    |    R00    | 
+| Codigo Requerimiento    |    R00F    | 
 |:-------------|:---------------|
-| Codigo Interfaz    |    I - 00    | 
-| Imagen interfaz   | ![image]() |
+| Codigo Interfaz    |    I - 00H    | 
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/d2b5a087137a916cfb148ce51a930d75a2aaaf8f/pnt/generarnuevasboletas.png) |
 
 **Sentencia SQL**
 
--:
+Visualizar planillas que aun no han sido pagadas:
 ```
-
+select id_planilla where fecha_calculo is null and monto_emitido is null;
 ```
 
 
