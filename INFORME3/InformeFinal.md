@@ -1450,15 +1450,16 @@ Dividiremos en dos actividades:
 | 1 | Al darle click en la opción “Registro de Planilla”  y seleccionar "Movimientos de planilla"
 se le mostrara la pantalla I-003 donde podrá visualizar todos los empleados con contrato activo. Pero si selecciona un periodo en especifico se filtrara la lista de empleados mostrados,
 por aquellos que su contrato sigue vigente dentro de dicho periodo. Esto se dara por medio de una consulta a las tablas donde se limitara a mostrar a los empleados donde el periodo
-se encuentre entre la fecha de inicio y fin de dicho contrato.|
-| imagen 1 | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/4e801377-7e27-4c34-9a35-3daf7510e4f5)| 
+se encuentre entre la fecha de inicio y fin de dicho contrato.
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/4e801377-7e27-4c34-9a35-3daf7510e4f5)|
+
 | 2 | Si le da click a "Agregar", en cualquiera de los empleados. Se le mostrara la pantalla I-003 donde visualizara los movimientos planilla registrados dentro del contrato de dicho empleado.
 En la parte inferior se mostraran los ingresos y descuentos registrados en el contrato de dicho empleado. Estos se visualizaran por dos consultas que mostraran los movimientos de planilla de 
-dicho empleado ya sea si es ingreso o descuento. Se mostrara el nombre y valor de dicho movimiento registrado. Y en la parte inferior se mostrara la suma de estas| 
-| imagen 2 | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/0120f1d2-cb7b-4baa-9943-de19613b9874)|
+dicho empleado ya sea si es ingreso o descuento. Se mostrara el nombre y valor de dicho movimiento registrado. Y en la parte inferior se mostrara la suma de estas.
+ ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/0120f1d2-cb7b-4baa-9943-de19613b9874)| 
 | 3 | Al dar click en  "Agregar", sea de ingresos o descuentos. Se abrira la pantalla I-001, donde podra elegir concepto a registrar y valor que se le esta otorgando, el cual 
-despues aparecera en la pantalla. Tomar en cuenta que la fecha se asignara de manera automatica| 
-| imagen 3 | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/0e38498a-bc0a-4caa-8a21-d60bd80718f1)|
+despues aparecera en la pantalla. Tomar en cuenta que la fecha se asignara de manera automatica.
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/0e38498a-bc0a-4caa-8a21-d60bd80718f1)| 
 
 ### Registro de conceptos asistencia
 | Actividad     | Descripcion        | 
