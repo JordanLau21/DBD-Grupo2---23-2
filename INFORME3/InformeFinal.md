@@ -960,7 +960,7 @@ En caso de elegir como Medio de Pago(<12>) el Efectivo, esos 2 campos tomarán e
 
 ## CASO 10
 ### Código de Requerimiento: R010
-### Código de Interfaz: 
+### Código de Interfaz: I012
 ### Imagen Interfaz: 
 ![image]()
 ### Sentecias SQL:
