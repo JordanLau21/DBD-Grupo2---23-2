@@ -1916,7 +1916,4 @@ Robustez de funciones: PostgreSQL tiene una amplia gama de características y fu
 Rendimiento: PostgreSQL es un sistema de gestión de bases de datos muy eficiente. Puede escalar para manejar grandes volúmenes de datos y cargas de trabajo intensivas.  
 Seguridad: PostgreSQL es una base de datos segura. Soporta una amplia gama de funciones de seguridad que ayudan a proteger los datos.  
 Coste: PostgreSQL es una base de datos de código abierto, lo que significa que es gratuita de usar y distribuir.  
-## Diagrama de interracion de los componentes
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/a3f2988d-7664-427d-9cea-24418da0ea2d)
-
 # Primera Version de sus aplicacion (BONUS)
