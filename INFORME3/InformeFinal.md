@@ -919,7 +919,7 @@ UPDATE Asistencia mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
 * **Eliminar concepto registrado:** Se mostrara en pantalla los datos del empleado 
 ```
 DELETE FROM Asistencia as WHERE as.id_asistencia=<1>;
-
+```
 # CARGA DE DATOS
 - Régimen Pensionario
 ```
@@ -1043,7 +1043,7 @@ Esta funcionalidad permitirá cumplir con los requerimientos de Pantalla Solicit
 | 3  | En el caso de que un empleado desee hacer una solicitud, primero obtendrá la vista del tipo de solicitud que desee hacer, dependiendo de las opciones que elija, le saldrán 2 posibles opciones, una con la opción de ingresar un monto (Adelanto, Aumento y Reclamo) y otra sin mencionada opción (Licencia, Vacaciones, Configuración de Información). Una vez seleccionado el tipo de solciitud, el empleado deberá fundamentar las razones de su solicitud en la parte de detalles y en el caso haya escogido una de los tipos de solicitudes que incluye monto, deberá ingresar o no una cantidad dependiendo de la solicitud. Todos estos datos se aplicaran en un INSERT apenas se de click en el boton "Enviar". <br> ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cd8350c8-9c33-4a84-8078-f187bfdc14a6) ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/51a0b9e3-706b-475e-9c97-10c301819f0e) ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/033bbdec-0212-4606-be2c-bd42878956a3) | 
 
 
-# STACL TECNOLÓGICO
+# STACK TECNOLÓGICO
 ## Frontend
 Para la parte del Frontend se dispone de las herramientas de HTML, CSS, Javascript, además
 utilizaremos framework de Angular y tailwind CSS.
