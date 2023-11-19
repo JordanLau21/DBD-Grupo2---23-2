@@ -1799,6 +1799,41 @@ Esta funcionalidad permitirá cumplir con los requerimientos de Pantalla Solicit
 | 2    | En el caso de la cuenta de un empleado, este al darle a la opción de solicitudes, tendrá vista del historial de todas las solcitudes que ha hecho anteriormente con acceso a los detalles y el estado de sus solicitude. Además Tendrá la opción de hacer una nueva solicitud. <br> ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/827564fb-52fd-4bef-97ad-6e3913cd6e3a) | 
 | 3  | En el caso de que un empleado desee hacer una solicitud, primero obtendrá la vista del tipo de solicitud que desee hacer, dependiendo de las opciones que elija, le saldrán 2 posibles opciones, una con la opción de ingresar un monto (Adelanto, Aumento y Reclamo) y otra sin mencionada opción (Licencia, Vacaciones, Configuración de Información). Una vez seleccionado el tipo de solciitud, el empleado deberá fundamentar las razones de su solicitud en la parte de detalles y en el caso haya escogido una de los tipos de solicitudes que incluye monto, deberá ingresar o no una cantidad dependiendo de la solicitud. Todos estos datos se aplicaran en un INSERT apenas se de click en el boton "Enviar". <br> ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cd8350c8-9c33-4a84-8078-f187bfdc14a6) ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/51a0b9e3-706b-475e-9c97-10c301819f0e) ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/033bbdec-0212-4606-be2c-bd42878956a3) | 
 
+## MÓDULO: EMPLEADOS
+**Funcionalidad primaria elegida:** Registro de los empleados en el sistema de planillas, considerando sus datos personles y los pactados en el contrato firmado entre este y la empresa.<br>
+**Sustentación:** 
+* El pago neto se calculará para cada empleado de una empresa, es por esto que se requiere muchos tipos de datos sobre este para el cálculo de lo que percibirá, por ejemplo el tipo de seguro, el régimen pensionario, entre otros.<br>
+*Además sirve como registro de empleados y exempleados, con sus datos y detalle de pago de cada uno.<br>
+<br>
+Esta funcionalidad permitirá cumplir con los requerimientos de Pantalla Ingreso de Datos del Empleado (Administrador) (R009), Visualización de usuarios vigentes o activos (R010), visualización de usuarios desvinculados o desactivados (R012) los cuales se encuentran relacionados con las interfaces I010, I011, I012 e I013.
+Dividiremos en 3 actividades
+### Registro de Empleado
+| Actividad     | Descripcion        | 
+|:-------------:|:---------------:|
+| 1 |Dirigirse a la pestaña “Empleados”.|
+| 2 |Dar click a la casilla “Crear Empleados”.| 
+| 3 |Ingresar los datos del empleado. ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2047.png)| 
+| 4 |Dar click en "Siguiente".|
+| 5 |Ingresar los datos del contrato del empleado.  ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2048.png)|
+| 6 |Dar click en "Finalizar".|
+
+
+### Visualización de usuarios vigentes o activos
+| Actividad     | Descripcion        | 
+|:-------------:|:---------------:|
+| 1 |Dirigirse a la pestaña “Empleados”.|
+| 2 |Dar click a la casilla “Vigentes”.| 
+| 3 |Se visualizará la lista de todos los usuarios vigentes en ese momento.  ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/vigentes.png)| 
+
+
+### Visualización de usuarios desvinculado o desactivados
+| Actividad     | Descripcion        | 
+|:-------------:|:---------------:|
+| 1 |Dirigirse a la pestaña “Empleados”.|
+| 2 |Dar click a la casilla “Desvinculado”.| 
+| 3 |Se visualizará la lista de todos los usuarios desvinculados en ese momento.  ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados.png)| 
+
+
 ## MÓDULO : REGISTRO DE MOVIMIENTOS PLANILLA Y LICENCIAS, INASISTENCIAS,ETC
 **Funcionalidad primaria elegida:** Registrar todos los movimientos de planilla y conceptos de asistencia de un contrato activo de un empleado en especifico <br>
 **Sustentación:** 
