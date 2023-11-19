@@ -649,16 +649,19 @@ CREATE TABLE concepto_nomina
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/f534d16e-2300-4c33-9915-7ebe273bca1a)
 
 # SENTENCIA SQL POR CADA PROTOTIPO
-## Caso 1
-### Código Requerimiento : R - 005
-### Codigo interfaz : I - 021
+## CASO 1
+### Código Requerimiento : R - 001
+### Codigo interfaz : I - 001
 ### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/9e1545da-ecb9-4aee-a0ff-15451ec76e8b)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/e8412cf3-66de-4947-b0c4-d007af60f40f)
 ### Sentecias SQL:
 ### Eventos: 
-* **Botón Registrar:** Se agregará un nuevo registro a la tabla de clientes.  
-INSERT INTO CLIENTE(DNI, NOMBRE, DIRECCION, CORREO, TELEFONO) VALUES (<1>, <2>, <3>, <4>, <5>);  
-Donde los valores del 1 al 5 se capturarán de la interfaz de usuario según se muestran en la imagen.
+* **Autenticación de Usuario:** Se verificará la autenticidad de la persona ingresante a su cuenta.
+```
+SELECT usuario, contraseña from Cuenta
+WHERE usuario = <1> AND contraseña = <2>
+```
+Donde los valores del 1 al 2 se capturarán de la interfaz de inicio de sesión según se muestran en la imagen.
 
 # CARGA DE DATOS
 
