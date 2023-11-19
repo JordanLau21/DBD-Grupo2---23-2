@@ -767,7 +767,7 @@ los nombres de los niveles de división |
 
 | Código Interfaz | I021 |
 |----------|----------|
-|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/d7d6c0aa-c02f-4200-87cc-1d6e70440dea)|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/d1757202-270e-49ef-bcd4-faa2b7f02263)|
 
 | Código Interfaz | I022 |
 |----------|----------|
