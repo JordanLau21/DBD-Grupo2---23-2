@@ -1233,7 +1233,35 @@ VALUES ('Roberto Carlos', 'Flores', 'Velarde', '76071011', 'Activo', 1);
 ```
 DELETE FROM RepresentanteLegal WHERE id_representante = 3;
 ```
-
+## CASO 16
+### Código Requerimiento : R - 0016
+### Codigo interfaz : I - 024, I - 025
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/451e2641-3db6-48c6-bd48-702e23be3374)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/05708f15-9e98-4c52-ba29-2fa10b45d93d)
+### Sentecias SQL:
+### Eventos: 
+* **Mostrar lista de cargos:** Se mostrara en pantalla la lista de cargos registradas con anterioridad 
+```
+SELECT
+    ROW_NUMBER() OVER (ORDER BY c.id_cargo) AS "N°",
+    c.nombre_cargo AS "Descripción",
+    c.estado AS "Estado",
+    a.nombre_area AS "Área"
+FROM
+    Cargo c
+JOIN
+    Empresa e ON c.id_empresa = e.id_empresa
+JOIN
+    Area a ON c.id_empresa = a.id_empresa
+WHERE
+    e.id_empresa = 1;
+```
+* **Crear un nuevo cargo:** Se mostrara en pantalla para insertar nuevos cargos necesarios 
+```
+INSERT INTO Cargo (id_cargo, nombre_cargo, codigo_cargo, descripcion_cargo, requerimientos, estado, id_empresa)
+VALUES (16, 'Jefe RRHH', 'jefe_rrhh', 'Gestor y controller del área de recursos humanos, considerando remuneraciones, selección y gestión por procesos', 'Técnico o Ingeniería a fin (DO, RRHH), Metódico', 'Activo', 1);
+```
 
 | Codigo Requerimiento    |    R018    | 
 |:-------------|:---------------|
