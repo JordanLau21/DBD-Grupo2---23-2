@@ -852,8 +852,8 @@ id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cue
 ### Código de Requerimiento: R009
 ### Código de Interfaz: I010, I011, I012
 ### Imagen Interfaz: 
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047.png)
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048.png)
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047_1.png)
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048_1.png)
 ### Sentecias SQL:
 ### Eventos:
 1. Llenado de Datos del Empleado: Se mostrarán los campos con datos del usuario que se tiene que ingresar manualmente o elegir entre las que cuentan con opciones (Régimen Pensionario, Seguro Médico, Situación de Discapacidad, Empresa)
