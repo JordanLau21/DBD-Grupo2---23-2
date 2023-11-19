@@ -636,11 +636,11 @@ CREATE TABLE concepto_nomina
 
 ### Código interfaz: I - 011
 ### Imagen interfaz:
-![image]()
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048.png)
 
 ### Código interfaz: I - 012
 ### Imagen interfaz:
-![image]()
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2049.png)
 
 
 
