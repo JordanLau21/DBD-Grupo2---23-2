@@ -161,6 +161,7 @@ where fecha_calculo is not null and monto_emitido is not null;
 | Codigo Interfaz    |    I - 00F, I - 00G    | 
 | Imagen interfaz   I-00F  | ![image](https://github.com/nnthony/bookish-doodle/blob/6545e6397d88a3a2bbade4d4f3435bd855b81231/pnt/R-detallePlanillaPagada.png) |
 | Imagen interfaz   I-00G  | ![image](https://github.com/nnthony/bookish-doodle/blob/d2b5a087137a916cfb148ce51a930d75a2aaaf8f/pnt/R-DetallEBoleta1.png) |
+
 **Sentencia SQL**
 
 Conteo de boletas en la planilla:
