@@ -965,6 +965,12 @@ En caso de elegir como Medio de Pago(<12>) el Efectivo, esos 2 campos tomarán e
 ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes_1.png)
 ### Sentecias SQL:
 ### Eventos:
+1. Carga de Página: Se llenará la lista de empleados vigentes:
+
+```
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos, FROM Empleado INNER JOIN Cuenta 
+ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1;
+```
 
 
 ## CASO 11
