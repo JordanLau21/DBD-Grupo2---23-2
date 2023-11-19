@@ -618,6 +618,47 @@ CREATE TABLE concepto_nomina
 | Actor secundario    |-|
 | Precondiciones    |Informe de las licencias, inasistencias y vacaciones del empleado|
 
+### Modulo Administración de la Empresa
+
+| Código | R0014 |
+|----------|----------|
+|Nombre  |Editar información de la empresa|
+|Objetivo  |Editar información de la empresa en la plataforma|
+| Descripción   | Este caso de uso permite al personal de Recursos Humanos (RRHH) editar y actualizar la información de la empresa en la plataforma. La edición de información incluye datos generales, bancos, Régimen y representantes legales de la empresa   |
+| Actor primario    | Administrador de R.R. H.H  |
+| Actor secundario    | -  |
+| Precondiciones    | Acceso a la plataforma con credenciales de usuario válidas, contar con permisos específicos para acceder y visualizar el organigrama de la empresa  |
+
+| Código | R0015 |
+|----------|----------|
+|Nombre  |Editar las Variables de la Empresa|
+|Objetivo  |Modificar las variables de la empresa|
+| Descripción   | Este procedimiento permite a los administradores realizar ajustes en las variables de sus razones sociales, como EPS, Vida Ley, SCTR Salud, SCTR Pensión, Porcentaje de vida Ley, Porcentaje SCTR Salud, Porcentaje de SCTR Pensión y otros campos relevantes, de acuerdo con la ley del gobierno peruano |
+| Actor primario    | Administrador de R.R. H.H  |
+| Actor secundario    | -  |
+| Precondiciones    | Tener acceso a una cuenta. haber iniciado sesión en la plataforma, contar con los permisos necesarios y disponer de la información actualizada |
+
+### Modulo Organización
+
+| Código | R0016 |
+|----------|----------|
+|Nombre  |Crear nuevo cargo|
+|Objetivo  |Facilitar el proceso de creación y gestión de cargos en la plataforma|
+| Descripción   | Este procedimiento tiene como finalidad explicar de manera detallada cómo crear cargos en la plataforma, los usuarios 
+ obtendrán información sobre el proceso de creación, así como la utilización de opciones para gestionar cargos de manera eficiente, se aborda la creación individual |
+| Actor primario    | Administrador de R.R. H.H  |
+| Actor secundario    | -  |
+| Precondiciones    | Tener acceso a una cuenta. haber iniciado sesión en la plataforma, contar con los permisos necesarios y disponer de la información actualizada, conocimiento de la estructura organizativa |
+
+| Código | R0017 |
+|----------|----------|
+|Nombre  |Crear nueva área|
+|Objetivo  |Facilitar la creación de áreas en la plataforma, para establecer una estructura organizacional eficiente|
+| Descripción   | Este procedimiento proporciona una guía detallada para la creación de áreas en la plataforma, permitiendo a los usuarios configurar una estructura organizacional precisa y efectiva. Se aborda la creación individual, incluyendo la personalización de
+los nombres de los niveles de división |
+| Actor primario    | Administrador de R.R. H.H  |
+| Actor secundario    | -  |
+| Precondiciones    | Tener acceso a una cuenta. haber iniciado sesión en la plataforma, contar con los permisos necesarios y disponer de la información actualizada |
 
 ## Codificación de prototipos de interfaz
 ### Modulo de Autenticacion usuario
