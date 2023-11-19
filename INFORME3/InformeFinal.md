@@ -847,6 +847,28 @@ INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, <4>, <5> , null , 2 , <
 id_empleado <7>: Se obtiene de la base de datos en la cual esta registrada la cuenta. <br>
 id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cuenta.
 
+## CASO 9
+### Código de Requerimiento: R009
+### Código de Interfaz: I010, I011, I012
+### Imagen Interfaz: 
+![image]()
+
+
+
+## CASO 10
+### Código de Requerimiento: R010
+### Código de Interfaz: 
+### Imagen Interfaz: 
+![image]()
+
+
+## CASO 11
+### Código de Requerimiento: 
+### Código de Interfaz: 
+### Imagen Interfaz: 
+![image]()
+
+
 
 ## CASO 5
 ### Código Requerimiento : R - 005
