@@ -693,6 +693,20 @@ WHERE usuario = <1> AND contraseña = <3>
 ```
 Donde los valores del 1 al 4 se capturarán de las interfaces de inicio de sesión e ingresar nueva contraseña según se muestran en la imagen.
 
+## CASO 4
+### Código Requerimiento : R - 004
+### Codigo interfaz : I - 004
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/93b46bbe-2473-4176-bbee-5990438e8c2c)
+### Sentecias SQL:
+### Eventos: 
+* **Ver solicitudes:** Se mostrará en la pantalla todas la solicitudes pendientes y ya respondidas para que asi el administrador pueda responderla.
+```
+SELECT em.nombres, em.apellidos, so.fec_solicitud, ti.descripcion FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
+AND ti.id_tipo_solicitud = so.id_tipo_solicitud
+```
+
 # CARGA DE DATOS
 - Régimen Pensionario
 ```
