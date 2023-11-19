@@ -570,6 +570,37 @@ CREATE TABLE concepto_nomina
 | Precondiciones    |El empleado debe tener un contrato firmado con la empresa.|
 
 
+| Código | R010  |
+|----------|----------|
+|Nombre  |Ver usuarios vigentes o activos|
+|Objetivo  |Visualizar los usuarios activos en el sistema de planillas.|
+| Descripción   |El administrador podrá visualizar los usuarios cuyo estado es activo en el momento, es decir, los empleados que tienen contrato vigente con la empresa.|
+| Actor primario    |Administrador|
+| Actor secundario    |Empleados|
+| Precondiciones    |El usuario tiene contrato vigente con la empresa.|
+
+
+| Código | R011  |
+|----------|----------|
+|Nombre  |Ver usuarios vigentes o activos|
+|Objetivo  ||
+| Descripción   ||
+| Actor primario    ||
+| Actor secundario    ||
+| Precondiciones    ||
+
+
+| Código | R011  |
+|----------|----------|
+|Nombre  |Ver usuarios vigentes o activos|
+|Objetivo  ||
+| Descripción   ||
+| Actor primario    ||
+| Actor secundario    ||
+| Precondiciones    ||
+
+
+
 
 ## Codificación de prototipos de interfaz
 
