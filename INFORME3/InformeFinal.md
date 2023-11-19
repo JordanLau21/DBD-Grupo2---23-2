@@ -926,11 +926,12 @@ id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cue
 1. Llenado de Datos del Empleado: Se mostrarán los campos con datos del usuario que se tiene que ingresar manualmente o elegir entre las que cuentan con opciones (Régimen Pensionario, Seguro Médico, Situación de Discapacidad, Empresa)
 
 - Llenado de Campos
+```
 SELECT tipo_regimen FROM Regimen_pensionario;
 SELECT tipo_seguro FROM Seguro_medico;
 SELECT tipo_discapacidad FROM Situacion_discapacidad;
 SELECT razon_social FROM Empresa;
-```
+
 INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,cantidad_menores_cargo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa,id_cuenta) VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>,<8>,<9>,<10>,<11>,<12>,<13>,<14>)
 ```
 Donde los valores del 1 al 14, se capturan de la interfaz de usuario, como se muestra en la imagen.
@@ -939,6 +940,7 @@ Se pasa a la siguiente pestaña, para ingresar los datos del contrato del emplea
 
 2. Llenado de Datos del Contrato del Empleado: Se mostrarán los campos con datos del contrato del empleado que se tiene que ingresar manualmente o elegir entre las opciones de los lookup tables (Área,Cargo,Estado de Contrato, Tipo de Contrato,Tipo de Jornada)
 - Llenado de Campos
+```
 SELECT nombre_cargo FROM Cargo;
 SELECT nombre_area FROM Area;
 SELECT estado_contrato FROM Estado_contrato;
@@ -947,6 +949,7 @@ SELECT tipo_jornada FROM Tipo_jornada;
 
 INSERT INTO Contrato(id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico,id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_frecuencia_pago,id_medio_pago) VALUES
 (<1>,<2>,<3>,<4>,<5>,<6>,<7>,1,<8>,<9>,<10>,<11>,<12>,<13>,<14>);
+```
 El 1 que está entre <7> y <8>, es el id del estado de contrato, este representa un estado de contrato VIGENTE, el cuál será el único estado de contrato que se permitirá a la hora de Registrar empleados en el sistema, ya una vez registrado se podrá cambiar en base a la actualidad del empleado.
 Para <13> y <14>:
 En caso de elegir como Medio de Pago(<12>) el Efectivo, esos 2 campos tomarán el valor de NULL.
