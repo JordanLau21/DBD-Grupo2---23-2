@@ -658,17 +658,15 @@ CREATE TABLE concepto_nomina
 
 ### Código interfaz: I - 014
 ### Imagen interfaz:
-![image]()
-
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Empleado.png)
 
 ### Código interfaz: I - 015
 ### Imagen interfaz:
-![image]()
-
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Contrato.png)
 
 ### Código interfaz: I - 016
 ### Imagen interfaz:
-![image]()
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Pago.png)
 
 
 ### Código interfaz : I - 001
