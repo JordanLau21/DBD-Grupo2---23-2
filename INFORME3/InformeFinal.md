@@ -1039,6 +1039,18 @@ ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1 AND ((Emp
 ```
 El <1> será el nombre o apellido del empleado que se quiere buscar.
 
+
+## CASO 10
+### Código de Requerimiento: R012
+### Código de Interfaz: I013
+### Imagen Interfaz: 
+![image]()
+### Sentecias SQL:
+### Eventos:
+
+
+
+
 ## CASO 11
 ### Código Requerimiento : R - 007
 ### Codigo interfaz : I - 006
