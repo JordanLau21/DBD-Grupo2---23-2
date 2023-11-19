@@ -1455,8 +1455,9 @@ Dividiremos en dos actividades:
 | Actividad     | Descripcion        | 
 |:-------------:|:---------------:|
 | 1 | Al darle click en la opción “Registro de Planilla”  y seleccionar "Inasistencias, Licencias, etc", se le mostrara la pantalla I-001 donde visualizara todos los empleados con contrato activo. Tambien puede usar la opcion de filtrar por periodo. ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/640cef28-9b81-45f8-bc39-99f080a73be1) | 
-| 2 | Si le da click a "Asignar", en cualquiera de los empleados. Se le mostrara la pantalla I-003 donde visualizara los conceptos asistencia registrado en dicho contrato. En la parte inferior se mostraran los conceptos de asistencias registrado en dicho contrato. Estos se visualizaran por una consulta a base de datos las asistencias registradas en dicho contrato.  Se mostrara el nombre y valor de dicho concepto registrado.| 
-| 3 | Al dar click en  "Agregar", sea de ingresos o descuentos. Se abrira la pantalla I-001, donde podra elegir el concepto a registrar, las fechas de inicio y final, y si lo requiere un comentario. Despues de clickear en "Agregar" se agregara dicho concepto en dicha lista| 
+| 2 | Si le da click a "Asignar", en cualquiera de los empleados. Se le mostrara la pantalla I-003 donde visualizara los conceptos asistencia registrado en dicho contrato. En la parte inferior se mostraran los conceptos de asistencias registrado en dicho contrato. Estos se visualizaran por una consulta a base de datos las asistencias registradas en dicho contrato.  Se mostrara el nombre y valor de dicho concepto registrado. [image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/413bd909-28ac-45a3-8ba7-616e9d43bce0)| 
+| 3 | Al dar click en  "Agregar", sea de ingresos o descuentos. Se abrira la pantalla I-001, donde podra elegir el concepto a registrar, las fechas de inicio y final, y si lo requiere un comentario. Despues de clickear en "Agregar" se agregara dicho concepto en dicha lista. ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/b08e9022-a543-4790-8d7f-6758a58742ef)
+| 
 
 
 # STACK TECNOLÓGICO
