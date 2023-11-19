@@ -925,7 +925,8 @@ id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cue
 ### Eventos:
 1. Llenado de Datos del Empleado: Se mostrarán los campos con datos del usuario que se tiene que ingresar manualmente o elegir entre las que cuentan con opciones (Régimen Pensionario, Seguro Médico, Situación de Discapacidad, Empresa)
 
-- Llenado de CamposSELECT tipo_regimen FROM Regimen_pensionario;
+- Llenado de Campos
+SELECT tipo_regimen FROM Regimen_pensionario;
 SELECT tipo_seguro FROM Seguro_medico;
 SELECT tipo_discapacidad FROM Situacion_discapacidad;
 SELECT razon_social FROM Empresa;
