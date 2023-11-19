@@ -1,5 +1,5 @@
 # Videos Individuales
-### Modulo(s):2
+### Modulo(s): Logeo y Solicitudes :v
 - Alumno:Laureano Hidalgo, Jordan Cesar
 - Link:
 ### Modulo(s):
@@ -11,6 +11,6 @@
 ### Modulo(s):
 - Alumno:
 - Link:
-### Modulo(s):
+### Modulo(s): PLanilla
 - Alumno: Calderon Perez, Anthony Alexis
 - Link:
