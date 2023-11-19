@@ -5,9 +5,9 @@
 ### Modulo(s):
 - Alumno:
 - Link:
-### Modulo(s):
-- Alumno:
-- Link:
+### Modulo(s): Administración de Empleados y Organización
+- Alumno: Flores Velarde Roberto Carlos
+- Link: https://unipe-my.sharepoint.com/:v:/g/personal/roberto_flores_v_uni_pe/EUHWXCuzE9hHojJso_wCmsEBH8xcQPt-dFF-v8qeHz4QHg?e=hg8BeQ
 ### Modulo(s):
 - Alumno: Yucra Serpa, Jean Herberth
 - Link: 
