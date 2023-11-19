@@ -1087,7 +1087,7 @@ AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 ```
 SELECT em.dni,em.nombres,em.apellidos,car.nombre_cargo,co.fecha_inicio_laboral,co.fecha_termino_contrato 
 FROM Contrato co,Empleado em,Cargo car,Planilla pe WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo 
-AND pe.periodo = <1> AND co.fecha_inicio_laboral<=pe.fecha_inicio AND pe.fecha_fin<=co.fecha_termino_contrato; 
+AND pe.periodo=<1> AND co.fecha_inicio_laboral<=pe.fecha_inicio AND pe.fecha_fin<=co.fecha_termino_contrato; 
 ```
 ## CASO 13
 ### Código Requerimiento : R - 007
@@ -1098,19 +1098,21 @@ AND pe.periodo = <1> AND co.fecha_inicio_laboral<=pe.fecha_inicio AND pe.fecha_f
 ### Eventos: 
 * **Mostrar datos de empleado:** Se mostrara en pantalla los datos del empleado 
 ```
-SELECT em.dni,em.nombres ,em.apellidos FROM Empleado em WHERE em.id_empleado=<1>;
+SELECT em.dni,em.nombres, em.apellidos FROM Empleado em, Contrato con WHERE em.id_empleado=con.id_contrato AND con.id_contrato=<1>;
 ```
 * **Mostrar listado de ingresos:** Se mostrara en el lado izquierdo el listado de ingresos
 ```
-SELECT co.nombre_nomina, mo.monto FROM Empleado em,Concepto_nomina co, Movimiento_planilla mo, Tipo_operacion ti 
-WHERE co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion AND ti.id_tipo_operacion=1 AND em.id_empleado=<1>;
+SELECT co.nombre_nomina, mo.monto FROM Contrato con,Concepto_nomina co, Movimiento_planilla mo, Tipo_operacion ti 
+WHERE con.id_contrato=mo.id_contrato AND co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion 
+AND ti.id_tipo_operacion=1 AND con.id_contrato=<1>;
 ```
-* **Mostrar listado de descuentos:** Se mostrara en pantalla los datos del empleado 
+* **Mostrar listado de descuentos:** Se mostrara en el lado derecho el listado de descuentos
 ```
-SELECT co.nombre_nomina, mo.monto FROM Empleado em,Concepto_nomina co, Movimiento_planilla mo, tipo_operacion ti 
-WHERE co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion AND ti.id_tipo_operacion=2 AND em.id_empleado=<1>;
+SELECT co.nombre_nomina, mo.monto FROM Contrato con,Concepto_nomina co, Movimiento_planilla mo, Tipo_operacion ti 
+WHERE con.id_contrato=mo.id_contrato AND co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion 
+AND ti.id_tipo_operacion=2 AND con.id_contrato=<1>;
 ```
-* **Eliminar concepto registrado:** Se mostrara en pantalla los datos del empleado 
+* **Eliminar concepto registrado:** Se eliminara
 ```
 DELETE FROM Movimiento_planilla mov WHERE mov.id_movimiento=<2>;
 ```
@@ -1138,17 +1140,16 @@ UPDATE Movimiento_planilla mov SET mov.valor=<3> WHERE mov.id_movimiento=<2>;
 ### Eventos: 
 * **Mostrar datos de empleado:** Se mostrara en pantalla los datos del empleado 
 ```
-SELECT em.dni,em.nombres, em.apellidos FROM Empleado em WHERE em.id_empleado=<1>;
+SELECT em.dni,em.nombres, em.apellidos FROM Empleado em, Contrato con WHERE em.id_empleado=con.id_contrato AND con.id_contrato=<1>;
 ```
 * **Mostrar conceptos de asistencia registrados:** Se mostrara en pantalla los conceptos registrados 
 ```
-SELECT co.nombre_nomina, asi.fecha_inicio,asi.fecha_final,(fecha_final-fecha_inicio) as valor FROM Empleado em,
-Concepto_nomina co, Asistencia asi, tipo_operacion ti WHERE co.id_nomina=asi.id_nomina AND 
-co.id_tipo_operacion=ti.id_tipo_operacion AND em.id_empleado=1;
+SELECT co.nombre_nomina, asi.fecha_inicio,asi.fecha_final,(fecha_final-fecha_inicio) as valor FROM Contrato con,Concepto_nomina co, 
+Asistencia asi WHERE con.id_contrato=asi.id_contrato AND co.id_nomina=asi.id_nomina AND con.id_contrato=<1>;
 ```
 * **Eliminar concepto registrado:** Se eliminara el concepto elegido 
 ```
-DELETE FROM Asistencia asi WHERE asi.id_asistencia=<1>;
+DELETE FROM Asistencia asi WHERE asi.id_asistencia=<2>;
 ```
 ## CASO 16
 ### Código Requerimiento : R - 007
@@ -1163,7 +1164,7 @@ INSERT INTO Asistencia VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>);
 ```
 * **Actualizar concepto registrado:** M
 ```
-UPDATE Asistencia mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
+UPDATE Asistencia asi SET asi.valor=<2> WHERE asi.id_asistencia=<1>;
 ```
 ## CASO 17
 ### Código Requerimiento : R - 0014
