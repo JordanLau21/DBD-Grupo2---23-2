@@ -1,6 +1,6 @@
 # Videos Individuales
-### Modulo(s):
-- Alumno:
+### Modulo(s):2
+- Alumno:Laureano Hidalgo, Jordan Cesar
 - Link:
 ### Modulo(s):
 - Alumno:
