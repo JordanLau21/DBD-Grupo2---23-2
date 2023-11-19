@@ -1252,6 +1252,42 @@ INSERT INTO solicitud VALUES (51,'Solciito vacaciones por motivos de salud', '20
 INSERT INTO solicitud VALUES (52,'Si quieren que siga en esta chamba, solicito un cambio de sueldo', '2022/10/18','16:32:41',null,3,4,1,1)
 ```
 
+- TIPO DE SOLICITUD
+```
+INSERT INTO Tipo_solicitud VALUES (1,'Licencia'):
+INSERT INTO Tipo_solicitud VALUES (2,'Reclamo'):
+INSERT INTO Tipo_solicitud VALUES (3,'Aumento'):
+INSERT INTO Tipo_solicitud VALUES (4,'Vacaciones'):
+INSERT INTO Tipo_solicitud VALUES (5,'Configuración de Información'):
+INSERT INTO Tipo_solicitud VALUES (6,'Adelanto'):
+```
+
+- CUENTAS
+```
+INSERT INTO Cuenta VALUES(1,'DANIEL','47756342',1);
+INSERT INTO Cuenta VALUES(2,'EDUARDO SAUL','40157917',1);
+INSERT INTO Cuenta VALUES(3,'JAPHET CHARLIE JESUS','43044175',1);
+INSERT INTO Cuenta VALUES(4,'JHON ERIK','47231764',1);
+INSERT INTO Cuenta VALUES(5,'KEVYN ANTHONY','75363683',1);
+INSERT INTO Cuenta VALUES(6,'FRANCISCO ROBERTO','44569138',1);
+INSERT INTO Cuenta VALUES(7,'JORGE LUIS','72756436',1);
+INSERT INTO Cuenta VALUES(8,'RONALD HERBERT','72079266',1);
+INSERT INTO Cuenta VALUES(9,'YESSICA ISABEL','46698999',1);
+INSERT INTO Cuenta VALUES(10,'OMAR ADRIAN','46850431',1);
+INSERT INTO Cuenta VALUES(11,'CLAUDIA JOSELIN','42201690',1);
+INSERT INTO Cuenta VALUES(12,'GAYMO LUIS','71902155',1);
+INSERT INTO Cuenta VALUES(13,'JORGE OSWALDO','71395354',1);
+INSERT INTO Cuenta VALUES(14,'JORGE LUIS','41473747',1);
+INSERT INTO Cuenta VALUES(15,'KAREN EDITH','42685693',1);
+```
+
+- ESTADO DE CUENTAS
+```
+INSERT INTO Estado_cuenta VALUES (1, 'Vigente');
+INSERT INTO Estado_cuenta VALUES (2, 'Desvinculado');
+```
+
+
 # FUNCIONALIDAD PRIMARIA ELEGIDA (POR MODULO)
 ## MÓDULO : AUTENTICACIÓN DE USUARIO Y OLVIDO DE CONTRASEÑA
 **Funcionalidad primaria elegida:** Gestionar el proceso de inicio de sesión para los trabajadores de la empresa registrada (empleados y administradores) <br>
