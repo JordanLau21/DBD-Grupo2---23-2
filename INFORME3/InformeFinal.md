@@ -869,6 +869,31 @@ id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cue
 ### Código Requerimiento : R - 007
 ### Codigo interfaz : I - 006
 ### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3b239f7e-1f62-428d-b87b-215d7f9ec422)
+### Sentecias SQL:
+### Eventos:
+* **Mostrar empleados filtrados:** Se mostrara en pantalla el listado de contratos activos 
+```
+SELECT so.id_solicitud, em.nombres, em.apellidos, so.fec_solicitud, ti.descripcion FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
+AND ti.id_tipo_solicitud = so.id_tipo_solicitud
+```
+## CASO 9
+### Código Requerimiento : R - 007
+### Codigo interfaz : I - 006
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/be19dad0-9762-4c6e-b408-1a7d59ecf00b)
+### Sentecias SQL:
+### Eventos:
+* **Mostrar empleados filtrados:** Se mostrara en pantalla el listado de contratos activos 
+```
+SELECT em.dni,em.nombre,em.apellidos,car.nombre,co.fecha_inicio,co.fecha_final FROM Contrato co,Empleado em,Cargo car 
+WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo AND em.dni = <1> AND ORDER BY em.dni;
+
+## CASO 9
+### Código Requerimiento : R - 007
+### Codigo interfaz : I - 006
+### Imagen interfaz : 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/16303985-92b0-44c7-88db-628451c05ac0)
 ### Sentecias SQL:
 ### Eventos: 
@@ -886,10 +911,6 @@ WHERE co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion AN
 SELECT co.nombre,mo.valor FROM Empleado em,concepto_nominal co, Movimiento_planilla mo, tipo_operacion ti 
 WHERE co.id_nomina=mo.id_nomina AND co.id_tipo_operacion=ti.id_tipo_operacion AND ti.id_tipo_operacion=2 AND em.id_empleado=<1>;
 ```
-* **Registrar un concepto:** Se mostrara en pantalla los datos del empleado 
-```
-INSERT INTO Movimiento_planilla VALUES (NEXTVAL(secuencia_mov),CURRENT_DATE,<1>,<2>,<3>,<4>);
-```
 * **Actualizar concepto registrado:** Se mostrara en pantalla los datos del empleado 
 ```
 UPDATE Movimiento_planilla mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
@@ -898,6 +919,18 @@ UPDATE Movimiento_planilla mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
 ```
 DELETE FROM Movimiento_planilla mov WHERE mov.id_movimiento=<1>;
 ```
+## CASO 9
+### Código Requerimiento : R - 007
+### Codigo interfaz : I - 006
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3b2f83cf-1ce4-435b-8741-b5336fbfbed9)
+### Sentecias SQL:
+### Eventos:
+* **Registrar un concepto:** Se mostrara en pantalla los datos del empleado 
+```
+INSERT INTO Movimiento_planilla VALUES (NEXTVAL(secuencia_mov),CURRENT_DATE,<1>,<2>,<3>,<4>);
+```
+## CASO 9
 ### Código Requerimiento : R - 007
 ### Codigo interfaz : I - 006
 ### Imagen interfaz : 
@@ -919,6 +952,17 @@ UPDATE Asistencia mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
 * **Eliminar concepto registrado:** Se mostrara en pantalla los datos del empleado 
 ```
 DELETE FROM Asistencia as WHERE as.id_asistencia=<1>;
+```
+## CASO 9
+### Código Requerimiento : R - 007
+### Codigo interfaz : I - 006
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/201c9c54-68a4-4f35-9a5a-4eedce2783b0)
+### Sentecias SQL:
+### Eventos:
+* **Registrar un concepto asistencia:** Se mostrara en pantalla los datos del empleado 
+```
+INSERT INTO Asistencia VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>);
 ```
 # CARGA DE DATOS
 - Régimen Pensionario
