@@ -906,7 +906,10 @@ INSERT INTO Estado_solicitud VALUES (3, 'Rechazado');
 ```
 
 # FUNCIONALIDAD PRIMARIA ELEGIDA (POR MODULO)
-## MODULO : REGISTRO DE MOVIMIENTOS DE PLANILLA Y CONCEPTOS ASISTENCIA
+## MODULO : AUTENTICACIÓN DE USUARIO Y OLVIDO DE CONTRASEÑA
+**Funcionalidad primaria elegida:** Gestionar el proceso de inicio de sesión para los trabajadores de la empresa registrada (empleados y administradores) <br>
+**Sustentación:** El inicio de sesión y la recuperación de contraseña son funcionalidades fundamentales para el trabajador de la empresa, ya que gracias estas funcionalidades pueden acceder a todos los beneficios que trae nuestro sistema de planillas de manera segura. Por otro lado, tener la posibilidad de recuperar tu contraseña por si en algún momento la olvidas es un salvavidas que ayuda a muchos usuarios. <br>
+Esta funcionalidad permitirá cumplir con los requerimientos de Autenticación de Usuario (R001), Olvido de contraseña (R002), Cambio de contraseña e inicio de sesión (R003) los cuales se encuentran relacionados con las interfaces I-001, I-002, e I-003.
 
 | Actividad     | Descripcion        | 
 |:-------------:|:---------------:|
