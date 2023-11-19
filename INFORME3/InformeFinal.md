@@ -942,9 +942,15 @@ UPDATE Movimiento_planilla mov SET mov.valor=<3> WHERE mov.id_movimiento=<2>;
 ```
 SELECT em.dni,em.nombres, em.apellidos FROM Empleado em WHERE em.id_empleado=<1>;
 ```
+* **Mostrar conceptos de asistencia registrados:** Se mostrara en pantalla los conceptos registrados 
+```
+SELECT co.nombre_nomina, asi.fecha_inicio,asi.fecha_final,(fecha_final-fecha_inicio) as valor FROM Empleado em,
+Concepto_nomina co, Asistencia asi, tipo_operacion ti WHERE co.id_nomina=asi.id_nomina AND 
+co.id_tipo_operacion=ti.id_tipo_operacion AND em.id_empleado=1;
+```
 * **Eliminar concepto registrado:** Se eliminara el concepto elegido 
 ```
-DELETE FROM Asistencia as WHERE as.id_asistencia=<1>;
+DELETE FROM Asistencia asi WHERE asi.id_asistencia=<1>;
 ```
 ## CASO 9
 ### Código Requerimiento : R - 007
