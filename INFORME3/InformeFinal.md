@@ -572,12 +572,12 @@ CREATE TABLE concepto_nomina
 
 | Código | R011  |
 |----------|----------|
-|Nombre  |Ver datos de empleados vigentes o exempleados|
-|Objetivo  |Visualizar los datos de un empleado o exempleado, su contrato y la forma de pago que recibe o recibió.|
-| Descripción   |Se podrá ver los datos que se ingresaron del empleado o exempleado en su momento.|
+|Nombre  |Ver datos de empleados vigentes o actuales de la empresa.|
+|Objetivo  |Visualizar los datos de un empleado, su contrato y la forma de pago que recibe.|
+| Descripción   |Se podrá ver los datos que se ingresaron del empleado en el momento de su registro en el sistema.|
 | Actor primario    |Administrador|
 | Actor secundario    |Empleado|
-| Precondiciones    |El empleado debe haber estado o estar ligado a la empresa a través de la firma de un contrato.|
+| Precondiciones    |El empleado debe estar ligado a la empresa a través de la firma de un contrato.|
 
 
 | Código | R012  |
@@ -590,14 +590,14 @@ CREATE TABLE concepto_nomina
 | Precondiciones    |El empleado no tiene contrato vigente con la empresa.|
 
 
-| Código | R012  |
+| Código | R013  |
 |----------|----------|
-|Nombre  |Ver usuarios vigentes o activos|
-|Objetivo  ||
-| Descripción   ||
-| Actor primario    ||
-| Actor secundario    ||
-| Precondiciones    ||
+|Nombre  |Ver datos de exempleados de la empresa.|
+|Objetivo  |Visualizar los datos de un exempleado, el contrato y la forma de pago que recibió.|
+| Descripción   |Se podrá ver los datos que se ingresaron del exempleado cuando estaba registrado en el sistema.|
+| Actor primario    |Administrador|
+| Actor secundario    |Empleado|
+| Precondiciones    |El empleado debe haber estado a la empresa a través de la firma de un contrato.|
 
 ### Modulo Registro de Movimientos y Asistencias
 | Código | R012  |
