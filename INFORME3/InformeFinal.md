@@ -906,7 +906,7 @@ INSERT INTO Estado_solicitud VALUES (3, 'Rechazado');
 ```
 
 # FUNCIONALIDAD PRIMARIA ELEGIDA (POR MODULO)
-## MODULO : AUTENTICACIÓN DE USUARIO Y OLVIDO DE CONTRASEÑA
+## MÓDULO : AUTENTICACIÓN DE USUARIO Y OLVIDO DE CONTRASEÑA
 **Funcionalidad primaria elegida:** Gestionar el proceso de inicio de sesión para los trabajadores de la empresa registrada (empleados y administradores) <br>
 **Sustentación:** El inicio de sesión y la recuperación de contraseña son funcionalidades fundamentales para el trabajador de la empresa, ya que gracias estas funcionalidades pueden acceder a todos los beneficios que trae nuestro sistema de planillas de manera segura. Por otro lado, tener la posibilidad de recuperar tu contraseña por si en algún momento la olvidas es un salvavidas que ayuda a muchos usuarios. <br>
 
@@ -917,6 +917,19 @@ Esta funcionalidad permitirá cumplir con los requerimientos de Autenticación d
 | 1       | ESe mostrará la pantalla I-001 en la cual el usuario tendrá que ingresar su nombre de usuario para poder acceder a su cuenta, una vez el usuario le dé a la opción de "INICIAR SESIÓN" el sistema verificará los datos ingresados con los registros que se tenga en la base de datos. Una vez verificado los datos mediante una consulta, el sistema le dará acceso al usuario a todos los beneficios que ofrece el sistema de planillas en su cuenta![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/889f54a4-8acb-48b1-9777-fa37007fb49d) | 
 | 2    | En el caso de que el sistema verifique que los datos ingresados no coincide con ninguna información registrada en su base de datos, se apreciará una pantalla con el mnesaje "**DATOS ERRONEOS**, por favor vuelve a intentarlo"| 
 | 3  | Si el usuario llegara a olvidar su contraseña, este podrá reestablecerla dando click en la opción "¿Olvidó su contraseña? ¡Restaurela aquí!", en donde el usuario tendrá que probar que es quien dice ser ingresando su nombre y su dni, de tal manera que el sistema al encontrar dichos datos, le enviará mediante un mensaje SMS a su celular(registrado previamente en la base de datos) con un codigo de verificación (codigo: 1234) donde despues tendrá que ingresar su nueva contraseña y confirmarla para que así el sistema inicie sesión con su nueva contraseña ya cambiada en la base de datos. <br> ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/8598b432-8471-428f-a02b-9d165fc1e2c4) ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/834818bd-c978-49d3-9e82-e003dc9d9cfe) ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/ead48069-0cd7-4eb2-9a7f-131d2e42bac2) | 
+
+## MÓDULO : SOLICITUDES
+**Funcionalidad primaria elegida:** Gestionar todas las solicitudes hechas por los empleados de la empresa <br>
+**Sustentación:** La gestión de solicitudes en una empresa es una funcionalidad importante debido a que se requiere de un buen manejo de solicitudes para asi atender las necesidades de los empleados de la empresa. <br>
+
+Esta funcionalidad permitirá cumplir con los requerimientos de Pantalla Solicitudes (Administrador) (R004), Detalle de Solicitud (R005), Respuesta de Solicitud (R006), Pantalla de Solicitudes (Empleado) (R007) y Nueva Solicitud (R008) los cuales se encuentran relacionados con las interfaces I-004, I-005, I-006, I-007, I-008 e I-009.
+
+| Actividad     | Descripcion        | 
+|:-------------:|:---------------:|
+| 1       | ESe mostrará la pantalla I-001 en la cual el usuario tendrá que ingresar su nombre de usuario para poder acceder a su cuenta, una vez el usuario le dé a la opción de "INICIAR SESIÓN" el sistema verificará los datos ingresados con los registros que se tenga en la base de datos. Una vez verificado los datos mediante una consulta, el sistema le dará acceso al usuario a todos los beneficios que ofrece el sistema de planillas en su cuenta![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/889f54a4-8acb-48b1-9777-fa37007fb49d) | 
+| 2    | En el caso de que el sistema verifique que los datos ingresados no coincide con ninguna información registrada en su base de datos, se apreciará una pantalla con el mnesaje "**DATOS ERRONEOS**, por favor vuelve a intentarlo"| 
+| 3  | Si el usuario llegara a olvidar su contraseña, este podrá reestablecerla dando click en la opción "¿Olvidó su contraseña? ¡Restaurela aquí!", en donde el usuario tendrá que probar que es quien dice ser ingresando su nombre y su dni, de tal manera que el sistema al encontrar dichos datos, le enviará mediante un mensaje SMS a su celular(registrado previamente en la base de datos) con un codigo de verificación (codigo: 1234) donde despues tendrá que ingresar su nueva contraseña y confirmarla para que así el sistema inicie sesión con su nueva contraseña ya cambiada en la base de datos. <br> ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/8598b432-8471-428f-a02b-9d165fc1e2c4) ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/834818bd-c978-49d3-9e82-e003dc9d9cfe) ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/ead48069-0cd7-4eb2-9a7f-131d2e42bac2) | 
+
 
 # STACL TECNOLÓGICO
 ## Frontend
