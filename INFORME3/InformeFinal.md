@@ -977,9 +977,16 @@ En caso de elegir como Medio de Pago(<12>) el Efectivo, esos 2 campos tomarán e
 1. Carga de Página: Se llenará la lista de empleados vigentes:
 
 ```
-SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos, FROM Empleado INNER JOIN Cuenta 
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta 
 ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1;
 ```
+
+2. Búsqueda de Empleado
+```
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta 
+ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1 AND ((Empleado.nombre=<1>) OR (Empleado.apellidos=<1>));
+```
+El <1> será el nombre o apellido del empleado que se quiere buscar.
 
 
 ## CASO 11
