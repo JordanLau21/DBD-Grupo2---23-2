@@ -717,8 +717,7 @@ INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefon
 (12,'GAYMO LUIS','PEREZ MUÑOZ',TO_DATE('1992-05-30', 'YYYY-MM-DD'),31,970897522,'',71902155,'Casado','Masculino',2,4,1,3,12),
 (13,'JORGE OSWALDO','ARGUEDAS PUCUTAY',TO_DATE('1991-08-10', 'YYYY-MM-DD'),31,981378149,'larguedas1010@gmail.com',71395354,'Casado','Masculino',1,3,1,3,13),
 (14,'JORGE LUIS','DIAZ LEYTON',TO_DATE('1982-09-17', 'YYYY-MM-DD'),41,997935493,'leyton17_14@hotmail.com',41473747,'Divorciado','Masculino',2,4,1,3,14),
-(15,'KAREN EDITH','POMA CAMACHO DE SALAZAR',TO_DATE('1983-07-22', 'YYYY-MM-DD'),40,936131832,'karenpomakp30@gmail.com',42685693,'Divorciado','Femenino',1,3,1,3,15)
-;
+(15,'KAREN EDITH','POMA CAMACHO DE SALAZAR',TO_DATE('1983-07-22', 'YYYY-MM-DD'),40,936131832,'karenpomakp30@gmail.com',42685693,'Divorciado','Femenino',1,3,1,3,15);
 ```
 - Estado de Contrato
 ```
