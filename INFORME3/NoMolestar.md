@@ -212,3 +212,10 @@ select id_planilla where fecha_calculo is null and monto_emitido is null;
 
 ### FUNCIONALIDAD PRIMARIA ELEGIDA (POR MODULO)
 ### MODULO : PLANILLA
+Funcionalidad primaria elegida: Gestionar y controlar las planillas de los pagos hacia los trabajadores
+Sustentación: Es imprescindible para poder manejar y llevar un registro históricos de los pagos a los trabajadores, se puede visualizar los empleados que estuvieron incluidos en planillas anteriores, además de visualizar el monto de las boletas de cada empleado en los distintos periodos que se mantuvieron en la empresa
+
+| Actividad    |    Descripcion    | 
+|:-------------:|:---------------:|
+| 1    | En el modulo de planillas, el adminitrador puede  | 
+| 2   | ![image](https://github.com/nnthony/bookish-doodle/blob/d2b5a087137a916cfb148ce51a930d75a2aaaf8f/pnt/generarnuevasboletas.png) |
