@@ -684,20 +684,34 @@ CREATE TABLE concepto_nomina
 ### Código interfaz: I - 016
 ### Imagen interfaz:
 ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Pago.png)
+### Modulo Registro planilla y asistencia
+| Código Interfaz | I001  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/f2922732-04e4-4511-9671-e6ec9c6f7428)|
+| Código Interfaz | I001  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/c5bd74eb-a33b-4336-bc63-74629cc82879)|
 
+| Código Interfaz | I001  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/5f72cdb3-f8ac-4f3a-a7b0-694cb0690038)
+|
 
+| Código Interfaz | I001  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/940378ab-3cd2-4e36-97fc-4e2398048ef0)|
 
+| Código Interfaz | I001  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/0bfa8910-a4ee-41b5-840d-1b61cfba25cd)|
 
+| Código Interfaz | I001  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/fcc7d905-811f-4b5f-86e5-7e73c010f6ea)|
 
-
-### Código interfaz : I - 001
-### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/1a4a3448-f46c-4251-8139-8eeef1f57d1d)
-
-### Código interfaz : I - 002
-### Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/f534d16e-2300-4c33-9915-7ebe273bca1a)
-
+| Código Interfaz | I001  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/ee805bb3-fba9-4f43-9159-47c04acfc201)|
 # SENTENCIA SQL POR CADA PROTOTIPO
 ## CASO 1
 ### Código Requerimiento : R - 001
