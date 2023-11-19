@@ -57,32 +57,37 @@ CREATE TABLE Empleado(
 ```
 CREATE TABLE Estado_contrato(
 	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,
-	estado_contrato VARCHAR(10) NOT NULL
+	estado_contrato VARCHAR(20) NOT NULL
 );
 ```
 ### TIPO CONTRATO
 ```
 CREATE TABLE Tipo_contrato(
 	id_tipo_contrato INTEGER PRIMARY KEY NOT NULL,
-	tipo_contrato VARCHAR(15) NOT NULL
+	tipo_contrato VARCHAR(30) NOT NULL
 );
 ```
-### TIPO JORNADA
+### TIPO DE JORNADA
 ```
 CREATE TABLE Tipo_jornada(
 	id_tipo_jornada INTEGER PRIMARY KEY NOT NULL,
-	tipo_jornada VARCHAR(15) NOT NULL
+	tipo_jornada VARCHAR(20) NOT NULL
 );
 ```
-### DETALLE PAGO
+### FRECUENCIA DE PAGO
 ```
-CREATE TABLE Detalle_pago(
-	id_detalle_pago INTEGER PRIMARY KEY NOT NULL,
-	frecuencia_pago VARCHAR(30) NOT NULL,
-	dia_pago_mes INT NOT NULL,
-	medio_pago VARCHAR(30) NOT NULL,
-	entidad_financiera VARCHAR(30) NOT NULL,
-	cuenta NUMERIC(14) NOT NULL
+CREATE TABLE Frecuencia_pago(
+	id_frecuencia_pago INTEGER PRIMARY KEY NOT NULL,
+	frecuencia_pago VARCHAR(50) NOT NULL
+);
+```
+### MEDIO DE PAGO
+```
+CREATE TABLE Medio_pago(
+	id_medio_pago INTEGER PRIMARY KEY NOT NULL,
+	medio_pago VARCHAR(50) NOT NULL,
+	entidad_financiera VARCHAR(50),
+	cuenta NUMERIC
 );
 ```
 ### ESTADO SOLICITUD
