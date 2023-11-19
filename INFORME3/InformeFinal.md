@@ -658,33 +658,38 @@ CREATE TABLE concepto_nomina
 |----------|----------|
 |Imagen interfaz|![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/fddb795c-32ef-4ba5-8e68-a186cec548b2)|
 
-### Código interfaz: I - 010
-### Imagen interfaz:
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047.png)
+### Módulo Empleados
+| Código Interfaz | I010  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047.png)|
 
-### Código interfaz: I - 011
-### Imagen interfaz:
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048.png)
+| Código Interfaz | I011  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048.png)|
 
-### Código interfaz: I - 012
-### Imagen interfaz:
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2049.png)
+| Código Interfaz | I012  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2049.png)|
 
-### Código interfaz: I - 013
-### Imagen interfaz:
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes.png)
+| Código Interfaz | I013  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes.png)|
 
-### Código interfaz: I - 014
-### Imagen interfaz:
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Empleado.png)
+| Código Interfaz | I014  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Empleado.png)|
 
-### Código interfaz: I - 015
-### Imagen interfaz:
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Contrato.png)
+| Código Interfaz | I015  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Contrato.png)|
 
-### Código interfaz: I - 016
+| Código Interfaz | I016  |
+|----------|----------|
+|Imagen interfaz|![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Pago.png|
+
+
+### Código interfaz: I - 017
 ### Imagen interfaz:
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Datos%20Pago.png)
 
 ### Modulo Registro planilla y asistencia
 
