@@ -1126,6 +1126,65 @@ INSERT INTO Asistencia VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>);
 ```
 UPDATE Asistencia mov SET mov.valor=<2> WHERE mov.id_mov=<1>;
 ```
+## CASO 14
+### Código Requerimiento : R - 0014
+### Codigo interfaz : I - 021, I - 022
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/37d2fddd-7e83-492b-9cbb-32038cc8d324)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/050290fe-cdd4-46a8-9553-6e168a241cd9)
+### Sentecias SQL:
+### Eventos: 
+* **Mostrar datos de la empresa:** Se mostrara en pantalla los datos de la empresa
+```
+SELECT 
+    Empresa.ruc AS RUC, 
+    Empresa.razon_social AS Razón_Social,
+	CONCAT(RepresentanteLegal.nombres, ' ', RepresentanteLegal.apellido_paterno, ' ', RepresentanteLegal.apellido_materno) AS Representante,
+    Empresa.direccion AS Dirección,
+	Empresa.estado AS Estado    
+FROM Empresa
+LEFT JOIN RepresentanteLegal ON Empresa.id_empresa = RepresentanteLegal.id_empresa
+WHERE Empresa.id_empresa = 1;
+```
+* **Mostrar pantalla con la información antes de la edición:** Se mostrara en pantalla los conceptos registrados 
+```
+SELECT 
+    Empresa.id_empresa, 
+    Empresa.ruc, 
+    Empresa.regimen, 
+    Empresa.estado, 
+    Empresa.razon_social, 
+    Empresa.direccion, 
+    Empresa.giro, 
+    Empresa.ciudad, 
+    Empresa.logo,
+    RepresentanteLegal.id_representante,
+    RepresentanteLegal.nombres,
+    RepresentanteLegal.apellido_paterno,
+    RepresentanteLegal.apellido_materno,
+    RepresentanteLegal.dni
+FROM Empresa
+LEFT JOIN RepresentanteLegal ON Empresa.id_empresa = RepresentanteLegal.id_empresa
+WHERE Empresa.id_empresa = 1;
+```
+* **Actualizar información de la empresa:** 
+```
+UPDATE Empresa
+SET 
+    direccion = 'Jr. Calle los cocos 789',
+    estado = 'Activa'
+WHERE id_empresa = 1;
+```
+* **Añadir algún representante:** 
+```
+INSERT INTO RepresentanteLegal (nombres, apellido_paterno, apellido_materno, dni, estado, id_empresa)
+VALUES ('Roberto Carlos', 'Flores', 'Velarde', '76071011', 'Activo', 1);
+```
+* **Borrar algún representante:** 
+```
+DELETE FROM RepresentanteLegal WHERE id_representante = 3;
+```
+
 # CARGA DE DATOS
 - Régimen Pensionario
 ```
