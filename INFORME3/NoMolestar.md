@@ -57,9 +57,39 @@
 
 
 ## Codificación de prototipos de interfaz
-Código interfaz : I - 001
-Imagen interfaz:
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/d7d6c0aa-c02f-4200-87cc-1d6e70440dea)
+
+| Codigo Interfaz    |    I - 00X    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planilla.png) |
+
+| Codigo Interfaz    |    I - 00X    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/Detalleplanilla.png) |
+
+| Codigo Interfaz    |    I - 00X    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/generar%20planilla.png) |
+
+| Codigo Interfaz    |    I - 00X    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/visualizarcolaboradoresnuevaplanilla.png) |
+
+| Codigo Interfaz    |    I - 00X    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planillaspagadas.png) |
+
+| Codigo Interfaz    |    I - 00X    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/detalleplanillaspagadas.png) |
+
+| Codigo Interfaz    |    I - 00X    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/detalleboleta.png) |
+
+| Codigo Interfaz    |    I - 00X    | 
+|:-------------:|:---------------:|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/generar%20planilla.png) |
+
 
 
 # Sentencias SQL por cada prototipo
