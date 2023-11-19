@@ -755,6 +755,31 @@ AND id_empleado = <1>
 ```
 El id_empleado <1> se obtiene de la base de datos donde esta registrada la cuenta del mismo empleado.
 
+## CASO 8
+### Código Requerimiento : R - 008
+### Codigo interfaz : I - 007, I - 008 y I - 009
+### Imagen interfaz : 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/24662302-75da-4744-a056-6f80b0eb505b)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/adeec56f-4dc9-49a8-acd4-0d1feebb1d72)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/5e808ffc-375f-4a5b-84cf-1ed7af990bc1)
+### Sentecias SQL:
+### Eventos: 
+* **Nueva Solicitud:** El usuario podrá enviar una nueva solicitud primero seleccionando el tipo de solicitud que desea, dependiendo de la opción del tipo de solicitud que elija, le pueden aparecer 2 tipos de pantallas, las cuales son una con opción de ingresar un monto y la otra sin la mencionada opción.
+#### Opción 1
+Al elegirse esta opción, se está eligiendo un tipo de solicitud con monto, por ello aparecerá una nueva pantalla con la opción de ingresar monto, donde al enviar la solicitud, la consulta será:
+```
+CREATE SEQUENCE id_solicitud START WITH 1
+INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, <4>, <5> , <6> , 2 , <1>, <7> ,<8>)
+```
+#### Opción 2
+Al elegirse esta opción, se esta eligiendo un tipo de solicitud el cual no requiere de ingresarse un monto, debido a ello, aparecerá una pantalla el cual no tiene incluida la opción para ingresar un monto, donde al enviar la solicitud, la consulta será:
+```
+CREATE SEQUENCE id_solicitud START WITH 1
+INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, <4>, <5> , null , 2 , <2>, <7> ,<8>)
+```
+id_empleado <7>: Se obtiene de la base de datos en la cual esta registrada la cuenta. <br>
+id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cuenta.
+
 # CARGA DE DATOS
 - Régimen Pensionario
 ```
