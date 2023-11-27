@@ -106,18 +106,19 @@ AND est.estado_contrato='Vigente' and pl.id_planilla = <1>;
 
 Crear nueva planilla:
 ```
-INSERT INTO planilla (periodo, fecha_inicio, fecha_fin, fecha_creacion, hora_creacion)
-values (<1> ,<2> ,<3> ,current_date ,current_time);
+INSERT INTO planilla (fecha_inicio, fecha_fin, periodicidad, fecha_creacion, hora_creacion)
+values (<2> ,<3>, <1> ,current_date ,current_time);
 -- 1: periodicidad de planilla, 2: fecha inicio de planilla, 3: fecha final de planilla
+-- hay que generar el id, el codigo de periodo y poner los dias laborables dependiendo si es mensual o quincenal
 ```
 Visualizar empleados en nueva planilla:
 ```
 SELECT e.id_empleado, e.nombre, c.fecha_de_contrato, ca.nombre  
-FROM empleado e, cargo ca
-INNER JOIN contrato co ON em.id_empleado =co.id_empleado
-INNER JOIN Frecuencia_pago fp ON co.id_frecuencia_pago = fp.id_frecuencia_pago
-INNER JOIN cargo ca ON co.id_cargo = ca.id_cargo
-WHERE c.fecha_de_contrato < current_date AND c.fecha_termino_contrato > current_date AND fp.frecuencia_pago= <1>;
+FROM contrato c, cargo ca
+INNER JOIN empleado e ON e.id_empleado =c.id_empleado
+INNER JOIN Frecuencia_pago fp ON c.id_frecuencia_pago = fp.id_frecuencia_pago
+INNER JOIN cargo ca ON c.id_cargo = ca.id_cargo
+WHERE c.fecha_inicio_laboral < current_date AND c.fecha_termino_contrato > current_date AND fp.frecuencia_pago= <1>;
 -- 1: periodicidad de planilla
 ```
 Visualizar planillas que ya han generado sus pagos:
@@ -162,7 +163,7 @@ WHERE b.id_boleta = <2>
 ```
 Visualizar montos específicos por cada concepto:
 ```
-SELECT * FROM boleta b
+SELECT cn.nombre_nomina, mp.monto FROM boleta b
 INNER JOIN planilla p ON b.id_planilla = p.id_planilla
 INNER JOIN contrato co ON b.id_contrato = co.id_contrato
 INNER JOIN movimiento_planilla mp ON mp.id_contrato = co.id_contrato
