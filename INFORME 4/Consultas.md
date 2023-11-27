@@ -1,3 +1,87 @@
+### MODULO ADMINISTRACIÓN DE LA EMPRESA
+```
+-- Mostrar datos de la empresa
+SELECT 
+    Empresa.ruc AS RUC, 
+    Empresa.razon_social AS Razón_Social,
+	CONCAT(RepresentanteLegal.nombres, ' ', RepresentanteLegal.apellido_paterno, ' ', RepresentanteLegal.apellido_materno) AS Representante,
+    Empresa.direccion AS Dirección,
+	Empresa.estado AS Estado    
+FROM Empresa
+LEFT JOIN RepresentanteLegal ON Empresa.id_empresa = RepresentanteLegal.id_empresa
+WHERE Empresa.id_empresa = 1;
+
+-- Mostrar pantalla con la información antes de la edición
+SELECT 
+    Empresa.id_empresa, 
+    Empresa.ruc, 
+    Empresa.regimen, 
+    Empresa.estado, 
+    Empresa.razon_social, 
+    Empresa.direccion, 
+    Empresa.giro, 
+    Empresa.ciudad, 
+    Empresa.logo,
+    RepresentanteLegal.id_representante,
+    RepresentanteLegal.nombres,
+    RepresentanteLegal.apellido_paterno,
+    RepresentanteLegal.apellido_materno,
+    RepresentanteLegal.dni
+FROM Empresa
+LEFT JOIN RepresentanteLegal ON Empresa.id_empresa = RepresentanteLegal.id_empresa
+WHERE Empresa.id_empresa = 1;
+
+-- Actualizar información de la empresa
+UPDATE Empresa
+SET 
+    direccion = 'Jr. Calle los cocos 789',
+    estado = 'Activa'
+WHERE id_empresa = 1;
+
+-- Añadir algún representante
+INSERT INTO RepresentanteLegal (nombres, apellido_paterno, apellido_materno, dni, estado, id_empresa)
+VALUES ('Roberto Carlos', 'Flores', 'Velarde', '76071011', 'Activo', 1);
+
+--Borrar algún representante
+DELETE FROM RepresentanteLegal WHERE id_representante = 3;
+
+```
+### MODULO ORGANIZACIÓN
+```
+-- Mostrar lista de cargos
+SELECT
+    ROW_NUMBER() OVER (ORDER BY c.id_cargo) AS "N°",
+    c.nombre_cargo AS "Descripción",
+    c.estado AS "Estado",
+    a.nombre_area AS "Área"
+FROM
+    Cargo c
+JOIN
+    Empresa e ON c.id_empresa = e.id_empresa
+JOIN
+    Area a ON c.id_empresa = a.id_empresa
+WHERE
+    e.id_empresa = 1;
+
+-- Crear un nuevo cargo
+INSERT INTO Cargo (id_cargo, nombre_cargo, codigo_cargo, descripcion_cargo, requerimientos, estado, id_empresa)
+VALUES (16, 'Jefe RRHH', 'jefe_rrhh', 'Gestor y controller del área de recursos humanos, considerando remuneraciones, selección y gestión por procesos', 'Técnico o Ingeniería a fin (DO, RRHH), Metódico', 'Activo', 1);
+
+-- Mostrar dividsión de la empresa
+SELECT e.razon_social AS empresa, a.nombre_area AS area
+FROM Empresa e
+INNER JOIN Area a ON e.id_empresa = a.id_empresa
+LEFT JOIN Cargo c ON a.id_empresa = c.id_empresa
+WHERE e.razon_social = 'GRUPO ROMERO SAC'
+GROUP BY e.razon_social, a.nombre_area;
+
+-- Crear nueva Area
+INSERT INTO Area (id_area, nombre_area, descripcion_area, id_empresa)
+VALUES 
+(16, 'Investigación y Desarrollo', 'Área encargada de la investigación y creación de nuevos productos.', 9);
+```
+
+
 ### MODULO PLANILLA
 **Sentencia SQL**
 
