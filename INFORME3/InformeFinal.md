@@ -887,7 +887,7 @@ Donde los valores del 1 al 3 se capturarán de la interfaz de olvido de contrase
 ### Eventos: 
 * **Cambiar contraseña e inicio de sesión:** Una vez verificados los datos, el usuario ingresa una nueva contraseña para que asi esta sea cambiada por la anterior y así iniciar sesión con su nueva contraseña ya actualizada.
 ```
-UPDATE Cuenta SET contraseña= <3> WHERE contraseña= <2> AND usuario = <1>;
+UPDATE Cuenta SET contraseña= <3> WHERE usuario = <1>;
 SELECT usuario, contraseña from Cuenta
 WHERE usuario = <1> AND contraseña = <3>
 ```
