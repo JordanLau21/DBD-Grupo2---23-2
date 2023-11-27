@@ -452,23 +452,24 @@ VALUES
 (14, 'Diseño Gráfico', 'Área especializada en la creación y diseño gráfico.', 7),
 (15, 'Consultoría', 'Área dedicada a brindar asesoramiento y consultoría a clientes.', 8);
 
-INSERT INTO Empleado (id_empleado, nombres, apellidos, fecha_nacimiento, edad, telefono, email, direccion, dni, estado_civil, sexo, id_regimen_pensionario, id_seguro_medico, id_situacion_discapacidad, id_empresa, id_cuenta) VALUES 
-(1, 'DANIEL', 'SIFUENTES GRADOS', TO_DATE('1993-05-11', 'YYYY-MM-DD'), 30, 964701287, 'daniel.sifuentes@harlamsyo.pe', 'Calle A #123, Lima', 47756342, 'Soltero', 'Masculino', 2, 1, 1, 1, 1),
-(2, 'EDUARDO SAUL', 'ESCOBEDO VILLANUEVA', TO_DATE('1979-04-18', 'YYYY-MM-DD'), 44, 991961400, '', 'Avenida B #456, Arequipa', 40157917, 'Casado', 'Masculino', 2, 2, 1, 1, 2),
-(3, 'JAPHET CHARLIE JESUS', 'TORRES HUARINGA', TO_DATE('1985-05-29', 'YYYY-MM-DD'), 38, 926270930, '', 'Calle C #789, Trujillo', 43044175, 'Casado', 'Masculino', 2, 3, 1, 2, 3),
-(4, 'JHON ERIK', 'CAMPO VELÁSQUEZ', TO_DATE('1991-04-13', 'YYYY-MM-DD'), 32, 931854954, 'campovelas@gmail.com', 'Avenida D #101, Chiclayo', 47231764, 'Soltero', 'Masculino', 2, 3, 1, 4, 4),
-(5, 'KEVYN ANTHONY', 'PLASENCIA BLANCO', TO_DATE('1991-04-13', 'YYYY-MM-DD'), 28, 998400448, 'kevpb95@gmail.com', 'Calle E #202, Piura', 75363683, 'Soltero', 'Masculino', 1, 3, 1, 4, 5),
-(6, 'FRANCISCO ROBERTO', 'GRADOS PAREDES', TO_DATE('1987-10-04', 'YYYY-MM-DD'), 36, 918099146, 'gradosparadesfrank@gmail.com', 'Avenida F #303, Ica', 44569138, 'Casado', 'Masculino', 1, 3, 1, 4, 6),
-(7, 'JORGE LUIS', 'HOLGUIN ALARCON', TO_DATE('2001-06-04', 'YYYY-MM-DD'), 22, 938197568, 'jorholguinalarcon@gmail.com', 'Calle G #404, Tacna', 72756436, 'Soltero', 'Masculino', 2, 3, 2, 2, 7),
-(8, 'RONALD HERBERT', 'PRUDENCIO ALIAGA', TO_DATE('1994-12-12', 'YYYY-MM-DD'), 29, 920852657, 'ronaldhpa12@hotmail.com', 'Avenida H #505, Cusco', 72079266, 'Casado', 'Masculino', 2, 3, 1, 2, 8),
-(9, 'YESSICA ISABEL', 'FLORES VELARDE', TO_DATE('1990-11-17', 'YYYY-MM-DD'), 33, 989686976, 'yessicflores@gmail.com', 'Calle I #606, Huancayo', 46698999, 'Casado', 'Femenino', 2, 3, 1, 2, 9),
-(10, 'OMAR ADRIAN', 'ANAYA AYALA', TO_DATE('1992-01-05', 'YYYY-MM-DD'), 31, 992423368, 'anayaayala@gmail.com', 'Avenida J #707, Chimbote', 46850431, 'Casado', 'Masculino', 2, 3, 1, 2, 10),
-(11, 'CLAUDIA JOSELIN', 'CAMONES ALEGRIA', TO_DATE('1983-06-22', 'YYYY-MM-DD'), 40, 993904334, '', 'Calle K #808, Iquitos', 42201690, 'Viudo', 'Femenino', 2, 4, 2, 3, 11),
-(12, 'GAYMO LUIS', 'PEREZ MUÑOZ', TO_DATE('1992-05-30', 'YYYY-MM-DD'), 31, 970897522, '', 'Avenida L #909, Pucallpa', 71902155, 'Casado', 'Masculino', 2, 4, 1, 3, 12),
-(13, 'JORGE OSWALDO', 'ARGUEDAS PUCUTAY', TO_DATE('1991-08-10', 'YYYY-MM-DD'), 31, 981378149, 'larguedas1010@gmail.com', 'Calle M #1010, Tarapoto', 71395354, 'Casado', 'Masculino', 1, 3, 1, 3, 13),
-(14, 'JORGE LUIS', 'DIAZ LEYTON', TO_DATE('1982-09-17', 'YYYY-MM-DD'), 41, 997935493, 'leyton17_14@hotmail.com', 'Avenida N #1111, Huaraz', 41473747, 'Divorciado', 'Masculino', 2, 4, 1, 3, 14),
-(15, 'KAREN EDITH', 'POMA CAMACHO DE SALAZAR', TO_DATE('1983-07-22', 'YYYY-MM-DD'), 40, 936131832, 'karenpomakp30@gmail.com', 'Calle O #1212, Chiclayo', 42685693, 'Divorciado', 'Femenino', 1, 3, 1, 3, 15);
-
+INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,
+					  cantidad_menores_cargo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,
+					  id_empresa,id_cuenta) VALUES 
+(1,'DANIEL','SIFUENTES GRADOS','1993/05/11',30,964701287,'daniel.sifuentes@harlamsyo.pe',47756342,'Soltero','Masculino',0,2,1,1,1,1),
+(2,'EDUARDO SAUL','ESCOBEDO VILLANUEVA','1979/04/18',44,991961400,'',40157917,'Casado','Masculino',1,2,2,1,1,2),
+(3,'JAPHET CHARLIE JESUS','TORRES HUARINGA','1985/05/29',38,926270930,'',43044175,'Casado','Masculino',1,2,3,1,2,3),
+(4,'JHON ERIK','CAMPO VELÁSQUEZ','1991/04/13',32,931854954,'campovelas@gmail.com',47231764,'Soltero','Masculino',0,2,3,1,4,4),
+(5,'KEVYN ANTHONY','PLASENCIA BLANCO','1991/04/13',28,998400448,'kevpb95@gmail.com',75363683,'Soltero','Masculino',0,1,3,1,4,5),
+(6,'FRANCISCO ROBERTO','GRADOS PAREDES','1987/10/04',36,918099146,'gradosparadesfrank@gmail.com',44569138,'Casado','Masculino',2,1,3,1,4,6),
+(7,'JORGE LUIS','HOLGUIN ALARCON','2001/06/04',22,938197568,'jorholguinalarcon@gmail.com',72756436,'Soltero','Masculino',0,2,3,2,2,7),
+(8,'RONALD HERBERT','PRUDENCIO ALIAGA','1994/12/12',29,920852657,'ronaldhpa12@hotmail.com',72079266,'Casado','Masculino',1,2,3,1,2,8),
+(9,'YESSICA ISABEL','FLORES VELARDE','1990/11/17',33,989686976,'yessicflores@gmail.com',46698999,'Casado','Femenino',0,2,3,1,2,9),
+(10,'OMAR ADRIAN','ANAYA AYALA','1992/01/05',31,992423368,'anayaayala@gmail.com',46850431,'Casado','Masculino',1,2,3,1,2,10),
+(11,'CLAUDIA JOSELIN','CAMONES ALEGRIA','1983/06/22',40,993904334,'',42201690,'Viudo','Femenino',2,2,4,2,3,11),
+(12,'GAYMO LUIS','PEREZ MUÑOZ','1992-05-30',31,970897522,'',71902155,'Casado','Masculino',1,2,4,1,3,12),
+(13,'JORGE OSWALDO','ARGUEDAS PUCUTAY','1991/08/10',31,981378149,'larguedas1010@gmail.com',71395354,'Casado','Masculino',1,1,3,1,3,13),
+(14,'JORGE LUIS','DIAZ LEYTON','1982/09/17',41,997935493,'leyton17_14@hotmail.com',41473747,'Divorciado','Masculino',1,2,4,1,3,14),
+(15,'KAREN EDITH','POMA CAMACHO DE SALAZAR','1983/07/22',40,936131832,'karenpomakp30@gmail.com',42685693,'Divorciado','Femenino',1,1,3,1,3,15);
 
 INSERT INTO RepresentanteLegal (id_representante, nombres, apellido_paterno, apellido_materno, dni, estado, id_empresa)
 VALUES 
