@@ -1,3 +1,4 @@
+```
 CREATE TABLE Regimen_pensionario(
 	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,
 	tipo_regimen CHAR(3) NOT NULL
@@ -577,4 +578,4 @@ INSERT INTO Boleta ("id_boleta", "totalneto", "totalingresos", "totaldescuentos"
 ('400', '2865.48', '3022.6', '157.12', '753.00', '15', '195675')
 
 
-
+```
