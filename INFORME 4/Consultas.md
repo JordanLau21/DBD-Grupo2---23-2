@@ -267,12 +267,12 @@ AND id_empleado = <1>
 ```
 
 Nueva solicitud: <br>;
-Con opción aumento:
+Con opción aumento
 ```
 CREATE SEQUENCE id_solicitud START WITH 1
 INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE, LOCALTIME , <6> , 2 , <1>, <7> ,<8>)
 ```
-Sin opción aumento:
+Sin opción aumento
 ```
 CREATE SEQUENCE id_solicitud START WITH 1
 INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE , LOCALTIME , null , 2 , <2>, <7> ,<8>)
