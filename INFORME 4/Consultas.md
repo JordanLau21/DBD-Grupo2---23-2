@@ -218,7 +218,7 @@ SELECT id_planilla WHERE fecha_calculo IS NULL AND monto_emitido IS NULL;
 ```
 
 ### MODULO CUENTA
-**Sentencia SQL**<br>;
+**Sentencia SQL**<br>
 Auntenticación de Usuario:
 ```
 SELECT usuario, contraseña from Cuenta
@@ -237,7 +237,7 @@ SELECT usuario, contraseña from Cuenta
 WHERE usuario = <1> AND contraseña = <3>
 ```
 ### MODULO SOLICITUDES
-**Sentencia SQL**<br>;
+**Sentencia SQL**<br>
 Ver solicitudes (Administrador):
 ```
 SELECT so.id_solicitud, em.nombres, em.apellidos, so.fec_solicitud, ti.descripcion FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
@@ -266,7 +266,7 @@ WHERE ti.id_tipo_solicitud = so.id_tipo_solicitud AND es.id_estado_solicitud = s
 AND id_empleado = <1>
 ```
 
-Nueva solicitud: <br>;
+Nueva solicitud: <br>
 Con opción aumento
 ```
 CREATE SEQUENCE id_solicitud START WITH 1
