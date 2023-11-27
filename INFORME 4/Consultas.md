@@ -1,5 +1,11 @@
 ### MODULO EMPLEADOS
 ```
+--Registrar Empleado
+
+
+--Mostrar usuarios vigentes o activos
+
+--Mostrar usuarios desvinculados o desactivados
 
 ```
 
