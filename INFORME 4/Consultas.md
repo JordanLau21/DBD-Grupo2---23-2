@@ -215,3 +215,66 @@ WHERE b.id_boleta = <2> AND p.fecha_inicio < mp.fecha AND p.fecha_fin >= mp.fech
 Visualizar planillas que aun no han sido pagadas:
 ```
 SELECT id_planilla WHERE fecha_calculo IS NULL AND monto_emitido IS NULL;
+```
+
+### MODULO CUENTA
+**Sentencia SQL**
+Auntenticación de Usuario:
+```
+SELECT usuario, contraseña from Cuenta
+WHERE usuario = <1> AND contraseña = <2>
+```
+
+Olvidar contraseña:
+```
+SELECT nombres, apellidos, dni FROM Empleado WHERE nombres = <1> AND apellidos = <2> AND dni = < 3 >
+```
+
+Cambiar contraseña e inicio de sesión:
+```
+UPDATE Cuenta SET contraseña= <3> WHERE usuario = <1>;
+SELECT usuario, contraseña from Cuenta
+WHERE usuario = <1> AND contraseña = <3>
+```
+### MODULO SOLICITUDES
+**Sentencia SQL**
+Ver solicitudes (Administrador):
+```
+SELECT so.id_solicitud, em.nombres, em.apellidos, so.fec_solicitud, ti.descripcion FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
+AND ti.id_tipo_solicitud = so.id_tipo_solicitud
+```
+
+Boton detalles:
+```
+SELECT so.id_solicitud, em.nombres, em.apellidos, em.dni, so.fec_solicitud, so.hora_solicitud, ti.descripcion, so.detalles, es.descripcion
+FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
+AND ti.id_tipo_solicitud = so.id_tipo_solicitud
+```
+
+Boton cambio de estado:
+```
+UPDATE Solicitud SET id_estado_solicitud = <1> WHERE id_estado_solicitud = 2 AND id_solicitud = <2>
+```
+
+Ver Solicitudes (Empleado):
+```
+SELECT so.id_solicitud, so.fec_solicitud, ti.descripcion, es.descripcion
+FROM Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE ti.id_tipo_solicitud = so.id_tipo_solicitud AND es.id_estado_solicitud = so.id_estado_solicitud
+AND id_empleado = <1>
+```
+
+Nueva solicitud:
+Con opción aumento:
+```
+CREATE SEQUENCE id_solicitud START WITH 1
+INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE, LOCALTIME , <6> , 2 , <1>, <7> ,<8>)
+```
+Sin opción aumento:
+```
+CREATE SEQUENCE id_solicitud START WITH 1
+INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE , LOCALTIME , null , 2 , <2>, <7> ,<8>)
+```
+
