@@ -964,13 +964,13 @@ El id_empleado <1> se obtiene de la base de datos donde esta registrada la cuent
 Al elegirse esta opción, se está eligiendo un tipo de solicitud con monto, por ello aparecerá una nueva pantalla con la opción de ingresar monto, donde al enviar la solicitud, la consulta será:
 ```
 CREATE SEQUENCE id_solicitud START WITH 1
-INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, <4>, <5> , <6> , 2 , <1>, <7> ,<8>)
+INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE, LOCALTIME , <6> , 2 , <1>, <7> ,<8>)
 ```
 #### Opción 2
 Al elegirse esta opción, se esta eligiendo un tipo de solicitud el cual no requiere de ingresarse un monto, debido a ello, aparecerá una pantalla el cual no tiene incluida la opción para ingresar un monto, donde al enviar la solicitud, la consulta será:
 ```
 CREATE SEQUENCE id_solicitud START WITH 1
-INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, <4>, <5> , null , 2 , <2>, <7> ,<8>)
+INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE , LOCALTIME , null , 2 , <2>, <7> ,<8>)
 ```
 id_empleado <7>: Se obtiene de la base de datos en la cual esta registrada la cuenta. <br>
 id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cuenta.
