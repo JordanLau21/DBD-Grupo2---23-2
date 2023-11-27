@@ -1,6 +1,7 @@
 ### MODULO EMPLEADOS
 ```
 --Registrar Empleado
+
 1. Datos del Empleado
 SELECT tipo_regimen FROM Regimen_pensionario;
 SELECT tipo_seguro FROM Seguro_medico;
@@ -18,13 +19,23 @@ SELECT tipo_jornada FROM Tipo_jornada;
 
 INSERT INTO Contrato(id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico,id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_frecuencia_pago,id_medio_pago) VALUES
 (<1>,<2>,<3>,<4>,<5>,<6>,<7>,1,<8>,<9>,<10>,<11>,<12>,<13>,<14>);
+
 --Mostrar usuarios vigentes o activos
+1. Visualizar usuarios vigentes
 SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta 
 ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1;
 
+2. Búsqueda de un ususario en específico por nombre o apellido
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1 AND ((Empleado.nombre=<1>) OR (Empleado.apellidos=<1>));
+
 --Mostrar usuarios desvinculados o desactivados
+1. Visualizar usuarios desvinculados
 SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta 
 ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=2;
+
+2. Búsqueda de un ususario en específico por nombre o apellido
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta 
+ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=2 AND ((Empleado.nombre=<1>) OR (Empleado.apellidos=<1>));
 ```
 
 ### MODULO ADMINISTRACIÓN DE LA EMPRESA
