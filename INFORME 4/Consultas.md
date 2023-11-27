@@ -1,8 +1,22 @@
 ### MODULO EMPLEADOS
 ```
 --Registrar Empleado
+1. Datos del Empleado
+SELECT tipo_regimen FROM Regimen_pensionario;
+SELECT tipo_seguro FROM Seguro_medico;
+SELECT tipo_discapacidad FROM Situacion_discapacidad;
+SELECT razon_social FROM Empresa;
 
+INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,cantidad_menores_cargo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa,id_cuenta) VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>,<8>,<9>,<10>,<11>,<12>,<13>,<14>)
+2. Datos del Contrato y Pago
+SELECT nombre_cargo FROM Cargo;
+SELECT nombre_area FROM Area;
+SELECT estado_contrato FROM Estado_contrato;
+SELECT tipo_contrato FROM Tipo_contrato;
+SELECT tipo_jornada FROM Tipo_jornada;
 
+INSERT INTO Contrato(id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico,id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_frecuencia_pago,id_medio_pago) VALUES
+(<1>,<2>,<3>,<4>,<5>,<6>,<7>,1,<8>,<9>,<10>,<11>,<12>,<13>,<14>);
 --Mostrar usuarios vigentes o activos
 
 --Mostrar usuarios desvinculados o desactivados
