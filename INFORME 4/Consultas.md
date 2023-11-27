@@ -151,9 +151,13 @@ WHERE p.id_planilla = <1>;
 ```
 Visualizar generales de boleta:
 ```
-SELECT DISTINCT e.nombres, e.apellidos, e.dni, b.total_neto, b.total_ingresos, b.total_descuentos, b.total_aportes, tc.tipo_contrato,c.sueldo_base 
-FROM planilla p, empleado e, contrato c, concepto_nomina cn, boleta b, movimiento_planilla mp,tipo_contrato tc
-WHERE b.id_boleta = <2> AND c.id_tipo_contrato=tp.id_tipo_contrato AND c.id_empleado=e.id_empleado AND b.id_planilla=p.id_planilla;
+SELECT DISTINCT e.nombres, e.apellidos, e.dni, b.total_neto, b.total_ingresos, b.total_descuentos, b.total_aportes, tc.tipo_contrato,co.sueldo_base 
+FROM boleta b
+INNER JOIN planilla p ON b.id_planilla = p.id_planilla
+INNER JOIN contrato co ON b.id_contrato = co.id_contrato
+INNER JOIN tipo_contrato tc ON c.id_tipo_contrato=tp.id_tipo_contrato
+INNER JOIN empleado e ON co.id_empleado=e.id_empleado
+WHERE b.id_boleta = <2>
 -- 2: id de la boleta
 ```
 Visualizar montos específicos por cada concepto:
