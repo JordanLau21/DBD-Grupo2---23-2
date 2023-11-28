@@ -26,34 +26,38 @@ CREATE TABLE Tipo_solicitud(
 	id_tipo_solicitud INTEGER PRIMARY KEY NOT NULL,
 	descripcion VARCHAR(50) NOT NULL
 );	
-
+```
 CREATE TABLE Estado_contrato(
 	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,
 	estado_contrato VARCHAR(20) NOT NULL
 );
-
+```
+```
 CREATE TABLE Tipo_contrato(
 	id_tipo_contrato INTEGER PRIMARY KEY NOT NULL,
 	tipo_contrato VARCHAR(30) NOT NULL
 );
-
+```
+```
 CREATE TABLE Tipo_jornada(
 	id_tipo_jornada INTEGER PRIMARY KEY NOT NULL,
 	tipo_jornada VARCHAR(20) NOT NULL
 );
-
+```
+```
 CREATE TABLE Frecuencia_pago(
 	id_frecuencia_pago INTEGER PRIMARY KEY NOT NULL,
 	frecuencia_pago VARCHAR(50) NOT NULL
 );
-
+```
+```
 CREATE TABLE Medio_pago(
 	id_medio_pago INTEGER PRIMARY KEY NOT NULL,
 	medio_pago VARCHAR(50) NOT NULL,
 	entidad_financiera VARCHAR(50),
 	cuenta NUMERIC
 );
-
+```
 CREATE TABLE Planilla
 (
   id_planilla INTEGER NOT NULL,
@@ -149,7 +153,7 @@ CREATE TABLE Area(
     id_empresa INTEGER NOT NULL,
     FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 );
-
+```
 CREATE TABLE Empleado(
 	id_empleado INTEGER PRIMARY KEY NOT NULL,
 	nombre VARCHAR(20) NOT NULL,
@@ -173,7 +177,7 @@ CREATE TABLE Empleado(
 	id_cuenta INTEGER NOT NULL,
 	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)
 );
-
+```
 CREATE TABLE Solicitud(
 	id_solicitud INTEGER PRIMARY KEY NOT NULL,
 	detalles VARCHAR(100) NOT NULL,
@@ -189,7 +193,7 @@ CREATE TABLE Solicitud(
 	id_empresa INTEGER NOT NULL,
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 );
-
+```
 CREATE TABLE Contrato(
 	id_contrato INTEGER PRIMARY KEY NOT NULL,
 	fecha_firma_contrato DATE NOT NULL,
@@ -214,7 +218,7 @@ CREATE TABLE Contrato(
 	id_medio_pago INTEGER NOT NULL,
 	FOREIGN KEY (id_medio_pago) REFERENCES Medio_pago(id_medio_pago)
 );
-
+```
 CREATE TABLE Asistencia(
 	id_asistencia INTEGER PRIMARY KEY,
 	fecha_inicio DATE,
