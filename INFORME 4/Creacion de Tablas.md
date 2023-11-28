@@ -1,17 +1,21 @@
+```
 CREATE TABLE Regimen_pensionario(
 	id_regimen_pensionario INTEGER PRIMARY KEY NOT NULL,
 	tipo_regimen CHAR(3) NOT NULL
 );
-
+```
+```
 CREATE TABLE Seguro_medico(
 	id_seguro_medico INTEGER PRIMARY KEY NOT NULL,
 	tipo_seguro VARCHAR(10) NOT NULL
 );
-
+```
+```
 CREATE TABLE Situacion_discapacidad(
 	id_situacion_discapacidad INTEGER PRIMARY KEY NOT NULL,
 	tipo_discapacidad VARCHAR(10) NOT NULL
 );
+```
 
 CREATE TABLE Estado_solicitud(
 	id_estado_solicitud INTEGER PRIMARY KEY NOT NULL,
