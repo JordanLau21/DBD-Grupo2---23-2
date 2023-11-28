@@ -28,7 +28,7 @@ CREATE TABLE Tipo_solicitud(
 	descripcion VARCHAR(50) NOT NULL
 );	
 ```
-
+```
 CREATE TABLE Estado_contrato(
 	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,
 	estado_contrato VARCHAR(20) NOT NULL
@@ -60,6 +60,7 @@ CREATE TABLE Medio_pago(
 	cuenta NUMERIC
 );
 ```
+```
 CREATE TABLE Planilla
 (
   id_planilla INTEGER NOT NULL,
@@ -74,19 +75,22 @@ CREATE TABLE Planilla
   hora_creacion time not null,
   PRIMARY KEY (id_planilla)
 );
-
+```
+```
 create table Tipo_operacion (
 	id_tipo_operacion INTEGER not null,
 	descripcion_operacion VARCHAR(20) not null,
 	primary key (id_tipo_operacion)
 );
-
+```
+```
 create table Estado_concepto (
 	id_estado INTEGER not null,
 	descripcion_estado VARCHAR(20) not null,
 	primary key (id_estado)
 );
-
+```
+```
 CREATE TABLE Concepto_nomina(
   id_nomina INTEGER NOT NULL,
   nombre_nomina VARCHAR(50) NOT NULL,
@@ -97,12 +101,14 @@ CREATE TABLE Concepto_nomina(
   FOREIGN KEY (id_tipo_operacion) REFERENCES Tipo_operacion(id_tipo_operacion),
   FOREIGN KEY (id_estado) REFERENCES Estado_concepto(id_estado)
 );
-
+```
+```
 CREATE TABLE Estado_cuenta(
 	id_estado_cuenta INTEGER PRIMARY KEY NOT NULL,
 	estado_cuenta VARCHAR(30) NOT NULL
 );
-
+```
+```
 CREATE TABLE Cuenta(
 	id_cuenta INTEGER PRIMARY KEY NOT NULL,
 	usuario VARCHAR(50) NOT NULL,
@@ -111,7 +117,8 @@ CREATE TABLE Cuenta(
 	id_estado_cuenta INTEGER NOT NULL,
 	FOREIGN KEY (id_estado_cuenta) REFERENCES Estado_cuenta(id_estado_cuenta)
 );
-
+```
+```
 CREATE TABLE Empresa(
 	id_empresa INTEGER PRIMARY KEY NOT NULL,
 	ruc NUMERIC(12) NOT NULL,
@@ -125,7 +132,8 @@ CREATE TABLE Empresa(
     id_cuenta INTEGER NOT NULL,
 	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)
 );
-
+```
+```
 CREATE TABLE RepresentanteLegal(
 	id_representante INTEGER PRIMARY KEY NOT NULL,
 	nombres VARCHAR(20) NOT NULL,
@@ -136,7 +144,8 @@ CREATE TABLE RepresentanteLegal(
 	id_empresa INTEGER NOT NULL,
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 ); 
-
+```
+```
 CREATE TABLE Cargo(
 	id_cargo INTEGER PRIMARY KEY NOT NULL,
 	nombre_cargo VARCHAR(50) NOT NULL,
@@ -147,7 +156,8 @@ CREATE TABLE Cargo(
 	id_empresa INTEGER NOT NULL,
 	FOREIGN KEY  (id_empresa) REFERENCES Empresa(id_empresa)
 );
-
+```
+```
 CREATE TABLE Area(
     id_area INTEGER PRIMARY KEY NOT NULL,
     nombre_area VARCHAR(50) NOT NULL,
@@ -155,6 +165,7 @@ CREATE TABLE Area(
     id_empresa INTEGER NOT NULL,
     FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 );
+```
 ```
 CREATE TABLE Empleado(
 	id_empleado INTEGER PRIMARY KEY NOT NULL,
@@ -180,6 +191,7 @@ CREATE TABLE Empleado(
 	FOREIGN KEY (id_cuenta) REFERENCES Cuenta(id_cuenta)
 );
 ```
+```
 CREATE TABLE Solicitud(
 	id_solicitud INTEGER PRIMARY KEY NOT NULL,
 	detalles VARCHAR(100) NOT NULL,
@@ -195,6 +207,7 @@ CREATE TABLE Solicitud(
 	id_empresa INTEGER NOT NULL,
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 );
+```
 ```
 CREATE TABLE Contrato(
 	id_contrato INTEGER PRIMARY KEY NOT NULL,
@@ -221,6 +234,7 @@ CREATE TABLE Contrato(
 	FOREIGN KEY (id_medio_pago) REFERENCES Medio_pago(id_medio_pago)
 );
 ```
+```
 CREATE TABLE Asistencia(
 	id_asistencia INTEGER PRIMARY KEY,
 	fecha_inicio DATE,
@@ -232,7 +246,8 @@ CREATE TABLE Asistencia(
 	FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
 	FOREIGN KEY (id_nomina) REFERENCES Concepto_Nomina(id_nomina)
 );
-
+```
+```
 CREATE TABLE Movimiento_planilla(
 	id_movimiento INTEGER PRIMARY KEY,
 	fecha DATE,
@@ -242,7 +257,8 @@ CREATE TABLE Movimiento_planilla(
 	FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
 	FOREIGN KEY (id_nomina) REFERENCES Concepto_Nomina(id_nomina)
 );
-
+```
+```
 CREATE TABLE Boleta(
   id_boleta INTEGER NOT NULL,
   TotalDescuentos NUMERIC(9,2) NOT NULL,
@@ -255,3 +271,4 @@ CREATE TABLE Boleta(
   FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
   FOREIGN KEY (id_planilla) REFERENCES Planilla(id_planilla)
 );
+```
