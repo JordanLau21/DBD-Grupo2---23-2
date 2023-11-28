@@ -16,17 +16,19 @@ CREATE TABLE Situacion_discapacidad(
 	tipo_discapacidad VARCHAR(10) NOT NULL
 );
 ```
-
+```
 CREATE TABLE Estado_solicitud(
 	id_estado_solicitud INTEGER PRIMARY KEY NOT NULL,
 	descripcion VARCHAR(15) NOT NULL
 );
-
+```
+```
 CREATE TABLE Tipo_solicitud(
 	id_tipo_solicitud INTEGER PRIMARY KEY NOT NULL,
 	descripcion VARCHAR(50) NOT NULL
 );	
 ```
+
 CREATE TABLE Estado_contrato(
 	id_estado_contrato INTEGER PRIMARY KEY NOT NULL,
 	estado_contrato VARCHAR(20) NOT NULL
