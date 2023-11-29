@@ -133,14 +133,12 @@ SELECT id_planilla, periodo, fecha_inicio, periodicidad FROM planilla;
 
 Visualizar empleados en una planilla:
 ```
-SELECT distinct em.id_empleado, em.nombres , em.apellidos, co.fecha_inicio_laboral,
+SELECT distinct em.id_empleado, em.nombre , em.apellidos, co.fecha_inicio_laboral,
 ca.nombre_cargo
-FROM Empleado em, planilla pl, estado_contrato est, cargo ca
-INNER JOIN contrato co on em.id_empleado =co.id_empleado
-INNER JOIN Frecuencia_pago fp on co.id_frecuencia_pago = fp.id_frecuencia_pago 
-WHERE pl.periodicidad = fp.frecuencia_pago
-AND pl.fecha_inicio>co.fecha_inicio_laboral and co.id_cargo=ca.id_cargo and pl.fecha_fin<=co.fecha_termino_contrato
-AND est.estado_contrato='Vigente' and pl.id_planilla = <1>;
+FROM empleado em, planilla pl, estado_contrato est, cargo ca, contrato co,Frecuencia_pago fp
+where pl.id_planilla = <1> and em.id_empleado =co.id_empleado and co.id_frecuencia_pago=fp.id_frecuencia_pago
+and fp.frecuencia_pago=pl.periodicidad and pl.fecha_fin<=co.fecha_termino_contrato and pl.fecha_inicio>=co.fecha_inicio_laboral
+and ca.id_cargo=co.id_cargo;
 -- 1: id de planilla seleccionada
 ```
 
