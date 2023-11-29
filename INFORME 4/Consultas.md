@@ -204,8 +204,8 @@ INNER JOIN planilla p ON b.id_planilla = p.id_planilla
 INNER JOIN contrato co ON b.id_contrato = co.id_contrato
 INNER JOIN movimiento_planilla mp ON mp.id_contrato = co.id_contrato
 INNER JOIN concepto_nomina cn ON mp.id_nomina = cn.id_nomina
-WHERE b.id_boleta = <2> AND p.fecha_inicio < mp.fecha AND p.fecha_fin >= mp.fecha AND mp.monto>0;
--- 2: id_boleta
+WHERE b.id_boleta = 1380 AND p.fecha_inicio < mp.fecha AND p.fecha_fin >= mp.fecha AND mp.monto>0;
+-- 2: id_boleta 245 1380
 ```
 
 Visualizar planillas que aun no han sido pagadas:
