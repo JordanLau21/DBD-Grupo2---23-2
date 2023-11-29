@@ -165,7 +165,7 @@ WHERE fecha_calculo IS NOT NULL AND monto_emitido IS NOT NULL;
 
 Conteo de boletas en la planilla:
 ```
-SELECT DISTINCT count(*)  FROM planilla p
+SELECT count(*)  FROM planilla p
 INNER JOIN boleta b ON b.id_planilla = p.id_planilla
 INNER JOIN contrato co ON b.id_contrato = co.id_contrato
 INNER JOIN empleado e ON e.id_empleado = co.id_empleado
@@ -179,7 +179,7 @@ SELECT id_planilla, fecha_calculo,monto_emitido, periodo, periodicidad  FROM pla
 ```
 Visualizar empleados a los que se le pagó en el periodo de planilla:
 ```
-SELECT DISTINCT e.nombres, e.apellidos, b.totalneto, b.id_boleta from planilla p
+SELECT e.nombre, e.apellidos, b.totalneto, b.id_boleta from planilla p
 INNER JOIN boleta b ON b.id_planilla = p.id_planilla
 INNER JOIN contrato co ON b.id_contrato = co.id_contrato
 INNER JOIN empleado e ON e.id_empleado = co.id_empleado
