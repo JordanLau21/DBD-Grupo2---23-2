@@ -1,0 +1,27 @@
+<body>
+<main id="contenedorprincipal">
+  <div class="login-box">
+    <h1 class="tituloPrincipal">PLANILLA FRONTEND</h1>
+    <form class="formulario">
+      <br><br>
+      <div class="Form-group">
+        <label> Usuario:</label>
+        <input type="text"  [(ngModel)]="usuario"  [ngModelOptions]="{standalone: true}"  placeholder="Ingresar usuario"><br>
+      </div>
+      <div class="Form-group">
+        <label> Contraseña:</label>
+        <input type="password"  [(ngModel)]="contrasenia"  [ngModelOptions]="{standalone: true}"    placeholder="Ingresar contraseña"><br>
+      </div>
+      <button (click)="validar()" class="boton-login">
+        <input type="button" value="Confirmar datos" class="boton-confirmardatos">
+      </button>
+      <p>{{mensaje}}</p>
+      <div *ngIf="mensaje=='Validado!'">
+        <a [routerLink]="['/inicioempresa',id_empresa]">INGRESAR EMPRESA</a>
+      </div>
+      <a href="#">¿Olvidaste tu contraseña?</a><br>
+    </form>
+
+  </div>
+</main>
+</body>
