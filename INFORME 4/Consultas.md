@@ -210,7 +210,7 @@ WHERE b.id_boleta = 1380 AND p.fecha_inicio < mp.fecha AND p.fecha_fin >= mp.fec
 
 Visualizar planillas que aun no han sido pagadas:
 ```
-SELECT id_planilla WHERE fecha_calculo IS NULL AND monto_emitido IS NULL;
+SELECT id_planilla from planilla WHERE fecha_calculo IS NULL AND monto_emitido IS NULL;
 ```
 
 ### MODULO CUENTA
