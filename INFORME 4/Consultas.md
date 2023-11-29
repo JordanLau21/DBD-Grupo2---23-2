@@ -151,12 +151,10 @@ values (<2> ,<3>, <1> ,current_date ,current_time);
 ```
 Visualizar empleados en nueva planilla:
 ```
-SELECT e.id_empleado, e.nombre, c.fecha_de_contrato, ca.nombre  
-FROM contrato c, cargo ca
-INNER JOIN empleado e ON e.id_empleado =c.id_empleado
-INNER JOIN Frecuencia_pago fp ON c.id_frecuencia_pago = fp.id_frecuencia_pago
-INNER JOIN cargo ca ON c.id_cargo = ca.id_cargo
-WHERE c.fecha_inicio_laboral < current_date AND c.fecha_termino_contrato > current_date AND fp.frecuencia_pago= <1>;
+SELECT e.id_empleado, e.nombre, co.fecha_inicio_laboral,co.fecha_termino_contrato, ca.nombre_cargo  
+FROM contrato co, cargo ca, empleado e, Frecuencia_pago fp
+WHERE co.fecha_inicio_laboral < current_date AND co.fecha_termino_contrato > current_date AND fp.frecuencia_pago= <1>
+AND e.id_empleado =co.id_empleado AND co.id_frecuencia_pago = fp.id_frecuencia_pago AND co.id_cargo = ca.id_cargo ;
 -- 1: periodicidad de planilla
 ```
 Visualizar planillas que ya han generado sus pagos:
