@@ -198,7 +198,7 @@ Se creará dentro de este módulo una opción "Crear amonestación", en donde se
 Con el fin de salvaguardar la seguridad de la empresa y de los empleados de esta, podría considerarse aplicar una capa adicional de seguridad, como una autenticación multifactor por ejemplo, a través de códigos de verificación, además del cifrado de datos, el cual ayudará a proteger los datos sensibles de la plataforma, como los datos financieros por ejemplo, esto podría hacerse usando la extensión pgcrypto.
 Además también se necesitará organizar los componentes de acuerdo a los módulos que se han establecido en este documento, de manera que se simplifique el diseño y se reduzca la complejidad para facilitar la detección de errores, lo que a su vez facilitaría su corrección.
 ## ROADMAP
-
+Luego de los cambios necesarios mencionados se procederá con la fase de pruebas, la cual en caso de pasar exitosamente, se pasará a desplegar la apliación web en un servicio cloud, como pueden ser Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP) o Oracle Cloud Infrastructure (OCI). Finalmente, luego de todo esto, la aplicación web entrará en uso y se le dará un mantenimiento periódico, y actualizaciones cada que sea necesario.
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME%204/Im%C3%A1genes/roadmap.PNG)
 
 
