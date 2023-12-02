@@ -199,4 +199,7 @@ Con el fin de salvaguardar la seguridad de la empresa y de los empleados de esta
 Además también se necesitará organizar los componentes de acuerdo a los módulos que se han establecido en este documento, de manera que se simplifique el diseño y se reduzca la complejidad para facilitar la detección de errores, lo que a su vez facilitaría su corrección.
 ## ROADMAP
 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME%204/Im%C3%A1genes/roadmap.PNG)
+
+
 
