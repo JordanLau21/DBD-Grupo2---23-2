@@ -33,24 +33,45 @@ INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefon
 ## VISTA 2
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2048.png)
 ### QUERY 1
+```
+SELECT nombre_cargo FROM Cargo;
+SELECT nombre_area FROM Area;
+SELECT estado_contrato FROM Estado_contrato;
+SELECT tipo_contrato FROM Tipo_contrato;
+SELECT tipo_jornada FROM Tipo_jornada;
 
+INSERT INTO Contrato(id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico,id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_frecuencia_pago,id_medio_pago) VALUES
+(<1>,<2>,<3>,<4>,<5>,<6>,<7>,1,<8>,<9>,<10>,<11>,<12>,<13>,<14>);
+```
 ### POSTMAN
 
 
 
 
 ## VISTA 3
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/vigentes.png)### QUERY 1
-
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/vigentes.png)
+### QUERY 1
+```
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email 
+FROM Empleado 
+INNER JOIN Cuenta_empleado
+ON Cuenta_empleado.id_empleado=Empleado.id_empleado 
+WHERE Cuenta_empleado.id_estado_cuenta=1;
+```
 ### POSTMAN
 
 
 
 ## VISTA 4
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados.png)
-
 ### QUERY 1
-
+```
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email 
+FROM Empleado 
+INNER JOIN Cuenta_empleado
+ON Cuenta_empleado.id_empleado=Empleado.id_empleado 
+WHERE Cuenta_empleado.id_estado_cuenta=2;
+```
 ### POSTMAN
 
 
