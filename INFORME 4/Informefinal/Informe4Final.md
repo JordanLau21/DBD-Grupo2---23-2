@@ -1,3 +1,11 @@
+# ALUMNOS PARTICIPANTES
+- Flores Velarde, Roberto Carlos
+- Huamán Silva, Luis Fernando
+- Mamani Olgado, Alex Wilson
+- Calderon Perez, Anthony Alexis
+- Laureano Hidalgo, Jordan Cesar
+- Yucra Serpa, Jean Herberth
+
 # ÍNDICES Y OTROS OBJETOS DE BD
 # PL/pgSQL - PROCESO BATCH
 # ACTUALIZACIONES A LA ARQUITECTURA DE LA APLICACIÓN
