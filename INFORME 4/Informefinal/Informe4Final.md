@@ -25,6 +25,8 @@ SELECT razon_social FROM Empresa;
 
 INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,cantidad_menores_cargo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa) VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>,<8>,<9>,<10>,<11>,<12>,<13>)
 ```
+### RESULTADO
+
 ### POSTMAN
 
 
@@ -43,6 +45,9 @@ SELECT tipo_jornada FROM Tipo_jornada;
 INSERT INTO Contrato(id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico,id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_frecuencia_pago,id_medio_pago) VALUES
 (<1>,<2>,<3>,<4>,<5>,<6>,<7>,1,<8>,<9>,<10>,<11>,<12>,<13>,<14>);
 ```
+### RESULTADO
+
+
 ### POSTMAN
 
 
@@ -58,6 +63,9 @@ INNER JOIN Cuenta_empleado
 ON Cuenta_empleado.id_empleado=Empleado.id_empleado 
 WHERE Cuenta_empleado.id_estado_cuenta=1;
 ```
+### RESULTADO
+
+
 ### POSTMAN
 
 
@@ -72,6 +80,9 @@ INNER JOIN Cuenta_empleado
 ON Cuenta_empleado.id_empleado=Empleado.id_empleado 
 WHERE Cuenta_empleado.id_estado_cuenta=2;
 ```
+### RESULTADO
+
+
 ### POSTMAN
 
 
