@@ -31,6 +31,19 @@ SELECT so.id_solicitud, em.nombres, em.apellidos, so.fec_solicitud, ti.descripci
 WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
 AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 ```
+## VISTA 4
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/8dc630f7-3a83-43ee-9490-489d656ce892)
+### QUERY 4
+```
+SELECT so.id_solicitud, em.nombres, em.apellidos, em.dni, so.fec_solicitud, so.hora_solicitud, ti.descripcion, so.detalles, es.descripcion
+FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
+AND ti.id_tipo_solicitud = so.id_tipo_solicitud
+```
+### QUERY 5
+```
+UPDATE Solicitud SET id_estado_solicitud = <1> WHERE id_estado_solicitud = 2 AND id_solicitud = <2>
+```
 ## VISTA 1
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2047.png)
 ### QUERY 1
@@ -196,6 +209,40 @@ El resultado tras introducir y ejecutar el query 1 es:
 ### POSTMAN
 
 
+
+## VISTA 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/02f1c160-8ed7-465a-970a-60190e6eed7c)
+### QUERY
+```
+SELECT usuario, contraseña from Cuenta
+WHERE usuario = <1> AND contraseña = <2>
+```
+## VISTA
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/beb0390a-f7a4-4dd5-9c31-32df2159ebc2)
+### QUERY
+```
+SELECT so.id_solicitud, so.fec_solicitud, ti.descripcion, es.descripcion
+FROM Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE ti.id_tipo_solicitud = so.id_tipo_solicitud AND es.id_estado_solicitud = so.id_estado_solicitud
+AND id_empleado = <1>
+```
+## VISTA
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/a1ba1f00-531e-4563-810d-8a8475434548)
+## VISTA
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/06f2968e-087a-4c25-9a86-aa7c5ba60510)
+### QUERY
+```
+CREATE SEQUENCE id_solicitud START WITH 1
+INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE , LOCALTIME , null , 2 , <2>, <7> ,<8>)
+```
+## VISTA
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/a70e5292-9aa3-4901-9e20-10e7ef6ae906)
+
+### QUERY
+```
+CREATE SEQUENCE id_solicitud START WITH 1
+INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE, LOCALTIME , <6> , 2 , <1>, <7> ,<8>)
+```
 
 
 # PROXIMOS PASOS
