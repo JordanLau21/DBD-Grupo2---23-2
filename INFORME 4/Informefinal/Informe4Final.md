@@ -194,6 +194,9 @@ Otro agregado será el de firma electrónica del empleado, a los cuales se les n
 A través de este módulo se buscará que se pueda registrar amonestaciones al personal de la empresa sin muchas dificultades.
 Se creará dentro de este módulo una opción "Crear amonestación", en donde se deberá elegir al empleado vigente a amonestar, luego de esto se podrá crear un reporte sobre la amonestación indicando los detalles de este.
 
-
+## CAMBIOS NECESARIOS
+Con el fin de salvaguardar la seguridad de la empresa y de los empleados de esta, podría considerarse aplicar una capa adicional de seguridad, como una autenticación multifactor por ejemplo, a través de códigos de verificación, además del cifrado de datos, el cual ayudará a proteger los datos sensibles de la plataforma, como los datos financieros por ejemplo, esto podría hacerse usando la extensión pgcrypto.
+Además también se necesitará organizar los componentes de acuerdo a los módulos que se han establecido en este documento, de manera que se simplifique el diseño y se reduzca la complejidad para facilitar la detección de errores, lo que a su vez facilitaría su corrección.
+## ROADMAP
 
 
