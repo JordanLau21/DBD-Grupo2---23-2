@@ -58,6 +58,16 @@ INSERT INTO Contrato(id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha
 (<1>,<2>,<3>,<4>,<5>,<6>,<7>,1,<8>,<9>,<10>,<11>,<12>,<13>,<14>);
 ```
 ### RESULTADOS
+- Antes de una inserción:
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME%204/Im%C3%A1genes/v2_1.jpg)
+
+- Luego de la inserción:<br>
+Se probó, para el ejemplo:
+```
+INSERT INTO Contrato (fecha_firma_contrato,fecha_inicio_laboral,fecha_termino_contrato,sueldo_base,liquido_teorico, id_area,id_cargo,id_empleado,id_estado_contrato,id_tipo_contrato,id_tipo_jornada,id_frecuencia_pago,id_medio_pago) VALUES ('15-01-2020','01-02-2020','31-12-2023',991.9614,991.96130080387,1,2,1,1,1,1,1,3);
+```
+La base de datos registra esta inserción:
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME%204/Im%C3%A1genes/v2_2.jpg)
 
 ### POSTMAN
 
