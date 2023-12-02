@@ -14,6 +14,20 @@
 ## CLIENTE
 
 # VERSIÓN FINAL DE LA APLICACIÓN
-## VISTAS
+## VISTA 1
+
+
+### QUERY 1
+
+
+### QUERY 2
+
+
+### POSTMAN
+
+
+
+
+## VISTA 2
 
 # PROXIMOS PASOS
