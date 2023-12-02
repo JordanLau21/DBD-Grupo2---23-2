@@ -31,18 +31,18 @@ SELECT so.id_solicitud, em.nombres, em.apellidos, so.fec_solicitud, ti.descripci
 WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
 AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 ```
+### QUERY 4
+```
+UPDATE Solicitud SET id_estado_solicitud = <1> WHERE id_estado_solicitud = 2 AND id_solicitud = <2>
+```
 ## VISTA 4
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/8dc630f7-3a83-43ee-9490-489d656ce892)
-### QUERY 4
+### QUERY 5
 ```
 SELECT so.id_solicitud, em.nombres, em.apellidos, em.dni, so.fec_solicitud, so.hora_solicitud, ti.descripcion, so.detalles, es.descripcion
 FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
 WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
 AND ti.id_tipo_solicitud = so.id_tipo_solicitud
-```
-### QUERY 5
-```
-UPDATE Solicitud SET id_estado_solicitud = <1> WHERE id_estado_solicitud = 2 AND id_solicitud = <2>
 ```
 ## VISTA 1
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2047.png)
