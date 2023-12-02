@@ -51,9 +51,9 @@ FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
 WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
 AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 ```
-## VISTA 1
+## VISTA 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2047.png)
-### QUERY 1
+### QUERY 
 ```
 SELECT tipo_regimen FROM Regimen_pensionario;
 SELECT tipo_seguro FROM Seguro_medico;
@@ -81,9 +81,9 @@ La base de datos registra esta inserción:
 
 
 
-## VISTA 2
+## VISTA 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2048.png)
-### QUERY 1
+### QUERY
 ```
 SELECT nombre_cargo FROM Cargo;
 SELECT nombre_area FROM Area;
@@ -113,7 +113,7 @@ La base de datos registra esta inserción:
 
 ## VISTA 3
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/vigentes.png)
-### QUERY 1
+### QUERY
 ```
 SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email 
 FROM Empleado 
@@ -157,7 +157,7 @@ INSERT INTO Cuenta_empleado (usuario,contraseña,id_estado_cuenta, rol,id_emplea
 INSERT INTO Cuenta_empleado (usuario,contraseña,id_estado_cuenta, rol,id_empleado) VALUES ('JORGE LUIS','41473747',2,'empleado',14);
 INSERT INTO Cuenta_empleado (usuario,contraseña,id_estado_cuenta, rol,id_empleado) VALUES ('KAREN EDITH','42685693',2,'empleado',15);
 ```
-El resultado tras introducir y ejecutar el query 1 es:
+El resultado tras introducir y ejecutar el query es:
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME%204/Im%C3%A1genes/v3_1.jpg)
 ### POSTMAN
 
