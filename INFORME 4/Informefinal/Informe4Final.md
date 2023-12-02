@@ -31,5 +31,27 @@ INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefon
 
 
 ## VISTA 2
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2048.png)
+### QUERY 1
+
+### POSTMAN
+
+
+
+
+## VISTA 3
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/vigentes.png)### QUERY 1
+
+### POSTMAN
+
+
+
+## VISTA 4
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados.png)
+
+### QUERY 1
+
+### POSTMAN
+
 
 # PROXIMOS PASOS
