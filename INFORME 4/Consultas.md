@@ -8,7 +8,7 @@ SELECT tipo_seguro FROM Seguro_medico;
 SELECT tipo_discapacidad FROM Situacion_discapacidad;
 SELECT razon_social FROM Empresa;
 
-INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,cantidad_menores_cargo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa,id_cuenta) VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>,<8>,<9>,<10>,<11>,<12>,<13>,<14>)
+INSERT INTO Empleado (id_empleado,nombre,apellidos,fecha_nacimiento,edad,telefono,email,dni,estado_civil,sexo,cantidad_menores_cargo,id_regimen_pensionario,id_seguro_medico,id_situacion_discapacidad,id_empresa) VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>,<8>,<9>,<10>,<11>,<12>,<13>)
 
 2. Datos del Contrato y Pago
 SELECT nombre_cargo FROM Cargo;
@@ -22,20 +22,33 @@ INSERT INTO Contrato(id_contrato,fecha_firma_contrato,fecha_inicio_laboral,fecha
 
 --Mostrar usuarios vigentes o activos
 1. Visualizar usuarios vigentes
-SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta 
-ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1;
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email 
+FROM Empleado 
+INNER JOIN Cuenta_empleado
+ON Cuenta_empleado.id_empleado=Empleado.id_empleado 
+WHERE Cuenta_empleado.id_estado_cuenta=1;
 
 2. Búsqueda de un ususario en específico por nombre o apellido
-SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1 AND ((Empleado.nombre=<1>) OR (Empleado.apellidos=<1>));
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email 
+FROM Empleado 
+INNER JOIN Cuenta_empleado
+ON Cuenta_empleado.id_empleado=Empleado.id_empleado 
+WHERE Cuenta_empleado.id_estado_cuenta=1 AND ((Empleado.nombre='SIFUENTES GRADOS') OR (Empleado.apellidos='SIFUENTES GRADOS'));
 
 --Mostrar usuarios desvinculados o desactivados
 1. Visualizar usuarios desvinculados
-SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta 
-ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=2;
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email 
+FROM Empleado 
+INNER JOIN Cuenta_empleado
+ON Cuenta_empleado.id_empleado=Empleado.id_empleado 
+WHERE Cuenta_empleado.id_estado_cuenta=2;
 
 2. Búsqueda de un ususario en específico por nombre o apellido
-SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta 
-ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=2 AND ((Empleado.nombre=<1>) OR (Empleado.apellidos=<1>));
+SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email 
+FROM Empleado 
+INNER JOIN Cuenta_empleado
+ON Cuenta_empleado.id_empleado=Empleado.id_empleado 
+WHERE Cuenta_empleado.id_estado_cuenta=2 AND ((Empleado.nombre='ARGUEDAS PUCUTAY') OR (Empleado.apellidos='ARGUEDAS PUCUTAY'));
 ```
 
 ### MODULO ADMINISTRACIÓN DE LA EMPRESA
