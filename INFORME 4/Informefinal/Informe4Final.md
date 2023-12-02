@@ -15,6 +15,23 @@
 
 # VERSIÓN FINAL DE LA APLICACIÓN
 ## VISTA 1
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/544012e2-8669-4a95-b491-dac39d533107)
+### QUERY 1
+```
+SELECT usuario, contraseña from Cuenta
+WHERE usuario = <1> AND contraseña = <2>
+```
+## VISTA 2
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/c68370f8-c355-4c7d-ade4-02fe23ce997b)
+## VISTA 3
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/48b103b5-d539-4c82-8359-4d98225f4ff6)
+### QUERY 3
+```
+SELECT so.id_solicitud, em.nombres, em.apellidos, so.fec_solicitud, ti.descripcion FROM Empleado em, Solicitud so, Tipo_solicitud ti, Estado_solicitud es
+WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
+AND ti.id_tipo_solicitud = so.id_tipo_solicitud
+```
+## VISTA 1
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2047.png)
 ### QUERY 1
 ```
