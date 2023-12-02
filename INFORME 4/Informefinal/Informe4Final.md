@@ -15,14 +15,8 @@
 
 # VERSIÓN FINAL DE LA APLICACIÓN
 ## VISTA 1
-
-
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2047.png)
 ### QUERY 1
-
-
-### QUERY 2
-
-
 ### POSTMAN
 
 
