@@ -2,7 +2,7 @@
 # PL/pgSQL - PROCESO BATCH
 # ACTUALIZACIONES A LA ARQUITECTURA DE LA APLICACIÓN
 ## ESTRUCTURA DE LA APLICACIÓN
-
+La estructura de la aplicación se basa en el uso de una API REST (Application Programming Interface Representational State Transfer), la cual emplea el formato de intercambio de datos JSON (JavaScript Object Notation).
 ## TECNOLOGIA UTILIZADA
 
 ## HERRAMIENTAS
