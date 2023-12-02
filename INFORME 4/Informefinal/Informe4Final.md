@@ -190,8 +190,10 @@ En este módulo también se podrá contar con un calendario, que permita visuali
 ### DOCUMENTOS
 El sistema de planillas deberá, en un futuro, permitir la subida de plantillas de documentos como por ejemplo, el Contrato tipo, Anexo tipo,  Certificado de Antigüedad, Certificado de Vacaciones, Finiquito, Carta de Aviso o Certificado de Renta Anual, entre muchos otros, pero además también se podrá hacer gestión documental, de manera que se tenga un repositorio de documentos de cada empleado de la empresa.
 Otro agregado será el de firma electrónica del empleado, a los cuales se les notificará a través de la plataforma y su correo que tienen documentos pendientes de firma, para firmar digitalmente deberán ingresar a la plataforma con su usuario respectivo, ir al módulo documentos, revisar el documento, ingresar la contraseña de usuario, luego se le enviará un correo su código de confirmación, el cual luego de ser ingresado en la plataforma hará que el documento figure como firmado por el empleado.
+### AMONESTACIONES
+A través de este módulo se buscará que se pueda registrar amonestaciones al personal de la empresa sin muchas dificultades.
+Se creará dentro de este módulo una opción "Crear amonestación", en donde se deberá elegir al empleado vigente a amonestar, luego de esto se podrá crear un reporte sobre la amonestación indicando los detalles de este.
 
 
-Con Buk starter puedes hacer gestión documental y tener todo el repositorio de documentos de tu colaborador.
 
 
