@@ -37,8 +37,9 @@ END;
 $$
 LANGUAGE plpgsql;
 ```
+```
 select crear_boletas(34);
-
+```
 
 ```
 CREATE OR REPLACE FUNCTION modificar_boletas_consecutivas() RETURNS VOID AS $$
@@ -88,5 +89,7 @@ BEGIN
     END LOOP;
 END;
 $$ LANGUAGE PLPGSQL;
-
+```
+```
+select modificar_boletas_consecutivas();
 ```
