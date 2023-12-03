@@ -7,6 +7,23 @@
 - Yucra Serpa, Jean Herberth
 
 # ÍNDICES Y OTROS OBJETOS DE BD
+### Índices para Optimización del proceso de cálculo de planillas
+1. Para mejorar el rendimiento de consultas relacionadas con el cálculo de planillas, se han creado índices en las tablas relevantes. A continuación, se detallan los índices creados y su impacto en las consultas.
+Consulta 1: Planillas Procesadas
+```
+CREATE INDEX idx_fecha_calculo_monto_emitido
+ON planilla(fecha_calculo, monto_emitido);
+```
+Este índice mejora la búsqueda de planillas que ya han sido procesadas, utilizando las columnas "fecha_calculo" y "monto_emitido".
+Consulta 2: Empleados a Pagar en una Planilla
+```
+CREATE INDEX idx_fecha_contrato_cargo
+ON contrato(fecha_inicio_laboral, fecha_termino_contrato, id_cargo);
+
+CREATE INDEX idx_empleado_frecuencia_pago_cargo
+ON empleado(id_empleado, id_frecuencia_pago, id_cargo);
+```
+Estos índices aceleran la identificación de empleados que deben recibir pagos en función de las fechas de contrato, la frecuencia de pago y el cargo.
 # PL/pgSQL - PROCESO BATCH
 ### Proceso: Calculo de planilla
 
