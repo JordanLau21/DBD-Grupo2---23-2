@@ -68,6 +68,8 @@ LANGUAGE plpgsql;
 ```
 &nbsp; &nbsp; &nbsp; &nbsp; Este código crea una función que tiene como variable de entrada el *id_planilla* de la planilla que se quiere pagar. Con esta función se crea las boletas, en base a la *frecuencia_pago*, *fecha_inicio_laboral* y *fecha_termino_contrato* del contrato y la *periodicidad*, *fecha_inicio* y *fecha_fin* de la planilla. Se crea una fila a partir de un query, en esta fila se obtiene todos los contratos de los empleados a los que se les debe pagar por esta planilla, por eso este query es similar al anterior. Una vez ejecutada esta función se tendran todas las nuevas boletas.
 
+&nbsp; &nbsp; &nbsp; &nbsp; **IMPORTANTE**: Se debe verificar cual es el nombre de la secuencia que está usando el *id_boleta*.
+
 &nbsp; &nbsp; &nbsp; &nbsp; El código tambien almacena el primer y último *id_boleta* que se insertó, los guarda en *primer_id_boleta* y *ultimo_id_boleta* respectivamente. Lo que hace es que en cada iteración el valor *ultimo_id_boleta* se actualiza al valor del *id_boleta* de la iteración actual y *primer_id_boleta* se actualiza solo en la primera iteración, ya que tiene un condicional que verifica si es no nulo. Despues se invoca a la siguiente funcion que permitirá actualizar los valores de la boletas. Esta invocación 
 con *PERFOMR* tiene un condicional que verifica si los valores de entrada son no nulos.
 
