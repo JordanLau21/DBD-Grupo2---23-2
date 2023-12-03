@@ -87,6 +87,9 @@ BEGIN
                             AND mp2.fecha < (SELECT fecha_fin FROM Planilla WHERE id_planilla = Boleta.id_planilla)))
         WHERE id_boleta = curr_id;
     END LOOP;
+	UPDATE planilla
+	SET fecha_calculo=current_date, monto_emitido=(select sum(totalneto) from boleta where id_boleta=34 )
+	where id_planilla=34;
 END;
 $$ LANGUAGE PLPGSQL;
 ```
