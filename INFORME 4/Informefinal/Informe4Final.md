@@ -383,6 +383,54 @@ INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE , LOCALTIM
 CREATE SEQUENCE id_solicitud START WITH 1
 INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE, LOCALTIME , <6> , 2 , <1>, <7> ,<8>)
 ```
+## VISTA 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/3bfe0fb2-c834-4fa7-8079-13aedae43b77)
+### QUERY
+```
+SELECT 
+    Empresa.ruc AS RUC, 
+    Empresa.razon_social AS Razón_Social,
+	CONCAT(RepresentanteLegal.nombres, ' ', RepresentanteLegal.apellido_paterno, ' ', RepresentanteLegal.apellido_materno) AS Representante,
+    Empresa.direccion AS Dirección,
+	Empresa.estado AS Estado    
+FROM Empresa
+LEFT JOIN RepresentanteLegal ON Empresa.id_empresa = RepresentanteLegal.id_empresa
+WHERE Empresa.id_empresa = 1;
+```
+## VISTA 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/ea3158e1-f557-4fb7-98d0-8e73b8e5e833)
+### QUERY
+```
+SELECT 
+    Empresa.id_empresa, 
+    Empresa.ruc, 
+    Empresa.regimen, 
+    Empresa.estado, 
+    Empresa.razon_social, 
+    Empresa.direccion, 
+    Empresa.giro, 
+    Empresa.ciudad, 
+    Empresa.logo,
+    RepresentanteLegal.id_representante,
+    RepresentanteLegal.nombres,
+    RepresentanteLegal.apellido_paterno,
+    RepresentanteLegal.apellido_materno,
+    RepresentanteLegal.dni
+FROM Empresa
+LEFT JOIN RepresentanteLegal ON Empresa.id_empresa = RepresentanteLegal.id_empresa
+WHERE Empresa.id_empresa = 1;
+```
+## VISTA 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/7e8c032b-42b8-4cf5-99a9-c90ffedff95f)
+### QUERY
+```
+UPDATE Empresa
+SET 
+    direccion = 'Jr. Calle los cocos 789',
+    logo = 'https://nuevo_logo.com/logo.png'
+WHERE id_empresa = 1;
+```
+
 
 
 # PROXIMOS PASOS
