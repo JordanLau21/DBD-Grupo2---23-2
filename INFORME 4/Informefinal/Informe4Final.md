@@ -27,7 +27,7 @@ WHERE co.fecha_inicio_laboral <= (SELECT fecha_inicio FROM planilla WHERE id_pla
   AND co.id_cargo = ca.id_cargo
 -- 1: id de planilla
 ```
-3. Para empezar con el cálculo de planilla, el sistema generará boletas con valores en blanco, es decir, los valores en total neto, total ingresos, etc, serán en 0. En esencia, se necesita realizar *inserts* en la tabla boleta considerando algunos parametros, esto se llevará a cabo con el siguiente código en lenguaje plpsql:
+3. Para empezar con el cálculo de planilla, el sistema generará boletas con valores en blanco, es decir, los valores en total neto, total ingresos, etc, serán 0. En esencia, se necesita realizar *inserts* en la tabla boleta considerando algunos parametros, esto se llevará a cabo con el siguiente código en lenguaje plpsql:
 ```
 CREATE OR REPLACE FUNCTION crear_boletas(planilla_id integer)
 RETURNS VOID AS 
