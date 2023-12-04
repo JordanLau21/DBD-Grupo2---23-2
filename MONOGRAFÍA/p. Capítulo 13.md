@@ -88,7 +88,7 @@ Dividiremos en dos actividades:
 | 3 | Al dar click en  "Agregar", sea de ingresos o descuentos. Se abrira la pantalla I-001, donde podra elegir el concepto a registrar, las fechas de inicio y final, y si lo requiere un comentario. Despues de clickear en "Agregar" se agregara dicho concepto en dicha lista. ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/b08e9022-a543-4790-8d7f-6758a58742ef)|
 
 
-### MÓDULO : PLANILLA
+## MÓDULO : PLANILLA
 **Funcionalidad primaria elegida**: Gestionar y controlar las planillas de los pagos hacia los trabajadores
 
 **Sustentación**: Es imprescindible para poder manejar y llevar un registro históricos de los pagos a los trabajadores, se puede visualizar los empleados que estuvieron incluidos en planillas anteriores, además de visualizar el monto de las boletas de cada empleado en los distintos periodos que se mantuvieron en la empresa
