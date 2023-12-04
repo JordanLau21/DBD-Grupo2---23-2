@@ -77,6 +77,8 @@ Las bases de datos de series temporales son sistemas diseñados específicamente
 
 
 
+### Ventajas respecto a un motor de Base de Datos Relacional
+
 
 
 
