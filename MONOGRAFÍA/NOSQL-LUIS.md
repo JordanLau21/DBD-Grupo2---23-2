@@ -115,11 +115,27 @@ Las bases de datos de series temporales son sistemas diseñados específicamente
 ### Trabajar con CouchDB
 
 CouchDB posee una interfaz web llamada Futon, la cual proporciona una manera sencilla de administrar la base de datos. Accedemos a Futon entrando al siguiente link: http://localhost:5984/_utils/
-![image]()
-
-
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/Screenshot_1.jpg)
 
 Para ingresar, debemos colocar el usuario y contraseña que elegimos durante la instalación:
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/Screenshot_2.jpg)
+
+Pantalla de inicio tras el ingreso de usuario y contraseña:
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/Screenshot_3.jpg)
+
+Vamos al apartado de verificación dando click en "Verify", ya ahí damos click en "Verify Installation", esto verificará que la instalación haya sido correcta.
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/Captura.PNG)
+
+
+
+
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
 ![image]()
 
 
