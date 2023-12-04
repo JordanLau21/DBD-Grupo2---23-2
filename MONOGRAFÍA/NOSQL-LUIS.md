@@ -46,25 +46,26 @@ Algunos ejemplos de motores de bases de datos relacionales son:<br>
 
 
 ### Tipos de Motores de Bases de Datos no Relacionales
+
 #### Motores de Base de Datos Clave Valor
 Este tipo de motores almacena datos en pares clave valor, donde cada valor está asociado con una clave única, lo que permite una recuperación rápida de datos. Algunos de los motores más populares de este tipo son: Riak, Redis y Amazon DynamoDB.
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/clave%20valor.PNG)
 
 #### Motores de Base de Datos orientados a Documentos
 Este tipo de motores almacenan datos en documentos, que pueden ser XML,JSON o BSON. Estos documentos son estructuras flexibles que tienen campos y valores anidados, lo que facilita la representación de datos complejos y cambiantes. Algunos de los motores más populares de este tipo son: CocuhDB, RavenDB y MongoDB.
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/documentos.webp)
 
 #### Motores de Base de Datos orientados a Grafos
 Estos motores están diseñados para almacenar y consultar datos altamente relacionados, utilizando estructuras de grafo para representar entidades y las relaciones de estas, debido a su diseño permiten consultas complejas que siguen los patrones y conexiones en el grafo de datos. Algunos de los motores más populares de este tipo son: ArangoDB, Neo4j y Amazon Neptune.
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/grafos.png)
 
 #### Motores de Base de Datos Columnares
 Este tipo de motores almacenan datos en columnas en lugar de filas, permitiendo alta compresión y acceso eficiente a subconjuntos de columnas. Son especialmente adecuados para casos de uso analíticos y consultas que involucran el análisis de grandes conjuntos de datos. Algunos de los motores más populares de este tipo son: Apache Cassandra, ClickHouse y Apacha Hbase.
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/columnares.jpg)
 
 
 ### Comparación de Rendimiento de Motores de Bases de Datos SQL y NoSQL
