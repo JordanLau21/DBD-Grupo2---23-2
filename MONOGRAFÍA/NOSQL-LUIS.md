@@ -23,7 +23,8 @@ Algunos ejemplos de motores de bases de datos relacionales son:<br>
 - MariaDB
 - SQLite
 - IBM Db2
-- Amazon RDS, etc.<br>
+- Amazon RDS, etc.
+
 ### Motores de Bases de Datos no Relacionales
 
 ### Comparación de Rendimiento de Motores de Bases de Datos SQL y NoSQL
