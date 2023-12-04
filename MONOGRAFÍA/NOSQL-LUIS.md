@@ -74,9 +74,6 @@ Las bases de datos de series temporales son sistemas diseñados específicamente
 
 
 ## Selección de Motor de Base de Datos NoSQL
-### Tipo de Motor de Base de Datos NoSQL
-
-### Motor de Base de Datos NoSQL - CouchDB
 
 
 
@@ -116,6 +113,15 @@ Las bases de datos de series temporales son sistemas diseñados específicamente
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/16.jpg)
 
 ### Trabajar con CouchDB
+
+CouchDB posee una interfaz web llamada Futon, la cual proporciona una manera sencilla de administrar la base de datos. Accedemos a Futon entrando al siguiente link: http://localhost:5984/_utils/
+![image]()
+
+
+
+Para ingresar, debemos colocar el usuario y contraseña que elegimos durante la instalación:
+![image]()
+
 
 
 
