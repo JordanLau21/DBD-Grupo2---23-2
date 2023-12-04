@@ -1,12 +1,12 @@
-# DESARROLLO CONCEPTUAL
+# Desarrollo Conceptual
 
-# DESCRIPCIÓN DE ESCENARIO DE USO
+# Descripción de escenario de uso
 
-# CONFIGURACIÓN
+# Configuración
 ### 
 
-### INSTALACIÓN
+### Intalación
 
-### CONFIGURACIÓN COMO SERVICIO EN LA NUBE
+### Configuración como servicio en la nube
 
-# IMPLEMENTACIÓN
+# Implementación
