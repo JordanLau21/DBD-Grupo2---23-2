@@ -78,9 +78,12 @@ Las bases de datos de series temporales son sistemas diseñados específicamente
 
 
 ### Ventajas respecto a un motor de Base de Datos Relacional
-
-
-
+- Flexibilidad en el esquema de datos
+Un motor de base de datos no relacional nos permitiría que las solicitudes tengan campos variables o persanalizados, ya que no se tendría un esquema predefinido y rígido, y además del hecho de permitir almacenar datos de diferente estructura en un mismo lugar facilitaría la adaptación de los cambios de dato dependiendo del tipo de solicitud que desea el empleado.
+- Rendimiento con grandes volúmenes de datos - Escalabilidad horizontal
+Si se da un aumento significativa en la cantidad de datos en el módulo de solicitudes y planillas, ya sea por un alto flujo de solicitudes y/o planillas generados, un motor de base de datos NoSQL, al escalar horizontalmente, haría más sencillo trabajar con esta gran cantidad de datos, ya que permitiría distribuir la carga en múltiples servidores.
+- Menor necesidad de JOINs y consultas complejas
+Un motor de base de datos no relacional evitaría la necesidad de realizar JOINS complejos entre múltiples tables, lo que simplificaría el proceso de consulta y reduciría considerablemente el tiempo de desarrollo.
 
 
 ## Configuración de Motor de Base de Datos NoSQL CouchDB
