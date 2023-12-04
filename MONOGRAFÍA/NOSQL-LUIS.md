@@ -5,9 +5,25 @@ Las bases de datos son sistemas de almacenamiento y organización de informació
 ### Motores de Bases de Datos Relacionales
 Los motores de bases de datos relacionales están basados en el modelo relacional que planteó Edgar Frank Codd en su obra "A relational model of data for large shared data banks", publicada en 1970.<br> 
 Este modelo usa tablas para organizar y almacenar datos y los motores utilizan un Lenguaje de Consulta Estructurado o Structured Query Language (SQL) para manipular y consultar esos datos.<br>
-Aspectos clave en estos motores:<br>
-
-
+Algunos aspectos clave en estos motores:<br>
+- Tablas: Los datos se almacenan en estas, las cuales están compuestas por filas y columnas. Cada fila representa un registro individual y cada columna representa un atributo de la entidad almacenada en la tabla.
+- Claves o llaves primarias: Es un campo o una combinación de campos en una tabla que identifica de manera única cada fila de la tabla, sirviendo como identificador único.
+- Relaciones entre Tablas: Los motores de bases de datos relacionales permiten establecer relaciones entre tablas, lo que facilita la consulta y la manipulación de datos en múltiples tablas al mismo tiempo utilizando operaciones como JOIN, INNER JOIN, LEFT JOIN, etc.
+- Claves o llaves foráneas: Son campos en una tabla que hacen referencia a la clave primaria de otra tabla, estableciendo relaciones entre diferentes tablas de la base de datos.
+- Transacciones: Los motores de bases de datos relacionales ofrecen soporte para transacciones, que permiten realizar operaciones atómicas y consistentes con los datos, para asegurar la integridad de los datos incluso en situación de fallo.
+- ACID: Los sistemas de bases de datos relacionales tienen las propiedades ACID, definidos: Atomicidad (todos los cambios se realizan como si fueran una sola operación), Consistencia (los datos permanecen en un estado consistente de un estado a otro), Aislamiento (el estado intermedio de una transacción no es visible para otras transacciones) y Durabilidad (después de completada una transacción, los cambios en los datos persisten).
+- Normalización: Es el proceso de división de datos para minimizar la redundancia  y mantener la coherencia e integridad de los datos.
+- Seguridad y Control de Acceso: Los motores de bases de datos relacionales ofrecen mecanismos para controlar quién tiene acceso a qué datos y en qué medida. 
+<br>
+Algunas ejemplos de motores de bases de datos relacionales son: <br>
+- PostgreSQL
+- MySQL
+- Oracle Database
+- Microsoft SQL Server
+- MariaDB
+- SQLite
+- IBM Db2
+- Amazon RDS, etc.
 ### Motores de Bases de Datos no Relacionales
 
 ### Comparación de Rendimiento de Motores de Bases de Datos SQL y NoSQL
