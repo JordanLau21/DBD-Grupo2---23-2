@@ -1,10 +1,20 @@
-# Desarrollo Conceptual
+# APLICACIÓN DE UNA BASE DE DATOS NOSQL
+## Estado del Arte
+### Historia de las Bases de Datos
 
-# Descripción de escenario de uso
+### Bases de Datos Relacionales
 
-# Configuración
-## 
-![image]()
+### Bases de Datos no Relacionales
+
+### Comparación de Rendimientos SQL y NoSQL
+
+
+
+
+## Descripción de escenario de uso
+
+## Configuración
+ 
 
 ## Instalación del Software CouchDB
 1. Ingresar a la página oficial de CouchDB: https://couchdb.apache.org/<br>
@@ -40,7 +50,7 @@
 
 ## Configuración como servicio en la nube
 
-# Implementación
+## Implementación
 
 
 
