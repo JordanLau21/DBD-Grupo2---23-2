@@ -4,9 +4,12 @@
 
 # Configuración
 ## 
+![image]()
 
-## Intalación
+## Instalación
+![image]()
 
-### Configuración como servicio en la nube
+
+## Configuración como servicio en la nube
 
 # Implementación
