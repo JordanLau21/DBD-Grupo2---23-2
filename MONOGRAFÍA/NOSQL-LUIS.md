@@ -8,7 +8,8 @@
 
 ## Instalación del Software CouchDB
 1. Ingresar a la página oficial de CouchDB: https://couchdb.apache.org/
-<br>![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/1.jpg)
+<br>
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/1.jpg)
 2. Dar click en la opción "Download".<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/1.1.jpg)
 3. Elegir la opción a instalar en base al sistema operativo que se posea, en nuestro caso Windows.<br>
