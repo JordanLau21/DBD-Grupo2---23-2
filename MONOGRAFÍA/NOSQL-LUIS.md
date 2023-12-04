@@ -30,7 +30,7 @@
 11. Dar click en "Install" para iniciar con la instalación.
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/12.jpg)
 
-12. Esperar hasta que la instalación finalice.
+12. Esperar hasta que la instalación finalice.<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/14.jpg)
 13. Una vez finalizada la instalación, dar click en "Finish". Se recomienda reiniciar su máquina para actualizar archivos y/o servicios que no se pueden actualizar mientras el sistema está en ejecución.
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/16.jpg)
