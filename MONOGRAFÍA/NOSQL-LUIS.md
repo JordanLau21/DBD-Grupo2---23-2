@@ -14,7 +14,11 @@ Algunos aspectos clave en estos motores:<br>
 - ACID: Los sistemas de bases de datos relacionales tienen las propiedades ACID, definidos: Atomicidad (todos los cambios se realizan como si fueran una sola operación), Consistencia (los datos permanecen en un estado consistente de un estado a otro), Aislamiento (el estado intermedio de una transacción no es visible para otras transacciones) y Durabilidad (después de completada una transacción, los cambios en los datos persisten).
 - Normalización: Es el proceso de división de datos para minimizar la redundancia  y mantener la coherencia e integridad de los datos.
 - Seguridad y Control de Acceso: Los motores de bases de datos relacionales ofrecen mecanismos para controlar quién tiene acceso a qué datos y en qué medida. 
-<br>
+
+Algunos aspectos clave en estos motores:<br>
+- PostgreSQL
+
+
 Algunos ejemplos de motores de bases de datos relacionales son:<br>
 - PostgreSQL
 - MySQL
