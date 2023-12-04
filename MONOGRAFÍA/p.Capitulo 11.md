@@ -1,6 +1,6 @@
-# CAPITULO 11
-## ASIGNACIÓN DE CÓDIGOS Y REQUERIMIENTOS
-### CÓDIGOS DE REQUERIMIENTO
+# CAPITULO 11: ASIGNACIÓN DE CÓDIGOS A REQUERIMIENTOS E INTERFACES
+
+## CÓDIGOS DE REQUERIMIENTO
 
 <table>
 	<tbody>
@@ -144,7 +144,7 @@
 </table>
 
 
-### REQUERIMIENTOS
+## REQUERIMIENTOS
 ### Módulo: Autenticacion de usuario
 | Código | R001  |
 |----------|----------|
@@ -172,7 +172,7 @@
 | Actor primario    | Un administrador de RRHH u otro empleado de la empresa  |
 | Actor secundario    | -  |
 | Precondiciones    | Los datos que ingrese el usuario deben estar en la base de datos del sistema  |
-#### Módulo: Solicitudes
+### Módulo: Solicitudes
 | Código | R004  |
 |----------|----------|
 |Nombre  |Ver solicitudes (Administrador)|
@@ -217,7 +217,7 @@
 | Actor primario    | Un empleado de la empresa  |
 | Actor secundario    | -  |
 | Precondiciones    | -  |
-#### Módulo: Empleados
+### Módulo: Empleados
 | Código | R009  |
 |----------|----------|
 |Nombre  |Registrar Empleado en Sistema|
@@ -364,8 +364,7 @@ los nombres de los niveles de división |
 | Actor secundario    |-|
 | Precondiciones    |Informe de las licencias, inasistencias y vacaciones del empleado|
 
-## ASIGNACIÓN DE CÓDIGOS E INTERFACES
-### CÓDIGOS
+## CÓDIGOS DE INTERFACES
 <table>
 	<tbody>
 		<tr>
@@ -496,7 +495,7 @@ los nombres de los niveles de división |
 </table>
 
 
-### INTERFACES
+## INTERFACES
 
 ### Módulo: Autenticación de usuario
 | Código Interfaz | I001  |
