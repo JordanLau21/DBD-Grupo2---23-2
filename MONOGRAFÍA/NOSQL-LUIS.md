@@ -25,7 +25,7 @@ Algunos ejemplos de motores de bases de datos relacionales son:<br>
 - IBM Db2
 - Amazon RDS, etc.
 
-### Motores de Bases de Datos no Relacionales
+### Motores de Bases de Datos no Relacionales o NoSQL
 Los motores de bases de datos no relacionales, también llamados bases de datos NoSQL (Not Only SQL), son una categoría diversa de sistemas de almacenamiento que difieren en estructura y enfoque en comparación con los motores relacionales. Inicialmente fue diseñado para ser ejecutado en UNIX y bajo el paradigma del flujo del procesador, sin embargo, con el paso del tiempo se ha vuelto un sistema confiable y eficaz para el manejo de grandes volúmenes de datos no estructurados o semi-estructurados, ofreciendo flexibilidad, escalabilidad y rendimiento en entornos donde las bases de datos relacionales podrían tener limitaciones.
 Algunos aspectos clave en estos motores son los siguientes:<br>
 - Modelos de datos flexibles: Los motores NoSQL permiten la flexibilidad en el modelo de datos, lo que significa que los datos no están obligatoriamente estructurados en tablas y filas. Esta propiedad facilita el almacenamiento de datos no estructurados como documentos, grafos o pares clave de valor.
@@ -45,7 +45,7 @@ Algunos ejemplos de motores de bases de datos relacionales son:<br>
 - Cosmos DB, etc.
 
 
-### Tipos de Motores de Bases de Datos no Relacionales
+### Tipos de Motores de Bases de Datos no Relacionales o NoSQL
 
 #### Motores de Base de Datos Clave Valor
 Este tipo de motores almacena datos en pares clave valor, donde cada valor está asociado con una clave única, lo que permite una recuperación rápida de datos. Algunos de los motores más populares de este tipo son: Riak, Redis y Amazon DynamoDB.
@@ -74,22 +74,19 @@ Las bases de datos de series temporales son sistemas diseñados específicamente
 
 
 ## Selección de Motor de Base de Datos NoSQL
+### Tipo de Motor de Base de Datos NoSQL
+
+### Motor de Base de Datos NoSQL - CouchDB
 
 
 
-## CouchDB
 
 
 
 
+## Configuración de Motor de Base de Datos NoSQL CouchDB
 
-
-## Descripción de escenario de uso
-
-## Configuración
- 
-
-## Instalación del Software CouchDB
+### Instalación de CouchDB
 1. Ingresar a la página oficial de CouchDB: https://couchdb.apache.org/<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/1.jpg)
 2. Dar click en la opción "Download".<br>
@@ -118,13 +115,11 @@ Las bases de datos de series temporales son sistemas diseñados específicamente
 13. Una vez finalizada la instalación, dar click en "Finish". Se recomienda reiniciar su máquina para actualizar archivos y/o servicios que no se pueden actualizar mientras el sistema está en ejecución.<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/16.jpg)
 
+### Trabajar con CouchDB
 
 
-
-## Configuración como servicio en la nube
 
 ## Implementación
 
 
 
-# Referencias
