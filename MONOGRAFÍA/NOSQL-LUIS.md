@@ -1,12 +1,13 @@
 # APLICACIÓN DE UNA BASE DE DATOS NOSQL
 ## Estado del Arte
-### Historia de las Bases de Datos
+### Bases de Datos
+Las bases de datos son sistemas de almacenamiento y organización de información que permiten la gestión y manipulación de datos de manera eficiente. La historia de las bases de datos se remonta a la década de 1960, cuando se desarrollaron los primeros sistemas de gestión de bases de datos (DBMS, por sus siglas en inglés). Estos sistemas permitían la creación, modificación y eliminación de datos de manera estructurada y organizada. Con el tiempo, los DBMS evolucionaron y se desarrollaron diferentes modelos de bases de datos, como el modelo relacional, el modelo jerárquico y el modelo de red. Actualmente, las bases de datos son ampliamente utilizadas en diferentes ámbitos, como la industria, la investigación, la educación y la salud, entre otros.
 
-### Bases de Datos Relacionales
+### Motores de Bases de Datos Relacionales
 
-### Bases de Datos no Relacionales
+### Motores de Bases de Datos no Relacionales
 
-### Comparación de Rendimientos SQL y NoSQL
+### Comparación de Rendimiento de Motores de Bases de Datos SQL y NoSQL
 
 
 
