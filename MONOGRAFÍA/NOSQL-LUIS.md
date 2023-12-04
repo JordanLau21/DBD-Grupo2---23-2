@@ -73,8 +73,11 @@ Las bases de datos de series temporales son sistemas diseñados específicamente
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/series%20temporales.webp)
 
 
-## Comparación de Rendimiento de Motores de Bases de Datos SQL y NoSQL
+## Selección de Motor de Base de Datos NoSQL
 
+
+
+## CouchDB
 
 
 
