@@ -32,6 +32,7 @@ Algunos aspectos clave en estos motores son los siguientes:<br>
 - Escalabilidad horizontal: La gran mayoría de motores de bases de datos NoSQL están diseñados para escalar horizontalmente, esto les permite manejar grandes volúmenes de información y altas cargas de trabajo al distribuir los datos y operaciones en múltiples nodos o servidores.
 - Alta disponibilidad y tolerancia a fallos: Los motores NoSQL están diseñados para que puedan continuar operando incluso si ocurren fallos en los nodos o si se pierde conexión de red.
 - Consultas y acceso eficiente: Los motores NoSQL ofrecen mecanismos de consulta y acceso adaptados a los modelos de datos específicos que utilizan, cada tipo de motor tiene su propio conjunto de operaciones y consultas optimizadas para el modelo en cuestión.<br>
+
 Algunos ejemplos de motores de bases de datos relacionales son:<br>
 - CouchDB
 - MongoDB
