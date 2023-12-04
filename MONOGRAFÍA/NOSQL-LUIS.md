@@ -31,7 +31,7 @@ Algunos aspectos clave en estos motores son los siguientes:<br>
 - Modelos de datos flexibles: Los motores NoSQL permiten la flexibilidad en el modelo de datos, lo que significa que los datos no están obligatoriamente estructurados en tablas y filas. Esta propiedad facilita el almacenamiento de datos no estructurados como documentos, grafos o pares clave de valor.
 - Escalabilidad horizontal: La gran mayoría de motores de bases de datos NoSQL están diseñados para escalar horizontalmente, esto les permite manejar grandes volúmenes de información y altas cargas de trabajo al distribuir los datos y operaciones en múltiples nodos o servidores.
 - Alta disponibilidad y tolerancia a fallos: Los motores NoSQL están diseñados para que puedan continuar operando incluso si ocurren fallos en los nodos o si se pierde conexión de red.
-- Consultas y acceso eficiente: Los motores NoSQL ofrecen mecanismos de consulta y acceso adaptados a los modelos de datos específicos que utilizan, cada tipo de motor tiene su propio conjunto de operaciones y consultas optimizadas para el modelo en cuestión.
+- Consultas y acceso eficiente: Los motores NoSQL ofrecen mecanismos de consulta y acceso adaptados a los modelos de datos específicos que utilizan, cada tipo de motor tiene su propio conjunto de operaciones y consultas optimizadas para el modelo en cuestión.<br>
 Algunos ejemplos de motores de bases de datos relacionales son:<br>
 - CouchDB
 - MongoDB
