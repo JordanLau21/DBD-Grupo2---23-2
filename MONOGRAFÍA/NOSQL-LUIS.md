@@ -126,20 +126,7 @@ Pantalla de inicio tras el ingreso de usuario y contraseña:
 Vamos al apartado de verificación dando click en "Verify", ya ahí damos click en "Verify Installation", esto verificará que la instalación haya sido correcta.
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/Captura.PNG)
 
-
-
-
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-
-
-
+Una vez verificado, se podrá trabajar con CouchDB sin ningún tipo de problema.
 
 ## Implementación
 
