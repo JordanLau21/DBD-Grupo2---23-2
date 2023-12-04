@@ -67,8 +67,13 @@ Este tipo de motores almacenan datos en columnas en lugar de filas, permitiendo 
 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/columnares1.jpg)
 
+#### Motores de Base de Datos Columnares
+Las bases de datos de series temporales son sistemas diseñados específicamente para almacenar y gestionar datos organizados en función del tiempo. Estas bases de datos son especialmente útiles cuando se trata de datos que cambian con el tiempo y están marcados por marcas temporales, como datos financieros, registros de sensores, registros de servidores, datos meteorológicos, etc. Algunos de los motores más populares de este tipo son: OpenTSDB, InfluxDB, TimescaleDB, KairosDB y Prometheus.
 
-### Comparación de Rendimiento de Motores de Bases de Datos SQL y NoSQL
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/series%20temporales.webp)
+
+
+## Comparación de Rendimiento de Motores de Bases de Datos SQL y NoSQL
 
 
 
