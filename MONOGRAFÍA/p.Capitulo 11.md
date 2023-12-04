@@ -132,8 +132,7 @@
 |----------|----------|
 |Nombre  |Crear nuevo cargo|
 |Objetivo  |Facilitar el proceso de creación y gestión de cargos en la plataforma|
-| Descripción   | Este procedimiento tiene como finalidad explicar de manera detallada cómo crear cargos en la plataforma, los usuarios 
- obtendrán información sobre el proceso de creación, así como la utilización de opciones para gestionar cargos de manera eficiente, se aborda la creación individual |
+| Descripción   | Este procedimiento tiene como finalidad explicar de manera detallada cómo crear cargos en la plataforma, los usuarios obtendrán información sobre el proceso de creación, así como la utilización de opciones para gestionar cargos de manera eficiente, se aborda la creación individual |
 | Actor primario    | Administrador de R.R. H.H  |
 | Actor secundario    | -  |
 | Precondiciones    | Tener acceso a una cuenta. haber iniciado sesión en la plataforma, contar con los permisos necesarios y disponer de la información actualizada, conocimiento de la estructura organizativa |
@@ -157,7 +156,7 @@ los nombres de los niveles de división |
 | Descripción   | El administrador puede visualizar todas las planillas de los distintos periodos de trabajo  |
 | Actor primario    | Administrador de RRHH |
 | Actor secundario    | -  |
-| Precondiciones    | -  |
+| Precondiciones    | Registro de planillas |
 
 | Código | R019  |
 |----------|----------|
@@ -166,7 +165,7 @@ los nombres de los niveles de división |
 | Descripción   | El administrador puede visualizar todos los trabajadores en una planilla, además se brindan datos adicionales sobre la planilla |
 | Actor primario    | Administrador de RRHH |
 | Actor secundario    | -  |
-| Precondiciones    | -  |
+| Precondiciones    | Registro de planillas  |
 
 | Código | R020  |
 |----------|----------|
@@ -175,7 +174,7 @@ los nombres de los niveles de división |
 | Descripción   | Se creará una nueva planilla que servirá para realizar a los trabajadores, esta planilla está delimitada por algunos parametros como el periodo y la periodicidad, además se pueden visualizar los empleados que estarán incluidos en esta nueva planilla |
 | Actor primario    | Administrador de RRHH |
 | Actor secundario    | -  |
-| Precondiciones    | -  |
+| Precondiciones    | Contratos de empleados con vigencia activa |
 
 
 | Código | R021  |
@@ -185,7 +184,7 @@ los nombres de los niveles de división |
 | Descripción   | El administrador puede visualizar las planillas que ya fueron pagadas, visualizando otros datos como el monto resultante que se le pago a todos los trabajadores en esa planilla |
 | Actor primario    | Administrador de RRHH |
 | Actor secundario    | -  |
-| Precondiciones    | -  |
+| Precondiciones    | Existencia de planillas calculadas |
 
 | Código | R022  |
 |----------|----------|
@@ -203,7 +202,24 @@ los nombres de los niveles de división |
 | Descripción   | El administrador puede generar las boletas de pago por una planilla, visualizando previamente algunas variables en pantalla |
 | Actor primario    | Administrador de RRHH |
 | Actor secundario    | -  |
-| Precondiciones    | -  |
+| Precondiciones    | Existencia de planillas sin pagar |
 
+### Modulo Registro de Movimientos y Asistencias
+| Código | R024  |
+|----------|----------|
+|Nombre  |Registrar movimiento de planilla|
+|Objetivo  |Registrar los movimientos que modifiquen el pago habitual de los empleados|
+| Descripción   |El administrador podrá registrar los movimientos que influyan en el pago de los empleados, como por ejemplo: horas extras, descuentos por cafetería, bonificación extraordinaria, minutos de tardanza, etc, por periodo de planilla|
+| Actor primario    |Un administrador de RRHH|
+| Actor secundario    |-|
+| Precondiciones    |Informe de los movimientos de ingresos y descuentos por parte de la empresa|
 
+| Código | R025  |
+|----------|----------|
+|Nombre  |Registrar licencias, inasistencias y vacaciones|
+|Objetivo  |Registrar las licencias, inasistencias y vacaciones a partir del periodo de planilla activo|
+| Descripción   |Se podrán registrar inasistencias, licencias y otros conceptos mas de cada empleado dentro de su periodo de planilla activo.|
+| Actor primario    |Administrador de RRHH|
+| Actor secundario    |-|
+| Precondiciones    |Informe de las licencias, inasistencias y vacaciones del empleado|
 
