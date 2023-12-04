@@ -2,8 +2,10 @@
 ## Estado del Arte
 ### Bases de Datos
 Las bases de datos son sistemas de almacenamiento y organización de información que permiten la gestión y manipulación de datos de manera eficiente. Su historia se remonta a la década de 1960, cuando se desarrollaron los primeros Sistemas de Gestión de Bases de Datos (DBMS). Estos sistemas permitían la creación, modificación y eliminación de datos de manera estructurada y organizada. Con el tiempo, los DBMS evolucionaron y se desarrollaron diferentes modelos de bases de datos, como el modelo relacional, el modelo jerárquico o el modelo de red, los cuales son ampliamenta utilizados en la actualiadad en diferentes ámbitos, como la industria, investigación, educación y salud, etc.
-
 ### Motores de Bases de Datos Relacionales
+Los motores de bases de datos relacionales están basados en el modelo relacional que planteó Edgar Frank Codd en su obra "A relational model of data for large shared data banks", publicada en 1970. 
+Este modelo usa tablas para organizar y almacenar datos y los motores utilizan un Lenguaje de Consulta Estructurado o Structured Query Language (SQL) para manipular y consultar esos datos.
+Aspectos clave en estos motores:
 
 ### Motores de Bases de Datos no Relacionales
 
