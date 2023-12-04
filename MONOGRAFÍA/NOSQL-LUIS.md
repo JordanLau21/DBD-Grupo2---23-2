@@ -5,7 +5,7 @@ Las bases de datos son sistemas de almacenamiento y organización de informació
 ### Motores de Bases de Datos Relacionales
 Los motores de bases de datos relacionales están basados en el modelo relacional que planteó Edgar Frank Codd en su obra "A relational model of data for large shared data banks", publicada en 1970.<br> 
 Este modelo usa tablas para organizar y almacenar datos y los motores utilizan un Lenguaje de Consulta Estructurado o Structured Query Language (SQL) para manipular y consultar esos datos.<br>
-Algunos aspectos clave en estos motores:<br>
+Algunos aspectos clave en estos motores son los siguientes:<br>
 - Tablas: Los datos se almacenan en estas, las cuales están compuestas por filas y columnas. Cada fila representa un registro individual y cada columna representa un atributo de la entidad almacenada en la tabla.
 - Claves o llaves primarias: Es un campo o una combinación de campos en una tabla que identifica de manera única cada fila de la tabla, sirviendo como identificador único.
 - Relaciones entre Tablas: Los motores de bases de datos relacionales permiten establecer relaciones entre tablas, lo que facilita la consulta y la manipulación de datos en múltiples tablas al mismo tiempo utilizando operaciones como JOIN, INNER JOIN, LEFT JOIN, etc.
@@ -14,8 +14,6 @@ Algunos aspectos clave en estos motores:<br>
 - ACID: Los sistemas de bases de datos relacionales tienen las propiedades ACID, definidos: Atomicidad (todos los cambios se realizan como si fueran una sola operación), Consistencia (los datos permanecen en un estado consistente de un estado a otro), Aislamiento (el estado intermedio de una transacción no es visible para otras transacciones) y Durabilidad (después de completada una transacción, los cambios en los datos persisten).
 - Normalización: Es el proceso de división de datos para minimizar la redundancia  y mantener la coherencia e integridad de los datos.
 - Seguridad y Control de Acceso: Los motores de bases de datos relacionales ofrecen mecanismos para controlar quién tiene acceso a qué datos y en qué medida. 
-
-
 
 Algunos ejemplos de motores de bases de datos relacionales son:<br>
 - PostgreSQL
@@ -28,6 +26,22 @@ Algunos ejemplos de motores de bases de datos relacionales son:<br>
 - Amazon RDS, etc.
 
 ### Motores de Bases de Datos no Relacionales
+Los motores de bases de datos no relacionales, también llamados bases de datos NoSQL (Not Only SQL), son una categoría diversa de sistemas de almacenamiento que difieren en estructura y enfoque en comparación con los motores relacionales. Inicialmente fue diseñado para ser ejecutado en UNIX y bajo el paradigma del flujo del procesador, sin embargo, con el paso del tiempo se ha vuelto un sistema confiable y eficaz para el manejo de grandes volúmenes de datos no estructurados o semi-estructurados, ofreciendo flexibilidad, escalabilidad y rendimiento en entornos donde las bases de datos relacionales podrían tener limitaciones.
+Algunos aspectos clave en estos motores son los siguientes:<br>
+- Modelos de datos flexibles: Los motores NoSQL permiten la flexibilidad en el modelo de datos, lo que significa que los datos no están obligatoriamente estructurados en tablas y filas. Esta propiedad facilita el almacenamiento de datos no estructurados como documentos, grafos o pares clave de valor.
+- Escalabilidad horizontal: La gran mayoría de motores de bases de datos NoSQL están diseñados para escalar horizontalmente, esto les permite manejar grandes volúmenes de información y altas cargas de trabajo al distribuir los datos y operaciones en múltiples nodos o servidores.
+- Alta disponibilidad y tolerancia a fallos: Los motores NoSQL están diseñados para que puedan continuar operando incluso si ocurren fallos en los nodos o si se pierde conexión de red.
+- Consultas y acceso eficiente: Los motores NoSQL ofrecen mecanismos de consulta y acceso adaptados a los modelos de datos específicos que utilizan, cada tipo de motor tiene su propio conjunto de operaciones y consultas optimizadas para el modelo en cuestión.
+Algunos ejemplos de motores de bases de datos relacionales son:<br>
+- CouchDB
+- MongoDB
+- Cassandra
+- Couchbase
+- Redis
+- Neo4j
+- RavenDB
+- CockroachDB
+- Cosmos DB, etc.
 
 ### Comparación de Rendimiento de Motores de Bases de Datos SQL y NoSQL
 
