@@ -15,7 +15,7 @@ Algunos aspectos clave en estos motores:<br>
 - Normalización: Es el proceso de división de datos para minimizar la redundancia  y mantener la coherencia e integridad de los datos.
 - Seguridad y Control de Acceso: Los motores de bases de datos relacionales ofrecen mecanismos para controlar quién tiene acceso a qué datos y en qué medida. 
 <br>
-Algunos ejemplos de motores de bases de datos relacionales son:
+Algunos ejemplos de motores de bases de datos relacionales son:<br>
 - PostgreSQL
 - MySQL
 - Oracle Database
@@ -23,7 +23,7 @@ Algunos ejemplos de motores de bases de datos relacionales son:
 - MariaDB
 - SQLite
 - IBM Db2
-- Amazon RDS, etc.
+- Amazon RDS, etc.<br>
 ### Motores de Bases de Datos no Relacionales
 
 ### Comparación de Rendimiento de Motores de Bases de Datos SQL y NoSQL
