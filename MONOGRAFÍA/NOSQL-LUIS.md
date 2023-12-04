@@ -14,7 +14,7 @@
 3. Elegir la opción a instalar en base al sistema operativo que se posea, en nuestro caso Windows.
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/2.jpg)
 4. Nos redigirá a otra página en donde daremos click a la opción "Downlado CouchDB"
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/3.jpg)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/3.1.jpg)
 5. 
 ![image]()
 6. 
