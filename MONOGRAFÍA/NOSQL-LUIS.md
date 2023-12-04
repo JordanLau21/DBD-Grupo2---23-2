@@ -53,7 +53,7 @@ Este tipo de motores almacena datos en pares clave valor, donde cada valor está
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/clave%20valor.PNG)
 
 #### Motores de Base de Datos orientados a Documentos
-Este tipo de motores almacenan datos en documentos, que pueden ser XML,JSON o BSON. Estos documentos son estructuras flexibles que tienen campos y valores anidados, lo que facilita la representación de datos complejos y cambiantes. Algunos de los motores más populares de este tipo son: CocuhDB, RavenDB y MongoDB.
+Este tipo de motores almacenan datos en documentos, que pueden ser XML,JSON, BSON e incluso en formatos binarios como documentos de Microsoft Office o PDF. Estos documentos son estructuras flexibles que tienen campos y valores anidados, lo que facilita la representación de datos complejos y cambiantes. Algunos de los motores más populares de este tipo son: CocuhDB, RavenDB y MongoDB.
 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/documentos.webp)
 
