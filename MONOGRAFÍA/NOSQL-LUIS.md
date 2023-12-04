@@ -65,7 +65,7 @@ Estos motores están diseñados para almacenar y consultar datos altamente relac
 #### Motores de Base de Datos Columnares
 Este tipo de motores almacenan datos en columnas en lugar de filas, permitiendo alta compresión y acceso eficiente a subconjuntos de columnas. Son especialmente adecuados para casos de uso analíticos y consultas que involucran el análisis de grandes conjuntos de datos. Algunos de los motores más populares de este tipo son: Apache Cassandra, ClickHouse y Apacha Hbase.
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/columnares.jpg)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/columnares1.jpg)
 
 
 ### Comparación de Rendimiento de Motores de Bases de Datos SQL y NoSQL
