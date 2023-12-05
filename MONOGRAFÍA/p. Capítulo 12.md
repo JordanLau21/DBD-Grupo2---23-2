@@ -16,13 +16,11 @@ WHERE usuario = <1> AND contraseña = <2>
 ```
 *Donde los valores del 1 al 2 se capturarán de la interfaz de inicio de sesión según se muestran en la imagen.*
 
-## CASO 2
-### Código Requerimiento : R - 002
-### Codigo interfaz : I - 002
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/31d8b522-39de-4136-b0b7-3cddb2861812)
 
-
+| Codigo Requerimiento    |  R - 002 | 
+|:-------------|:---------------|
+| Codigo Interfaz    | I - 002  | 
+| Imagen interfaz   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/31d8b522-39de-4136-b0b7-3cddb2861812) |
 
 
 ### Sentecias SQL:
@@ -33,12 +31,13 @@ SELECT nombres, apellidos, dni FROM Empleado WHERE nombres = <1> AND apellidos =
 ```
 Donde los valores del 1 al 3 se capturarán de la interfaz de olvido de contraseña según se muestran en la imagen.
 
-## CASO 3
-### Código Requerimiento : R - 003
-### Codigo interfaz : I - 001 y I - 003
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/810c4a06-7a8c-4d2c-b7a1-5d30d1d41951)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/3458369c-f54b-4d9d-b303-b1efa3316e2b)
+
+| Codigo Requerimiento    |   R - 003  | 
+|:-------------|:---------------|
+| Codigo Interfaz    |     I - 001 y I - 003  | 
+| Imagen interfaz   |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/810c4a06-7a8c-4d2c-b7a1-5d30d1d41951)    |
+| Imagen interfaz   |     ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/3458369c-f54b-4d9d-b303-b1efa3316e2b) |
+
 
 ### Sentecias SQL:
 ### Eventos: 
@@ -48,13 +47,13 @@ UPDATE Cuenta SET contraseña= <3> WHERE usuario = <1>;
 SELECT usuario, contraseña from Cuenta
 WHERE usuario = <1> AND contraseña = <3>
 ```
-Donde los valores del 1 al 4 se capturarán de las interfaces de inicio de sesión e ingresar nueva contraseña según se muestran en la imagen.
+*Donde los valores del 1 al 4 se capturarán de las interfaces de inicio de sesión e ingresar nueva contraseña según se muestran en la imagen.*
 
-## CASO 4
-### Código Requerimiento : R - 004
-### Codigo interfaz : I - 004
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/8ef6f6c8-3aa2-4e65-9a17-ab0490e4a21f)
+| Codigo Requerimiento    |  R - 004   | 
+|:-------------|:---------------|
+| Codigo Interfaz    |   I - 004    | 
+| Imagen interfaz   |   ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/8ef6f6c8-3aa2-4e65-9a17-ab0490e4a21f)  |
+
 ### Sentecias SQL:
 ### Eventos: 
 * **Ver solicitudes:** Se mostrará en la pantalla todas la solicitudes pendientes y ya respondidas para que asi el administrador pueda responderla.
@@ -64,11 +63,12 @@ WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id
 AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 ```
 
-## CASO 5
-### Código Requerimiento : R - 005
-### Codigo interfaz : I - 005
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/1eb1b037-b250-46ea-a22f-efd9f6674668)
+
+| Codigo Requerimiento    |   R - 005  | 
+|:-------------|:---------------|
+| Codigo Interfaz    |     I - 005  | 
+| Imagen interfaz   |   ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/1eb1b037-b250-46ea-a22f-efd9f6674668)     |
+
 ### Sentecias SQL:
 ### Eventos: 
 * **Boton Detalles:** Se mostrará los detalles de la solicitud hecha por el empleado el cual tendrá acceso tanto administrador como empleado, el atractivo principal de este boton es conocer los fundamentos del empleado acerca de su solicitud.
@@ -79,11 +79,12 @@ WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id
 AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 ```
 
-## CASO 6
-### Código Requerimiento : R - 006
-### Codigo interfaz : I - 004
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cb3c7535-2422-40b9-b160-5b1b487cace6)
+
+| Codigo Requerimiento    |  R - 006   | 
+|:-------------|:---------------|
+| Codigo Interfaz    |    I - 004   | 
+| Imagen interfaz   |  ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cb3c7535-2422-40b9-b160-5b1b487cace6)      |
+
 ### Sentecias SQL:
 ### Eventos: 
 * **Boton Estado:** El boton sirve para que el administrador pueda cambiar el estado de espera de la solicitud a Aceptado o Rechazado.
@@ -91,11 +92,13 @@ AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 UPDATE Solicitud SET id_estado_solicitud = <1> WHERE id_estado_solicitud = 2 AND id_solicitud = <2>
 ```
 
-## CASO 7
-### Código Requerimiento : R - 007
-### Codigo interfaz : I - 006
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/e433215f-d373-4566-aa33-7e8741907696)
+
+| Codigo Requerimiento    |  R - 007   | 
+|:-------------|:---------------|
+| Codigo Interfaz    |   I - 006    | 
+| Imagen interfaz   |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/e433215f-d373-4566-aa33-7e8741907696)    |
+
+
 ### Sentecias SQL:
 ### Eventos: 
 * **Pantalla Solicitudes (Empleados):** Se mostrará el historial de todo el registro de solicitudes anteriores del empleado junto con los actuales que se encuentran en espera.
@@ -105,15 +108,17 @@ FROM Solicitud so, Tipo_solicitud ti, Estado_solicitud es
 WHERE ti.id_tipo_solicitud = so.id_tipo_solicitud AND es.id_estado_solicitud = so.id_estado_solicitud
 AND id_empleado = <1>
 ```
-El id_empleado <1> se obtiene de la base de datos donde esta registrada la cuenta del mismo empleado.
+*El id_empleado <1> se obtiene de la base de datos donde esta registrada la cuenta del mismo empleado.*
 
-## CASO 8
-### Código Requerimiento : R - 008
-### Codigo interfaz : I - 007, I - 008 y I - 009
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/24662302-75da-4744-a056-6f80b0eb505b)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/adeec56f-4dc9-49a8-acd4-0d1feebb1d72)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/5e808ffc-375f-4a5b-84cf-1ed7af990bc1)
+
+
+| Codigo Requerimiento    |  R - 008   | 
+|:-------------|:---------------|
+| Codigo Interfaz    |   I - 007, I - 008 y I - 009    | 
+| Imagen interfaz   |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/24662302-75da-4744-a056-6f80b0eb505b)    |
+| Imagen interfaz   |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/adeec56f-4dc9-49a8-acd4-0d1feebb1d72)    |
+| Imagen interfaz   |   ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/5e808ffc-375f-4a5b-84cf-1ed7af990bc1)     |
+
 ### Sentecias SQL:
 ### Eventos: 
 * **Nueva Solicitud:** El usuario podrá enviar una nueva solicitud primero seleccionando el tipo de solicitud que desea, dependiendo de la opción del tipo de solicitud que elija, le pueden aparecer 2 tipos de pantallas, las cuales son una con opción de ingresar un monto y la otra sin la mencionada opción.
@@ -129,15 +134,17 @@ Al elegirse esta opción, se esta eligiendo un tipo de solicitud el cual no requ
 CREATE SEQUENCE id_solicitud START WITH 1
 INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE , LOCALTIME , null , 2 , <2>, <7> ,<8>)
 ```
-id_empleado <7>: Se obtiene de la base de datos en la cual esta registrada la cuenta. <br>
-id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cuenta.
+*id_empleado <7>: Se obtiene de la base de datos en la cual esta registrada la cuenta. <br>*
+*id_empresa <8>: Se obtiene de la base de datos en la cual esta registrada la cuenta.*
 
-## CASO 9
-### Código de Requerimiento: R009
-### Código de Interfaz: I010, I011
-### Imagen Interfaz: 
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047_1.png)
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048_1.png)
+
+
+| Codigo Requerimiento    |  R009   | 
+|:-------------|:---------------|
+| Codigo Interfaz    |    I010, I011   | 
+| Imagen interfaz   |    ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047_1.png)    |
+| Imagen interfaz   |    ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048_1.png) |
+
 ### Sentecias SQL:
 ### Eventos:
 1. Llenado de Datos del Empleado: Se mostrarán los campos con datos del usuario que se tiene que ingresar manualmente o elegir entre las que cuentan con opciones (Régimen Pensionario, Seguro Médico, Situación de Discapacidad, Empresa)
@@ -172,14 +179,15 @@ Para <13> y <14>:
 En caso de elegir como Medio de Pago(<12>) el Efectivo, esos 2 campos tomarán el valor de NULL.
 
 
-- Botón Finalizar: Se termina el registro del empleado al sistema.
+- *Botón Finalizar: Se termina el registro del empleado al sistema.*
 
 
-## CASO 10
-### Código de Requerimiento: R010
-### Código de Interfaz: I012
-### Imagen Interfaz: 
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes_1.png)
+| Codigo Requerimiento    |     | 
+|:-------------|:---------------|
+| Codigo Interfaz    |   I012    | 
+| Imagen interfaz   |      ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes_1.png)  |
+
+
 ### Sentecias SQL:
 ### Eventos:
 1. Carga de Página: Se llenará la lista de empleados vigentes:
@@ -194,14 +202,15 @@ ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1;
 SELECT Empleado.id_empleado,Empleado.dni,Empleado.nombre,Empleado.apellidos,Empleado.telefono,Empleado.email FROM Empleado INNER JOIN Cuenta 
 ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=1 AND ((Empleado.nombre=<1>) OR (Empleado.apellidos=<1>));
 ```
-El <1> será el nombre o apellido del empleado que se quiere buscar.
+*El <1> será el nombre o apellido del empleado que se quiere buscar.*
 
 
-## CASO 10
-### Código de Requerimiento: R012
-### Código de Interfaz: I013
-### Imagen Interfaz: 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados_1.png)
+| Codigo Requerimiento    | R012    | 
+|:-------------|:---------------|
+| Codigo Interfaz    |   I013    | 
+| Imagen interfaz   |   ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados_1.png)     |
+
+
 ### Sentecias SQL:
 ### Eventos:
 1. Carga de Página: Se llenará la lista de empleados desvinculados:
@@ -219,12 +228,12 @@ ON Empleado.id_cuenta=Cuenta.id_cuenta WHERE Cuenta.id_estado_cuenta=2 AND ((Emp
 El <1> será el nombre o apellido del empleado que se quiere buscar.
 
 
+| Codigo Requerimiento    |  R - 007   | 
+|:-------------|:---------------|
+| Codigo Interfaz    |    I - 006   | 
+| Imagen interfaz   |   ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3b239f7e-1f62-428d-b87b-215d7f9ec422)    |
 
-## CASO 11
-### Código Requerimiento : R - 007
-### Codigo interfaz : I - 006
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3b239f7e-1f62-428d-b87b-215d7f9ec422)
+
 ### Sentecias SQL:
 ### Eventos:
 * **Mostrar empleados filtrados:** Se mostrara en pantalla el listado de contratos activos 
@@ -233,11 +242,13 @@ SELECT so.id_solicitud, em.nombres, em.apellidos, so.fec_solicitud, ti.descripci
 WHERE so.id_estado_solicitud = es.id_estado_solicitud AND em.id_empleado = so.id_empleado
 AND ti.id_tipo_solicitud = so.id_tipo_solicitud
 ```
-## CASO 12
-### Código Requerimiento : R - 007
-### Codigo interfaz : I - 006
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/be19dad0-9762-4c6e-b408-1a7d59ecf00b)
+
+| Codigo Requerimiento    |  R - 007   | 
+|:-------------|:---------------|
+| Codigo Interfaz    |    I - 006   | 
+| Imagen interfaz   |   ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/be19dad0-9762-4c6e-b408-1a7d59ecf00b)     |
+
+
 ### Sentecias SQL:
 ### Eventos:
 * **Mostrar empleados filtrados:** Se mostrara en pantalla el listado de contratos dentro de dicho periodo.
@@ -246,11 +257,14 @@ SELECT em.dni,em.nombres,em.apellidos,car.nombre_cargo,co.fecha_inicio_laboral,c
 FROM Contrato co,Empleado em,Cargo car,Planilla pe WHERE em.id_empleado=co.id_empleado AND car.id_cargo=co.id_cargo 
 AND pe.periodo=<1> AND co.fecha_inicio_laboral<=pe.fecha_inicio AND pe.fecha_fin<=co.fecha_termino_contrato; 
 ```
-## CASO 13
-### Código Requerimiento : R - 007
-### Codigo interfaz : I - 006
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/16303985-92b0-44c7-88db-628451c05ac0)
+
+
+| Codigo Requerimiento    |     | 
+|:-------------|:---------------|
+| Codigo Interfaz    |    I - 006   | 
+| Imagen interfaz   |     ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/16303985-92b0-44c7-88db-628451c05ac0)   |
+
+
 ### Sentecias SQL:
 ### Eventos: 
 * **Mostrar datos de empleado:** Se mostrara en pantalla los datos del empleado 
@@ -273,11 +287,14 @@ AND ti.id_tipo_operacion=2 AND con.id_contrato=<1>;
 ```
 DELETE FROM Movimiento_planilla mov WHERE mov.id_movimiento=<2>;
 ```
-## CASO 14
-### Código Requerimiento : R - 007
-### Codigo interfaz : I - 006
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3b2f83cf-1ce4-435b-8741-b5336fbfbed9)
+
+
+
+| Codigo Requerimiento    |   R - 007  | 
+|:-------------|:---------------|
+| Codigo Interfaz    |  I - 006     | 
+| Imagen interfaz   |   ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3b2f83cf-1ce4-435b-8741-b5336fbfbed9)     |
+
 ### Sentecias SQL:
 ### Eventos:
 * **Registrar un concepto:** Se mostrara en pantalla los datos del empleado 
@@ -288,11 +305,13 @@ INSERT INTO Movimiento_planilla VALUES (<1>,CURRENT_DATE,<2>,<3>,<4>,<5>);
 ```
 UPDATE Movimiento_planilla mov SET mov.valor=<3> WHERE mov.id_movimiento=<2>;
 ```
-## CASO 15
-### Código Requerimiento : R - 007
-### Codigo interfaz : I - 006
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/2c1e3766-31e9-46ff-be3a-4078c5646f89)
+
+
+| Codigo Requerimiento    |  R007    | 
+|:-------------|:---------------|
+| Codigo Interfaz    |     I006  | 
+| Imagen interfaz   |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/2c1e3766-31e9-46ff-be3a-4078c5646f89)    |
+
 ### Sentecias SQL:
 ### Eventos: 
 * **Mostrar datos de empleado:** Se mostrara en pantalla los datos del empleado 
@@ -308,11 +327,14 @@ Asistencia asi WHERE con.id_contrato=asi.id_contrato AND co.id_nomina=asi.id_nom
 ```
 DELETE FROM Asistencia asi WHERE asi.id_asistencia=<2>;
 ```
-## CASO 16
-### Código Requerimiento : R - 007
-### Codigo interfaz : I - 006
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/201c9c54-68a4-4f35-9a5a-4eedce2783b0)
+
+
+
+| Codigo Requerimiento    |  R - 007   | 
+|:-------------|:---------------|
+| Codigo Interfaz    |    I - 006   | 
+| Imagen interfaz   |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/201c9c54-68a4-4f35-9a5a-4eedce2783b0)    |
+
 ### Sentecias SQL:
 ### Eventos:
 * **Registrar un concepto asistencia:** Se mostrara en pantalla los datos del empleado 
@@ -323,12 +345,13 @@ INSERT INTO Asistencia VALUES (<1>,<2>,<3>,<4>,<5>,<6>,<7>);
 ```
 UPDATE Asistencia asi SET asi.valor=<2> WHERE asi.id_asistencia=<1>;
 ```
-## CASO 17
-### Código Requerimiento : R - 0014
-### Codigo interfaz : I - 021, I - 022
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/37d2fddd-7e83-492b-9cbb-32038cc8d324)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/050290fe-cdd4-46a8-9553-6e168a241cd9)
+
+| Codigo Requerimiento    |   R - 0014  | 
+|:-------------|:---------------|
+| Codigo Interfaz    |   I - 021, I - 022    | 
+| Imagen interfaz   |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/37d2fddd-7e83-492b-9cbb-32038cc8d324)    |
+| Imagen interfaz   |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/050290fe-cdd4-46a8-9553-6e168a241cd9)    |
+
 ### Sentecias SQL:
 ### Eventos: 
 * **Mostrar datos de la empresa:** Se mostrara en pantalla los datos de la empresa
@@ -381,12 +404,14 @@ VALUES ('Roberto Carlos', 'Flores', 'Velarde', '76071011', 'Activo', 1);
 ```
 DELETE FROM RepresentanteLegal WHERE id_representante = 3;
 ```
-## CASO 16
-### Código Requerimiento : R - 0016
-### Codigo interfaz : I - 024, I - 025
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/451e2641-3db6-48c6-bd48-702e23be3374)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/05708f15-9e98-4c52-ba29-2fa10b45d93d)
+
+
+| Codigo Requerimiento    |  R - 0016   | 
+|:-------------|:---------------|
+| Codigo Interfaz    |   I - 024, I - 025    | 
+| Imagen interfaz   |   ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/451e2641-3db6-48c6-bd48-702e23be3374)     |
+| Imagen interfaz   |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/05708f15-9e98-4c52-ba29-2fa10b45d93d)   |
+
 ### Sentecias SQL:
 ### Eventos: 
 * **Mostrar lista de cargos:** Se mostrara en pantalla la lista de cargos registradas con anterioridad 
@@ -410,12 +435,14 @@ WHERE
 INSERT INTO Cargo (id_cargo, nombre_cargo, codigo_cargo, descripcion_cargo, requerimientos, estado, id_empresa)
 VALUES (16, 'Jefe RRHH', 'jefe_rrhh', 'Gestor y controller del área de recursos humanos, considerando remuneraciones, selección y gestión por procesos', 'Técnico o Ingeniería a fin (DO, RRHH), Metódico', 'Activo', 1);
 ```
-## CASO 17
-### Código Requerimiento : R - 0017
-### Codigo interfaz : I - 026, I - 027
-### Imagen interfaz : 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/015aa01e-dabd-4fac-bf00-7e711b7566a1)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/784ecdcf-e8df-4c70-a22a-99575bb1a739)
+
+| Codigo Requerimiento    |   R017  | 
+|:-------------|:---------------|
+| Codigo Interfaz    |   I026, I027    | 
+| Imagen interfaz   |   ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/015aa01e-dabd-4fac-bf00-7e711b7566a1)     |
+| Imagen interfaz   |  ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/784ecdcf-e8df-4c70-a22a-99575bb1a739)      |
+
+
 ### Sentecias SQL:
 ### Eventos: 
 * **Mostrar dividsión de la empresa:** Se mostrara en pantalla las areas que tiene la empresa y la cantidad de empleados según el área
