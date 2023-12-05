@@ -72,7 +72,7 @@ Las bases de datos de series temporales son sistemas diseñados específicamente
 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/series%20temporales.webp)
 
-## Elección de Herramientos NoSQL
+## Elección de Herramientas NoSQL
 ### Escenario de Uso - Tipo de Motor de Base de Datos NoSQL
 Para el sistema de planillas que estamos desarrollando en este trabajo, hay mucho módulos, todos relacionados ya sea en mayor o menor medida, pero para la selección de un motor de base de datos NoSQL en específico se ha realizado un análisis en conjunto de manera que se pueda elegir la mejor opción para aplicar este motor, antes de hacer la elección del motor se ha enfocado en elegir el tipo de base de datos no relacional que mejor se adapta a los módulos a los que los aplicaremos, siendo estos módulos los de solicitudes y planillas.
 Se utilizará un motor de base de datos no relacional orientado a documentos, esto debido a que este tipo de motor permite almacenar diferentes tipos de datos y formatos en un mismo documento, esto permitiría que las solicitudes y planillas no se limiten únicamente a los campos predefinidos, sino que también pueda considerarse información adicional relevante del empleado en cuestión.
