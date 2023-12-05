@@ -72,10 +72,10 @@ Las bases de datos de series temporales son sistemas diseñados específicamente
 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/series%20temporales.webp)
 
-
-## Selección de Motor de Base de Datos NoSQL
-
-
+## Elección de Herramientos NoSQL
+### Escenario de Uso - Tipo de Motor de Base de Datos NoSQL
+Para el sistema de planillas que estamos desarrollando en este trabajo, hay mucho módulos, todos relacionados ya sea en mayor o menor medida, pero para la selección de un motor de base de datos NoSQL en específico se ha realizado un análisis en conjunto de manera que se pueda elegir la mejor opción para aplicar este motor, antes de hacer la elección del motor se ha enfocado en elegir el tipo de base de datos no relacional que mejor se adapta a los módulos a los que los aplicaremos, siendo estos módulos los de solicitudes y planillas.
+Se utilizará un motor de base de datos no relacional orientado a documentos, esto debido a que este tipo de motor permite almacenar diferentes tipos de datos y formatos en un mismo documento, esto permitiría que las solicitudes y planillas no se limiten únicamente a los campos predefinidos, sino que también pueda considerarse información adicional relevante del empleado en cuestión.
 
 ### Ventajas respecto a un motor de Base de Datos Relacional
 - Flexibilidad en el esquema de datos<br>
@@ -85,6 +85,8 @@ Si se da un aumento significativa en la cantidad de datos en el módulo de solic
 - Menor necesidad de JOINs y consultas complejas<br>
 Un motor de base de datos no relacional evitaría la necesidad de realizar JOINS complejos entre múltiples tables, lo que simplificaría el proceso de consulta y reduciría considerablemente el tiempo de desarrollo.
 
+### Elección de Motor de Base de Datos NoSQL
+Entre todos los motores de base de datos no relacional orientado a documentos se ha elegido a CouchDB, herramienta que posee una gran escalabilidad horizaontal y manejo de grandes volúmenes de datos, características importantes para garantizar una correcta experiencia del usuario sin importar cuanto aumente la carga de trabajo.
 
 ## Configuración de Motor de Base de Datos NoSQL CouchDB
 
