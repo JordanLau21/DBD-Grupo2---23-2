@@ -272,11 +272,11 @@ Para el poblamiento de datos, se recurrió al poblamiento masivo con archivos .j
   ![imagen](https://github.com/nnthony/bookish-doodle/blob/012f61d97ca64d6d0cd347446b0e664efc62153e/pnt/MONO/cap2.png)
 - En este caso se tienen 4 archivos para poblar datos
 
-&nbsp; &nbsp; &nbsp; [contrato3.json]
+&nbsp; &nbsp; &nbsp; [contrato3.json](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/8f6386f8c3b916864df7ed745b629ff565a43865/MONOGRAF%C3%8DA/Recursos/contrato3.json)
 ![imagen](https://github.com/nnthony/bookish-doodle/blob/b69c72108ef44e4b900a4acf1914ac59819decae/pnt/MONO/cap3.png)
-&nbsp; &nbsp; &nbsp; [boletas2.json] y [boletas3.json]
+&nbsp; &nbsp; &nbsp; [boletas2.json](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/8f6386f8c3b916864df7ed745b629ff565a43865/MONOGRAF%C3%8DA/Recursos/boletas2.json) y [boletas3.json](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/8f6386f8c3b916864df7ed745b629ff565a43865/MONOGRAF%C3%8DA/Recursos/boletas3.json)
 ![imagen](https://github.com/nnthony/bookish-doodle/blob/b69c72108ef44e4b900a4acf1914ac59819decae/pnt/MONO/cap4.png)
-&nbsp; &nbsp; &nbsp; [planillas.json]
+&nbsp; &nbsp; &nbsp; [planillas.json](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/8f6386f8c3b916864df7ed745b629ff565a43865/MONOGRAF%C3%8DA/Recursos/planillas.json)
 ![imagen](https://github.com/nnthony/bookish-doodle/blob/b69c72108ef44e4b900a4acf1914ac59819decae/pnt/MONO/cap5.png)
 El comando tiene esta forma:
 ```
