@@ -336,15 +336,26 @@ curl http://admin:admin@127.0.0.1:5984/boletas/_design/boleta/_view/pantalla_de_
 ![](https://github.com/nnthony/bookish-doodle/blob/6f0a906384f58d77b59138e88a0e7fa806bd3db7/pnt/Detalleplanilla1.png)
 #### I-034
 - Se creará una vista en la BD *boletas* que entreguen los datos de la interfaz de detalle de planilla
-  ![]()
+  ![](https://github.com/nnthony/bookish-doodle/blob/e9d3885df31b281d99b39d556da31e61c4191e8e/pnt/MONO/cap11.png)
 - Se usará el siguiente código para la creación de la vista
 ```
-
+function (doc) {
+  if (doc.id === <1> && doc.concepto && Array.isArray(doc.concepto)) {
+    for (var i = 0; i < doc.concepto.length; i++) {
+      emit(doc._id, {
+        concepto_nombre: doc.concepto[i].nombre,
+        concepto_valor: doc.concepto[i].valor,
+        concepto_tipo_operacion: doc.concepto[i].tipo_operacion
+      });
+    }
+  }
+}
+-- 1: es el id de la boleta seleccionada
 ```
 - Se ejecutará desde consola, con el siguiente comando:
 ```
-
+curl http://admin:admin@127.0.0.1:5984/boletas/_design/boleta/_view/pantalla_de_boleta
 ```
-![]()
+![](https://github.com/nnthony/bookish-doodle/blob/e9d3885df31b281d99b39d556da31e61c4191e8e/pnt/MONO/cap12.png)
 - Vista propuesta en el proyecto original
 ![](https://github.com/nnthony/bookish-doodle/raw/12ab224f3729055d81bb78c5a342c2ea6f54dd7e/pnt/detalleboleta1.png)
