@@ -137,7 +137,41 @@ Una vez verificado, se podrá trabajar con CouchDB sin ningún tipo de problema.
 
 ## Implementación
 
-#### MODULO SOLICITUDES
+### MODULO SOLICITUDES
+Para poder trabajar con las solicitudes de cada empleado, se tuvo que mudar todas las insercciones de datos que estaban en SQL en Postgres a un formato JSON debido a que couchDB utiliza este formato para trabajar. he aqui la pantalla con los datos subidos:
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/434fb38f-cd70-4a83-9726-0dd6462d77b4)
+En cada documento de la base de datos que llamamos "solicitudes", se establecieron los siguientes campos: nombres, apellidos, detalles, fecha de solicitud, hora de solicitud, estado de solicitud y monto.
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/33059cf2-f467-4d33-84a8-8a0f6f155a21)
+Una vez subido los datos con dichos campos, ya se podía empezar a trabajar.
+Para hacer la prueba de todas las pantallas se utilizó la consola de la computadora.
+A continuación se mostrará las vistas que se pudieron trabajar con esta base de datos NoSQL llamada CouchDB.
+#### PANTALLA SOLICITUDES ADMINISTRADOR
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/02165a52-460f-4a3d-a895-46ecc8eb6341) <br>
+Para lograr obtener los datos para esta pantalla, primero se debe crear una view en couchDB donde puedas ingresar todos los datos que dicha pantalla necesita, por ello se creó la view llamada vista_administrador:
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/67444cbd-9618-475e-a726-01f9bd3130be)
+En la cual se generó el siguiente código para hacer aparecer todos los datos que requerimos para esta pantalla:
+```
+function (doc) {
+  if (doc.nombres && doc.apellidos && doc["fecha de solicitud"] && doc["tipo de solicitud"] && doc["estado de solicitud"]) {
+    emit(doc._id, {
+      nombres: doc.nombres,
+      apellidos: doc.apellidos,
+      fecha_solicitud: doc["fecha de solicitud"],
+      tipo_solicitud: doc["tipo de solicitud"],
+      estado_solicitud: doc["estado de solicitud"]
+    });
+  }
+```
+Para probar que funciona, se requerirá de usar cierto comando en la consola, el cual es:
+```
+curl "http://localhost:5984/solicitudes/_design/Solicitudes/_view/vista_administrador"
+```
+El cual nos dá como resultado:
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/68e6ca20-94f2-43a7-9b01-3c33af2cd7af)
+
+
+
+
 
 
 
