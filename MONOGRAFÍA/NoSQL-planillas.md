@@ -286,7 +286,8 @@ curl -d @contrato3.json -H "Content-type: application/json" -X POST http://admin
 En la interfaz de Fauxton ya se pueden visualizar las BD y los datos
 ![Imagen](https://github.com/nnthony/bookish-doodle/blob/b70a5650e72482cf1c01f8c3d0b4a3068e644228/pnt/MONO/cap6.png)
 ### Preparación de vistas
-- Se creará una vista, desde Fauxton que entregue los datos de la interfaz de planillas:
+#### I-028
+- Se creará una vista en la BD *planillas* desde Fauxton que entregue los datos de la interfaz de planillas:
 ![Imagen](https://github.com/nnthony/bookish-doodle/blob/b70a5650e72482cf1c01f8c3d0b4a3068e644228/pnt/MONO/cap7.png)
 - Se usará el siguiente código para la creación de la vista:
 ```
@@ -304,4 +305,32 @@ curl http://admin:admin@127.0.0.1:5984/planillas/_design/planilla/_view/pantalla
 ```
 ![Imagen](https://github.com/nnthony/bookish-doodle/blob/b70a5650e72482cf1c01f8c3d0b4a3068e644228/pnt/MONO/cap8.png)
 - Vista propuesta en el proyecto original
-- ![](https://github.com/nnthony/bookish-doodle/raw/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planilla.png)
+![](https://github.com/nnthony/bookish-doodle/raw/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planilla.png)
+#### I-029
+- Se creará una vista en la BD *boletas* que entreguen los datos de la interfaz de detalle de planilla
+  ![](https://github.com/nnthony/bookish-doodle/blob/e10c33fe5a7362b1372047f187ef6c07551991f8/pnt/MONO/cap9.png)
+- Se usará el siguiente código para la creación de la vista
+```
+function (doc) {
+  if (
+    doc.empleado && doc.empleado.id && doc.empleado.nombre && doc.empleado.apellidos &&
+    doc.contrato && doc.contrato.fecha_inicio_laboral && doc.planilla && doc.planilla.id &&
+    doc.planilla.id === <1>
+  ) {
+    emit(doc._id, {
+      empleado_id: doc.empleado.id,
+      empleado_nombre: doc.empleado.nombre,
+      empleado_apellidos: doc.empleado.apellidos,
+      fecha_inicio_laboral: doc.contrato.fecha_inicio_laboral
+    });
+  }
+}
+-- 1: El id de la planilla seleccionada
+```
+- Se ejecutará desde consola, con el siguiente comando:
+```
+curl http://admin:admin@127.0.0.1:5984/boletas/_design/boleta/_view/pantalla_de_planilla
+```
+![](https://github.com/nnthony/bookish-doodle/blob/e10c33fe5a7362b1372047f187ef6c07551991f8/pnt/MONO/cap10.png)
+- Vista propuesta en el proyecto original
+![](https://github.com/nnthony/bookish-doodle/blob/6f0a906384f58d77b59138e88a0e7fa806bd3db7/pnt/Detalleplanilla1.png)
