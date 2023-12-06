@@ -211,5 +211,41 @@ Los atributos de la tabla *planilla* del modelo original se mantienen iguales, g
 identificados en el proyecto esta parte del modelo fue particularmente fácil de adaptar.
 - Se propone la base de datos documental "contratos" con la siguiente estructura principal:
 ```
-
+{
+ "id": "fc54584461f1b4f81b70adbc53708f8a",
+ "key": "fc54584461f1b4f81b70adbc53708f8a",
+ "value": {
+  "rev": "1-86a7cdca4d823d227702a431ca5eeff1"
+ },
+ "doc": {
+  "_id": "fc54584461f1b4f81b70adbc53708f8a",
+  "_rev": "1-86a7cdca4d823d227702a431ca5eeff1",
+  "id": 11,
+  "fecha_firma_contrato": "2022-12-22",
+  "fecha_inicio_laboral": "2023-02-01",
+  "fecha_termino_contrato": "2023-09-09",
+  "sueldo_base": 1753,
+  "area": {
+   "id": 7,
+   "nombre_area": "Desarrollo"
+  },
+  "cargo": {
+   "id": 1,
+   "nombre_cargo": "Gerente de Ventas"
+  },
+  "empleado": {
+   "id": 11,
+   "nombre": "Finn",
+   "apellido": "Morfey"
+  },
+  "frecuencia_pago": {
+   "id": 2,
+   "fp": "Quincenal"
+  }
+ }
+}
 ```
+Para agilizar el proceso de poblamiento de datos se optó por mantener solo los datos relevantes para el módulo de la tabla
+*contrato* del modelo original. Los atributos *fecha_firma_contrato*, *fecha_inicio_laboral*, *fecha_termino contrato* y *sueldo_base* del modelo original se mantuvieron. Ahora *area*, *cargo*, *empleado*, *frecuencia_pago* son objetos que almacenan algunos datos relevantes para los requerimientos del proyecto original.
+
+
