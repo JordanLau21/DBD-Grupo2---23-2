@@ -168,6 +168,67 @@ curl "http://localhost:5984/solicitudes/_design/Solicitudes/_view/vista_administ
 ```
 El cual nos dá como resultado:
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/68e6ca20-94f2-43a7-9b01-3c33af2cd7af)
+#### PANTALLA DETALLES
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/b8412487-906a-480e-85e6-3b2832e689f0) <br>
+Para esta pantalla, como podemos notar por la imagen, tendremos que requerir de los campos nombres, apellidos, fecha de solicitud, hora de solicitud, tipo de solicitud, estado de solicitud y la id de la solicitud.
+Para lograr ello, se creó otra view en el couchDB llamado vista_empleados:
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/ea4401cd-be3f-42b0-b427-fa1dd65eb9a9)
+En la cual se generó el siguiente código para atraer a todos los campos recorridos:
+```
+function (doc) {
+  if (doc.nombres && doc.apellidos && doc["fecha de solicitud"] && doc["hora de solicitud"] && doc["tipo de solicitud"] && doc["estado de solicitud"] && doc.detalles) {
+    emit(doc._id, {
+      nombres: doc.nombres,
+      apellidos: doc.apellidos,
+      fecha_solicitud: doc["fecha de solicitud"],
+      hora_solicitud: doc["hora de solicitud"],
+      tipo_solicitud: doc["tipo de solicitud"],
+      estado_solicitud: doc["estado de solicitud"],
+      detalles: doc.detalles
+    });
+  }
+}
+```
+Para poder probar que funcione, se requerira usar el siguiente comando en la consola:
+```
+curl "http://localhost:5984/solicitudes/_design/Solicitudes/_view/vista_empleados"
+```
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/c77457ac-768c-4c3c-a01b-501b6769ba01)
+Sin embargo, como podran notar, este comando no da una vista de todos los detalles de los empleados, para lograr una vista específica de algun empleado, se utilizará su id del documento, como en el siguiente ejemplo:
+Se usa el código
+```
+curl "http://Jordan:75930253@127.0.0.1:5984/solicitudes/_design/Solicitudes/_view/vista_empleados?key=\"d87ef0b908a14df64b77e5f7e003f6ce\""
+```
+El cual nos dá el sgte resultado
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/96ae7722-a4ca-4a13-a42b-56d632eebd76) <br>
+Dandose así su funcionalidad correcta
+
+#### PANTALLA SOLICITUDES VISTA EMPLEADO
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/d4d1f06f-f6bb-478a-812a-e9485f2900e0)
+Para lograr esta pantalla, se tendrá que hacer un proceso similar que con la pantalla de detalles, la diferencia es que aquí necesitaremos guiarnos por el nombre debido a que todos los documentos tienen una id que representa a la solicitud mas no al empleado.
+Primero creamos la view empleado_especifico.
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/a43dc880-4ffa-41e3-b7e0-78725a9a2214)
+En el cual, tal como se muestra en la primera imagene de la pantalla que queremos lograr, se necesitará el siguiente código para lograrlo:
+```
+function (doc) {
+  if (doc["fecha de solicitud"] && doc["tipo de solicitud"] && doc["estado de solicitud"]) {
+    emit(doc._id, {
+      fecha_solicitud: doc["fecha de solicitud"],
+      tipo_solicitud: doc["tipo de solicitud"],
+      estado_solicitud: doc["estado de solicitud"],
+    });
+  }
+}
+```
+Para probar este código, tal y como se mencionó anteriormente, ya no se puede usar la id por que esta esta referida a las solicitudes y no al empleado, por ello se usará el nombre del empleado para atraer a sus solicitudes hechas usando el siguiente comando:
+```
+curl "http://Jordan:75930253@127.0.0.1:5984/solicitudes/_design/Solicitudes/_view/empleado_especifico?key=\"DANIEL\""
+```
+
+
+
+
+
 
 
 
