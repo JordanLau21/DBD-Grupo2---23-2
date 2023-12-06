@@ -132,40 +132,40 @@ Para la base de datos NoSQL CouchDB se propone el siguiente planteamiento para l
   },
   "planilla": {
    "id": 13,
-   "periodicidad": "Quincenal",
-   "fecha_inicio": "2023-04-19",
-   "fecha_fin": "2023-10-13"
+   "periodicidad": "Mensual",
+   "fecha_inicio": "2023-10-01",
+   "fecha_fin": "2023-10-31"
   },
   "concepto": [
    {
     "nombre": "Essalud",
     "valor": 684,
-    "tipo_operación": "Descuento"
+    "tipo_operación": "Aporte"
    },
    {
     "nombre": "Sueldo Básico a pagar",
     "valor": 2971,
-    "tipo_operación": "Descuento"
+    "tipo_operación": "Ingreso"
    },
    {
     "nombre": "DSCTOS. INASISTENCIA",
     "valor": 349,
-    "tipo_operación": "Aporte"
+    "tipo_operación": "Descuento"
    },
    {
     "nombre": "Essalud",
     "valor": 2325,
-    "tipo_operación": "Descuento"
+    "tipo_operación": "Aporte"
    },
    {
     "nombre": "Renta 5ta",
     "valor": 2700,
-    "tipo_operación": "Ingreso"
+    "tipo_operación": "Descuento"
    },
    {
     "nombre": "AFP Seguro",
     "valor": 602,
-    "tipo_operación": "Descuento"
+    "tipo_operación": "Aporte"
    },
    {
     "nombre": "Vacaciones",
@@ -175,7 +175,7 @@ Para la base de datos NoSQL CouchDB se propone el siguiente planteamiento para l
    {
     "nombre": "Bono Extraord",
     "valor": 1011,
-    "tipo_operación": "Descuento"
+    "tipo_operación": "Ingreso"
    }
   ]
  }
@@ -334,3 +334,17 @@ curl http://admin:admin@127.0.0.1:5984/boletas/_design/boleta/_view/pantalla_de_
 ![](https://github.com/nnthony/bookish-doodle/blob/e10c33fe5a7362b1372047f187ef6c07551991f8/pnt/MONO/cap10.png)
 - Vista propuesta en el proyecto original
 ![](https://github.com/nnthony/bookish-doodle/blob/6f0a906384f58d77b59138e88a0e7fa806bd3db7/pnt/Detalleplanilla1.png)
+#### I-034
+- Se creará una vista en la BD *boletas* que entreguen los datos de la interfaz de detalle de planilla
+  ![]()
+- Se usará el siguiente código para la creación de la vista
+```
+
+```
+- Se ejecutará desde consola, con el siguiente comando:
+```
+
+```
+![]()
+- Vista propuesta en el proyecto original
+![](https://github.com/nnthony/bookish-doodle/raw/12ab224f3729055d81bb78c5a342c2ea6f54dd7e/pnt/detalleboleta1.png)
