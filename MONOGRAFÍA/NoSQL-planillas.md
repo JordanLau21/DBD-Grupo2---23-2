@@ -268,4 +268,18 @@ curl -X PUT http://admin:admin@127.0.0.1:5984/contratos
 ```
 ### Poblamiento de datos
 Para el poblamiento de datos, se recurrió al poblamiento masivo con archivos .json, el proceso se realiza desde consola:
-- Primero ubicamos 
+- Primero ubicamos la carpeta en donde están alojados los archivos
+  ![imagen](https://github.com/nnthony/bookish-doodle/blob/012f61d97ca64d6d0cd347446b0e664efc62153e/pnt/MONO/cap2.png)
+- En este caso se tienen 4 archivos para poblar datos
+
+&nbsp; &nbsp; &nbsp; [contrato3.json]
+![imagen](https://github.com/nnthony/bookish-doodle/blob/b69c72108ef44e4b900a4acf1914ac59819decae/pnt/MONO/cap3.png)
+&nbsp; &nbsp; &nbsp; [boletas2.json] y [boletas3.json]
+![imagen](https://github.com/nnthony/bookish-doodle/blob/b69c72108ef44e4b900a4acf1914ac59819decae/pnt/MONO/cap4.png)
+&nbsp; &nbsp; &nbsp; [planillas.json]
+![imagen](https://github.com/nnthony/bookish-doodle/blob/b69c72108ef44e4b900a4acf1914ac59819decae/pnt/MONO/cap5.png)
+El comando tiene esta forma:
+```
+curl -d @contrato3.json -H "Content-type: application/json" -X POST http://admin:admin@127.0.0.1:5984/contratos/_bulk_docs
+-- considerando el nombre del archivo y el nombre de la bd, además de los datos de acceso
+```
