@@ -284,3 +284,24 @@ curl -d @contrato3.json -H "Content-type: application/json" -X POST http://admin
 -- considerando el nombre del archivo y el nombre de la bd, además de los datos de acceso
 ```
 En la interfaz de Fauxton ya se pueden visualizar las BD y los datos
+![Imagen](https://github.com/nnthony/bookish-doodle/blob/b70a5650e72482cf1c01f8c3d0b4a3068e644228/pnt/MONO/cap6.png)
+### Preparación de vistas
+- Se creará una vista, desde Fauxton que entregue los datos de la interfaz de planillas:
+![Imagen](https://github.com/nnthony/bookish-doodle/blob/b70a5650e72482cf1c01f8c3d0b4a3068e644228/pnt/MONO/cap7.png)
+- Se usará el siguiente código para la creación de la vista:
+```
+function (doc) {
+  if (doc.periodo && doc.fecha_inicio && doc.periodicidad) 
+  { emit(doc._id, 
+  {periodo: doc.periodo,
+  fecha_inicio: doc.fecha_inicio,
+  periodicidad: doc.periodicidad});}
+}
+```
+- Para visualizarla, se ejecutará desde consola, con el siguiente comando:
+```
+curl http://admin:admin@127.0.0.1:5984/planillas/_design/planilla/_view/pantalla_planilla
+```
+![Imagen](https://github.com/nnthony/bookish-doodle/blob/b70a5650e72482cf1c01f8c3d0b4a3068e644228/pnt/MONO/cap8.png)
+- Vista propuesta en el proyecto original
+- ![](https://github.com/nnthony/bookish-doodle/raw/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planilla.png)
