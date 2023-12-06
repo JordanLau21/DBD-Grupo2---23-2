@@ -1,0 +1,215 @@
+# MÓDULO DE PLANILLAS
+La aplicación de la base de datos NoSQL CouchDB requirió de un reformulamiento en el proyecto planteado inicialmente que 
+trabajaba con una base de datos SQL, en el módulo de planillas intervenian principalmente estas tablas:
+```
+CREATE TABLE Frecuencia_pago(
+	id_frecuencia_pago SERIAL PRIMARY KEY NOT NULL,
+	frecuencia_pago VARCHAR(50) NOT NULL
+);
+CREATE TABLE Planilla
+(
+  id_planilla SERIAL NOT NULL,
+  periodo VARCHAR(10) NOT NULL,
+  dias_laborables NUMERIC(3) not null,
+  fecha_inicio DATE  not null,
+  fecha_fin DATE  not null,
+  fecha_calculo DATE,
+  monto_emitido NUMERIC(12,5),
+  periodicidad VARCHAR(10) not null,
+  fecha_creacion DATE not null,
+  hora_creacion time not null,
+  PRIMARY KEY (id_planilla)
+);
+create table Tipo_operacion (
+	id_tipo_operacion SERIAL not null,
+	descripcion_operacion VARCHAR(20) not null,
+	primary key (id_tipo_operacion)
+);
+CREATE TABLE Concepto_nomina(
+  id_nomina SERIAL NOT NULL,
+  nombre_nomina VARCHAR(50) NOT NULL,
+  valor_nomina numeric(7,2) NOT NULL,
+  id_tipo_operacion SERIAL NOT NULL,
+  id_estado SERIAL NOT NULL,
+  PRIMARY KEY (id_nomina),
+  FOREIGN KEY (id_tipo_operacion) REFERENCES Tipo_operacion(id_tipo_operacion),
+  FOREIGN KEY (id_estado) REFERENCES Estado_concepto(id_estado)
+);
+CREATE TABLE Empleado(
+	id_empleado SERIAL PRIMARY KEY NOT NULL,
+	nombre VARCHAR(20) NOT NULL,
+	apellidos VARCHAR(50) NOT NULL,
+	fecha_nacimiento DATE  NOT NULL,
+	edad INT NOT NULL,
+	telefono NUMERIC(9) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	dni NUMERIC(8) NOT NULL,
+	estado_civil VARCHAR(15) NOT NULL,
+	sexo VARCHAR(10) NOT NULL,
+	cantidad_menores_cargo INT NOT NULL,
+	id_regimen_pensionario SERIAL NOT NULL,
+	FOREIGN KEY (id_regimen_pensionario) REFERENCES Regimen_pensionario(id_regimen_pensionario),
+	id_seguro_medico SERIAL NOT NULL,
+	FOREIGN KEY (id_seguro_medico) REFERENCES Seguro_medico(id_seguro_medico),
+	id_situacion_discapacidad SERIAL NOT NULL,
+	FOREIGN KEY (id_situacion_discapacidad) REFERENCES Situacion_discapacidad(id_situacion_discapacidad),
+	id_empresa SERIAL NOT NULL,
+	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
+);
+CREATE TABLE Contrato(
+	id_contrato SERIAL PRIMARY KEY NOT NULL,
+	fecha_firma_contrato DATE NOT NULL,
+	fecha_inicio_laboral DATE  NOT NULL,
+	fecha_termino_contrato DATE  NOT NULL,
+	sueldo_base FLOAT NOT NULL,
+	liquido_teorico FLOAT NOT NULL,
+	id_area SERIAL NOT NULL,
+	FOREIGN KEY  (id_area) REFERENCES Area(id_area),
+	id_cargo SERIAL NOT NULL,
+	FOREIGN KEY (id_cargo) REFERENCES Cargo(id_cargo),
+	id_empleado SERIAL NOT NULL,
+	FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado),
+	id_estado_contrato SERIAL NOT NULL,
+	FOREIGN KEY (id_estado_contrato) REFERENCES Estado_contrato(id_estado_contrato),
+	id_tipo_contrato SERIAL NOT NULL,
+	FOREIGN KEY (id_tipo_contrato) REFERENCES Tipo_contrato(id_tipo_contrato),
+	id_tipo_jornada SERIAL NOT NULL,
+	FOREIGN KEY (id_tipo_jornada) REFERENCES Tipo_jornada(id_tipo_jornada),
+	id_frecuencia_pago SERIAL NOT NULL,
+	FOREIGN KEY (id_frecuencia_pago) REFERENCES Frecuencia_pago(id_frecuencia_pago),
+	id_medio_pago SERIAL NOT NULL,
+	FOREIGN KEY (id_medio_pago) REFERENCES Medio_pago(id_medio_pago)
+);
+CREATE TABLE Movimiento_planilla(
+	id_movimiento SERIAL PRIMARY KEY,
+	fecha DATE ,
+	monto NUMERIC(10,2),
+	id_contrato SERIAL,
+	id_nomina SERIAL,
+	FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
+	FOREIGN KEY (id_nomina) REFERENCES Concepto_Nomina(id_nomina)
+);
+CREATE TABLE Boleta(
+  id_boleta SERIAL NOT NULL,
+  TotalDescuentos NUMERIC(9,2) NOT NULL,
+  TotalNeto NUMERIC(9,2) NOT NULL,
+  TotalIngresos NUMERIC(9,2) NOT NULL,
+  TotalAportes numeric(9,2) NOT NULL,
+  id_contrato SERIAL NOT NULL,
+  id_planilla SERIAL NOT NULL,
+  PRIMARY KEY (id_boleta),
+  FOREIGN KEY (id_contrato) REFERENCES Contrato(id_contrato),
+  FOREIGN KEY (id_planilla) REFERENCES Planilla(id_planilla)
+);
+```
+
+Para la base de datos NoSQL CouchDB se propone el siguiente planteamiento para los documentos en formato json:
+- Se propone la base de datos documental "boletas" con la siguiente estructura principal:
+```
+{
+ "id": "fc54584461f1b4f81b70adbc53394cb6",
+ "key": "fc54584461f1b4f81b70adbc53394cb6",
+ "value": {
+  "rev": "1-97262d0274fd19498bc6f783d8839b4b"
+ },
+ "doc": {
+  "_id": "fc54584461f1b4f81b70adbc53394cb6",
+  "_rev": "1-97262d0274fd19498bc6f783d8839b4b",
+  "id": 7,
+  "total_ingresos": 2150,
+  "total_descuentos": 415,
+  "total_aportes": 500,
+  "total_neto": 1735,
+  "contrato": {
+   "id": 7,
+   "fecha_inicio_laboral": "2023-04-02",
+   "fecha_termino_contrato": "2023-07-04",
+   "frecuencia_pago": {
+    "id": 1,
+    "fp": "Mensual"
+   }
+  },
+  "planilla": {
+   "id": 13,
+   "periodicidad": "Quincenal",
+   "fecha_inicio": "2023-04-19",
+   "fecha_fin": "2023-10-13"
+  },
+  "concepto": [
+   {
+    "nombre": "Essalud",
+    "valor": 684,
+    "tipo_operación": "Descuento"
+   },
+   {
+    "nombre": "Sueldo Básico a pagar",
+    "valor": 2971,
+    "tipo_operación": "Descuento"
+   },
+   {
+    "nombre": "DSCTOS. INASISTENCIA",
+    "valor": 349,
+    "tipo_operación": "Aporte"
+   },
+   {
+    "nombre": "Essalud",
+    "valor": 2325,
+    "tipo_operación": "Descuento"
+   },
+   {
+    "nombre": "Renta 5ta",
+    "valor": 2700,
+    "tipo_operación": "Ingreso"
+   },
+   {
+    "nombre": "AFP Seguro",
+    "valor": 602,
+    "tipo_operación": "Descuento"
+   },
+   {
+    "nombre": "Vacaciones",
+    "valor": 2262,
+    "tipo_operación": "Ingreso"
+   },
+   {
+    "nombre": "Bono Extraord",
+    "valor": 1011,
+    "tipo_operación": "Descuento"
+   }
+  ]
+ }
+}
+```
+Los atributos de la tabla boleta original se mantienen, ahora *contrato* y *planilla* son objetos. Además se agregó
+*concepto* que representaría al concepto nomina, ahora se encuentra dentro de *boleta* como un array que almacena 
+elementos con 3 datos, *nombre*, *valor*, *tipo_operación* que en el modelo anterior era presentado como
+*movimiento_planilla*
+- Se propone la base de datos documental "planillas" con la siguiente estructura principal:
+```
+{
+ "id": "fc54584461f1b4f81b70adbc5360de44",
+ "key": "fc54584461f1b4f81b70adbc5360de44",
+ "value": {
+  "rev": "1-17222c286c3b1936c98cb6d908369a9e"
+ },
+ "doc": {
+  "_id": "fc54584461f1b4f81b70adbc5360de44",
+  "_rev": "1-17222c286c3b1936c98cb6d908369a9e",
+  "periodo": "09ME12023",
+  "dias_laborables": 30,
+  "fecha_inicio": "2023-09-01",
+  "fecha_fin": "2023-09-30",
+  "fecha_calculo": "2023-09-30",
+  "monto_emitido": 49054.27,
+  "periodicidad": "Mensual",
+  "fecha_creacion": "2023-09-01",
+  "hora_creacion": "07:29:43"
+ }
+}
+```
+Los atributos de la tabla *planilla* del modelo original se mantienen iguales, gracias a los requerimientos 
+identificados en el proyecto esta parte del modelo fue particularmente fácil de adaptar.
+- Se propone la base de datos documental "contratos" con la siguiente estructura principal:
+```
+
+```
