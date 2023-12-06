@@ -283,3 +283,4 @@ El comando tiene esta forma:
 curl -d @contrato3.json -H "Content-type: application/json" -X POST http://admin:admin@127.0.0.1:5984/contratos/_bulk_docs
 -- considerando el nombre del archivo y el nombre de la bd, además de los datos de acceso
 ```
+En la interfaz de Fauxton ya se pueden visualizar las BD y los datos
