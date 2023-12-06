@@ -86,7 +86,12 @@ Si se da un aumento significativa en la cantidad de datos en el módulo de solic
 Un motor de base de datos no relacional evitaría la necesidad de realizar JOINS complejos entre múltiples tables, lo que simplificaría el proceso de consulta y reduciría considerablemente el tiempo de desarrollo.
 
 ### Elección de Motor de Base de Datos NoSQL
-Entre todos los motores de base de datos no relacional orientado a documentos se ha elegido a CouchDB, herramienta que posee una gran escalabilidad horizaontal y manejo de grandes volúmenes de datos, características importantes para garantizar una correcta experiencia del usuario sin importar cuanto aumente la carga de trabajo.
+Entre todos los motores de base de datos no relacional orientado a documentos se ha elegido a CouchDB debido estas características:
+- Modelo de datos flexible: CouchDB utiliza un modelo de datos basado en documentos JSON que permite almacenar datos de manera flexible y estructurada, punto clave para nuestro caso en particular. Además los documentos en CouchDB pueden tener diferentes estrucutras sin definir un esquema fijo.  
+- Escalabilidad: CouchDB presenta una gran escalabilidad horizontal, esto a través de múltiples nodos, la que la hace capaz de manejar grandes volúmenes de datos, incluso en entornos distribuidos (usan distintos nodos para un objetivo compartido común).
+- Replicación y sincronización: CouchDB admite la replicación de datos entre múltiples instancias de bases de datos, lo que facilita la sincronización y la creación de copias de seguridad, esto es útil para nuestro trabajo, ya que trabajamos con datos replicados en algunos casos (Ejm: Tipo de seguro médico, tipo de régimen pensionario, etc.)
+- Actualizaciones incrementales: CouchDB permite actualizaciones incrementales en los documentos, lo que significa que solo se actualiza la parte modificada del documento en lugar del documento completo.
+- Tolerancia a fallos: CouchDB está diseñada para ser tolerante a fallos, debido a que los datos se distribuyen en nodos, esto hace que si en caso de fallo de un nodo, la base de datos puede continuar funcionando sin interrupciones significativas.
 
 ## Configuración de Motor de Base de Datos NoSQL CouchDB
 
