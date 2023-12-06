@@ -199,7 +199,7 @@ Se usa el código
 ```
 curl "http://Jordan:75930253@127.0.0.1:5984/solicitudes/_design/Solicitudes/_view/vista_empleados?key=\"d87ef0b908a14df64b77e5f7e003f6ce\""
 ```
-El cual nos dá el sgte resultado
+El cual nos dá el siguiente resultado
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/96ae7722-a4ca-4a13-a42b-56d632eebd76) <br>
 Dandose así su funcionalidad correcta
 
