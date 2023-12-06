@@ -1,4 +1,5 @@
 # MÓDULO DE PLANILLAS
+## Planteamiento
 La aplicación de la base de datos NoSQL CouchDB requirió de un reformulamiento en el proyecto planteado inicialmente que 
 trabajaba con una base de datos SQL, en el módulo de planillas intervenian principalmente estas tablas:
 ```
@@ -248,4 +249,23 @@ identificados en el proyecto esta parte del modelo fue particularmente fácil de
 Para agilizar el proceso de poblamiento de datos se optó por mantener solo los datos relevantes para el módulo de la tabla
 *contrato* del modelo original. Los atributos *fecha_firma_contrato*, *fecha_inicio_laboral*, *fecha_termino contrato* y *sueldo_base* del modelo original se mantuvieron. Ahora *area*, *cargo*, *empleado*, *frecuencia_pago* son objetos que almacenan algunos datos relevantes para los requerimientos del proyecto original.
 
-
+## Preparación de la base de datos NoSQL CouchDB
+Previamente ya se explicó el proceso de instalación y configuración inicial del entorno de trabajo CouchDB, ahora se explicará los pasos a seguir refrentes al módulo de planillas
+### Creación de bases de datos
+El proceso de creación se puede hacer desde consola o a través de la interfaz Fauxton, a continuación el proceso en consola:
+- Para crear bases de datos aplicamos el comando:
+```
+curl -X PUT http://admin:admin@127.0.0.1:5984/boletas
+--considerando usuario, contraseña, dirección, puerto y el nombre de la nueva base de datos
+```
+![imagen](https://github.com/nnthony/bookish-doodle/blob/0a610d41488655c9fa85819f2f23447f12dfbe81/pnt/MONO/CAP1.png)
+Realizamos lo mismo para las otras 2 bases de datos restantes
+```
+curl -X PUT http://admin:admin@127.0.0.1:5984/planillas
+```
+```
+curl -X PUT http://admin:admin@127.0.0.1:5984/contratos
+```
+### Poblamiento de datos
+Para el poblamiento de datos, se recurrió al poblamiento masivo con archivos .json, el proceso se realiza desde consola:
+- Primero ubicamos 
