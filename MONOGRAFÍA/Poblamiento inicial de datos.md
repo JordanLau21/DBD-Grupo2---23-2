@@ -1,11 +1,12 @@
 # CAPÍTULO : POBLAMIENTO INICIAL DE DATOS
+TABLA: Régimen Pensionario
 
 ```
 INSERT INTO Regimen_pensionario (tipo_regimen) VALUES ('ONP');
 
 INSERT INTO Regimen_pensionario (tipo_regimen) VALUES ('AFP');
 ```
---
+TABLA: Seguro Médico
 ```
 INSERT INTO Seguro_medico (tipo_seguro) VALUES ('EPS');
 
@@ -15,7 +16,7 @@ INSERT INTO Seguro_medico (tipo_seguro) VALUES ('EsSalud');
 
 INSERT INTO Seguro_medico (tipo_seguro) VALUES ('Privado');
 ```
---
+TABLA: Situación de Discapacidad
 ```
 INSERT INTO Situacion_discapacidad (tipo_discapacidad) VALUES ('Ninguna');
 
