@@ -143,7 +143,7 @@
 </table>
 
 ## DESCRIPCIÓN DE MÓDULOS
-### Módulo Autenticación de usuario 
+### - Módulo Autenticación de usuario 
 #### Responsabilidades
 - Gestionar el proceso de inicio de sesión de los usuarios (empleados y administradores).
 - Validar la autenticidad de la información ingresada por los usuarios.
