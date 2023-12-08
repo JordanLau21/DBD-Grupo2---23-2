@@ -25,7 +25,6 @@
 | Cambiar contraseña e iniciar sesión | R003 |
 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/55c797cf-4b38-4916-b329-e9324ca90ae9)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cedbba2c-b6e4-4d28-b269-7b2a81b25f96)
 
 - Tipo de Usuario: Usuario Paramétrico
 
