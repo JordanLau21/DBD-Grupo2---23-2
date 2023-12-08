@@ -56,7 +56,7 @@
 |---|---|
 | Respuesta Solicitud | R006 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cb3c7535-2422-40b9-b160-5b1b487cace6)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -66,7 +66,7 @@
 |---|---|
 | Pantalla Solicitudes (Empleado) | R007 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/e433215f-d373-4566-aa33-7e8741907696)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -76,7 +76,9 @@
 |---|---|
 | Nueva Solicitud |R008  |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/24662302-75da-4744-a056-6f80b0eb505b)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/adeec56f-4dc9-49a8-acd4-0d1feebb1d72)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/5e808ffc-375f-4a5b-84cf-1ed7af990bc1)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -87,7 +89,8 @@
 |---|---|
 | Registrar Empleado en Sistema |R009  |
 
-![image]()
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047_1.png)
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048_1.png)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -97,7 +100,7 @@
 |---|---|
 | Ver usuarios vigentes o activos | R010 |
 
-![image]()
+![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes_1.png)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -107,7 +110,7 @@
 |---|---|
 | Ver usuarios desvinculados o inactivos | R011 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados_1.png)
 
 - Tipo de Usuario: Usuario Paramétrico
 
