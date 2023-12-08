@@ -6,8 +6,10 @@
 | IS1 | 1 |
 | IS2 | 2 |
 
-| **Título** |
+|Título|
 |---|---|
+| IS1 | 1 |
+| IS2 | 2 |
 ### 4.1.2. Olvido de contraseña
 ### 4.1.3. Cambiar contraseña e iniciar sesión
 
