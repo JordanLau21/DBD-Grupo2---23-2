@@ -6,6 +6,11 @@
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
 
 ### 4.1.2. Olvido de contraseña
 | # | Código de Caso de Uso relacionado |
@@ -13,11 +18,25 @@
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.1.3. Cambiar contraseña e iniciar sesión
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
+
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
 
 
 ## 4.2. Módulo Solicitudes
@@ -27,11 +46,25 @@
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.2.2. Detalle de Solicitud
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
+
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
 
 ### 4.2.3. Respuesta Solicitud
 | # | Código de Caso de Uso relacionado |
@@ -39,17 +72,38 @@
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.2.4. Pantalla Solicitudes (Empleado)
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.2.5. Nueva Solicitud
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
+
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
 
 ## 4.3. Módulo Empleados
 ### 4.3.1. Registrar Empleado en Sistema
@@ -58,17 +112,37 @@
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.3.2. Ver usuarios vigentes o activos
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.3.3. Ver usuarios desvinculados o inactivos
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
+
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
 
 
 ## 4.4. Módulo Administración de la empresa
@@ -78,11 +152,25 @@
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.4.2. Editar las Variables de la Empresa
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
+
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
 
 
 ## 4.5. Módulo Organización
@@ -92,11 +180,25 @@
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.5.2. Crear nueva área
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
+
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
 
 
 ## 4.6. Módulo Planillas
@@ -106,11 +208,25 @@
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.6.2. Empleados en una planilla
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
+
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
 
 ### 4.6.3. Crear una planilla
 | # | Código de Caso de Uso relacionado |
@@ -118,11 +234,25 @@
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.6.4. Planillas pagadas
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
+
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
 
 ### 4.6.5. Boletas
 | # | Código de Caso de Uso relacionado |
@@ -130,11 +260,25 @@
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.6.6. Generar pago
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
+
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
 
 ## 4.7. Módulo Registro de movimientos y asistencias
 ### 4.7.1. Registrar movimiento de planilla
@@ -143,10 +287,25 @@
 | 1 |  |
 | 2 |  |
 
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 ### 4.7.2. Registrar licencias, inasistencias y vacaciones
 | # | Código de Caso de Uso relacionado |
 |---|---|
 | 1 |  |
 | 2 |  |
+
+![image]()
+
+- Tipo de Usuario:
+- Dimensión de usabilidad:
+- Entidades identificadas: 
+
+
 
 
