@@ -8,8 +8,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 ### 4.1.2. Olvido de contraseña
 | Caso de Uso | Código de Caso de Uso  |
@@ -19,8 +17,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.1.3. Cambiar contraseña e iniciar sesión
@@ -31,8 +27,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 
@@ -45,8 +39,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.2.2. Detalle de Solicitud
@@ -57,8 +49,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.2.3. Respuesta Solicitud
@@ -69,8 +59,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.2.4. Pantalla Solicitudes (Empleado)
@@ -81,8 +69,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.2.5. Nueva Solicitud
@@ -93,8 +79,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ## 4.3. Módulo Empleados
@@ -106,8 +90,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.3.2. Ver usuarios vigentes o activos
@@ -118,8 +100,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.3.3. Ver usuarios desvinculados o inactivos
@@ -130,8 +110,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ## 4.4. Módulo Administración de la empresa
@@ -143,8 +121,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.4.2. Editar las Variables de la Empresa
@@ -155,8 +131,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 
@@ -169,9 +143,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
-
 
 ### 4.5.2. Crear nueva área
 | Caso de Uso | Código de Caso de Uso  |
@@ -181,8 +152,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 
@@ -195,8 +164,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.6.2. Empleados en una planilla
@@ -207,8 +174,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.6.3. Crear una planilla
@@ -219,8 +184,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.6.4. Planillas pagadas
@@ -231,8 +194,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.6.5. Boletas
@@ -243,8 +204,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.6.6. Generar pago
@@ -255,8 +214,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ## 4.7. Módulo Registro de movimientos y asistencias
@@ -268,8 +225,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 ### 4.7.2. Registrar licencias, inasistencias y vacaciones
@@ -280,8 +235,6 @@
 ![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
-- Dimensión de usabilidad:
-- Entidades identificadas: 
 
 
 
