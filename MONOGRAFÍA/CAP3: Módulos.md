@@ -143,18 +143,20 @@
 </table>
 
 ## DESCRIPCIÓN DE MÓDULOS
-### MÓDULO 
+### Módulo Autenticación de usuario 
 
 
+### Módulo Solicitudes
 
-### MÓDULO 
 
+### Módulo Empleados
 
-### MÓDULO 
+### Módulo Administración de la empresa
 
-### MÓDULO 
-### MÓDULO 
-### MÓDULO 
-### MÓDULO 
+### Módulo Organización
+
+### Módulo Planillas
+
+### Módulo Registro de movimientos y asistencias
 
 
