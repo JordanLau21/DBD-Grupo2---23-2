@@ -7,7 +7,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -18,7 +18,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -30,7 +30,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -44,7 +44,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -56,7 +56,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -68,7 +68,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -80,7 +80,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -92,7 +92,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -105,7 +105,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -117,7 +117,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -129,7 +129,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -142,7 +142,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -154,7 +154,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -168,7 +168,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -180,7 +180,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -194,7 +194,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -206,7 +206,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -218,7 +218,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -230,7 +230,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -242,7 +242,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -254,7 +254,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -267,7 +267,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
@@ -279,7 +279,7 @@
 
 ![image]()
 
-- Tipo de Usuario:
+- Tipo de Usuario: Usuario Paramétrico
 - Dimensión de usabilidad:
 - Entidades identificadas: 
 
