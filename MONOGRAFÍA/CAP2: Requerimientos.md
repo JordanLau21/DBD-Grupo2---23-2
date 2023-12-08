@@ -110,22 +110,8 @@ Caso de uso #2: Olvido de contraseña <br>
 | 6  |   Guardamos la información y visualizamos el resultado |
 | 7 |   Caso terminado   |
 
-  Caso de uso #7: Mostrar Organigrama de la Empresa <br>
+ Caso de uso #7: Crear empleado y usuario <br>
 | Código | R007 | 
-|----------|----------|
-| Objetivo |Mostrar el organigrama de la empresa a través de la plataforma.|
-|  Descripción |  Este caso de uso permite a los usuarios, en particular al personal de Recursos Humanos (RRHH), acceder y visualizar el organigrama de la empresa en la plataforma. El organigrama proporciona una representación gráfica de la estructura jerárquica de la organización, mostrando las relaciones entre diferentes cargos y áreas, consideramos que es el resultado de nuestras ediciones.  |
-|  Actor primario   |  Administrador de R.R. H.H.  |
-| Actor Secundario |  -  |
-| Precondiciones | Acceso a la plataforma con credenciales de usuario válidas, contar con permisos específicos para acceder y visualizar el organigrama de la empresa. |
-|  Paso  |  Acción   |
-|     1  | Ingresar a “Organización”  |
-|  2 |     Seleccionar pestaña “Organigrama” |
-|  3 |  Visualiza el Organigrama, resultado de tu edición  |
-| 4 |   Caso terminado   |
-
- Caso de uso #8: Crear empleado y usuario <br>
-| Código | R008 | 
 |----------|----------|
 | Objetivo |Introducir los datos de un empleado con contrato vigente con la empresa, de manera que se cree un usuario para este.|
 |  Descripción |   A través de la subida de datos del empleado, se crea un usuario que le permitirá a este poder ver su sistema de planillas.  |
@@ -144,8 +130,8 @@ Caso de uso #2: Olvido de contraseña <br>
 | 9 |  Dar click en finalizar|
 |  10 |   El usuario habrá sido creado exitosamente.|
 
- Caso de uso #9: Ver los usuarios vigentes o activos <br>
-| Código | R009 | 
+ Caso de uso #8: Ver los usuarios vigentes o activos <br>
+| Código | R008 | 
 |----------|----------|
 | Objetivo |Visualizar los usuarios activos en el sistema de planillas|
 |  Descripción |  El administrador podrá visualizar los usuarios cuyo estado es activo en el momento, es decir, los empleados que tienen contrato vigente con la empresa. |
@@ -159,8 +145,8 @@ Caso de uso #2: Olvido de contraseña <br>
 |   4 | Para ver los datos del empleado al detalle, dar click en el botón del ojo. |
 | 5 |  Se observarán los datos personales, previsionales y de trabajo del empleado.|
 
- Caso de uso #10: Renovar contrato de empleado <br>
-| Código | R010 | 
+ Caso de uso #9: Renovar contrato de empleado <br>
+| Código | R09 | 
 |----------|----------|
 | Objetivo |Renovar el contrato de un empleado|
 |  Descripción | El administrador podrá renovar el contrato del empleado bajo las mismas condiciones o cambiar los datos que hayan sido modificados, como por ejemplo, el cargo, área, sueldo, etc. |
@@ -181,8 +167,8 @@ Caso de uso #2: Olvido de contraseña <br>
 | 11 |  En caso de que los datos del contrato vayan a ser los mismos que el anterior, se dará click en “Condiciones Anteriores”.|
 | 12 | Una vez llenado todos los datos necesarios, dar click en “Finalizar” para terminar el proceso de renovación. |
 
- Caso de uso #11: Ver los usuarios desvinculados <br>
-| Código | R011 | 
+ Caso de uso #10: Ver los usuarios desvinculados <br>
+| Código | R010 | 
 |----------|----------|
 | Objetivo |Desvincular a un empleado activo o visualizar a los empleados desvinculados.|
 |  Descripción | El administrador podrá desvincular usuarios activos, por término de contrato, además de poder visualizar los empleados desvinculados anteriormente |
@@ -199,8 +185,8 @@ Caso de uso #2: Olvido de contraseña <br>
 | 7 |  Se da click al botón “Confirmar” de la ventana emergente. |
 |  8 |  El usuario activo elegido será desvinculado y pasará a estar desactivado.|
 
- Caso de uso #12: Envío de solicitudes <br>
-| Código | R012 | 
+ Caso de uso #11: Envío de solicitudes <br>
+| Código | R011 | 
 |----------|----------|
 | Objetivo |Los empleados realicen solicitudes que puedan ser aprobadas por sus superiores.|
 |  Descripción | Medio eficiente por el cual los empleados pueden realizar solicitudes en lo que respecta a permisos o quejas. |
@@ -217,8 +203,8 @@ Caso de uso #2: Olvido de contraseña <br>
 | 7 | El usuario confirma el registro de solicitud |
 | 8 | Caso terminado |
 
- Caso de uso #13: Recepción de solicitudes <br>
-| Código | R013 | 
+ Caso de uso #12: Recepción de solicitudes <br>
+| Código | R012 | 
 |----------|----------|
 | Objetivo |Los usuarios administradores gestionen las solicitudes de los empleados.|
 |  Descripción |Medio por el cual los administrativos encargados gestionan las solicitudes emitidas por los trabajadores en el sistema. |
@@ -231,8 +217,8 @@ Caso de uso #2: Olvido de contraseña <br>
 |  3 | El administrador verifica los detalles de dichas solicitudes o reclamos. |
 |   4 |El caso termina. |
 
- Caso de uso #14: Verificación del estado de las solicitudes <br>
-| Código | R014 | 
+ Caso de uso #13: Verificación del estado de las solicitudes <br>
+| Código | R013 | 
 |----------|----------|
 | Objetivo |Los usuarios trabajadores pueden ver el estado de sus solicitudes.|
 |  Descripción |Medio por el cual los trabajadores podran ver si sus solicitudes hechas fueron rechazadas, aceptadas o siguen en estado de espera. |
@@ -244,8 +230,8 @@ Caso de uso #2: Olvido de contraseña <br>
 |  2 |  El usuario podrá ver el estado de todas las solicitudes que haya hecho. |
 |  3 | El caso termina. |
 
- Caso de uso #15: Aceptación o Rechazo de solicitudes <br>
-| Código | R015 | 
+ Caso de uso #14: Aceptación o Rechazo de solicitudes <br>
+| Código | R014 | 
 |----------|----------|
 | Objetivo |Los usuarios administradores gestionen las solicitudes de los empleados.|
 |  Descripción | Medio por el cual los administrativos encargados gestionan las solicitudes emitidas por los trabajadores en el sistema. |
@@ -259,8 +245,8 @@ Caso de uso #2: Olvido de contraseña <br>
 |   4 |El administrador reconfirma dicha aceptación o rechazo. |
 | 5 | El caso termina |
 
-Caso de uso #16: Registrar movimiento de planilla (por periodo de planilla) <br>
-| Código | R016 | 
+Caso de uso #15: Registrar movimiento de planilla (por periodo de planilla) <br>
+| Código | R015 | 
 |----------|----------|
 | Objetivo |Registrar los movimientos que modifiquen el pago habitual de los empleados.|
 |  Descripción | El administrador podrá registrar los movimientos que influyan en el pago de los empleados, como por ejemplo: horas extras, descuentos por cafetería, bonificación extraordinaria, minutos de tardanza, etc, por periodo de planilla. |
@@ -279,8 +265,8 @@ Caso de uso #16: Registrar movimiento de planilla (por periodo de planilla) <br>
 | 9 |Modifica los montos de ingresos y descuentosClickeando en Editar o Agregar y asignando los valores. |
 | 10 | Presiona en el botón de guardar. |
 
-Caso de uso #17: Registrar licencias, inasistencias y vacaciones <br>
-| Código | R017 | 
+Caso de uso #16: Registrar licencias, inasistencias y vacaciones <br>
+| Código | R016 | 
 |----------|----------|
 | Objetivo |Registrar las licencias, inasistencias y vacaciones a partir del periodo de planilla activo.|
 |  Descripción | Se podrán registrar inasistencias, licencias y otros conceptos mas de cada empleado dentro de su periodo de planilla activo. |
@@ -301,8 +287,8 @@ Caso de uso #17: Registrar licencias, inasistencias y vacaciones <br>
 | 11 | Presionar botón de grabar.    |
 | 12 |  El sistema le mostrara un mensaje de validación de los cambios.   |
 
-Caso de uso #18: Visualizar historial de recibos de pago <br>
-| Código | R018 | 
+Caso de uso #17: Visualizar historial de recibos de pago <br>
+| Código | R017 | 
 |----------|----------|
 | Objetivo |El usuario trabajador pueda revisar sus boletas de pagos de meses anteriores. |
 |  Descripción | El usuario trabajador podrá revisar sus boletas de pagos de meses anteriores, y poder ver los detalles de cada boleta de pago. |
@@ -317,8 +303,8 @@ Caso de uso #18: Visualizar historial de recibos de pago <br>
 | 5 |Ingresar el nombre del “Nuevo Cargo”. |
 |  6 |Ingresar Descripción y Requerimientos del “Nuevo Cargo”.|
 
-Caso de uso #19: Generar nueva planilla <br>
-| Código | R019 | 
+Caso de uso #18: Generar nueva planilla <br>
+| Código | R018 | 
 |----------|----------|
 | Objetivo |Generar una nueva planilla correspondiente a un nuevo periodo.|
 |  Descripción | El administrador genera una nueva planilla en donde puede incluir o excluir empleados para un nuevo periodo. |
@@ -339,8 +325,8 @@ Caso de uso #19: Generar nueva planilla <br>
 | 11 | Click en el botón verde “Aceptar”.    |
 | 12 | Click en el botón verde “Generar”.   |
 
-Caso de uso #20: Generar boletas <br>
-| Código | R020 | 
+Caso de uso #19: Generar boletas <br>
+| Código | R019 | 
 |----------|----------|
 | Objetivo |Generar boletas correspondientes a una planilla.|
 |  Descripción | El administrador genera las boletas correspondientes a una planilla. |
@@ -352,8 +338,8 @@ Caso de uso #20: Generar boletas <br>
 |  2 |  Click en el botón “Generar boletas”. |
 |  3 | Click en el botón “Generar”. |
 
-Caso de uso #21: Visualizar boletas de pago (Administrador) <br>
-| Código | R021 | 
+Caso de uso #20: Visualizar boletas de pago (Administrador) <br>
+| Código | R020 | 
 |----------|----------|
 | Objetivo |Visualizar las boletas de pago por periodo.|
 |  Descripción | El administrador tiene acceso y visualiza las boletas de pago de las planillas por periodo. |
