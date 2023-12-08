@@ -153,16 +153,19 @@
 No tiene interacción directa con otros módulos dentro del sistema de planilla, sino como prerrequisito para acceder a ellos, ya que se debe autenticar el usuario para ingresar a la plataforma.
 ### - Módulo Solicitudes
 #### Responsabilidades
-
+- Gestionar el proceso de solicitudes de los empleados.
+- Permitir al administrador dar respuesta a las solicitudes hechos por los empleados.
+- Permitir al empleado explicar el motivo de su solicitud.
+- Permitir ver al empleado el estado de sus solicitudes.
 #### Interacción con otros módulos
-
+No tiene interacción directa con otros módulos dentro del sistema de planilla.
 ### - Módulo Empleados
 #### Responsabilidades
 - Crear cuenta para empleado.
 - Visualizar los empleados vigentes o activos.
 - Visualizar los empleados desvinculados o inactivos.
 #### Interacción con otros módulos
-
+Interacción con el módulo Organización, ya que al crear un usuario se ingresará el cargo y área de este, los cuales deberán ser creados antes en el módulo Organización.
 ### - Módulo Administración de la empresa
 #### Responsabilidades
 - Editar información de la empresa: Permite a los usuarios autorizados editar y actualizar la información de una empresa registrada en la plataforma. Esto incluye datos generales, bancos, opciones de gratificaciones, cajas de compensaciones y representantes legales.
@@ -178,12 +181,20 @@ Tiene interacción con el Módulo Planilla, ya que en los diferentes casos, para
 Con el Módulo de Empleados, ya que estas creaciones son fundamentales hacerlas primero antes de crear un Empleado, ósea hacer su contrato en la plataforma, ya que, en ese caso, al colocar los datos del trabajador, se necesitará datos como cargo, división, área, sub-área, es por ello que primero se crea este, debido a que los puestos pueden obtenerlo muchos empleados
 ### - Módulo Planillas
 #### Responsabilidades
-
+- Gestiona el proceso de creación de planilla.
+- Permitir la generación de planillas para un nuevo periodo.
+- Permitir a el administrador incluir o retirar a empleados de la planilla.
+- Permitir el registro de los movimientos de planilla para cada trabajador durante un periodo.
+- Permitir visualizar el registro de todas las planillas, las boletas y la información referente a pagos
+de cada trabajador.
 #### Interacción con otros módulos
-
+Interacción con el Módulo Registro de movimientos y asistencias.
 ### - Módulo Registro de movimientos y asistencias
 #### Responsabilidades
-
+- Registrar los movimientos de planilla, de cada planilla activa durante un periodo dado.
+- Registrar conceptos como inasistencias, vacaciones, licencias, entre otros. Dentro de cada
+planilla activa durante un periodo dado.
+- Permitir a los administradores el registro de dichos datos de manera eficiente.
 #### Interacción con otros módulos
-
+Interacción con el Módulo de Empleados y el Modulo de Planilla.
 
