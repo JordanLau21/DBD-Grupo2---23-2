@@ -7,6 +7,7 @@
 | IS2 | 2 |
 
 |Título|
+| Historia de usuario | Código |
 |---|---|
 | IS1 | 1 |
 | IS2 | 2 |
