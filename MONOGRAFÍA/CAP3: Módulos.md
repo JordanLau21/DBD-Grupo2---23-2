@@ -4,10 +4,10 @@
 	<tbody>
 		<tr>
 			<td>N</td>
-			<td>MÓDULO</td>
+			<td>Módulo</td>
 			<td>N</td>
-			<td>REQUERIMIENTO</td>
-			<td>CÓDIGO</td>
+			<td>Caso de Uso</td>
+			<td>Código</td>
 		</tr>
 		<tr>
 			<td rowspan="3">1</td>
