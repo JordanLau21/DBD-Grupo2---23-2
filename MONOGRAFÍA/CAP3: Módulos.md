@@ -144,7 +144,7 @@
 
 ## DESCRIPCIÓN DE MÓDULOS
 ### Módulo Autenticación de usuario 
-
+### Responsabilidades
 
 ### Módulo Solicitudes
 
