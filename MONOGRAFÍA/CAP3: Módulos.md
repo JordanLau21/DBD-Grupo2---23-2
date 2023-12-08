@@ -158,7 +158,9 @@ No tiene interacción directa con otros módulos dentro del sistema de planilla,
 
 ### - Módulo Empleados
 #### Responsabilidades
-
+- Crear cuenta para empleado.
+- Visualizar los empleados vigentes o activos.
+- Visualizar los empleados desvinculados o inactivos.
 #### Interacción con otros módulos
 
 ### - Módulo Administración de la empresa
