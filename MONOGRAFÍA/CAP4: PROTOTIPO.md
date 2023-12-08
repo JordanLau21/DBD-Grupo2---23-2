@@ -5,7 +5,7 @@
 |---|---|
 | Autenticación de Usuario | R001 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/e8412cf3-66de-4947-b0c4-d007af60f40f)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/d7d6c0aa-c02f-4200-87cc-1d6e70440dea)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -14,7 +14,7 @@
 |---|---|
 | Olvido de contraseña | R002 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/31d8b522-39de-4136-b0b7-3cddb2861812)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/4395cef4-7cd5-4763-9eae-496070e14a8b)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -24,8 +24,8 @@
 |---|---|
 | Cambiar contraseña e iniciar sesión | R003 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/810c4a06-7a8c-4d2c-b7a1-5d30d1d41951)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/3458369c-f54b-4d9d-b303-b1efa3316e2b)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/55c797cf-4b38-4916-b329-e9324ca90ae9)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cedbba2c-b6e4-4d28-b269-7b2a81b25f96)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -37,7 +37,7 @@
 |---|---|
 | Ver solicitudes (Administrador) |R004  |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/8ef6f6c8-3aa2-4e65-9a17-ab0490e4a21f)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/81ef464d-ee97-45ff-b727-ca5feda8a432)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -47,7 +47,7 @@
 |---|---|
 | Detalle de Solicitud | R005 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/1eb1b037-b250-46ea-a22f-efd9f6674668)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/ff159860-6d4b-40f0-a78c-5097e51c67f3)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -57,7 +57,7 @@
 |---|---|
 | Respuesta Solicitud | R006 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/cb3c7535-2422-40b9-b160-5b1b487cace6)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/7bf03a59-db93-4534-b5fb-f8785dbbf529)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -67,7 +67,7 @@
 |---|---|
 | Pantalla Solicitudes (Empleado) | R007 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/e433215f-d373-4566-aa33-7e8741907696)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/5b79c089-1e91-4107-b80f-e39e4c91b1b3)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -77,9 +77,9 @@
 |---|---|
 | Nueva Solicitud |R008  |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/24662302-75da-4744-a056-6f80b0eb505b)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/adeec56f-4dc9-49a8-acd4-0d1feebb1d72)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/5e808ffc-375f-4a5b-84cf-1ed7af990bc1)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/fddb795c-32ef-4ba5-8e68-a186cec548b2)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2047.png)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2048.png)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -90,8 +90,8 @@
 |---|---|
 | Registrar Empleado en Sistema |R009  |
 
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2047_1.png)
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048_1.png)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/vigentes.png)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados.png)
 
 - Tipo de Usuario: Usuario Paramétrico
 
