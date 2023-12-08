@@ -36,7 +36,7 @@
 |---|---|
 | Ver solicitudes (Administrador) |R004  |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/81ef464d-ee97-45ff-b727-ca5feda8a432)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/ff159860-6d4b-40f0-a78c-5097e51c67f3)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -46,7 +46,7 @@
 |---|---|
 | Detalle de Solicitud | R005 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/ff159860-6d4b-40f0-a78c-5097e51c67f3)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/81ef464d-ee97-45ff-b727-ca5feda8a432)
 
 - Tipo de Usuario: Usuario Paramétrico
 
