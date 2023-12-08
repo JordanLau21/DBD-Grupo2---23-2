@@ -1,16 +1,10 @@
 # CAPÍTULO 4: PROTOTIPO
 ## 4.1. Módulo Autenticación de usuario
 ### 4.1.1. Autenticación de Usuario
-| Historia de usuario | Código |
+| |
 |---|---|
-| IS1 | 1 |
-| IS2 | 2 |
 
-|Título|
-| Historia de usuario | Código |
-|---|---|
-| IS1 | 1 |
-| IS2 | 2 |
+
 ### 4.1.2. Olvido de contraseña
 ### 4.1.3. Cambiar contraseña e iniciar sesión
 
