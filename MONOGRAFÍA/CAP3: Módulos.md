@@ -3,9 +3,9 @@
 <table>
 	<tbody>
 		<tr>
-			<td>N</td>
+			<td>#</td>
 			<td>Módulo</td>
-			<td>N</td>
+			<td>#</td>
 			<td>Caso de Uso</td>
 			<td>Código</td>
 		</tr>
