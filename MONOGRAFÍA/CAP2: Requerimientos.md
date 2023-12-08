@@ -372,3 +372,26 @@ Caso de uso #21: Visualizar boletas de pago (Administrador) <br>
 | 5 | Click en el botón verde para ver los detalles de la boleta. |
 |  6 |Click en la “x” para salir.|
 | 7 | Click en el botón verde de documento para generar un pdf de la boleta de pago. |
+
+## 2.2 REQUERIMIENTOS DE ALTA CALIDAD
+- Exactitud: El sistema debe calcular los salarios y las prestaciones de 
+los trabajadores de manera precisa.
+- Completitud: El sistema debe proporcionar toda la información 
+necesaria para la gestión de la nómina.
+- Eficiencia: El sistema debe ser capaz de procesar la nómina de manera 
+rápida y eficiente.
+- Flexibilidad: El sistema debe permitir adaptar los procesos a las 
+necesidades específicas de la empresa.
+- Usabilidad: El sistema debe ser fácil de usar, incluso para usuarios con 
+un nivel de conocimiento básico.
+- Seguridad: El sistema debe contar con las medidas de seguridad 
+necesarias para proteger los datos de los trabajadores.
+- Mantenibilidad: El sistema debe ser fácil de mantener y actualizar.
+- Rendimiento: El sistema debe funcionar de manera estable y sin errores.
+## 2.3 RESTRICCIONES
+- El sistema se implementará en un sistema de gestión de base de datos llamado
+PostgreSQL.
+- En la parte del Backend se usará el lenguaje de programación llamado JAVA usando como 
+framework React, Note y Express.
+- Por otro lado, en la parte del Frontend se trabajará con HTML, CSS, Javascript y 
+Bootstrap debido a que los integrantes tienen mejor conocimiento de estas herramientas.
