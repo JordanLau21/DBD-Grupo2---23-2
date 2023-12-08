@@ -146,17 +146,39 @@
 ### Módulo Autenticación de usuario 
 #### Responsabilidades
 
+#### Interacción con otros módulos
+
+
+
 ### Módulo Solicitudes
+#### Responsabilidades
+
+#### Interacción con otros módulos
 
 
 ### Módulo Empleados
+#### Responsabilidades
+
+#### Interacción con otros módulos
 
 ### Módulo Administración de la empresa
+#### Responsabilidades
+
+#### Interacción con otros módulos
 
 ### Módulo Organización
+#### Responsabilidades
+
+#### Interacción con otros módulos
 
 ### Módulo Planillas
+#### Responsabilidades
+
+#### Interacción con otros módulos
 
 ### Módulo Registro de movimientos y asistencias
+#### Responsabilidades
+
+#### Interacción con otros módulos
 
 
