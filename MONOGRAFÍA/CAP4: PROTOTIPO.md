@@ -56,7 +56,7 @@
 |---|---|
 | Respuesta Solicitud | R006 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/7bf03a59-db93-4534-b5fb-f8785dbbf529)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -66,7 +66,7 @@
 |---|---|
 | Pantalla Solicitudes (Empleado) | R007 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/5b79c089-1e91-4107-b80f-e39e4c91b1b3)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -76,9 +76,7 @@
 |---|---|
 | Nueva Solicitud |R008  |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/fddb795c-32ef-4ba5-8e68-a186cec548b2)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2047.png)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/Frame%2048.png)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -89,8 +87,7 @@
 |---|---|
 | Registrar Empleado en Sistema |R009  |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/vigentes.png)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados.png)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -100,7 +97,7 @@
 |---|---|
 | Ver usuarios vigentes o activos | R010 |
 
-![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes_1.png)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -110,7 +107,7 @@
 |---|---|
 | Ver usuarios desvinculados o inactivos | R011 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/INFORME3/imagenes/desvinculados_1.png)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -121,7 +118,7 @@
 |---|---|
 | Editar información de la empresa | R012 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3b239f7e-1f62-428d-b87b-215d7f9ec422)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -131,7 +128,7 @@
 |---|---|
 | Editar las Variables de la Empresa | R013 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/be19dad0-9762-4c6e-b408-1a7d59ecf00b)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -143,7 +140,7 @@
 |---|---|
 | Crear nuevo cargo | R014 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/16303985-92b0-44c7-88db-628451c05ac0)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -152,7 +149,7 @@
 |---|---|
 | Crear nueva área | R015 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3b2f83cf-1ce4-435b-8741-b5336fbfbed9)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -164,7 +161,7 @@
 |---|---|
 | Planillas | R016 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/2c1e3766-31e9-46ff-be3a-4078c5646f89)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -174,7 +171,7 @@
 |---|---|
 | Empleados en una planilla |R017  |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/201c9c54-68a4-4f35-9a5a-4eedce2783b0)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -184,8 +181,7 @@
 |---|---|
 | Crear una planilla | R018 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/37d2fddd-7e83-492b-9cbb-32038cc8d324)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/050290fe-cdd4-46a8-9553-6e168a241cd9)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -195,8 +191,7 @@
 |---|---|
 | Planillas pagadas | R019 |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/451e2641-3db6-48c6-bd48-702e23be3374)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/05708f15-9e98-4c52-ba29-2fa10b45d93d)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -206,8 +201,7 @@
 |---|---|
 | Boletas |R020  |
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/015aa01e-dabd-4fac-bf00-7e711b7566a1)
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/784ecdcf-e8df-4c70-a22a-99575bb1a739)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -217,7 +211,7 @@
 |---|---|
 | Generar pago | R021 |
 
-![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planilla.png)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -228,8 +222,7 @@
 |---|---|
 | Registrar movimiento de planilla | R022 |
 
-![image](https://github.com/nnthony/bookish-doodle/blob/2ceb2f790f281e07d397457c91d28831b6284f14/pnt/R-GenerarPLanilla.png)
-![image](https://github.com/nnthony/bookish-doodle/blob/2ceb2f790f281e07d397457c91d28831b6284f14/pnt/visualizarcolaboradoresnuevaplanilla.png)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -239,7 +232,7 @@
 |---|---|
 | Registrar licencias, inasistencias y vacaciones |R023  |
 
-![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planillaspagadas.png)
+![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
