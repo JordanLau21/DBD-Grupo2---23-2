@@ -97,22 +97,18 @@ Caso de uso #2: Olvido de contraseña <br>
 | Código | R006 | 
 |----------|----------|
 | Objetivo |Facilitar la creación de áreas en la plataforma, para establecer una estructura organizacional eficiente.|
-|  Descripción |   Este procedimiento proporciona una guía detallada para la creación de áreas en la plataforma, permitiendo a los usuarios configurar una estructura organizacional precisa y efectiva. Se aborda la creaciónindividual, incluyendo la personalización de los nombres de los niveles de división. |
+|  Descripción |   Este procedimiento proporciona una guía detallada para la creación de áreas en la plataforma, permitiendo a los usuarios configurar una estructura organizacional precisa y efectiva. Se aborda la creación individual, incluyendo la personalización de los nombres de los niveles de división. |
 |  Actor primario   |  Administrador de R.R. H.H.  |
 | Actor Secundario |  -  |
 | Precondiciones | Tener acceso a una cuenta. haber iniciado sesión en la plataforma, contar con los permisos necesarios y disponer de la información actualizada, conocimiento de la estructura organizativa.|
 |  Paso  |  Acción   |
 |     1  | Ingresar a “Organización”  |
 |  2 |     Seleccionar pestaña “Área”  |
-|  3 |  Seleccionar botón “Nueva División”  |
-|   4 | Visualizar el nombre de la División y Activar su “Estado”  |
-| 5 |   Seleccionar “Crear Área” |
-|  6 |  Ingresar el Nombre y activar la Herencia de la División |
-| 7 |   Al visualizar el Nombre, activamos su “Estado”|
-|  8 |   Seccionar botón “Crear Sub-Área” |
-| 9 |  Ingresamos los datos correspondientes|
-|  10 |   Guardamos la información y visualizamos el resultado |
-| 11 |   Caso terminado   |
+|  3 |  Seleccionar botón “Crear Área”  |
+|   4 | Insertar los datos correspondientes  |
+| 5 |   Seleccionar “Guardar” |
+| 6  |   Guardamos la información y visualizamos el resultado |
+| 7 |   Caso terminado   |
 
   Caso de uso #7: Mostrar Organigrama de la Empresa <br>
 | Código | R007 | 
