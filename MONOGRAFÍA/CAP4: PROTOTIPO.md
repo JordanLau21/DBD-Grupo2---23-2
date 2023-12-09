@@ -119,7 +119,7 @@
 |---|---|
 | Editar información de la empresa | R012 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/editar%20informacion%20de%20la%20empresa.jpg)
 
 - Tipo de Usuario: Usuario Paramétrico
 
