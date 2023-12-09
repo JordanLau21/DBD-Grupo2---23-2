@@ -1,4 +1,4 @@
-# PL/pgSQL - PROCESO BATCH
+# Capítulo 15: PL_pgSQL – Proceso Batch
 ### Proceso: Calculo de planilla
 
 1. Se realizará el calculo de una planilla que aun no haya generado sus pagos, el sistema puede identificar cuales son con este query:
