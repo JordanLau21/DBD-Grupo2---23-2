@@ -1,6 +1,6 @@
 ## 5.1 MODELO DEL ÁREA DE NEGOCIO
 Una vez hecho el prototipo en el capitulo anterior, con los resultados se elaboró el siguiente modelo entidad relación del sistema de planillas. <br>
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/54e9c484-668e-4f7e-b648-9ce2c500ec7e)
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/6a72cdd8-a57c-4a14-b628-6af56e98bcaf)
 ## 5.2 DICCIONARIO DE DATOS
 #### Nombre entidad: SOLICITUD
 Semantica: Entidad que representa las solicitudes hechas por los empleados
