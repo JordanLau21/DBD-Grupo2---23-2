@@ -1,4 +1,4 @@
-# CAPÍTULO 4: PROTOTIPO
+# Capítulo 04: Prototipo
 ## 4.1. Módulo Autenticación de usuario
 ### 4.1.1. Autenticación de Usuario
 | Caso de Uso | Código de Caso de Uso  |
