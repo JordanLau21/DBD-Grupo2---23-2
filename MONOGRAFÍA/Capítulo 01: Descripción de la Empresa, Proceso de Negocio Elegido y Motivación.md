@@ -1,4 +1,4 @@
-# CAPÍTULO 01: DESCRIPCIÓN DE LA EMPRESA, PROCESO DE NEGOCIO ELEGIDO Y MOTIVACIÓN
+# Capítulo 01: Descripción de la Empresa, Proceso de Negocio Elegido y Motivación
 ## 1.1 PRESENTACIÓN DE LA EMPRESA
 #### 1.1.1 Empresa
 La empresa WOW Perú fue fundada en 2022 por un grupo de empresarios peruanos y colombianos. La empresa inició sus operaciones en Lima, y rápidamente se expandió a 
