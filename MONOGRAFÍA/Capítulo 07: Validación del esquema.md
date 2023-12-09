@@ -28,6 +28,10 @@ Columnas: id_situacion_discapacidad, tipo_discapacidad
 |2|Parcial|
 |3|Total|
 
+
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/empleado.jpg) <br>
+
+
 ### Entidad: Contrato
 - Estado de Contrato
 Columnas: id_estado_contrato, estado_contrato
@@ -76,6 +80,8 @@ Columnas: id_medio_pago, medio_pago, entidad_financiera, cuenta
 |2|Cheque|
 |3|Transferencia Bancaria|
 
+![image]() <br>
+
 
 ### Entidad: Solicitud
 - Tipo de Solicitud
@@ -99,6 +105,10 @@ Columnas: id_estado_solicitud, descripcion
 |2|En Espera|
 |3|Rechazado|
 
+
+![image]() <br>
+
+
 ### Entidad: Concepto de Nómina
 - Tipo de Operación
 Columnas: id_tipo_operacion, descripcion_operacion
@@ -110,6 +120,9 @@ Columnas: id_tipo_operacion, descripcion_operacion
 |3|Aportes|
 |4|Neutro|
 
+![image]() <br>
+
+
 
 ### Entidades: Cuenta de Empleado y Cuenta de Empresa
 - Estado de Cuenta
@@ -120,5 +133,7 @@ Columnas: id_estado_cuenta, estado_cuenta
 |1|Vigente|
 |2|Desvinculado|
 
+
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/cuenta.jpg) <br>
 
 
