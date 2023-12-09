@@ -4,6 +4,7 @@
 - Régimen Pensionario
 |id_regimen_pensionario|tipo_regimen|
 |----------------------|------------|
+|id_regimen_pensionario|tipo_regimen|
 
   
 - Seguro Médico
