@@ -1,4 +1,4 @@
-<center>hola</center>
+<center> hola </center>
 
 # UNIVERSIDAD NACIONAL DE INGENIERÍA
 # FACULTAD DE INGENIERÍA INDUSTRIAL Y DE SISTEMAS
