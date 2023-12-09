@@ -1,4 +1,4 @@
-# CAPITULO 10: ASIGNACIÓN DE CÓDIGOS A REQUERIMIENTOS E INTERFACES
+# Capítulo 10: Asignacion de codigos, requerimientos e interfaces
 
 ## CÓDIGOS DE REQUERIMIENTO
 
