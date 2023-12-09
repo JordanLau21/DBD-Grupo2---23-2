@@ -1,4 +1,4 @@
-# CAPÍTULO : SENTENCIAS SQL
+# CAPÍTULO 11 : SENTENCIAS SQL
 
 
 | Codigo Requerimiento    |  R - 001    | 
