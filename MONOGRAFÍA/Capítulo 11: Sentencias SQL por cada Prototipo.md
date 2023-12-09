@@ -483,11 +483,12 @@ select id_planilla, periodo, fecha_inicio, periodicidad from planilla;
 
 Visualizar empleados en una planilla:
 ```
-SELECT distinct em.id_empleado, em.nombres , em.apellidos, co.fecha_inicio_laboral,
-ca.nombre_cargo FROM Empleado em, contrato co, detalle_pago de, planilla pl, estado_contrato est, cargo ca
-WHERE em.id_empleado =co.id_empleado AND de.id_detalle_pago=co.id_detalle_pago and pl.periodicidad = de.frecuencia_pago
-AND pl.fecha_inicio>co.fecha_inicio_laboral and co.id_cargo=ca.id_cargo and pl.fecha_fin<=co.fecha_termino_contrato
-AND est.estado_contrato='Vigente' and pl.id_planilla = <1>;
+SELECT distinct em.id_empleado, em.nombre , em.apellidos, co.fecha_inicio_laboral,
+ca.nombre_cargo
+FROM empleado em, planilla pl, estado_contrato est, cargo ca, contrato co,Frecuencia_pago fp
+where pl.id_planilla = <1> and em.id_empleado =co.id_empleado and co.id_frecuencia_pago=fp.id_frecuencia_pago
+and fp.frecuencia_pago=pl.periodicidad and pl.fecha_fin<=co.fecha_termino_contrato and pl.fecha_inicio>=co.fecha_inicio_laboral
+and ca.id_cargo=co.id_cargo;
 -- 1: id de planilla seleccionada
 ```
 
@@ -501,14 +502,16 @@ AND est.estado_contrato='Vigente' and pl.id_planilla = <1>;
 
 Crear nueva planilla:
 ```
-insert into planilla (periodo, fecha_inicio, fecha_fin, fecha_creacion, hora_creacion)
-values (<1> ,<2> ,<3> ,current_date ,current_time);
+INSERT INTO planilla (fecha_inicio, fecha_fin, periodicidad, fecha_creacion, hora_creacion)
+values (<2> ,<3>, <1> ,current_date ,current_time);
 -- 1: periodicidad de planilla, 2: fecha inicio de planilla, 3: fecha final de planilla
 ```
 Visualizar empleados en nueva planilla:
 ```
-select e.id_empleado, e.nombre, c.fecha_de_contrato, ca.nombre  from empleado e, contrato c, detalle_pago d,cargo ca 
-where c.fecha_de_contrato < current_date and c.fecha_termino_contrato > current_date and d.frecuencia_pago= <1>
+SELECT e.id_empleado, e.nombre, co.fecha_inicio_laboral,co.fecha_termino_contrato, ca.nombre_cargo  
+FROM contrato co, cargo ca, empleado e, Frecuencia_pago fp
+WHERE co.fecha_inicio_laboral < current_date AND co.fecha_termino_contrato > current_date AND fp.frecuencia_pago= <1>
+AND e.id_empleado =co.id_empleado AND co.id_frecuencia_pago = fp.id_frecuencia_pago AND co.id_cargo = ca.id_cargo ;
 -- 1: periodicidad de planilla
 ```
 
@@ -534,34 +537,47 @@ where fecha_calculo is not null and monto_emitido is not null;
 
 Conteo de boletas en la planilla:
 ```
-select distinct count(*)  from planilla p, empleado e,boleta b, contrato c
-where p.id_planilla = <1> and p.id_planilla=b.id_planilla and c.id_contrato=b.id_contrato and c.id_empleado=e.id_empleado;
+SELECT count(*)  FROM planilla p
+INNER JOIN boleta b ON b.id_planilla = p.id_planilla
+INNER JOIN contrato co ON b.id_contrato = co.id_contrato
+INNER JOIN empleado e ON e.id_empleado = co.id_empleado
+WHERE p.id_planilla = <1> ;
 -- 1: id de la planilla
 ```
 Visualizar datos adicionales de planilla:
 ```
-select id_planilla, fecha_calculo,monto_emitido, periodo, periodicidad  from planilla where id_planilla = <1>;
+SELECT id_planilla, fecha_calculo,monto_emitido, periodo, periodicidad  FROM planilla WHERE id_planilla = <1>;
 -- 1: id de la planilla
 ```
 Visualizar empleados a los que se le pagó en el periodo de planilla:
 ```
-select distinct e.nombres, e.apellidos, b.totalneto, b.id_boleta  from planilla p, empleado e,boleta b, contrato c
-where p.id_planilla = <1> and p.id_planilla=b.id_planilla and c.id_contrato=b.id_contrato and c.id_empleado=e.id_empleado;
+SELECT e.nombre, e.apellidos, b.totalneto, b.id_boleta from planilla p
+INNER JOIN boleta b ON b.id_planilla = p.id_planilla
+INNER JOIN contrato co ON b.id_contrato = co.id_contrato
+INNER JOIN empleado e ON e.id_empleado = co.id_empleado
+WHERE p.id_planilla = <1>;
 -- 1: id de la planilla
 ```
 Visualizar generales de boleta:
 ```
-select distinct e.nombres, e.apellidos, e.dni, b.total_neto, b.total_ingresos, b.total_descuentos, b.total_aportes, tc.tipo_contrato,c.sueldo_base 
-from planilla p, empleado e, contrato c, concepto_nomina cn, boleta b, movimiento_planilla mp,tipo_contrato tc
-where b.id_boleta = <2> and c.id_tipo_contrato=tp.id_tipo_contrato and c.id_empleado=e.id_empleado and b.id_planilla=p.id_planilla;
+SELECT e.nombre, e.apellidos, e.dni, b.totalneto, b.totalingresos, b.totaldescuentos, b.totalaportes, tc.tipo_contrato,co.sueldo_base 
+FROM boleta b
+INNER JOIN planilla p ON b.id_planilla = p.id_planilla
+INNER JOIN contrato co ON b.id_contrato = co.id_contrato
+INNER JOIN tipo_contrato tc ON co.id_tipo_contrato=tc.id_tipo_contrato
+INNER JOIN empleado e ON co.id_empleado=e.id_empleado
+WHERE b.id_boleta = <2>
 -- 2: id de la boleta
 ```
 Visualizar montos específicos por cada concepto:
 ```
-select * from movimiento_planilla mp, concepto_nomina cn, boleta b, planilla p, contrato c
-where b.id_boleta = <2> and p.fecha_inicio<mp.fecha and p.fecha_fin>=mp.fecha and b.id_planilla=p.id_planilla 
-and c.id_contrato=b.id_contrato and c.id_contrato=mp.id_contrato and mp.id_nomina=cn.id_nomina and mp.monto>0;
--- 2: id_boleta
+SELECT cn.nombre_nomina, mp.monto FROM boleta b
+INNER JOIN planilla p ON b.id_planilla = p.id_planilla
+INNER JOIN contrato co ON b.id_contrato = co.id_contrato
+INNER JOIN movimiento_planilla mp ON mp.id_contrato = co.id_contrato
+INNER JOIN concepto_nomina cn ON mp.id_nomina = cn.id_nomina
+WHERE b.id_boleta = 1380 AND p.fecha_inicio < mp.fecha AND p.fecha_fin >= mp.fecha AND mp.monto>0;
+-- 2: id_boleta 245 1380
 ```
 
 
