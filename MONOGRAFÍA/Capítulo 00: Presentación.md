@@ -1,12 +1,11 @@
-
-# UNIVERSIDAD NACIONAL DE INGENIERÍA
-# FACULTAD DE INGENIERÍA INDUSTRIAL Y DE SISTEMAS
-# SISTEMA DE PLANILLAS
-## CURSO
+# `UNIVERSIDAD NACIONAL DE INGENIERÍA`
+# `FACULTAD DE INGENIERÍA INDUSTRIAL Y DE SISTEMAS`
+# `SISTEMA DE PLANILLAS`
+## `CURSO`
 Diseño de Base de Datos (SI505)
-## DOCENTE
+## `DOCENTE`
 Caballero Ortiz, José Alberto
-## INTEGRANTES
+## `INTEGRANTES`
 - Calderón Perez, Anthony Alexis
 - Flores Velarde, Roberto Carlos
 - Huamán Silva, Luis Fernando
@@ -14,6 +13,7 @@ Caballero Ortiz, José Alberto
 - Mamani Olgado, Alex Wilson
 - Yucra Serpa, Jean Herberth
 
+<br>
 
 # ÍNDICE
 ## [Capítulo 01: Descripción de la Empresa](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2001%3A%20Descripci%C3%B3n.md)
