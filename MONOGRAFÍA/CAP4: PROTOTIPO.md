@@ -202,7 +202,7 @@
 |---|---|
 | Boletas |R020  |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/boletas%20de%20pago.jpg)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -212,7 +212,7 @@
 |---|---|
 | Generar pago | R021 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/generar%20nuevo%20pago.jpg)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -223,7 +223,7 @@
 |---|---|
 | Registrar movimiento de planilla | R022 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/registrar%20movimiento%20de%20planilla.jpg)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -233,7 +233,7 @@
 |---|---|
 | Registrar licencias, inasistencias y vacaciones |R023  |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/registrar%20inasistencias%20licencias%20y%20vacaciones.jpg)
 
 - Tipo de Usuario: Usuario Paramétrico
 
