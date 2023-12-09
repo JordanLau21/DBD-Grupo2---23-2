@@ -142,7 +142,7 @@ INSERT INTO Solicitud VALUES (NEXTVAL(id_solicitud),<3>, CURRENT_DATE , LOCALTIM
 |:-------------|:---------------|
 | Codigo Interfaz    |    I010, I011   | 
 | Imagen interfaz   |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/1.png)    |
-| Imagen interfaz   |    ![image](https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/Frame%2048_1.png) |
+| Imagen interfaz   |    ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/2.png) |
 
 
 
