@@ -366,6 +366,8 @@ El administrador podra visualizar todas las boletas que hayan sido generadas en 
 #### Lista de boletas de pago: Se mostrara la lista de boletas de pago asociadas a dicha planilla seleccionada, ademas que se mostraran datos oportunos
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/9a938c20-920e-43e1-828d-f8ad0cf12384)
 #### Ver detalles: Podras acceder a ver detalles de la boleta de pago
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/f7c79f0f-ffcf-4da5-a822-68360c3102d2)
+
 ### Funcionalidad 
 Visualizar todas las boletas de pago asociadas a una planilla
 
