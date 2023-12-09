@@ -2,7 +2,6 @@
 
 Tu texto o elemento que quieres centrar
 
-</center>
 
 
 
