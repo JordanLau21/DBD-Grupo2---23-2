@@ -4,8 +4,8 @@ Diseño de Base de Datos (SI505)
 ## DOCENTE
 Caballero Ortiz, José Alberto
 ## INTEGRANTES
-- Calderon Perez, Anthony Alexis
-- Flores Velarde, Roberto
+- Calderón Perez, Anthony Alexis
+- Flores Velarde, Roberto Carlos
 - Huamán Silva, Luis Fernando
 - Laureano Hidalgo, Jordan Cesar
 - Mamani Olgado, Alex Wilson
