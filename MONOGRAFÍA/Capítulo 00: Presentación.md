@@ -1,6 +1,7 @@
 # SISTEMA DE PLANILLAS
 
-IMAGEN
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/uni.png) <br>
+
 ---
 
 **Curso:** Nombre del Curso  
