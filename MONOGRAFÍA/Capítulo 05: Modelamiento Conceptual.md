@@ -74,96 +74,16 @@ Semantica: Persona que trabaja en la empresa a cambio de una remuneración
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
 | id_empleado |INTEGER|999999|6 dígitos|||Identificar al empleado a nivel de la empresa|
-| Nombre | CHAR   |X(60)|NOT NULL|||Nombre del empleado de la empresa|
-| Apellido Paterno | CHAR  |X(60)|NOT NULL|||Apellido paterno del empleado de la empresa|
-| Apellido Materno| CHAR  |X(60)|NOT NULL|||Apellido materno del empleado de la empresa|
-| Tipo Documento | CHAR|XXXXXXX|TAB|||Tipo de documento con el que se identifica el empleado de la empresa|
-| Nro Documento | INTEGER|99999999|8 dígitos|||Número de documento del empleado de la empresa|
-| Sexo | CHAR   |XXX|TAB|||Sexo del empleado de la empresa|
+| Nombres | CHAR   |X(60)|NOT NULL|||Nombre del empleado de la empresa|
+| Apellidos | CHAR  |X(60)|NOT NULL|||Apellidos del empleado de la empresa|
 | Fecha de Nacimiento | DATE   |AAAAMMDD|Válida en Calendario|||Fecha de nacimiento del empleado de la empresa|
 | Edad | INTEGER   |99|>18|Años|Fecha de Nacimiento|Edad del empleado de la empresa|
-| Estado Civil | CHAR   |X|TAB|||Estado Civil del empleado de la empresa|
-| País de Nacimiento | CHAR   |X(30)|NOT NULL|||País de Nacimiento del empleado de la empresa|
-| Celular | INTEGER   |999999999|9 Dígitos|||Celular del empleado de la empresa|
-| Teléfono de Oficina | INTEGER   |9999999|7 Dígitos|||Teléfono de oficino del empleado de la empresa|
-| e-mail personal | CHAR   |X*@X*.X*|Dirección correcta según RFC8398|||Correo personal del empleado de la empresa|
-| e-mail corporativo | CHAR   |X*@X*.X*|Dirección correcta según RFC8398|||Correo corporativo del empleado de la empresa|
-| Dirección | CHAR   |X(150)|NOT NULL|||Domicilio vigente del empleado de la empresa|
-| Grupo Sanguíneo | CHAR   |XX|TAB|||Grupo Sanguíneo del empleado de la empresa|
-| Régimen Pensionario | CHAR   |XXX|TAB|||Régimen pensionario del empleado de la empresa|
-| Situación de Discapacidad | CHAR   |XX|TAB|||Indica si el empleado de la empresa sufre o no una discapacidad|
-| Seguro de Salud | CHAR   |XXX|TAB|||Seguro de salud del empleado de la empresa|
-| Fecha de Ingreso | CHAR   |DATE|AAAAMMDD|Válida en Calendario||Fecha de ingreso a la empresa del empleado|
-| Tipo de Pago | CHAR   |XXX|TAB|||Tipo de pago al empleado de la empresa|
-| Medio de Pago | CHAR   |XXXX|TAB|||Medio de pago al empleado de la empresa|
-| Cuenta Bancaria | INTEGER   |XXXXXXXXXX|10 Dígitos|||Cuenta bancario del empleado de la empresa, en caso posea|
-| Frecuencia de Pago | CHAR   |XXXX|TAB|||Frecuencia de pago al empleado de la empresa|
-| Día de Pago | DAY   |XX|Válido en días calendario|||Día de cada mes en el que se efectuará el pago al empleado de la empresa|
-
-TAB: Sexo
-|Código|Semantica|
-|------|---------|
-|MAS|Masculino|
-|FEM|Femenino|
-|OTR|Otro|
-
-TAB: Estado Civil
-|Código|Semantica|
-|------|---------|
-|S|Soltero(a)|
-|C|Casado(a)|
-|D|Divorciado(a)|
-|V|Viudo(a)|
-
-TAB: Grupo Sanguíneo
-|Código|Semantica|
-|------|---------|
-|A|ABO|
-|R|RH|
-
-TAB: Régimen Pensionario
-|Código|Semantica|
-|------|---------|
-|AFP|Administradoras de Fondo de Pensiones|
-|ONP|Oficina de Normalización Previsional|
-|NOP|No Posee|
-
-TAB: Situación de Discapacidad
-|Código|Semantica|
-|------|---------|
-|PD|Posee discapacidad|
-|NP|No posee discapacidad|
-
-TAB: Seguro de Salud
-|Código|Semantica|
-|------|---------|
-|PUB|Seguro de Salud Público|
-|PRI|Seguro de Salud Privado|
-
-TAB: Tipo de Pago
-|Código|Semantica|
-|------|---------|
-|EFEC|Efectivo|
-|BANC|Transferencia Bancaria|
-|CHEQ|Cheque|
-
-TAB: Medio de Pago
-|Código|Semantica|
-|------|---------|
-|A|BBVA|
-|B|BCP|
-|C|Interbank|
-|D|Scotiabank|
-|E|Banco Falabella|
-|F|Banco Ripley|
-|G|Banco Pichincha|
-|H|No|
-
-TAB: Frecuencia de Pago
-|Código|Semantica|
-|------|---------|
-|MENS|Mensual|
-|QUIN|Quincenal|
+| Teléfono | INTEGER   |999999999|9 Dígitos|||Teléfono del empleado de la empresa|
+| e-mail  | CHAR   |X*@X*.X*|Dirección correcta según RFC8398|||Correo del empleado de la empresa|
+| DNI | INTEGER   |9999999|8 dígitos|||Identificador nacional del empleado de la empresa.|
+| Estado Civil | CHAR   |x(50)||||Estado Civil del empleado de la empresa|
+| Sexo | CHAR   |x(15)||||Sexo del empleado de la empresa|
+| Cantidad de menores a cargo | INTEGER   |9||||Número de menores de los cuales el empleado de la empresa es apoderado o padre.|
 
 
 #### Entidad: CONTRATO
