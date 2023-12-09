@@ -1,4 +1,4 @@
-# CAPÍTULO : VALIDACIÓN DEL ESQUEMA
+# Capítulo 07: Validación del esquema
 ## Lookup Tables
 ### Entidad: Empleado
 - Régimen Pensionario
