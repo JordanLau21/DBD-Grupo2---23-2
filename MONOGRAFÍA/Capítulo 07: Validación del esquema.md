@@ -2,6 +2,7 @@
 ## Lookup Tables
 ### Entidad: Empleado
 - Régimen Pensionario
+|id_regimen_pensionario|tipo_regimen|
 |--------------|----------------|
 |id_regimen_pensionario|tipo_regimen|
 
