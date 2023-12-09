@@ -236,15 +236,6 @@ TAB:
 | A | Activo |
 | I | Inactivo |
 
-#### Nombre entidad: CUENTA EMPRESA
-Semantica: Representa el respectivo usuario con el cual dicho empleado iniciará sesión en el sistema de planillas
-
-| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
-|----------|----------|----------|----------|----------|---------|-------|
-| id_cuenta_empresa | INTEGER | 999999 | 6 dígitos | - | - | Diferencia al usuario de otros usuarios |
-| usuario | VARCHAR | X(32) | NOT NULL | - | - | Nombre creado por el usuario |
-| contraseña | VARCHAR | X(32) | NOT NULL | - | - | Permite dar exclusividad al usuario |
-
 #### Nombre entidad: REPRESENTANTE LEGAL
 Semantica:  Persona que representa a una empresa vinculada a un sector.
 
