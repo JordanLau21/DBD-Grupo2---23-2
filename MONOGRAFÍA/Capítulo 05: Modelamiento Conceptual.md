@@ -300,10 +300,3 @@ TAB: Sexo
 | Tiene | EMPLEADO-CUENTA | 1-1 | - | NO |
 | Contiene | EMPLEADO-FAMILIAR EMPLEADO | 1-N | - | NO |
 
-
-<br><br><br><br>
-[índice](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2000%3A%20Presentaci%C3%B3n.md)
-<br>
-[Capítulo Anterior](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2004%3A%20Prototipo.md)
-<br>
-[Capítulo Siguiente](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2006%3A%20Modelamiento%20L%C3%B3gico.md)
