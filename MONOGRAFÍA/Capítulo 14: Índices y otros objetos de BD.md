@@ -1,65 +1,40 @@
 ## 14.1 ÍNDICES
-En este subcapítulo, a partir de nuestros módulos escogidos para la funcionalidad primaria, evaluaremos el rendimiento por el uso de índices através de las consultas, para ello seguiremos los siguientes pasos: Planteamiento del uso de índice, Experimentación, Costo de Consulta en ambos casos
-#### 14.1.1 SOLICITUDES
-##### Planteamiento del Uso de Índices en el Módulo de Solicitudes:
-###### Consulta: Ver solicitudes
-Razón para el Índice: Esta consulta involucra la unión de varias tablas (Empleado, Solicitud, Tipo_solicitud, Estado_solicitud) basadas en sus identificadores. Indexar los campos utilizados en las cláusulas WHERE (id_estado_solicitud, id_empleado, id_tipo_solicitud) podría mejorar la eficiencia al buscar coincidencias entre estas tablas grandes.
-###### Consulta: Pantalla Solicitudes (Empleados)
-Razón para el Índice: Similar al caso anterior, aquí la consulta busca filtrar las solicitudes por id_empleado. Indexar el campo id_empleado en la tabla Solicitud podría agilizar la recuperación de las solicitudes asociadas a un empleado específico.
-###### Consulta: Nueva Solicitud
-Razón para el Índice: Dependiendo de la frecuencia y la importancia de esta operación, la creación de nuevas solicitudes podría beneficiarse de un índice en el campo id_empleado o id_empresa, ya que estos campos se utilizan para insertar datos en la tabla Solicitud.
-##### Experimentación y Evaluación del Rendimiento:
-1. Experimentación sin Índices: Ejecutar las consultas seleccionadas sin índices y medir el tiempo o recursos consumidos para cada una.
-2. Creación de Índices: Crear índices basados en las razones planteadas.
-3. Experimentación con Índices: Ejecutar las mismas consultas después de crear los índices y registrar el tiempo o recursos consumidos para compararlos con los resultados anteriores.
-##### Posibles Índices Propuestos:
-Para la tabla Solicitud:
-1. Nombre del Índice: idx_solicitud_estado_empleado_tipo
-Campos Involucrados: id_estado_solicitud, id_empleado, id_tipo_solicitud
-```
-CREATE INDEX idx_solicitud_estado_empleado_tipo ON Solicitud (id_estado_solicitud, id_empleado, id_tipo_solicitud);
-```
-2. Nombre del Índice: idx_solicitud_empleado
-Campos Involucrados: id_empleado
-```
-CREATE INDEX idx_solicitud_empleado ON Solicitud (id_empleado);
-```
-3. Nombre del Índice: idx_solicitud_empresa
-Campos Involucrados: id_empresa
-```
-CREATE INDEX idx_solicitud_empresa ON Solicitud (id_empresa);
-```
-#### 14.1.2 MÓDULO: EMPLEADOS
-##### Planteamiento del Uso de Índices en el Módulo de Empleados:
-###### Consulta: Llenado de Datos del Empleado
-Razón para el Índice: Las consultas a las tablas Regimen_pensionario, Seguro_medico, Situacion_discapacidad, Empresa se utilizan para obtener datos necesarios para la creación de un nuevo empleado. Podrías considerar indexar las columnas que se usan en los JOINs o que son frecuentemente buscadas en estas tablas (por ejemplo, tipo_regimen, tipo_seguro, tipo_discapacidad, razon_social) para agilizar la recuperación de datos al crear nuevos empleados.
-###### Consulta:  Llenado de Datos del Contrato del Empleado
-Al igual que en el caso anterior, las consultas a las tablas Cargo, Area, Estado_contrato, Tipo_contrato, Tipo_jornada se utilizan para obtener datos necesarios para la creación de un nuevo contrato de empleado. Podrías considerar indexar las columnas que se usan en los JOINs o que son frecuentemente buscadas en estas tablas (por ejemplo, nombre_cargo, nombre_area, estado_contrato, tipo_contrato, tipo_jornada) para agilizar la recuperación de datos al crear nuevos contratos de empleados.
-###### Consulta: Carga de Página
-Razón para el Índice: Esta consulta busca empleados por nombre o apellidos. Podrías considerar indexar las columnas nombre y apellidos en la tabla Empleado para mejorar el rendimiento de esta búsqueda.
-##### Experimentación y Evaluación del Rendimiento:
-1. Experimentación sin Índices: Ejecutar las consultas seleccionadas sin índices y medir el tiempo o recursos consumidos para cada una.
-2. Creación de Índices: Crear índices basados en las razones planteadas.
-3. Experimentación con Índices: Ejecutar las mismas consultas después de crear los índices y registrar el tiempo o recursos consumidos para compararlos con los resultados anteriores.
-##### Posibles Índices Propuestos:
-Para las tablas involucradas en las consultas:
-1. Nombre del Índice: idx_empleado_nombre_apellidos
-Campos Involucrados: nombre, apellidos
-```
-CREATE INDEX idx_solicitud_estado_empleado_tipo ON Solicitud (id_estado_solicitud, id_empleado, id_tipo_solicitud);
-```
-2. Nombre del Índice: idx_cuenta_estado_cuenta
-Campos Involucrados: id_estado_cuenta
-```
-CREATE INDEX idx_solicitud_empleado ON Solicitud (id_empleado);
-```
-3. Nombre del Índice: idx_solicitud_empresa
-Campos Involucrados: id_empresa
-```
-CREATE INDEX idx_solicitud_empresa ON Solicitud (id_empresa);
-```
+En este subcapítulo, a partir de nuestros módulos escogidos para la funcionalidad primaria, evaluaremos el rendimiento por el uso de índices através de las consultas, para ello seguiremos los siguientes pasos: Planteamiento del uso de índice, Experimentación, Costo de Consulta en ambos casos.
+##### Planteamiento del Uso de Índice
+1. Identificamos consultas frecuentes para mejorar su rendimiento mediante índices.
+2. Seleccionamos consultas clave que podrían beneficiarse de la indexación.
+##### Experimentación
+1. Ejecutamos las consultas seleccionadas sin la presencia de índices para medir el costo de consulta inicial.
+2. Creamos índices relevantes en las columnas utilizadas en esas consultas.
+##### Costo de Consulta en Ambos Casos
+1. Reejecutamos las mismas consultas después de la creación de índices para comparar y analizar la mejora de rendimiento.
+2. Documentamos la reducción en el costo de consulta observada después de la creación de índices.
+
 #### 14.1.3 MÓDULO : REGISTRO DE MOVIMIENTOS PLANILLA Y LICENCIAS, INASISTENCIAS,ETC
 #### 14.1.4 MÓDULO : PLANILLA
+La creación de índices relevantes en las columnas de planilla ha mejorado significativamente el rendimiento de 3 consultas, reduciendo el tiempo de ejecución y el costo de consulta en operaciones críticas del sistema.
+| Codigo Interfaz    |    I - 028    | 
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planilla.png) |
+| Sentencia SQL sin Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/f56fa068-c2e1-4e26-a8ef-b5687e3e4317) |
+| Sentencia SQL con Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/b019dfda-b59a-4e3b-afda-99cb19e4a0b5) |
+
+**Sentencia SQL**
+
+Visualizar planillas:
+```
+select id_planilla, periodo, fecha_inicio, periodicidad from planilla;
+```
+```
+-- Consulta sin índices - Visualizar planillas
+EXPLAIN ANALYZE select id_planilla, periodo, fecha_inicio, periodicidad from planilla;
+-- Creación de índices relevantes
+CREATE INDEX idx_periodo ON planilla(periodo);
+CREATE INDEX idx_fecha_inicio ON planilla(fecha_inicio);
+CREATE INDEX idx_periodicidad ON planilla(periodicidad);
+```
+
+
+
 ## 14.2 SECUENCIAS
 Las secuencias en SQL ofrecen una herramienta fundamental para la generación de identificadores únicos, especialmente en el contexto de aplicaciones que requieren la asignación de claves primarias para el seguimiento y la gestión de datos. En este apartado mencionamos el uso de secuencias en la generación de identificadores de solicitudes en una base de datos relacional, destacando su aplicabilidad y utilidad en este escenario.
 
