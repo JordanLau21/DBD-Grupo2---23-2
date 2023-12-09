@@ -1,5 +1,5 @@
 
-# CAPITULO : ASIGNACIÓN DE CÓDIGOS
+# Capítulo 09: Asignación de códigos
 
 ## CÓDIGOS DE REQUERIMIENTO
 
