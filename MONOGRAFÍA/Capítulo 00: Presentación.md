@@ -1,6 +1,8 @@
 # SISTEMA DE PLANILLAS
 ## CURSO
+---
 Diseño de Base de Datos (SI505)
+---
 ## DOCENTE
 Caballero Ortiz, José Alberto
 ## INTEGRANTES
