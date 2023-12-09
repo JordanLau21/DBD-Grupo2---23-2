@@ -18,22 +18,6 @@ La creación de índices relevantes en las columnas de planilla ha mejorado sign
 | Sentencia SQL sin Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/f56fa068-c2e1-4e26-a8ef-b5687e3e4317) |
 | Sentencia SQL con Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/b019dfda-b59a-4e3b-afda-99cb19e4a0b5) |
 
-**Sentencia SQL**
-
-Visualizar planillas:
-```
-select id_planilla, periodo, fecha_inicio, periodicidad from planilla;
-```
-```
--- Consulta sin índices - Visualizar planillas
-EXPLAIN ANALYZE select id_planilla, periodo, fecha_inicio, periodicidad from planilla;
--- Creación de índices relevantes
-CREATE INDEX idx_periodo ON planilla(periodo);
-CREATE INDEX idx_fecha_inicio ON planilla(fecha_inicio);
-CREATE INDEX idx_periodicidad ON planilla(periodicidad);
-```
-
-
 
 ## 14.2 SECUENCIAS
 Las secuencias en SQL ofrecen una herramienta fundamental para la generación de identificadores únicos, especialmente en el contexto de aplicaciones que requieren la asignación de claves primarias para el seguimiento y la gestión de datos. En este apartado mencionamos el uso de secuencias en la generación de identificadores de solicitudes en una base de datos relacional, destacando su aplicabilidad y utilidad en este escenario.
