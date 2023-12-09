@@ -72,9 +72,9 @@ Columnas: id_medio_pago, medio_pago, entidad_financiera, cuenta
 
 |id_medio_pago|medio_pago|entidad_financiera|cuenta|
 |-------------|----------|------------------|------|
-|1|Efectivo|-|-|
-|2|Cheque|' '|-|
-|3|Transferencia Bancaria|' '|0123456789|
+|1|Efectivo|NULL|NULL|
+|2|Cheque|"       "|NULL|
+|3|Transferencia Bancaria|"       "|0123456789|
 
 
 
