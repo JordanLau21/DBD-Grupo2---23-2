@@ -80,7 +80,7 @@ Columnas: id_medio_pago, medio_pago, entidad_financiera, cuenta
 |2|Cheque|
 |3|Transferencia Bancaria|
 
-![image]() <br>
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/contrato.jpg) <br>
 
 
 ### Entidad: Solicitud
@@ -106,7 +106,7 @@ Columnas: id_estado_solicitud, descripcion
 |3|Rechazado|
 
 
-![image]() <br>
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/solicitud.jpg) <br>
 
 
 ### Entidad: Concepto de Nómina
@@ -120,7 +120,7 @@ Columnas: id_tipo_operacion, descripcion_operacion
 |3|Aportes|
 |4|Neutro|
 
-![image]() <br>
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/concepto%20nomina.jpg) <br>
 
 
 
