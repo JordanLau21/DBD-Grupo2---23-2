@@ -103,3 +103,13 @@ Esta funcionalidad permite satisfacer los requerimientos R018, R019, R020, R021,
 | 5   | En el apartado de boleta, se muestra la interfaz I-032, se muestran todas las planillas que ya han sido pagadas, debajo de la columna "detalles" hay botones que redirigen a la interfaz I-033 de la planilla elegida. En la parte superior derecha, hay un boton "Generar pago" que redirige a la interfaz I-00H    ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planillaspagadas.png) |
 | 6   | En la interfaz I-033, se muestran algunos datos relevantes sobre la planilla ya pagada, además de la lista de empleados a los que se les pagó por esa planilla. Debajo de la columna detalles hay botones que permiten visualizar los detalles de la boleta de un trabajador y se redirige a la interfaz I-034. En la interfas I-034 se puede visualizar cada uno de los conceptos por los que se le pagó en dicha boleta, además de otros datos relevantes del empleado ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/detalleplanillaspagadas.png) ![image](https://github.com/nnthony/bookish-doodle/blob/12ab224f3729055d81bb78c5a342c2ea6f54dd7e/pnt/detalleboleta1.png)|
 | 7   | En la interfaz I-035, se muestran algunos datos relevantes para los pagos de planilla, el administrador puede seleccionar una planilla que no ha sido pagada y generar el pago con el botón "aceptar", se redirigirá a la interfaz I-032 con una nueva planilla pagada ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/generarnuevasboletas.png)|
+
+
+
+
+<br><br><br><br>
+[índice](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2000%3A%20Presentaci%C3%B3n.md)
+<br>
+[Capítulo Anterior]()
+<br>
+[Capítulo Siguiente]()
