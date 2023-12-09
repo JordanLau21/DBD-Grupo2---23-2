@@ -29,7 +29,7 @@ La empresa Wow, actualmente posee un servicio de sistema de planilla brindado po
 dicho sistema, se nos mencionó que dicho sistema tiene algunas limitaciones o no tiene opciones que ellos requieren. Además, que nos manifestaron que sería un buen paso, 
 que ellos puedan tener su propio sistema de planilla, de manera que puedan configurarlo como ellos deseen y de acuerdo a sus necesidades o requerimientos.
 
-## 1.4 PLANTEAMIENTO DEL PROBLEMA:
+## 1.4 PLANTEAMIENTO DEL PROBLEMA
 Actualmente Wow, sigue en manejo del sistema de planilla de Buk, sin embargo en ocasiones ha tenido problemas, u ciertas limitaciones que deseean arreglar. Los
 problemas encontrados fueron: <br>
 -Falta de flexibilidad: El sistema no permite adaptar los procesos a las necesidades específicas de la empresa.<br>
