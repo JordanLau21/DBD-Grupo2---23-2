@@ -381,8 +381,8 @@ Bootstrap debido a que los integrantes tienen mejor conocimiento de estas herram
 <br><br><br><br>
 [índice](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2000%3A%20Presentaci%C3%B3n.md)
 <br>
-[Capítulo Anterior]()
+[Capítulo Anterior](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2001%3A%20Descripci%C3%B3n%20de%20la%20Empresa.md)
 <br>
-[Capítulo Siguiente]()
+[Capítulo Siguiente](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2003%3A%20M%C3%B3dulos.md)
 
 
