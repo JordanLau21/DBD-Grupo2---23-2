@@ -1,5 +1,4 @@
 # CAPÍTULO 14: DOCUMENTACION DE LA APLICACIÓN
-# MODULO LOGEO 
 
 # CASO 1 : Iniciar Sesion 
 ## FLUJO DE LAS VISTAS
@@ -39,17 +38,24 @@ Esta es la vista que tendra el empleado despues de haberse registrado en el inic
 ### Funcionalidad 
 El empleado podra acceder a todas las opciones que estan en la barra de la izquierda.
 
+## Vista 3: Pantalla de inicio de empleado  
+### Descripcion 
+Esta es la vista que tendra el administrador despues de haberse registrado en el inicio de sesion.
+### Captura de pantalla 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/4a6c9c44-05e2-496f-ae26-aeb756194aed)
+### Funcionalidad 
+El administrador podra acceder a todas las opciones que se encuentren en la barra de la izquierda.
 
-# MODULO EMPLEADOS
-# CASO X: Registrar empleado y contrato 
+
+# CASO 2: Registrar empleado y contrato 
 ## FLUJO DE LAS VISTAS
 | PASOS | ACCION  |
 |----------|----------|
-| 1 | El administrador al apretar en el boton **"Crear empleado"** de la barra izquierda podra acceder a la **VISTA X** donde podra registrar los datos de un nuevo empleado|
-| 2 | Despues de registrar los datos del empleado, aprentando en el boton **"Siguiente"**, podra acceder a la **VISTA X** dondre podra registrar los datos del contrato de dicho empleado |
+| 1 | El administrador al apretar en el boton **"Crear empleado"** de la barra izquierda podra acceder a la **VISTA 3** donde podra registrar los datos de un nuevo empleado|
+| 2 | Despues de registrar los datos del empleado, aprentando en el boton **"Siguiente"**, podra acceder a la **VISTA 4** dondre podra registrar los datos del contrato de dicho empleado |
 | 3 | Despues de registrar los datos del contrato de dicho empleado podra volver a la pantalla de inicio | 
 
-## Vista : Registrar empleado
+## Vista 4: Registrar empleado
 ### Descripcion 
 El administrador al apretar en el boton de **"Crear empleado"**, podra acceder a esta vista donde puede registrar a un empleado en la empresa.
 ### Capturas de pantallas
@@ -64,7 +70,9 @@ Esta es la vista donde se puede ingresar los datos del empleado, para posteriorm
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3b942859-99e1-4515-9aec-141a00544c10)  <br>
 ### Funcionalidad 
 El administrador despues de haber registrado todos los datos del empleado. Apretara en el boton **"Registrar empleado"** y se registraran los datos ingresados del empleado.
-## Vista : Registrar contrato
+
+
+## Vista 5: Registrar contrato
 ### Descripcion 
 El administrador al apretar en el boton de **"Siguiente"**, podra registrar un contrato de dicho contrato antes registrado.
 ### Capturas de pantallas
@@ -89,8 +97,9 @@ Esta es la vista donde se puede ingresar los datos del contrato del empleado.
 El administrador despues de haber registrado todos los datos del contrato. Apretara en el boton **"Registrar Contrato"** y se guardara los datos del contrato en el sistema.
 Luego podra regresar a la pantalla de inicio apretanto el boton **"Regresar inicio"**
 
-# CASO X: Vigentes
-## Vista : Ver empleados vigentes
+
+# CASO 3: Vigentes
+## Vista 5: Ver empleados vigentes
 ### Descripcion 
 El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
 ### Capturas de pantallas
@@ -99,8 +108,8 @@ Esta es la vista donde podra visualizar todas los empleados vigentes de la empre
 ### Funcionalidad 
 
 
-# CASO X: Desvinculados
-## Vista : Ver empleados desviculados o inactivos
+# CASO 4: Desvinculados
+## Vista 6: Ver empleados desviculados o inactivos
 ### Descripcion 
 El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
 ### Capturas de pantallas
@@ -109,82 +118,82 @@ Esta es la vista donde podra visualizar todas los empleados vigentes de la empre
 ### Funcionalidad 
 
 
-## MODULO SOLICITUD
-## CASO X: Solicitudes de la empresa
-### FLUJO DE LAS VISTAS
+
+# CASO 5: Solicitudes de la empresa
+## FLUJO DE LAS VISTAS
 | PASOS | ACCION  |
 |----------|----------|
-| 1 | El administrador al apretar en el boton **"Solicitudes"** de la barra izquierda podra acceder a la **VISTA X** donde se le mostraran todas las solicitudes que tenga dicha empresa |
+| 1 | El administrador al apretar en el boton **"Solicitudes"** de la barra izquierda podra acceder a la **VISTA 7** donde se le mostraran todas las solicitudes que tenga dicha empresa |
 |  | Si apreta en los botones **"Regresar"** regresara a la pantalla de anterior|
-| 2 | Si apreta en el boton **"Ver detalles"** de una solicitud podra acceder a los detalles particulares de dicha solicitud. Tal como en la **VISTA X** |
+| 2 | Si apreta en el boton **"Ver detalles"** de una solicitud podra acceder a los detalles particulares de dicha solicitud. Tal como en la **VISTA 8** |
 |  | Si apreta en el boton **"Regresar solicitudes "** regresara a la VISTA X |
 |  | Si apreta en el boton **"Regresar solicitudes "** regresara a la VISTA X |
-### Vista : Ver solicitudes
-#### Descripcion 
+## Vista 7: Ver solicitudes
+### Descripcion 
 Esta es la vista que tendra el administrador, despues de apretar en el boton Solicitudes. Aqui podra apreciar todas las solicitudes que pertenecen a la empresa en un lista vertical 
-#### Captura de pantalla 
+### Captura de pantalla 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3d940819-544c-4968-9491-d23741ddcd51)
+### Opciones
+#### Lista de solicitudes: Las solicitudes asociadas a dicha emoresa se mostrara en una lista con datos oportunos mostrados
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/a4125b01-e0f0-4578-859c-42d73c8b3484)
+#### Ver detalles: Al apretar en el botorn ver detalles le redigira a otra vista donde podra ver detalles de la solicitud.
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/11a208aa-dfac-4aeb-bd1c-02f8f4499004)
 #### Funcionalidad 
 Se le mostraran todas las solicitudes que tenga asociada dicha empresa. Donde podra apretar en el boton "Ver detalles" que podra brindar mas informacion sobre la solicitud seleccionada.
 
 
-### Vista : Ver detalles de solicitud
-#### Descripcion 
+## Vista 8: Ver detalles de solicitud
+### Descripcion 
 Esta es la vista donde el administrador podra acceder a informacion mas detallada sobre la solicitud seleccionada.
-#### Captura de pantalla 
+### Captura de pantalla 
 Estos son los detalles de solicitud de la solicitud de id_solicitud = 1;
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/bc52cbc3-a48a-4342-8f36-9ab0c89f0db0)
-
-#### Funcionalidad 
+### Opciones
+#### Datos de la solicitud: Se mostraran mas datos de la solicitud seleccionada
+### Funcionalidad 
 Se podra apreciar los datos de la solicitud, como tambien la descripcion de dicha solicitud.
 
-## CASO X: Solicitudes del empleado
-### FLUJO DE LAS VISTAS
+## CASO 6: Solicitudes del empleado
+## FLUJO DE LAS VISTAS
 | PASOS | ACCION  |
 |----------|----------|
-| 1 | El empleado al apretar en el boton **"Mis solicitudes"** de la barra izquierda podra acceder a la **VISTA X** donde se le mostraran todas las solicitudes que haya realizado |
-| 2.1 | Si apreta en el boton **"Ver detalles"** de una solicitud podra acceder a los detalles particulares de dicha solicitud. Tal como en la **VISTA X** |
-| 2 | Si apreta en el boton **"Nueva solicitud"** podra acceder a la **VISTA X** donde podra registrar una nueva solicitud|
+| 1 | El empleado al apretar en el boton **"Mis solicitudes"** de la barra izquierda podra acceder a la **VISTA 9** donde se le mostraran todas las solicitudes que haya realizado |
+| 2 | Si apreta en el boton **"Nueva solicitud"** podra acceder a la **VISTA 10** donde podra registrar una nueva solicitud|
 
-### Vista : Ver mis solicitudes
-#### Descripcion 
+## Vista 9: Ver mis solicitudes
+### Descripcion 
 Esta es la vista que tendra el empleado, despues de apretar en el boton Mis solicitudes. Aqui podra apreciar todas las solicitudes que ha realizado en la empresa que pertenece.
-#### Captura de pantalla 
+### Captura de pantalla 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/6b783b57-d071-49b7-a133-f149150bed7e)
-#### Funcionalidad 
-Se le mostraran todas las solicitudes que tenga asociada dicha empresa. Donde podra apretar en el boton "Ver detalles" que podra brindar mas informacion sobre la solicitud seleccionada.
+### Funcionalidad 
+Visualizar las solicitudes registradas por el empleado
 
-### Vista : Ver detalles de solicitud
-#### Descripcion 
-Despues de apretar en **"Ver detalles"** el empleado podra ver detalles especificos de su solicitud
-#### Captura de pantalla 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/bc52cbc3-a48a-4342-8f36-9ab0c89f0db0)
-#### Funcionalidad 
-Se le mostraran todas las solicitudes que tenga asociada dicha empresa. Donde podra apretar en el boton "Ver detalles" que podra brindar mas informacion sobre la solicitud seleccionada.
-
-### Vista : Nueva solicitud
-#### Descripcion 
+## Vista 10: Nueva solicitud
+### Descripcion 
 Despues de apretar en **"Nueva Solicitud"** el empleado podra registrar una nueva solicitud hacia la empresa.
-#### Captura de pantalla 
+### Captura de pantalla 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/c8084642-53d2-4ac1-ad50-63810bdd5933)
-#### Opciones
+### Opciones
 #### **Tipo de solicitud:** El empleado podra seleccionar el tipo de solicitud mostrada en la barra desplegable
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/c8c3a5ba-506e-42f3-8f0a-94b2e73ed1e8) <br>
+#### Descripcion: Podra ingresar una descripcion detallada de la solicitud que se quiere realizar
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/02a78248-dbe3-4282-a91d-bc1f4397eb00)
 #### **Boton Enviar:** El empleado al apretar en el boton **ENVIAR**. Registrara los datos seleccionados e ingresados en la seccion tipo solicitud y descripcion. 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/f438ee6d-f21d-4ea3-87b7-c64bc6aaf9e8)
 
-#### Funcionalidad 
-Se le mostraran todas las solicitudes que tenga asociada dicha empresa. Donde podra apretar en el boton "Ver detalles" que podra brindar mas informacion sobre la solicitud seleccionada.
+### Funcionalidad 
+Poder registrar una nueva solicitud hacia la empresa
 
 
-# CASO X: Movimientos de planilla
+# CASO 7: Movimientos de planilla
 ## FLUJO DE LAS OPCIONES
 | PASOS | ACCION  |
 |----------|----------|
-| 1 | El empleado al apretar en el boton **"Movimientos de planilla"** de la barra izquierda podra acceder a la **VISTA X** |
+| 1 | El empleado al apretar en el boton **"Movimientos de planilla"** de la barra izquierda podra acceder a la **VISTA 1** |
 | 2.1 | Si apreta en el boton **"Agregar"** de un contrato podra agregar movimientos de planilla a dicho contrato |
-| 2 | Si apreta en el boton **"Nueva solicitud"** podra acceder a la **VISTA X** donde podra registrar una nueva solicitud|
+| 2 | Si apreta en el boton **"Nueva solicitud"** podra acceder a la **VISTA 12** donde podra registrar una nueva solicitud|
 
-## Vista : Ver lista de contratos 
+## Vista 11: Ver lista de contratos 
 ### Descripcion 
 El administrador al apretar en el boton de **"Movimientos de planilla"**, podra visualizar una lista de contratos
 ### Capturas de pantallas
@@ -197,7 +206,7 @@ El administrador al apretar en el boton de **"Movimientos de planilla"**, podra 
 ### Funcionalidad 
 El usuario podra visualizar todos los contratos en rango de fecha, de manera que pueda identificar aquellos contratos donde quiere agregar o registrar nuevos movimientos de planilla.
 
-## Vista : Movimientos de un contrato
+## Vista 12: Movimientos de un contrato
 ### Descripcion 
 El administrador al apretar en el boton de **"Agregar"**, podra visualizar todos los ingresos y descuentos registrados en dicho contrato.
 ### Capturas de pantallas
@@ -208,7 +217,7 @@ El administrador al apretar en el boton de **"Agregar"**, podra visualizar todos
 ### Funcionalidad 
 El administrador podra registrar todo los movimientos de planilla segun sea un ingreso o un descuento.
 
-## Vista : Agregar ingreso o descuento
+## Vista 13: Agregar ingreso o descuento
 ### Descripcion 
 Al apretar en el boton **Agregar** de un ingreso o descuento podra registrarlo
 ### Capturas de pantallas
@@ -216,14 +225,15 @@ Al apretar en el boton **Agregar** de un ingreso o descuento podra registrarlo
 ### Funcionalidad 
 Aqui podra agregar los ingresos o descuentos
 
-## MODULO ORGANIZACION
-## CASO X: Areas
+
+
+## CASO 8: Areas
 ## FLUJO DE LAS OPCIONES
 | PASOS | ACCION  |
 |----------|----------|
-| 1 | El empleado al apretar en el boton **"Areas"** de la barra izquierda podra acceder a la **VISTA X** |
-| 2 | Si apreta en el boton **"Nueva Area"** podra acceder a la **VISTA X** donde podra registrar un nuevo area |
-## Vista : Areas de la empresa
+| 1 | El empleado al apretar en el boton **"Areas"** de la barra izquierda podra acceder a la **VISTA 14** |
+| 2 | Si apreta en el boton **"Nueva Area"** podra acceder a la **VISTA 15** donde podra registrar un nuevo area |
+## Vista 14: Areas de la empresa
 ### Descripcion 
 El administrador podra visualizar todas las areas de la empresa
 ### Capturas de pantallas
@@ -233,7 +243,7 @@ El administrador podra visualizar todas las areas de la empresa
 #### Funcionalidad 
 Visualizar las areas que componen a la empresa y tambien ser capaz de registrar una nueva area
 
-## Vista : Nueva area
+## Vista 15: Nueva area
 ### Descripcion 
 El administrar accedera a un formulario para registrar nuevas areas
 ### Capturas de pantallas
@@ -248,13 +258,13 @@ Registrar los datos de un nuevo area
 
 
 
-## CASO X: Cargos
+## CASO 9: Cargos
 ## FLUJO DE LAS OPCIONES
 | PASOS | ACCION  |
 |----------|----------|
-| 1 | El empleado al apretar en el boton **"Cargos"** de la barra izquierda podra acceder a la **VISTA X** |
-| 2 | Si apreta en el boton **"Nueva cargo"** podra acceder a la **VISTA X** donde podra registrar un nuevo area |
-## Vista : Cargos de la empresa
+| 1 | El empleado al apretar en el boton **"Cargos"** de la barra izquierda podra acceder a la **VISTA 16** |
+| 2 | Si apreta en el boton **"Nueva cargo"** podra acceder a la **VISTA 17** donde podra registrar un nuevo area |
+## Vista 16: Cargos de la empresa
 ### Descripcion 
 El administrador podra visualizar todas las cargos de la empresa
 ### Capturas de pantallas
@@ -264,7 +274,7 @@ El administrador podra visualizar todas las cargos de la empresa
 #### Funcionalidad 
 Visualizar los cargos que componen a la empresa y tambien ser capaz de registrar un nuevo cargo
 
-## Vista : Nueva cargo
+## Vista 17: Nueva cargo
 ### Descripcion 
 El administrar accedera a un formulario para registrar nuevos cargos
 ### Capturas de pantallas
@@ -279,15 +289,16 @@ El administrar accedera a un formulario para registrar nuevos cargos
 Registrar los datos de un nuevo cargo
 
 
-## MODULO DE PLANILLA
-## CASO : Planillas
+
+## CASO 10: Planillas
 ## FLUJO DE LAS OPCIONES
 | PASOS | ACCION  |
 |----------|----------|
-| 1 | El empleado al apretar en el boton **"Ver planillas"** de la barra izquierda podra acceder a la **VISTA X** |
-| 2.1 | Si apreta en el boton **"Detalles"** podra acceder a la **VISTA X** donde podra visualizar los detatlles de la planilla |
-| 2.2 | Si apreta en el boton **"Generar planilla"** podra acceder a la **VISTA X** donde podra registrar una nueva planilla|
-## Vista : Ver planillas
+| 1 | El empleado al apretar en el boton **"Ver planillas"** de la barra izquierda podra acceder a la **VISTA 18** |
+| 2.1 | Si apreta en el boton **"Detalles"** podra acceder a la **VISTA 19** donde podra visualizar los detatlles de la planilla |
+| 2.2 | Si apreta en el boton **"Generar planilla"** podra acceder a la **VISTA 20** donde podra registrar una nueva planilla|
+
+## Vista 18: Ver planillas
 ### Descripcion 
 El administrador podra visualizar todas las planillas que posee la empresa
 ### Capturas de pantallas
@@ -302,22 +313,7 @@ El administrador podra visualizar todas las planillas que posee la empresa
 #### Funcionalidad 
 Visualizar todas las planillas de la empresa y poder acceder a detalles o generar una nueva planilla.
 
-## Vista : Ver planillas
-### Descripcion 
-El administrador podra visualizar todas las planillas que posee la empresa
-### Capturas de pantallas
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/e6d016ea-7932-4e91-a0ed-dbc3d5f6c14e)
-### Opciones
-#### Generar planilla: Al apretar en el boton Generar planilla el usuario se dirigira a otra vista donde podra registrar.
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/11ace2a7-be51-4065-889f-75be581213e6)
-#### DETALLES: Al apretar en el boton debajo de Detalles, podra acceder a ver los detalles de la planilla seleccionada
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/4c4cf3c1-aa9c-49da-bb6b-267ff3895253)
-
-#### Lista de planillas: En la parte inferior se mostraran las planillas que pertenecen a la empresa
-#### Funcionalidad 
-Visualizar todas las planillas de la empresa y poder acceder a detalles o generar una nueva planilla.
-
-## Vista : Ver detalle de planilla
+## Vista 19: Ver detalle de planilla
 ### Descripcion 
 El administrador podra visualizar los detalles de la planilla seleccionada
 ### Capturas de pantallas
@@ -330,16 +326,32 @@ El administrador podra visualizar los detalles de la planilla seleccionada
 ### Funcionalidad 
 Visualizar datos detallados de la planilla
 
+## Vista 20: Generar planilla
+### Descripcion 
+El administrador podra registrar una nueva planilla
+### Capturas de pantallas
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/207d2ae4-9bb6-43b5-9e4c-b854cedf79bc)
+### Opciones
+#### Datos de la nueva planilla: Se registrara los datos de una nueva planilla.
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/2f2e5aa6-6b8e-43ae-8291-012e3e496c21)
+#### Generar: Al apretar en el boton Generar se registrara dicha planilla en la base de datos
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/d615d402-0b96-4110-a73f-d0dd340173c3)
+### Funcionalidad 
+Registrar una nueva planilla
+
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/8e6d68d6-0459-4edc-8d02-5f12c0839d09)
+
+
 
 ## CASO : Boletas de Pago
 ## FLUJO DE LAS OPCIONES
 | PASOS | ACCION  |
 |----------|----------|
-| 1 | El empleado al apretar en el boton **"Boletas de pago"** de la barra izquierda podra acceder a la **VISTA X** |
-| 2.1 | Si apreta en el boton **"Detalles"** podra acceder a la **VISTA X** donde podra visualizar los detatlles de la planilla |
+| 1 | El empleado al apretar en el boton **"Boletas de pago"** de la barra izquierda podra acceder a la **VISTA 21** |
+| 2.1 | Si apreta en el boton **"Detalles"** podra acceder a la **VISTA 22** donde podra visualizar los detatlles de la planilla |
 | 2.2 | Si apreta en el boton **"Generar pago"** podra acceder a la **VISTA X** donde podra registrar una nueva planilla|
 
-## Vista : Ver planillas pagadas
+## Vista 21: Ver planillas pagadas
 ### Descripcion 
 El administrador podra visualizar todas las planillas que hayan sido procesadas para su pago
 ### Capturas de pantallas
@@ -354,7 +366,7 @@ El administrador podra visualizar todas las planillas que hayan sido procesadas 
 ### Funcionalidad 
 Visualizar las planillas ya procesadas como tambien acceder a opciones como detalles o poder generar un pago
 
-## Vista : Ver boletas de pago de las planillas
+## Vista 22: Ver boletas de pago de las planillas
 ### Descripcion 
 El administrador podra visualizar todas las boletas que hayan sido generadas en la planilla
 ### Capturas de pantallas
@@ -368,7 +380,7 @@ El administrador podra visualizar todas las boletas que hayan sido generadas en 
 ### Funcionalidad 
 Visualizar todas las boletas de pago asociadas a una planilla
 
-## Vista : Ver detalles de una boleta
+## Vista 22: Ver detalles de una boleta
 ### Descripcion 
 El administrador podra visualizar los detalles de una boleta de pago 
 ### Capturas de pantallas
@@ -379,6 +391,8 @@ El administrador podra visualizar los detalles de una boleta de pago
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/d44545cf-ed19-462d-bb7b-7fe476f4e804)
 ### Funcionalidad 
 Visualizar detalles de una boleta de pago
+
+
 
 
 
