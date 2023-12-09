@@ -28,6 +28,8 @@ Esta es la vista que tendra el administrador despues de haberse registrado en el
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/4a6c9c44-05e2-496f-ae26-aeb756194aed)
 ### Funcionalidad 
 El administrador podra acceder a todas las opciones que se encuentren en la barra de la izquierda.
+
+
 ## Vista 3: Pantalla de inicio de empleado 
 ### Descripcion 
 Esta es la vista que tendra el empleado despues de haberse registrado en el inicio de sesion
@@ -35,14 +37,6 @@ Esta es la vista que tendra el empleado despues de haberse registrado en el inic
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/d9433449-3d27-4070-af77-a0a5597d5914)
 ### Funcionalidad 
 El empleado podra acceder a todas las opciones que estan en la barra de la izquierda.
-
-## Vista 3: Pantalla de inicio de empleado  
-### Descripcion 
-Esta es la vista que tendra el administrador despues de haberse registrado en el inicio de sesion.
-### Captura de pantalla 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/4a6c9c44-05e2-496f-ae26-aeb756194aed)
-### Funcionalidad 
-El administrador podra acceder a todas las opciones que se encuentren en la barra de la izquierda.
 
 
 # CASO 2: Registrar empleado y contrato 
