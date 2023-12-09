@@ -648,3 +648,13 @@ los nombres de los niveles de división |
 | Codigo Interfaz    |    I - 035    | 
 |:-------------:|:---------------:|
 | Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/generarnuevasboletas.png) |
+
+
+
+
+<br><br><br><br>
+[índice](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2000%3A%20Presentaci%C3%B3n.md)
+<br>
+[Capítulo Anterior]()
+<br>
+[Capítulo Siguiente]()
