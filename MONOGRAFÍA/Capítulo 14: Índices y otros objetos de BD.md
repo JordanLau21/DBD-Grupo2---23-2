@@ -1,5 +1,5 @@
 ## 14.1 ÍNDICES
-En este subcapítulo, a partir de nuestros módulos escogidos para la funcionalidad primaria, evaluaremos el rendimiento por el uso de índices através de las consultas, para ello seguiremos los siguientes pasos: Planteamiento del uso de índice, Experimentación, Costo de Consulta en ambos casos.
+En este subcapítulo, a partir de nuestro módulo PLANILLA escogido para la funcionalidad primaria, evaluaremos el rendimiento por el uso de índices através de las consultas, para ello seguiremos los siguientes pasos: Planteamiento del uso de índice, Experimentación, Costo de Consulta en ambos casos.
 ##### Planteamiento del Uso de Índice
 1. Identificamos consultas frecuentes para mejorar su rendimiento mediante índices.
 2. Seleccionamos consultas clave que podrían beneficiarse de la indexación.
@@ -10,7 +10,6 @@ En este subcapítulo, a partir de nuestros módulos escogidos para la funcionali
 1. Reejecutamos las mismas consultas después de la creación de índices para comparar y analizar la mejora de rendimiento.
 2. Documentamos la reducción en el costo de consulta observada después de la creación de índices.
 
-#### 14.1.3 MÓDULO : REGISTRO DE MOVIMIENTOS PLANILLA Y LICENCIAS, INASISTENCIAS,ETC
 #### 14.1.4 MÓDULO : PLANILLA
 La creación de índices relevantes en las columnas de planilla ha mejorado significativamente el rendimiento de 3 consultas, reduciendo el tiempo de ejecución y el costo de consulta en operaciones críticas del sistema.
 | Codigo Interfaz    |    I - 028    | 
