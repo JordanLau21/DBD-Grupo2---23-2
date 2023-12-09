@@ -1,4 +1,6 @@
-<center> hola </center>
+<div style="text-align: center;">
+    Tu texto centrado
+</div>
 
 # UNIVERSIDAD NACIONAL DE INGENIERÍA
 # FACULTAD DE INGENIERÍA INDUSTRIAL Y DE SISTEMAS
