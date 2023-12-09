@@ -29,7 +29,12 @@ Caballero Ortiz, José Alberto
 ## [Capítulo 11: Asignación de códigos, requerimientos e interfaces](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2011%3A%20Asignacion%20de%20codigos%2C%20requerimientos%20e%20interfaces.md)
 ## [Capítulo 12: Sentencias SQL](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2012%3A%20Sentencias%20SQL.md)
 ## [Capítulo 13: Funcionalidad primaria](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2013%3A%20Funcionalidad%20primaria.md)
-## [Capítulo 14: Documentación de la aplicación](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2014%3A%20Documentacion%20de%20la%20aplicacion.md)
-## [Capítulo 15: Aplicación de una base de datos NoSQL](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2015%3A%20Aplicaci%C3%B3n%20de%20una%20base%20de%20datos%20NoSQL.md)
+## [Capítulo 14: Índices y otros objetos]()
+## [Capítulo 15: PL/pgSQL - Proceso Batch]()
+## [Capítulo 16: Arquitectura de la aplicación]()
+## [Capítulo 17: Versión Final de la Aplicación]()
+## [Capítulo 18: Próximos Pasos]()
+## [Capítulo 19: Aplicación de una base de datos NoSQL]()
+
 ## [Referencias](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Referencias.md)
 
