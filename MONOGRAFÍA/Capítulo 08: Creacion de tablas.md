@@ -1,14 +1,14 @@
-# CAPÍTULO : CREACIÓN DE TABLAS
+# Capítulo 08: Creacion de tablas
 
 
--tabla: RÉGIMEN PENSIONARIO 
+-Tabla: RÉGIMEN PENSIONARIO 
 ```
 CREATE TABLE Regimen_pensionario(
 	id_regimen_pensionario SERIAL PRIMARY KEY NOT NULL,
 	tipo_regimen CHAR(3) NOT NULL
 );
 ```
--tabla: SEGURO MÉDICO
+-Tabla: SEGURO MÉDICO
 ```
 CREATE TABLE Seguro_medico(
 	id_seguro_medico SERIAL NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE Seguro_medico(
 	primary key(id_seguro_medico)
 );
 ```
--tabla: SITUACIÓN DISCAPACIDAD
+-Tabla: SITUACIÓN DISCAPACIDAD
 ```
 CREATE TABLE Situacion_discapacidad(
 	id_situacion_discapacidad SERIAL NOT NULL,
@@ -24,49 +24,49 @@ CREATE TABLE Situacion_discapacidad(
 	primary key(id_situacion_discapacidad)
 );
 ```
--tabla: ESTADO DE SOLICITUD
+-Tabla: ESTADO DE SOLICITUD
 ```
 CREATE TABLE Estado_solicitud(
 	id_estado_solicitud SERIAL PRIMARY KEY NOT NULL,
 	descripcion VARCHAR(15) NOT NULL
 );
 ```
--tabla: TIPO DE SOLICITUD
+-Tabla: TIPO DE SOLICITUD
 ```
 CREATE TABLE Tipo_solicitud(
 	id_tipo_solicitud SERIAL PRIMARY KEY NOT NULL,
 	descripcion VARCHAR(50) NOT NULL
 );	
 ```
--tabla: ESTADO DE CONTRATO
+-Tabla: ESTADO DE CONTRATO
 ```
 CREATE TABLE Estado_contrato(
 	id_estado_contrato SERIAL PRIMARY KEY NOT NULL,
 	estado_contrato VARCHAR(20) NOT NULL
 );
 ```
--tabla: TIPO DE CONTRATO
+-Tabla: TIPO DE CONTRATO
 ```
 CREATE TABLE Tipo_contrato(
 	id_tipo_contrato SERIAL PRIMARY KEY NOT NULL,
 	tipo_contrato VARCHAR(30) NOT NULL
 );
 ```
--tabla: TIPO DE JORNADA
+-Tabla: TIPO DE JORNADA
 ```
 CREATE TABLE Tipo_jornada(
 	id_tipo_jornada SERIAL PRIMARY KEY NOT NULL,
 	tipo_jornada VARCHAR(20) NOT NULL
 );
 ```
--tabla: FRECUENCIA DE PAGO
+-Tabla: FRECUENCIA DE PAGO
 ```
 CREATE TABLE Frecuencia_pago(
 	id_frecuencia_pago SERIAL PRIMARY KEY NOT NULL,
 	frecuencia_pago VARCHAR(50) NOT NULL
 );
 ```
--tabla: MEDIO DE PAGO
+-Tabla: MEDIO DE PAGO
 ```
 CREATE TABLE Medio_pago(
 	id_medio_pago SERIAL PRIMARY KEY NOT NULL,
@@ -75,7 +75,7 @@ CREATE TABLE Medio_pago(
 	cuenta NUMERIC
 );
 ```
--tabla: PLANILLA
+-Tabla: PLANILLA
 ```
 CREATE TABLE Planilla
 (
@@ -92,7 +92,7 @@ CREATE TABLE Planilla
   PRIMARY KEY (id_planilla)
 );
 ```
--tabla: TIPO DE OPERACIÓN
+-Tabla: TIPO DE OPERACIÓN
 ```
 create table Tipo_operacion (
 	id_tipo_operacion SERIAL not null,
@@ -100,7 +100,7 @@ create table Tipo_operacion (
 	primary key (id_tipo_operacion)
 );
 ```
--tabla: ESTADO CONCEPTO
+-Tabla: ESTADO CONCEPTO
 ```
 create table Estado_concepto (
 	id_estado SERIAL not null,
@@ -108,7 +108,7 @@ create table Estado_concepto (
 	primary key (id_estado)
 );
 ```
--tabla: CONCEPTO NOMINA
+-Tabla: CONCEPTO NOMINA
 ```
 CREATE TABLE Concepto_nomina(
   id_nomina SERIAL NOT NULL,
@@ -121,14 +121,14 @@ CREATE TABLE Concepto_nomina(
   FOREIGN KEY (id_estado) REFERENCES Estado_concepto(id_estado)
 );
 ```
--tabla: ESTADO DE CUENTA
+-Tabla: ESTADO DE CUENTA
 ```
 CREATE TABLE Estado_cuenta(
 	id_estado_cuenta SERIAL PRIMARY KEY NOT NULL,
 	estado_cuenta VARCHAR(30) NOT NULL
 );
 ```
--tabla: EMPRESA
+-Tabla: EMPRESA
 ```
 CREATE TABLE Empresa(
 	id_empresa SERIAL PRIMARY KEY NOT NULL,
@@ -142,7 +142,7 @@ CREATE TABLE Empresa(
 	logo VARCHAR(200) NOT NULL
 );
 ```
--tabla: CUENTA_EMPRESA
+-Tabla: CUENTA_EMPRESA
 ```
 CREATE TABLE Cuenta_empresa(
 	id_cuenta SERIAL PRIMARY KEY NOT NULL,
@@ -155,7 +155,7 @@ CREATE TABLE Cuenta_empresa(
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa )
 );
 ```
--tabla: REPRESENTANTE LEGAL
+-Tabla: REPRESENTANTE LEGAL
 ```
 CREATE TABLE RepresentanteLegal(
 	id_representante SERIAL PRIMARY KEY NOT NULL,
@@ -168,7 +168,7 @@ CREATE TABLE RepresentanteLegal(
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 ); 
 ```
--tabla: CARGO
+-Tabla: CARGO
 ```
 CREATE TABLE Cargo(
 	id_cargo SERIAL PRIMARY KEY NOT NULL,
@@ -182,7 +182,7 @@ CREATE TABLE Cargo(
 );
 
 ```
--tabla: AREA
+-Tabla: AREA
 ```
 CREATE TABLE Area(
     id_area SERIAL PRIMARY KEY NOT NULL,
@@ -192,7 +192,7 @@ CREATE TABLE Area(
     FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 );
 ```
--tabla: EMPLEADO
+-Tabla: EMPLEADO
 ```
 CREATE TABLE Empleado(
 	id_empleado SERIAL PRIMARY KEY NOT NULL,
@@ -216,7 +216,7 @@ CREATE TABLE Empleado(
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 );
 ```
--tabla:CUENTA_EMPLEADO 
+-Tabla:CUENTA_EMPLEADO 
 ```
 CREATE TABLE Cuenta_empleado(
 	id_cuenta SERIAL PRIMARY KEY NOT NULL,
@@ -229,7 +229,7 @@ CREATE TABLE Cuenta_empleado(
 	FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado)
 );
 ```
--tabla: SOLICITUD
+-Tabla: SOLICITUD
 ```
 CREATE TABLE Solicitud(
 	id_solicitud SERIAL PRIMARY KEY NOT NULL,
@@ -247,7 +247,7 @@ CREATE TABLE Solicitud(
 	FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa)
 );
 ```
--tabla: CONTRATO
+-Tabla: CONTRATO
 ```
 CREATE TABLE Contrato(
 	id_contrato SERIAL PRIMARY KEY NOT NULL,
@@ -274,7 +274,7 @@ CREATE TABLE Contrato(
 	FOREIGN KEY (id_medio_pago) REFERENCES Medio_pago(id_medio_pago)
 );
 ```
--tabla: ASISTENCIA
+-Tabla: ASISTENCIA
 ```
 CREATE TABLE Asistencia(
 	id_asistencia SERIAL PRIMARY KEY,
@@ -288,7 +288,7 @@ CREATE TABLE Asistencia(
 	FOREIGN KEY (id_nomina) REFERENCES Concepto_Nomina(id_nomina)
 );
 ```
--tabla: MOVIMIENTO DE PLANILLA
+-Tabla: MOVIMIENTO DE PLANILLA
 ```
 CREATE TABLE Movimiento_planilla(
 	id_movimiento SERIAL PRIMARY KEY,
@@ -300,7 +300,7 @@ CREATE TABLE Movimiento_planilla(
 	FOREIGN KEY (id_nomina) REFERENCES Concepto_Nomina(id_nomina)
 );
 ```
--tabla: BOLETA
+-Tabla: BOLETA
 ```
 CREATE TABLE Boleta(
   id_boleta SERIAL NOT NULL,
