@@ -865,3 +865,12 @@ INSERT INTO solicitud (detalles,fec_solicitud,hora_solicitud,monto,id_estado_sol
 
 INSERT INTO solicitud (detalles,fec_solicitud,hora_solicitud,monto,id_estado_solicitud,id_tipo_solicitud,id_empleado,id_empresa) VALUES ('Si quieren que siga en esta chamba, solicito un cambio de sueldo', '2022/10/18','16:32:41',null,3,4,1,1)
 ```
+
+
+
+<br><br><br><br>
+[índice](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2000%3A%20Presentaci%C3%B3n.md)
+<br>
+[Capítulo Anterior]()
+<br>
+[Capítulo Siguiente]()
