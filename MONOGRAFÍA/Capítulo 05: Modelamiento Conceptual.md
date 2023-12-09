@@ -81,9 +81,9 @@ Semantica: Persona que trabaja en la empresa a cambio de una remuneración
 | Teléfono | INTEGER   |999999999|9 Dígitos|||Teléfono del empleado de la empresa|
 | e-mail  | CHAR   |X*@X*.X*|Dirección correcta según RFC8398|||Correo del empleado de la empresa|
 | DNI | INTEGER   |9999999|8 dígitos|||Identificador nacional del empleado de la empresa.|
-| Estado Civil | CHAR   |x(50)||||Estado Civil del empleado de la empresa|
-| Sexo | CHAR   |x(15)||||Sexo del empleado de la empresa|
-| Cantidad de menores a cargo | INTEGER   |9||||Número de menores de los cuales el empleado de la empresa es apoderado o padre.|
+| Estado Civil | CHAR   |x(50)|NOT NULL|||Estado Civil del empleado de la empresa|
+| Sexo | CHAR   |x(15)|NOT NULL|||Sexo del empleado de la empresa|
+| Cantidad de menores a cargo | INTEGER   |9|>=0|||Número de menores de los cuales el empleado de la empresa es apoderado o padre.|
 
 
 #### Entidad: CONTRATO
