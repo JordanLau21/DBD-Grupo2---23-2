@@ -1,25 +1,22 @@
-<center>
-UNIVERSIDAD NACIONAL DE INGENIERÍA
- </center>
+# Título del Trabajo
 
- 
-FACULTAD DE INGENIERÍA INDUSTRIAL Y DE SISTEMAS
+![Logo de la Universidad](enlace_a_la_imagen.jpg)
 
+---
 
+**Curso:** Nombre del Curso  
+**Docente:** Nombre del Docente  
+**Fecha:** Fecha de presentación
 
+---
 
-SISTEMA DE PLANILLAS
+## Integrantes:
 
-Curso: Diseño de Base de Datos (SI505)
-Docente: José Alberto Caballero Ortiz
-Sección: V
-Integrantes:
-- a
-- b
-- c
-- d
-- e
-- f
+- Nombre 1
+- Nombre 2
+- Nombre 3
+- ...
 
+---
 
-
+Breve descripción o introducción al trabajo.
