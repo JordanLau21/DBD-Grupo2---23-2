@@ -129,7 +129,7 @@
 |---|---|
 | Editar las Variables de la Empresa | R013 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/editar%20variable%20de%20la%20empresa.jpg)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -141,7 +141,7 @@
 |---|---|
 | Crear nuevo cargo | R014 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/nuevo%20cargo.jpg)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -150,7 +150,7 @@
 |---|---|
 | Crear nueva área | R015 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/nueva%20area.jpg?raw=true)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -162,7 +162,7 @@
 |---|---|
 | Planillas | R016 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/planilla.jpg)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -182,7 +182,7 @@
 |---|---|
 | Crear una planilla | R018 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/nueva%20planilla.jpg)
 
 - Tipo de Usuario: Usuario Paramétrico
 
