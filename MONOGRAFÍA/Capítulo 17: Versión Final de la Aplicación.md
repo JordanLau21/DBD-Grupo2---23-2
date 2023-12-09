@@ -178,70 +178,207 @@ Se le mostraran todas las solicitudes que tenga asociada dicha empresa. Donde po
 
 # CASO X: Movimientos de planilla
 ## FLUJO DE LAS OPCIONES
+| PASOS | ACCION  |
+|----------|----------|
+| 1 | El empleado al apretar en el boton **"Movimientos de planilla"** de la barra izquierda podra acceder a la **VISTA X** |
+| 2.1 | Si apreta en el boton **"Agregar"** de un contrato podra agregar movimientos de planilla a dicho contrato |
+| 2 | Si apreta en el boton **"Nueva solicitud"** podra acceder a la **VISTA X** donde podra registrar una nueva solicitud|
+
 ## Vista : Ver lista de contratos 
 ### Descripcion 
-El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
+El administrador al apretar en el boton de **"Movimientos de planilla"**, podra visualizar una lista de contratos
 ### Capturas de pantallas
-Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/d3f25bd7-194d-455d-a8e8-1dd0ef2990c1)
+### Opciones
+#### Filtrar: El usuario podra colocar dos fechas limites, para poder filtrar la lista de contratos
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/d05d75f2-4d82-403b-bf2b-9c6e1786be06)
+#### Agregar: El usuario al apretar el boton, podrá acceder a una vista donde se podra agregar movimientos a dicho contrato
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/99f4a5a3-1d5d-479d-b048-da7fa97334f6)
 ### Funcionalidad 
+El usuario podra visualizar todos los contratos en rango de fecha, de manera que pueda identificar aquellos contratos donde quiere agregar o registrar nuevos movimientos de planilla.
 
-# CASO X: Movimientos de un contrato
-## Vista : Ver empleados desviculados o inactivos
+## Vista : Movimientos de un contrato
 ### Descripcion 
-El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
+El administrador al apretar en el boton de **"Agregar"**, podra visualizar todos los ingresos y descuentos registrados en dicho contrato.
 ### Capturas de pantallas
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/c2038eef-0e36-4c42-952a-33a5b5aeb1f8)
-Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
-
+### Opciones
+#### Agregar: Al apretar en el boton Agregar podra agregar un nuevo ingreso o descuento
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/ee885ef0-ddd9-432e-9aa2-033cc00afc9a)
 ### Funcionalidad 
+El administrador podra registrar todo los movimientos de planilla segun sea un ingreso o un descuento.
 
-## CASO X: Movimientos de un contrato
-### Vista : Ver empleados desviculados o inactivos
-#### Descripcion 
-El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
-#### Capturas de pantallas
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/c2038eef-0e36-4c42-952a-33a5b5aeb1f8)
+## Vista : Agregar ingreso o descuento
+### Descripcion 
+Al apretar en el boton **Agregar** de un ingreso o descuento podra registrarlo
+### Capturas de pantallas
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3b861847-fd44-42e0-bc59-8ecbad33ab10)
+### Funcionalidad 
+Aqui podra agregar los ingresos o descuentos
 
-Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
-
-#### Funcionalidad 
-
-## CASO X: areas
-### Vista : Ver empleados desviculados o inactivos
-#### Descripcion 
-El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
-#### Capturas de pantallas
+## MODULO ORGANIZACION
+## CASO X: Areas
+## FLUJO DE LAS OPCIONES
+| PASOS | ACCION  |
+|----------|----------|
+| 1 | El empleado al apretar en el boton **"Areas"** de la barra izquierda podra acceder a la **VISTA X** |
+| 2 | Si apreta en el boton **"Nueva Area"** podra acceder a la **VISTA X** donde podra registrar un nuevo area |
+## Vista : Areas de la empresa
+### Descripcion 
+El administrador podra visualizar todas las areas de la empresa
+### Capturas de pantallas
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/e89d4f1c-b93b-4775-91a4-7aeae19a744f)
-
-Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
-
+### Opciones
+#### Nueva area: Al apretar en el boton Nueva area, podra acceder a una nueva vista donde registrara a la area
 #### Funcionalidad 
+Visualizar las areas que componen a la empresa y tambien ser capaz de registrar una nueva area
 
-## CASO X: cargos
-### Vista : Ver empleados desviculados o inactivos
-#### Descripcion 
-El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
-#### Capturas de pantallas
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/946335f9-3996-43bf-9083-2aa3d6c5995a)
-
-
-Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
-
+## Vista : Nueva area
+### Descripcion 
+El administrar accedera a un formulario para registrar nuevas areas
+### Capturas de pantallas
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/903224a5-18ca-4cb5-a02d-b86ffd2cff05)
+### Opciones
+#### Nombre: Ingresara el nombre del nuevo area
+#### Descripcion: Ingresara una descripcion de la area
+#### Guardar: Al apretarlo se guardara los datos ingresados
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/2812daaa-785e-4034-a4f6-eb30f4908ff3)
 #### Funcionalidad 
-
-## CASO X: Organigrama
-### Vista : Ver empleados desviculados o inactivos
-#### Descripcion 
-El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
-#### Capturas de pantallas
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/946335f9-3996-43bf-9083-2aa3d6c5995a)
+Registrar los datos de un nuevo area
 
 
-Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
 
+## CASO X: Cargos
+## FLUJO DE LAS OPCIONES
+| PASOS | ACCION  |
+|----------|----------|
+| 1 | El empleado al apretar en el boton **"Cargos"** de la barra izquierda podra acceder a la **VISTA X** |
+| 2 | Si apreta en el boton **"Nueva cargo"** podra acceder a la **VISTA X** donde podra registrar un nuevo area |
+## Vista : Cargos de la empresa
+### Descripcion 
+El administrador podra visualizar todas las cargos de la empresa
+### Capturas de pantallas
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/503799e5-9929-4ecc-a916-018d585d4908)
+### Opciones
+#### Nuevo cargo: Al apretar en el boton Nuevo cargo, podra acceder a una nueva vista donde registrara al cargo
 #### Funcionalidad 
+Visualizar los cargos que componen a la empresa y tambien ser capaz de registrar un nuevo cargo
+
+## Vista : Nueva cargo
+### Descripcion 
+El administrar accedera a un formulario para registrar nuevos cargos
+### Capturas de pantallas
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/2d115100-7706-4222-a841-1c7da7d2687a)
+### Opciones
+#### Nombre: Ingresara el nombre del nuevo area
+#### Descripcion: Ingresara una descripcion de la area
+#### Requerimientos:  Ingresara los requerimientos del cargo
+#### Guardar: Al apretarlo se guardara los datos ingresados
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/efc02356-5b32-49ae-9357-ae096e7bb49a)
+#### Funcionalidad 
+Registrar los datos de un nuevo cargo
+
+
+## MODULO DE PLANILLA
+## CASO : Planillas
+## FLUJO DE LAS OPCIONES
+| PASOS | ACCION  |
+|----------|----------|
+| 1 | El empleado al apretar en el boton **"Ver planillas"** de la barra izquierda podra acceder a la **VISTA X** |
+| 2.1 | Si apreta en el boton **"Detalles"** podra acceder a la **VISTA X** donde podra visualizar los detatlles de la planilla |
+| 2.2 | Si apreta en el boton **"Generar planilla"** podra acceder a la **VISTA X** donde podra registrar una nueva planilla|
+## Vista : Ver planillas
+### Descripcion 
+El administrador podra visualizar todas las planillas que posee la empresa
+### Capturas de pantallas
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/e6d016ea-7932-4e91-a0ed-dbc3d5f6c14e)
+### Opciones
+#### Generar planilla: Al apretar en el boton Generar planilla el usuario se dirigira a otra vista donde podra registrar.
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/11ace2a7-be51-4065-889f-75be581213e6)
+#### DETALLES: Al apretar en el boton debajo de Detalles, podra acceder a ver los detalles de la planilla seleccionada
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/4c4cf3c1-aa9c-49da-bb6b-267ff3895253)
+
+#### Lista de planillas: En la parte inferior se mostraran las planillas que pertenecen a la empresa
+#### Funcionalidad 
+Visualizar todas las planillas de la empresa y poder acceder a detalles o generar una nueva planilla.
+
+## Vista : Ver planillas
+### Descripcion 
+El administrador podra visualizar todas las planillas que posee la empresa
+### Capturas de pantallas
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/e6d016ea-7932-4e91-a0ed-dbc3d5f6c14e)
+### Opciones
+#### Generar planilla: Al apretar en el boton Generar planilla el usuario se dirigira a otra vista donde podra registrar.
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/11ace2a7-be51-4065-889f-75be581213e6)
+#### DETALLES: Al apretar en el boton debajo de Detalles, podra acceder a ver los detalles de la planilla seleccionada
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/4c4cf3c1-aa9c-49da-bb6b-267ff3895253)
+
+#### Lista de planillas: En la parte inferior se mostraran las planillas que pertenecen a la empresa
+#### Funcionalidad 
+Visualizar todas las planillas de la empresa y poder acceder a detalles o generar una nueva planilla.
+
+## Vista : Ver detalle de planilla
+### Descripcion 
+El administrador podra visualizar los detalles de la planilla seleccionada
+### Capturas de pantallas
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/352d22f5-732b-452a-b6e5-ba7bc40b2efc)
+### Opciones
+#### Datos de la planilla: El usuario visualizara los datos de la planilla seleccionada
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/ab4734d9-893a-4ffc-aaf7-fa3361062e18)
+#### Lista de colaboradores: El usuario visualizara la lisa de colaboradores asociados a dicha planilla
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/27a2e21f-ae11-4ead-9e51-136b3fcd8124)
+### Funcionalidad 
+Visualizar datos detallados de la planilla
+
+
+## CASO : Boletas de Pago
+## FLUJO DE LAS OPCIONES
+| PASOS | ACCION  |
+|----------|----------|
+| 1 | El empleado al apretar en el boton **"Boletas de pago"** de la barra izquierda podra acceder a la **VISTA X** |
+| 2.1 | Si apreta en el boton **"Detalles"** podra acceder a la **VISTA X** donde podra visualizar los detatlles de la planilla |
+| 2.2 | Si apreta en el boton **"Generar pago"** podra acceder a la **VISTA X** donde podra registrar una nueva planilla|
+
+## Vista : Ver planillas pagadas
+### Descripcion 
+El administrador podra visualizar todas las planillas que hayan sido procesadas para su pago
+### Capturas de pantallas
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/6f993061-b5e2-458c-8dcb-b6344700e8ef)
+### Opciones
+#### Generar pago: Al apretar en el boton Generar pago el usuario se dirigira a otra vista donde podra registrar.
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/4871ae24-327f-4fcd-8ca5-a2af065057d3)
+#### DETALLES: Al apretar en el boton debajo de Detalles, podra acceder a ver las boletas de los empleados segun la planilla
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/12c5ba79-b098-41a9-b7cc-c9e4b432bcaa)
+#### Lista de planillas: Se mostraran la lista de planillas que ya hayan sido procesadas
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/c6731b4b-bcfb-42eb-99b4-687d33a74c2b)
+### Funcionalidad 
+Visualizar las planillas ya procesadas como tambien acceder a opciones como detalles o poder generar un pago
+
+## Vista : Ver boletas de pago de las planillas
+### Descripcion 
+El administrador podra visualizar todas las boletas que hayan sido generadas en la planilla
+### Capturas de pantallas
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/305ec0a7-21e5-4db8-ae59-203b5c9704a1)
+### Opciones
+#### Datos de la planilla: Se podra visualizar los datos de la planilla antes seleccionada
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/63121826-0ebc-425f-9cc6-d92b2b569af5)
+#### Lista de boletas de pago: Se mostrara la lista de boletas de pago asociadas a dicha planilla seleccionada, ademas que se mostraran datos oportunos
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/9a938c20-920e-43e1-828d-f8ad0cf12384)
+#### Ver detalles: Podras acceder a ver detalles de la boleta de pago
+### Funcionalidad 
+Visualizar todas las boletas de pago asociadas a una planilla
+
+## Vista : Ver detalles de una boleta
+### Descripcion 
+El administrador podra visualizar los detalles de una boleta de pago 
+### Capturas de pantallas
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/ff0a792a-8362-4f5d-ad95-abbc1861b492)
+
+### Opciones
+#### Calculos: Se mostraran los ingresos y descuentos asociados a dicha boleta de pago, y se mostrara el resultado de calcular para obtener el suelto neto
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/d44545cf-ed19-462d-bb7b-7fe476f4e804)
+### Funcionalidad 
+Visualizar detalles de una boleta de pago
 
 
 
