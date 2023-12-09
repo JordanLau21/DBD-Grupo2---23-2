@@ -1,3 +1,4 @@
+# Capítulo 06: Modelamiento Lógico
 A continuación, se presentará la conversión de cada entidad mostrada en el modelado conceptual para así poder tener una mejor explicación de la versión final del modelo lógico
 ## 6.1 ENTIDADES
 #### 6.1.1 ENTIDAD EMPLEADO
