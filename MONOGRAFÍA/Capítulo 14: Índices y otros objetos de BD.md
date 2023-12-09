@@ -11,7 +11,7 @@ En este subcapítulo, a partir de nuestro módulo PLANILLA escogido para la func
 2. Documentamos la reducción en el costo de consulta observada después de la creación de índices.
 
 #### MÓDULO : PLANILLA
-La creación de índices relevantes en las columnas de planilla ha mejorado significativamente el rendimiento de 3 consultas, reduciendo el tiempo de ejecución y el costo de consulta en operaciones críticas del sistema.
+La creación de índices relevantes en las columnas de planilla ha mejorado significativamente el rendimiento de 4 consultas, reduciendo el tiempo de ejecución y el costo de consulta en operaciones críticas del sistema.
 | Codigo Interfaz    |    I - 028    | 
 |:-------------|:---------------|
 | Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planilla.png) |
