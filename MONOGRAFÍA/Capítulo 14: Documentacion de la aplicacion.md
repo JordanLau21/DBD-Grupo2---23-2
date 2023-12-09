@@ -1,129 +1,200 @@
 # CAPÍTULO 14: DOCUMENTACION DE LA APLICACIÓN
-## MODULO LOGEO 
+# MODULO LOGEO 
 
-## CASO 1 : Iniciar Sesion 
-### FLUJO DE LAS OPCION
-### Vista 1: Logearse
-#### Descripcion 
-Esta es la opcion que permite al usuario iniciar sesion y poder acceder al sistema
-#### Captura de pantalla 
+# CASO 1 : Iniciar Sesion 
+## FLUJO DE LAS VISTAS
+| PASOS | ACCION  |
+|----------|----------|
+| 1 | En la **VISTA 1** el usuario ingresara su cuenta (usuario y contraseña)   |
+| 2 | Apretara en el boton **Confirmar datos**, para validar los datos|
+| 3.1 | Si la cuenta es validada y le pertenece a un **administrador** entonces le saldra un boton llamado **"INGRESAR EMPRESA"** |
+| 3.2 | Si la cuenta es validada y le pertenece a un **empleado** entonces le saldra un boton llamado **"INGRESAR EMPLEADO"** |
+| 4.1 | Si apreta en el boton **"INGRESAR EMPRESA"** le redigira a la **VISTA 2** de inicio para el administrador |
+| 4.1 | Si apreta en el boton **"INGRESAR EMPLEADO"** le redigira a la **VISTA 3** de inicio para el empleado |
+| 5 | En la barra derecha podra apretar los botones que le redirigiran a las vistas correspondientes de la opcion  |
+## Vista 1: Logearse
+### Descripcion 
+Esta es la vista donde podra ingresar los datos de su cuenta y podra validarlos para poder acceder al sistema.
+### Captura de pantalla 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/588ae310-dc80-469a-9003-53e8740ad5e6)
-#### Funcionalidad 
-El usuario ingresara su cuenta, tanto usuario como contraseña. Si el sistema valida la cuenta. Entonces se le dirigira a la pestaña de **InicioEmpresa**
-la cuenta le pertenece a un administrador o le dirigira a la pestaña de **InicioEmpleado** si la cuenta le pertenece a un empleado.
-### Vista 2: Pantalla de inicio de administrador  
-#### Descripcion 
+### Funcionalidad 
+El usuario ingresara su cuenta, tanto usuario como contraseña. Si el sistema valida la cuenta. Entonces le permitira el acceso a la pestaña de **InicioEmpresa** 
+si la cuenta le pertenece a un administrador o le dirigira a la pestaña de **InicioEmpleado** si la cuenta le pertenece a un empleado.
+### Codigo
+Aqui se puede mostrar la parte en codigo que valida si una cuenta pertenece o no al sistema.
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/1e66a429-9c82-419c-998a-de72f2bca641)
+
+## Vista 2: Pantalla de inicio de administrador  
+### Descripcion 
 Esta es la vista que tendra el administrador despues de haberse registrado en el inicio de sesion.
-#### Captura de pantalla 
+### Captura de pantalla 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/4a6c9c44-05e2-496f-ae26-aeb756194aed)
-#### Funcionalidad 
+### Funcionalidad 
 El administrador podra acceder a todas las opciones que se encuentren en la barra de la izquierda.
-### Vista 3: Pantalla de inicio de empleado 
-#### Descripcion 
+## Vista 3: Pantalla de inicio de empleado 
+### Descripcion 
 Esta es la vista que tendra el empleado despues de haberse registrado en el inicio de sesion
-#### Captura de pantalla 
+### Captura de pantalla 
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/d9433449-3d27-4070-af77-a0a5597d5914)
-#### Funcionalidad 
-El empleado podra acceder a todas las opciones que estan en la barra de la izquierda
+### Funcionalidad 
+El empleado podra acceder a todas las opciones que estan en la barra de la izquierda.
 
-## CASO X: Solicitudes de la empresa
-### FLUJO DE LAS OPCIONES
-### Vista : Ver solicitudes
-#### Descripcion 
-El administrador al apretar en el boton de **"Solicitudes"**, podra ver las solicitudes de empleados que tiene dicha empresa
-#### Captura de pantalla 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3d940819-544c-4968-9491-d23741ddcd51)
-Estas son las solicitudes de la empresa con id = 3, como se aprecia en el URL de la pagina.
-#### Funcionalidad 
-Se le mostraran todas las solicitudes que tenga asociada dicha empresa. Donde se detallaran diferentes datos de las solicitudes.
 
-### Vista : Ver detalles de solicitudes
-#### Descripcion 
-El administrador al apretar en el boton **"Ver detalles"**, podra ver los detalles de cada solicitud
-#### Captura de pantalla 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/bc52cbc3-a48a-4342-8f36-9ab0c89f0db0)
-Estos son los detalles de solicitud de la solicitud de id = 1;
-#### Funcionalidad 
-Se podra apreciar los datos de la solicitud, como tambien la descripcion de dicha solicitud.
+# MODULO EMPLEADOS
+# CASO X: Registrar empleado y contrato 
+## FLUJO DE LAS VISTAS
+| PASOS | ACCION  |
+|----------|----------|
+| 1 | El administrador al apretar en el boton **"Crear empleado"** de la barra izquierda podra acceder a la **VISTA X** donde podra registrar los datos de un nuevo empleado|
+| 2 | Despues de registrar los datos del empleado, aprentando en el boton **"Siguiente"**, podra acceder a la **VISTA X** dondre podra registrar los datos del contrato de dicho empleado |
+| 3 | Despues de registrar los datos del contrato de dicho empleado podra volver a la pantalla de inicio | 
 
-## CASO X: Registrar empleado y contrato 
-## FLUJO DE LAS OPCIONES
-### Vista : Registrar empleado
-#### Descripcion 
-El administrador al apretar en el boton de **"Crear empleado"**, podra registrar a un empleado en la empresa.
-#### Capturas de pantallas
+## Vista : Registrar empleado
+### Descripcion 
+El administrador al apretar en el boton de **"Crear empleado"**, podra acceder a esta vista donde puede registrar a un empleado en la empresa.
+### Capturas de pantallas
 Esta es la vista donde se puede ingresar los datos del empleado, para posteriormente registrarlo.
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/fb9cf909-97dd-48e5-89e0-42a8447dea34) <br>
-Estas son las opciones disponibles de **Regimen pensionario**<br>
+### Opciones
+#### Estas son las opciones disponibles de **Regimen pensionario**<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/e8743629-300c-43fd-ae63-48187aaedd82) <br>
-Estas son las opciones disponibles de **Seguro medico**<br>
+#### Estas son las opciones disponibles de **Seguro medico**<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/6ad247f7-1250-44bb-b521-71fbe2334df7)  <br>
-Estas son las opciones disponibles de **Situacion discapacidad**<br>
+#### Estas son las opciones disponibles de **Situacion discapacidad**<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3b942859-99e1-4515-9aec-141a00544c10)  <br>
-#### Funcionalidad 
+### Funcionalidad 
 El administrador despues de haber registrado todos los datos del empleado. Apretara en el boton **"Registrar empleado"** y se registraran los datos ingresados del empleado.
-### Vista : Registrar contrato
-#### Descripcion 
+## Vista : Registrar contrato
+### Descripcion 
 El administrador al apretar en el boton de **"Siguiente"**, podra registrar un contrato de dicho contrato antes registrado.
-#### Capturas de pantallas
+### Capturas de pantallas
 Esta es la vista donde se puede ingresar los datos del contrato del empleado.
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/cc13c17c-3084-4381-afd1-896a09e5c502) <br>
-Estas son las opciones disponibles de **Area**<br>
+### Opciones
+#### Estas son las opciones disponibles de **Area**<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/dd4c2f23-e137-4706-adf1-88c0a3828e8e) <br>
-Estas son las opciones disponibles de **Cargo**<br>
+#### Estas son las opciones disponibles de **Cargo**<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/b3a6b927-b6f9-406f-8785-9ab0e098dd9d) <br>
-Estas son las opciones disponibles de **Estado de contrato**<br>
+#### Estas son las opciones disponibles de **Estado de contrato**<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/2dd1a002-bb1a-4e43-83eb-b648147a312d) <br>
-Estas son las opciones disponibles de **Tipo de contrato**<br>
+#### Estas son las opciones disponibles de **Tipo de contrato**<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/7af9d029-3356-4869-aab2-0180c0d8b535) <br>
-Estas son las opciones disponibles de **Tipo de jornada**<br>
+#### Estas son las opciones disponibles de **Tipo de jornada**<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/47efd74d-baf4-4938-acb4-fc1e6b48cf87) <br>
-Estas son las opciones disponibles de **Frecuencia de pago**<br>
+#### Estas son las opciones disponibles de **Frecuencia de pago**<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/bec7f0b7-a002-4230-8889-2021f3163fff) <br>
-Estas son las opciones disponibles de **Medio de pago**<br>
+#### Estas son las opciones disponibles de **Medio de pago**<br>
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/04e0d0a1-87c2-47b3-8c4d-210f2e0f2a41) <br>
-#### Funcionalidad 
+### Funcionalidad 
 El administrador despues de haber registrado todos los datos del contrato. Apretara en el boton **"Registrar Contrato"** y se guardara los datos del contrato en el sistema.
 Luego podra regresar a la pantalla de inicio apretanto el boton **"Regresar inicio"**
 
-## CASO X: Vigentes
-### Vista : Ver empleados vigentes
-#### Descripcion 
+# CASO X: Vigentes
+## Vista : Ver empleados vigentes
+### Descripcion 
 El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
-#### Capturas de pantallas
+### Capturas de pantallas
 Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/aa93dc50-d8fa-4274-8c08-baade987f607)
-#### Funcionalidad 
+### Funcionalidad 
 
 
-## CASO X: Desvinculados
-### Vista : Ver empleados desviculados o inactivos
-#### Descripcion 
+# CASO X: Desvinculados
+## Vista : Ver empleados desviculados o inactivos
+### Descripcion 
 El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
-#### Capturas de pantallas
+### Capturas de pantallas
 Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/2d034a10-cafa-425d-8794-fffd956bc041)
-#### Funcionalidad 
+### Funcionalidad 
 
-## CASO X: Movimientos de planilla
-## FLUJO DE LAS OPCIONES
-### Vista : Ver lista de contratos 
+
+## MODULO SOLICITUD
+## CASO X: Solicitudes de la empresa
+### FLUJO DE LAS VISTAS
+| PASOS | ACCION  |
+|----------|----------|
+| 1 | El administrador al apretar en el boton **"Solicitudes"** de la barra izquierda podra acceder a la **VISTA X** donde se le mostraran todas las solicitudes que tenga dicha empresa |
+|  | Si apreta en los botones **"Regresar"** regresara a la pantalla de anterior|
+| 2 | Si apreta en el boton **"Ver detalles"** de una solicitud podra acceder a los detalles particulares de dicha solicitud. Tal como en la **VISTA X** |
+|  | Si apreta en el boton **"Regresar solicitudes "** regresara a la VISTA X |
+|  | Si apreta en el boton **"Regresar solicitudes "** regresara a la VISTA X |
+### Vista : Ver solicitudes
 #### Descripcion 
+Esta es la vista que tendra el administrador, despues de apretar en el boton Solicitudes. Aqui podra apreciar todas las solicitudes que pertenecen a la empresa en un lista vertical 
+#### Captura de pantalla 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/3d940819-544c-4968-9491-d23741ddcd51)
+#### Funcionalidad 
+Se le mostraran todas las solicitudes que tenga asociada dicha empresa. Donde podra apretar en el boton "Ver detalles" que podra brindar mas informacion sobre la solicitud seleccionada.
+
+
+### Vista : Ver detalles de solicitud
+#### Descripcion 
+Esta es la vista donde el administrador podra acceder a informacion mas detallada sobre la solicitud seleccionada.
+#### Captura de pantalla 
+Estos son los detalles de solicitud de la solicitud de id_solicitud = 1;
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/bc52cbc3-a48a-4342-8f36-9ab0c89f0db0)
+
+#### Funcionalidad 
+Se podra apreciar los datos de la solicitud, como tambien la descripcion de dicha solicitud.
+
+## CASO X: Solicitudes del empleado
+### FLUJO DE LAS VISTAS
+| PASOS | ACCION  |
+|----------|----------|
+| 1 | El empleado al apretar en el boton **"Mis solicitudes"** de la barra izquierda podra acceder a la **VISTA X** donde se le mostraran todas las solicitudes que haya realizado |
+| 2.1 | Si apreta en el boton **"Ver detalles"** de una solicitud podra acceder a los detalles particulares de dicha solicitud. Tal como en la **VISTA X** |
+| 2 | Si apreta en el boton **"Nueva solicitud"** podra acceder a la **VISTA X** donde podra registrar una nueva solicitud|
+
+### Vista : Ver mis solicitudes
+#### Descripcion 
+Esta es la vista que tendra el empleado, despues de apretar en el boton Mis solicitudes. Aqui podra apreciar todas las solicitudes que ha realizado en la empresa que pertenece.
+#### Captura de pantalla 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/6b783b57-d071-49b7-a133-f149150bed7e)
+#### Funcionalidad 
+Se le mostraran todas las solicitudes que tenga asociada dicha empresa. Donde podra apretar en el boton "Ver detalles" que podra brindar mas informacion sobre la solicitud seleccionada.
+
+### Vista : Ver detalles de solicitud
+#### Descripcion 
+Despues de apretar en **"Ver detalles"** el empleado podra ver detalles especificos de su solicitud
+#### Captura de pantalla 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/bc52cbc3-a48a-4342-8f36-9ab0c89f0db0)
+#### Funcionalidad 
+Se le mostraran todas las solicitudes que tenga asociada dicha empresa. Donde podra apretar en el boton "Ver detalles" que podra brindar mas informacion sobre la solicitud seleccionada.
+
+### Vista : Nueva solicitud
+#### Descripcion 
+Despues de apretar en **"Nueva Solicitud"** el empleado podra registrar una nueva solicitud hacia la empresa.
+#### Captura de pantalla 
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/c8084642-53d2-4ac1-ad50-63810bdd5933)
+#### Opciones
+#### **Tipo de solicitud:** El empleado podra seleccionar el tipo de solicitud mostrada en la barra desplegable
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/c8c3a5ba-506e-42f3-8f0a-94b2e73ed1e8) <br>
+#### **Boton Enviar:** El empleado al apretar en el boton **ENVIAR**. Registrara los datos seleccionados e ingresados en la seccion tipo solicitud y descripcion. 
+
+#### Funcionalidad 
+Se le mostraran todas las solicitudes que tenga asociada dicha empresa. Donde podra apretar en el boton "Ver detalles" que podra brindar mas informacion sobre la solicitud seleccionada.
+
+
+# CASO X: Movimientos de planilla
+## FLUJO DE LAS OPCIONES
+## Vista : Ver lista de contratos 
+### Descripcion 
 El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
-#### Capturas de pantallas
+### Capturas de pantallas
 Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/d3f25bd7-194d-455d-a8e8-1dd0ef2990c1)
-#### Funcionalidad 
+### Funcionalidad 
 
-## CASO X: Movimientos de un contrato
-### Vista : Ver empleados desviculados o inactivos
-#### Descripcion 
+# CASO X: Movimientos de un contrato
+## Vista : Ver empleados desviculados o inactivos
+### Descripcion 
 El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
-#### Capturas de pantallas
+### Capturas de pantallas
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/c2038eef-0e36-4c42-952a-33a5b5aeb1f8)
 Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
 
-#### Funcionalidad 
+### Funcionalidad 
 
 ## CASO X: Movimientos de un contrato
 ### Vista : Ver empleados desviculados o inactivos
@@ -171,10 +242,6 @@ El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a to
 Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
 
 #### Funcionalidad 
-
-
-
-
 
 
 
