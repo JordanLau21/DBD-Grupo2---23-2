@@ -56,7 +56,6 @@
 |---|---|
 | Respuesta Solicitud | R006 |
 
-![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -172,8 +171,6 @@
 |---|---|
 | Empleados en una planilla |R017  |
 
-![image]()
-
 - Tipo de Usuario: Usuario Paramétrico
 
 
@@ -192,7 +189,6 @@
 |---|---|
 | Planillas pagadas | R019 |
 
-![image]()
 
 - Tipo de Usuario: Usuario Paramétrico
 
