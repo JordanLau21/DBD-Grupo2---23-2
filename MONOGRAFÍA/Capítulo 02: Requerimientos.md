@@ -1,3 +1,4 @@
+# Capítulo 02: Requerimientos
 ## 2.1 REQUERIMIENTOS FUNCIONALES
 #### 2.1.1 Usuarios: <br>
    - Empleado de RRHH :  Usuario que podrá ver y manejar ciertas opciones del sistema de planillas.<br>
