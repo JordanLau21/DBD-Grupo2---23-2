@@ -1,4 +1,12 @@
-:UNIVERSIDAD NACIONAL DE INGENIERÍA:
+<center>
+
+Tu texto o elemento que quieres centrar
+
+</center>
+
+
+
+UNIVERSIDAD NACIONAL DE INGENIERÍA
 
 FACULTAD DE INGENIERÍA INDUSTRIAL Y DE SISTEMAS
 
