@@ -1,4 +1,4 @@
-# CAPÍTULO: SENTENCIAS SQL POR CADA PROTOTIPO
+# Capítulo 11: Sentencias SQL por cada Prototipo
 
 
 | Codigo Requerimiento    |  R - 001    | 
