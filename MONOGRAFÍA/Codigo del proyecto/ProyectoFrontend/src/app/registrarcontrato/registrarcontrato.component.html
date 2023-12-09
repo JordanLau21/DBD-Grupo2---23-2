@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+<aside
+  id="sidebar-multi-level-sidebar"
+  class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+  aria-label="Sidebar"
+>
+  <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+    <ul class="space-y-2 font-medium">
+      <li>
+        <a [routerLink]="['/inicioempresa',id_empresa ]"
+          href="/"
+          class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+        >
+          <svg
+            class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 22 21"
+          >
+            <path
+              d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"
+            />
+            <path
+              d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"
+            />
+          </svg>
+          <span class="ms-3">Inicio</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>
+
+<div class="p-4 sm:ml-64">
+  <div
+    class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700"
+  >
+    <h1 class="text-2xl font-bold mb-2">Registrar Datos Contrato</h1>
+    <div class="flex">
+      <div class="text-md font-medium mr-2 mb-4">-</div>
+    </div>
+    <div class="ml-10 flex flex-col space-y-4">
+
+      <div class="flex">
+        <div class="text-md font-medium mr-2">Fecha de firma de contrato:</div>
+        <input class="h-6" type="text" [(ngModel)]="fecha_firma_contrato">
+      </div>
+      <div class="flex">
+        <div class="text-md font-medium mr-2" >Fecha de inicio laboral:</div>
+        <input class="h-6" type="text" [(ngModel)]="fecha_inicio_laboral" >
+      </div>
+      <div class="flex">
+        <div class="text-md font-medium mr-2">Fecha de termino de contrato:</div>
+        <input class="h-6" type="text" [(ngModel)]="fecha_termino_contrato" >
+      </div>
+      <div class="flex">
+        <div class="text-md font-medium mr-2">Sueldo Base:</div>
+        <input class="h-6" type="text" [(ngModel)]="sueldo_base" >
+      </div>
+      <div class="flex">
+        <div class="text-md font-medium mr-2">Liquido Teorico:</div>
+        <input class="h-6" type="text" [(ngModel)]="liquido_teorico" >
+      </div>
+      <div class="flex items-center">
+        <div class="text-md font-medium mr-2">Area:</div>
+        <select [(ngModel)]="id_area"
+                id="area"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+        >
+          <option value=1>Ventas</option>
+          <option value=2>Recursos Humanos</option>
+          <option value=3>Finanzas</option>
+          <option value=4>Desarrollo de software</option>
+          <option value=5>Produccion</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <div class="text-md font-medium mr-2">Cargo:</div>
+        <select [(ngModel)]="id_cargo"
+                id="cargo"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+        >
+          <option value=1>Gerente de Ventas</option>
+          <option value=2>Analista de Marketing</option>
+          <option value=3>Jefe de Recursos humanos</option>
+          <option value=4>Contador financiero</option>
+          <option value=5>Desarrollar de software</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <div class="text-md font-medium mr-2">Estado de contrato:</div>
+        <select [(ngModel)]="id_estado_contrato"
+                id="estado"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+        >
+          <option value=1>Vigente</option>
+          <option value=2>Finalizado</option>
+          <option value=3>Rescindido</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <div class="text-md font-medium mr-2">Tipo de contrato:</div>
+        <select [(ngModel)]="id_tipo_contrato"
+                id="tipocontrato"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+        >
+          <option value=1>Indefinido</option>
+          <option value=2>Plazo Definido</option>
+          <option value=3>Obra o Proyecto</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <div class="text-md font-medium mr-2">Tipo de jornada:</div>
+        <select [(ngModel)]="id_tipo_jornada"
+                id="tipojornada"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+        >
+          <option value=1>Ordinaria</option>
+          <option value=2>Parcial</option>
+          <option value=3>Excenta</option>
+        </select>
+      </div>
+
+      <div class="flex items-center">
+        <div class="text-md font-medium mr-2">Frecuercia de pago:</div>
+        <select [(ngModel)]="id_frecuencia_pago"
+                id="frecuencia"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+        >
+          <option value=1>Mensual</option>
+          <option value=2>Quincenal</option>
+        </select>
+      </div>
+      <div class="flex items-center">
+        <div class="text-md font-medium mr-2">Medio de pago:</div>
+        <select [(ngModel)]="id_medio_pago"
+                id="medio de pago"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+        >
+          <option value=1>Efectivo</option>
+          <option value=2>Cheque</option>
+          <option value=3>Transferencia Bancaria</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="flex justify-end">
+      <h1><a [routerLink]="['/inicioempresa',id_empresa ]" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-flex items-center"  >Regresar Inicio</a></h1>
+    </div>
+    <button (click)="registrar()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-flex items-center"
+    >Registrar Contrato</button>
+
+  </div>
+</div>
+</body>
+</html>
