@@ -19,9 +19,7 @@ Esta es la vista donde podra ingresar los datos de su cuenta y podra validarlos 
 ### Funcionalidad 
 El usuario ingresara su cuenta, tanto usuario como contraseña. Si el sistema valida la cuenta. Entonces le permitira el acceso a la pestaña de **InicioEmpresa** 
 si la cuenta le pertenece a un administrador o le dirigira a la pestaña de **InicioEmpleado** si la cuenta le pertenece a un empleado.
-### Codigo
-Aqui se puede mostrar la parte en codigo que valida si una cuenta pertenece o no al sistema.
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/1e66a429-9c82-419c-998a-de72f2bca641)
+
 
 ## Vista 2: Pantalla de inicio de administrador  
 ### Descripcion 
