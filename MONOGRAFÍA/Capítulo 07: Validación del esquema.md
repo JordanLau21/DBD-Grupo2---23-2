@@ -70,11 +70,55 @@ Columnas: id_frecuencia_pago, frecuencia_pago
 - Medio de Pago
 Columnas: id_medio_pago, medio_pago, entidad_financiera, cuenta
 
-|id_medio_pago|medio_pago|entidad_financiera|cuenta|
-|-------------|----------|------------------|------|
-|1|Efectivo|NULL|NULL|
-|2|Cheque|"       "|NULL|
-|3|Transferencia Bancaria|"       "|0123456789|
+|id_medio_pago|medio_pago|
+|-------------|----------|
+|1|Efectivo|
+|2|Cheque|
+|3|Transferencia Bancaria|
+
+
+### Entidad: Solicitud
+- Tipo de Solicitud
+Columnas: id_tipo_solicitud, descripcion
+
+|id_tipo_solicitud|descripcion|
+|-----------------|-----------|
+|1|Licencia|
+|2|Reclamo|
+|3|Aumento|
+|4|Vacaciones|
+|5|Configuración de Información|
+|6|Adelanto|
+
+- Estado de Solicitud
+Columnas: id_estado_solicitud, descripcion
+
+|id_estado_solicitud|descripcion|
+|-------------------|-----------|
+|1|Aceptado|
+|2|En Espera|
+|3|Rechazado|
+
+### Entidad: Concepto de Nómina
+- Tipo de Operación
+Columnas: id_tipo_operacion, descripcion_operacion
+
+|id_tipo_operacion|descripcion_operacion|
+|-----------------|---------------------|
+|1|Ingreso|
+|2|Descuento|
+|3|Aportes|
+|4|Neutro|
+
+
+### Entidades: Cuenta de Empleado y Cuenta de Empresa
+- Estado de Cuenta
+Columnas: id_estado_cuenta, estado_cuenta
+
+|id_estado_cuenta|estado_cuenta|
+|-----------------|---------------------|
+|1|Vigente|
+|2|Desvinculado|
 
 
 
