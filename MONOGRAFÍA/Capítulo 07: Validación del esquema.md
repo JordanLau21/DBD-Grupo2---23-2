@@ -2,14 +2,60 @@
 ## Lookup Tables
 ### Entidad: Empleado
 - Régimen Pensionario
-
+Columnas: id_regimen_pensionario, tipo_regimen
 |id_regimen_pensionario|tipo_regimen|
 |----------------------|------------|
-|a|b|
+|1|ONP|
+|2|AFP|
 
-  
 - Seguro Médico
+Columnas: id_seguro_medico, tipo_seguro
+|id_seguro_medico|tipo_seguro|
+|----------------|-----------|
+|1|EPS|
+|2|SIS|
+|3|EsSalud|
+|4|Privado|
+
 - Situación de Discapacidad
+Columnas: id_situacion_discapacidad, tipo_discapacidad
+|id_situacion_discapacidad|tipo_discapacidad|
+|-------------------------|-----------------|
+|1|Ninguna|
+|2|Parcial|
+|3|Total|
+
+### Entidad: Contrato
+- Estado de Contrato
+Columnas: id_regimen_pensionario, tipo_regimen
+|id_regimen_pensionario|tipo_regimen|
+|----------------------|------------|
+|1|ONP|
+
+
+- Tipo de Contrato
+Columnas: id_regimen_pensionario, tipo_regimen
+|id_regimen_pensionario|tipo_regimen|
+|----------------------|------------|
+|1|ONP|
+
+- Tipo de Jornada
+Columnas: id_regimen_pensionario, tipo_regimen
+|id_regimen_pensionario|tipo_regimen|
+|----------------------|------------|
+|1|ONP|
+
+- Frecuencia de Pago
+Columnas: id_regimen_pensionario, tipo_regimen
+|id_regimen_pensionario|tipo_regimen|
+|----------------------|------------|
+|1|ONP|
+
+- Medio de Pago
+Columnas: id_regimen_pensionario, tipo_regimen
+|id_regimen_pensionario|tipo_regimen|
+|----------------------|------------|
+|1|ONP|
 
 
 
