@@ -86,4 +86,5 @@ INNER JOIN Tipo_jornada TJ ON CO.id_tipo_jornada = TJ.id_tipo_jornada;
 
 SELECT * FROM DatosEmpleadoContrato;
 ```
+Esta vista combina la información relevante de las tablas Empleado y Contrato en una sola vista para facilitar las consultas, como resultado de la query:
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/ae3781f4-cce9-4993-9991-9426d211f2c3)
