@@ -69,4 +69,21 @@ El valor generado por NEXTVAL(id_solicitud) se usa como identificador único, si
 Este método de uso de secuencias provee una manera eficiente y consistente de generar identificadores únicos para las solicitudes en la base de datos. Además, se complementa con la obtención de otros valores, como id_empleado y id_empresa, provenientes de la información almacenada en la base de datos correspondiente.
 
 ## 14.3 VIEW
-Text
+Se creó una vista una vista que combine la información de Empleado y Contrato para simplificar las consultas y hacerlas más legibles. 
+```
+CREATE VIEW DatosEmpleadoContrato AS
+SELECT 
+    E.id_empleado, E.nombre, E.apellidos, E.fecha_nacimiento, E.edad, E.telefono, 
+	E.email, E.dni, E.estado_civil, E.sexo, E.cantidad_menores_cargo,
+    C.nombre_cargo, A.nombre_area, EC.estado_contrato, TC.tipo_contrato, TJ.tipo_jornada
+FROM Empleado E
+INNER JOIN Contrato CO ON E.id_empleado = CO.id_empleado
+INNER JOIN Cargo C ON CO.id_cargo = C.id_cargo
+INNER JOIN Area A ON CO.id_area = A.id_area
+INNER JOIN Estado_contrato EC ON CO.id_estado_contrato = EC.id_estado_contrato
+INNER JOIN Tipo_contrato TC ON CO.id_tipo_contrato = TC.id_tipo_contrato
+INNER JOIN Tipo_jornada TJ ON CO.id_tipo_jornada = TJ.id_tipo_jornada;
+
+SELECT * FROM DatosEmpleadoContrato;
+```
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/ae3781f4-cce9-4993-9991-9426d211f2c3)
