@@ -1,7 +1,6 @@
-# Título del Trabajo
+# SISTEMA DE PLANILLAS
 
-![Logo de la Universidad](enlace_a_la_imagen.jpg)
-
+IMAGEN
 ---
 
 **Curso:** Nombre del Curso  
@@ -12,11 +11,12 @@
 
 ## Integrantes:
 
-- Nombre 1
-- Nombre 2
-- Nombre 3
-- ...
+- a
+- b
+- c
+- d
+- e
+- f
 
 ---
 
-Breve descripción o introducción al trabajo.
