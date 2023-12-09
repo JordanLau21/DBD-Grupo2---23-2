@@ -1,3 +1,4 @@
+# CAPÍTULO 01: DESCRIPCIÓN DE LA EMPRESA
 ## 1.1 PRESENTACIÓN DE LA EMPRESA
 #### 1.1.1 Empresa
 La empresa WOW Perú fue fundada en 2022 por un grupo de empresarios peruanos y colombianos. La empresa inició sus operaciones en Lima, y rápidamente se expandió a 
