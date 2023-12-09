@@ -1,4 +1,4 @@
-# CAPÍTULO 3: MÓDULOS
+# Capítulo 03: Módulos
 ## 3.1. CÓDIGOS DE REQUERIMIENTO
 
 <table>
