@@ -27,9 +27,17 @@ La creación de índices relevantes en las columnas de planilla ha mejorado sign
 
 | Codigo Interfaz    |     I - 034    | 
 |:-------------|:---------------|
-| Imagen interfaz   I-00G  | ![image](https://github.com/nnthony/bookish-doodle/blob/d2b5a087137a916cfb148ce51a930d75a2aaaf8f/pnt/R-DetallEBoleta1.png) |
+| Imagen interfaz | ![image](https://github.com/nnthony/bookish-doodle/blob/d2b5a087137a916cfb148ce51a930d75a2aaaf8f/pnt/R-DetallEBoleta1.png) |
 | Sentencia SQL sin Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/7f3d9b3e-7b62-4371-a06b-2b34cd45ac24)  |
 | Sentencia SQL con Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/34a92c7b-dcfe-4e0c-b0ef-adfd1bb4e241) |
+
+| Codigo Interfaz    |     I - 035    | 
+|:-------------|:---------------|
+| Imagen interfaz | ![image](https://github.com/nnthony/bookish-doodle/blob/d2b5a087137a916cfb148ce51a930d75a2aaaf8f/pnt/generarnuevasboletas.png) |
+| Sentencia SQL sin Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/13e93d3c-901d-46bb-b5c8-d19f6ab96696) |
+| Sentencia SQL con Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/a1b3854a-5d5f-4bff-9baa-d3e3c3ae9c9d) |
+
+
 ## 14.2 SECUENCIAS
 Las secuencias en SQL ofrecen una herramienta fundamental para la generación de identificadores únicos, especialmente en el contexto de aplicaciones que requieren la asignación de claves primarias para el seguimiento y la gestión de datos. En este apartado mencionamos el uso de secuencias en la generación de identificadores de solicitudes en una base de datos relacional, destacando su aplicabilidad y utilidad en este escenario.
 
