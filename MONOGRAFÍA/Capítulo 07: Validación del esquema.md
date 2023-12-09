@@ -3,6 +3,7 @@
 ### Entidad: Empleado
 - Régimen Pensionario
 Columnas: id_regimen_pensionario, tipo_regimen
+
 |id_regimen_pensionario|tipo_regimen|
 |----------------------|------------|
 |1|ONP|
