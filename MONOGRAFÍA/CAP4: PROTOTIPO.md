@@ -66,7 +66,7 @@
 |---|---|
 | Pantalla Solicitudes (Empleado) | R007 |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/i006.jpg?raw=true)
 
 - Tipo de Usuario: Usuario Paramétrico
 
@@ -76,7 +76,7 @@
 |---|---|
 | Nueva Solicitud |R008  |
 
-![image]()
+![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/Luis/i007.jpg?raw=true)
 
 - Tipo de Usuario: Usuario Paramétrico
 
