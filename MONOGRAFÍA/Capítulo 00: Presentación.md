@@ -1,12 +1,8 @@
 <center>
-
-Tu texto o elemento que quieres centrar
-
-
-
-
 UNIVERSIDAD NACIONAL DE INGENIERÍA
+ </center>
 
+ 
 FACULTAD DE INGENIERÍA INDUSTRIAL Y DE SISTEMAS
 
 
