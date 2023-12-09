@@ -52,9 +52,4 @@ tendrá la empresa, ósea su valor agregado, este proceso de negocio nos basamos
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/144966702/8351b1ad-50f4-45da-b9c5-c4cb9493d330) <br>
 Proceso de Negocio: Elaboración Planilla de Pago. Elaboración Propia
 
-<br><br><br><br>
-[índice](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2000%3A%20Presentaci%C3%B3n.md)
-<br>
-[Capítulo Siguiente](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2002%3A%20Requerimientos.md)
-
 
