@@ -19,6 +19,12 @@ La creación de índices relevantes en las columnas de planilla ha mejorado sign
 | Sentencia SQL con Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/b019dfda-b59a-4e3b-afda-99cb19e4a0b5) |
 
 
+| Codigo Interfaz    |     I - 033    | 
+|:-------------|:---------------|
+| Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/6545e6397d88a3a2bbade4d4f3435bd855b81231/pnt/R-detallePlanillaPagada.png) |
+| Sentencia SQL sin Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/6f834716-8dd9-4238-86fc-32e0c0d5ce74) |
+| Sentencia SQL con Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/42c2afbf-3cbe-41b9-b9b8-9a0e76416850) |
+
 ## 14.2 SECUENCIAS
 Las secuencias en SQL ofrecen una herramienta fundamental para la generación de identificadores únicos, especialmente en el contexto de aplicaciones que requieren la asignación de claves primarias para el seguimiento y la gestión de datos. En este apartado mencionamos el uso de secuencias en la generación de identificadores de solicitudes en una base de datos relacional, destacando su aplicabilidad y utilidad en este escenario.
 
