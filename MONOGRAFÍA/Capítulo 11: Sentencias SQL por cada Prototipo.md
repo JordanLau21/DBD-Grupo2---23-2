@@ -186,7 +186,7 @@ En caso de elegir como Medio de Pago(<12>) el Efectivo, esos 2 campos tomarán e
 | Codigo Requerimiento    |     | 
 |:-------------|:---------------|
 | Codigo Interfaz    |   I012    | 
-| Imagen interfaz   |      ![image]([https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes_1.png](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/3.png))  |
+| Imagen interfaz   |      ![image]([https://github.com/luisfhs712/DBD_LUIS__PERS_23-1/blob/main/vigentes_1.png](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/IM%C3%81GENES/3.png)  |
 
 
 ### Sentecias SQL:
