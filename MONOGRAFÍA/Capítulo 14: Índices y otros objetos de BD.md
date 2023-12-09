@@ -14,6 +14,7 @@ En este subcapítulo, a partir de nuestros módulos escogidos para la funcionali
 #### 14.1.4 MÓDULO : PLANILLA
 La creación de índices relevantes en las columnas de planilla ha mejorado significativamente el rendimiento de 3 consultas, reduciendo el tiempo de ejecución y el costo de consulta en operaciones críticas del sistema.
 | Codigo Interfaz    |    I - 028    | 
+|:-------------|:---------------|
 | Imagen interfaz   | ![image](https://github.com/nnthony/bookish-doodle/blob/4e05c459ab523a14aa7aafdeb509a13028487e06/pnt/planilla.png) |
 | Sentencia SQL sin Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/f56fa068-c2e1-4e26-a8ef-b5687e3e4317) |
 | Sentencia SQL con Índice   | ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/81944281/b019dfda-b59a-4e3b-afda-99cb19e4a0b5) |
