@@ -331,9 +331,6 @@ El administrador podra registrar una nueva planilla
 ### Funcionalidad 
 Registrar una nueva planilla
 
-![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/8e6d68d6-0459-4edc-8d02-5f12c0839d09)
-
-
 
 ## CASO : Boletas de Pago
 ## FLUJO DE LAS OPCIONES
