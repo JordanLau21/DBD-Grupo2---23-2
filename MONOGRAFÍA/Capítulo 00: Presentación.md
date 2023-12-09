@@ -35,5 +35,5 @@ Caballero Ortiz, José Alberto
 ## [Capítulo 17: Versión Final de la Aplicación](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2017%3A%20Versi%C3%B3n%20Final%20de%20la%20Aplicaci%C3%B3n.md)
 ## [Capítulo 18: Próximos Pasos](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2018%3A%20Pr%C3%B3ximos%20Pasos.md)
 ## [Capítulo 19: Aplicación de una base de datos NoSQL](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Cap%C3%ADtulo%2019%3A%20Aplicaci%C3%B3n%20de%20una%20base%20de%20datos%20NoSQL.md)
-## [Referencias]()
+## [Referencias](https://github.com/JordanLau21/DBD-Grupo2---23-2/blob/main/MONOGRAF%C3%8DA/Referencias.md)
 
