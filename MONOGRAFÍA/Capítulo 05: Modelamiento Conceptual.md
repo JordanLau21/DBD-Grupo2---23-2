@@ -87,66 +87,16 @@ Semantica: Persona que trabaja en la empresa a cambio de una remuneración
 
 
 #### Entidad: CONTRATO
-Semantica: Acuerdo firmado por el empleado y la empresa en que se esécifican los términos acordados entre ambas partes
+Semantica: Acuerdo firmado por el empleado y la empresa en el que se especifican los términos acordados entre ambas partes.
 
 | Atributo | Naturaleza  |  Formato  |  Valores validos  |Unidad|Derivada de| Descripcion  |  
 |----------|----------|----------|----------|----------|----------|----------|
 | id_contrato |INTEGER|99|2 dígitos|||Identificador del contrato firmado por el empleado y la empresa|
-| Tipo de Jornada | CHAR   |XXXX|TAB|||Tipo de jornada que realiza el empleado en la empresa|
-| Sueldo Base | NUMERIC   |99999.99|>0|Soles||Sueldo base percibido por el empleado en la empresa|
-| Fecha de Contrato | DATE   |AAAAMMDD|Válido en calendario|||Fecha de firma del contrato entre el empleado y la empresa|
+| Fecha de Firma de Contrato | DATE   |AAAAMMDD|Válido en calendario|||Fecha de firma del contrato entre el empleado y la empresa|
+| Fecha de Inicio Laboral | DATE   |AAAAMMDD|Válido en calendario|||Fecha acordada para el inicio de labores del empleado en la empresa.|
 | Fecha Término de Contrato | DATE   |AAAAMMDD|Válido en calendario|||Fecha de finalización del contrato firmado entre el empleado y la empresa|
-|id_estado_contrato | INTEGER   |XXX| |||Identificador del estado del contrato firmado entre el empleado y la empresa|
-|id_tipo_contrato | INTEGER   |XXX| |||Identificador del tipo de contrato firmado entre el empleado y la empresa|
-| Horario Semanal | TIME   |HH:MM:SS-HH:MM:SS|[00:00:00-23:59:59]|||Horario semanal realizado por el empleado en la empresa|
-| Periodicidad de la Jornada | CHAR   |XXXX|TAB|||Periodicidad de la jornada semanal por parte del empleado en la empresa|
+| Sueldo Base | NUMERIC   |99999.99|>0|Soles||Sueldo base percibido por el empleado en la empresa|
 | Líquido Teórico | NUMERIC   |99999.99|>0|Soles||Líquito teórico que percibe el empleado por parte de la empresa|
-| Periodicidad de Pago | CHAR   |XXXX|TAB|||Periodicidad de pago realizado por la empresa al empleado|
-
-TAB: Tipo de Jornada
-|Código|Semantica|
-|------|---------|
-|ORDI|Ordinaria|
-|PARC|Parcial|
-|EXCE|Excenta|
-
-TAB: Estado de Contrato
-|Código|Semantica|
-|------|---------|
-|VIG|Vigente|
-|FIN|Finalizado|
-|RES|Rescindido|
-
-TAB: Tipo de Contrato
-|Código|Semantica|
-|------|---------|
-|IND|Indefinido|
-|OBR|Obra|
-|PLF|Plazo Fijo|
-
-TAB: Periodicidad de la Jornada
-|Código|Semantica|
-|------|---------|
-|MENS|Mensual|
-|DIAR|Diaria|
-
-TAB: Periodicidad de Pago
-|Código|Semantica|
-|------|---------|
-|MENS|Mensual|
-|QUIN|Quincenal|
-
-Lookup Tables
-| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
-|----------|----------|----------|----------|----------|----------|----------|
-|id_estado_contrato|INTEGER|XXX||||Identificador del estado del actual contrato del empleado|
-|descricpion_estado_contrato|CHAR|X(3)|NOT NULL|||Representa el estado del contrato del empleado|
-
-| Atributo | Naturaleza  |  Formato  |  Valores validos  |  Unidad  |  Derivada de  |  Descripcion  |  
-|----------|----------|----------|----------|----------|----------|----------|
-|id_tipo_contrato|INTEGER|XXX||||Identificador del tipo de contrato del empleado|
-|descricpion_tipo_contrato|CHAR|X(3)|NOT NULL|||Representa el tipo de contrato del empleado|
-
 
 #### Entidad: CARGO
 Semantica: Función de la cual una persona tiene la responsabilidad en la organización
