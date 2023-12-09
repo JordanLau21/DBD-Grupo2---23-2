@@ -1,4 +1,16 @@
 # CAPÍTULO : VALIDACIÓN DEL ESQUEMA
+## Lookup Tables
+### Entidad: Empleado
+- Régimen Pensionario
+|--------------|----------------|
+|id_regimen_pensionario|tipo_regimen|
+
+  
+- Seguro Médico
+- Situación de Discapacidad
+
+
+
 
 - Entidad: EMPLEADO
 
