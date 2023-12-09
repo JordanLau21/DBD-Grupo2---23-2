@@ -103,7 +103,7 @@ Esta es la vista donde podra visualizar todas los empleados vigentes de la empre
 # CASO 4: Desvinculados
 ## Vista 6: Ver empleados desviculados o inactivos
 ### Descripcion 
-El administrador al apretar en el boton de **"Vigentes"**, podra visualizar a todos los empleado vigentes de la empresa
+El administrador al apretar en el boton de **"Desvinculados"**, podra visualizar a todos los empleado desvinculados o inactivos de la empresa
 ### Capturas de pantallas
 Esta es la vista donde podra visualizar todas los empleados vigentes de la empresa
 ![image](https://github.com/JordanLau21/DBD-Grupo2---23-2/assets/114813930/2d034a10-cafa-425d-8794-fffd956bc041)
