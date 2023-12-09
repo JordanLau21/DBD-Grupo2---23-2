@@ -1,4 +1,4 @@
-# ACTUALIZACIONES A LA ARQUITECTURA DE LA APLICACIÓN
+# Capítulo 16: Arquitectura de la Aplicación
 
 ## ESTRUCTURA DE LA APLICACIÓN
 
