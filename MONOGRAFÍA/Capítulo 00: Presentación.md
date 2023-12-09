@@ -1,7 +1,8 @@
-<div class="centrado">
-    Tu texto centrado
-</div>
-
+<style>
+    .centrado {
+        text-align: center;
+    }
+</style>
 
 # UNIVERSIDAD NACIONAL DE INGENIERÍA
 # FACULTAD DE INGENIERÍA INDUSTRIAL Y DE SISTEMAS
