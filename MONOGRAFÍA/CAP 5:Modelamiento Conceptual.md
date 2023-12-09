@@ -404,4 +404,30 @@ TAB: Sexo
 | A | Activo |
 | I | Inactivo |
 
+## 5.3 RELACIONES Y ATRIBUTOS
+### TABLA DE RELACIONES
+
+| Nombre de la relacion | Entidades participantes  |  Cardinalidad  |  Atributos  |  ¿Entidad Aparte? |  
+|----------|----------|----------|----------|----------|
+| Envía | EMPLEADO-SOLICITUD | 1-N | - | NO |
+| Pertenece | SOLCITUD-EMPRESA | N-1 | - | NO |
+| Tiene | EMPRESA-REPRESENTANTE LEGAL | 1-N | - | NO |
+| Tiene | EMPRESA-CUENTA EMPRESA | 1-1 | - | NO |
+| Tiene | EMPRESA-ÁREA | 1-N | - | NO |
+| Tiene | EMPRESA-EMPLEADO | 1-N | - | NO |
+| Maneja | EMPRESA-CARGO | 1-N | - | NO |
+| Tiene | ÁREA-CONTRATO | 1-N | - | NO |
+| Tiene | CONTRATO-EMPLEADO | N-1 | - | NO |
+| Tiene | CONTRATO-ASISTENCIAS | 1-N | - | NO |
+| Tiene | CONTRATO-BOLETA | 1-N | - | NO |
+| Tiene | CONTRATO-CARGO | N-1 | - | NO |
+| Tiene | CONTRATO-MOVIMIENTO DE PLANILLA | 1-N | - | NO |
+| Compuesta | MOVIMIENTO DE PLANILLA-BOLETA | N-1 | - | NO |
+| Tiene | MOVIMIENTO DE PLANILLA-CONCEPTO NOMINA | N-1 | - | NO |
+| Tiene | PLANILLA-BOLETA | 1-N | - | NO |
+| Compuesta | ASISTENCIAS-BOLETA | N-1 | - | NO |
+| Tiene | ASISTENCIAS-CONCEPTO NOMINA | N-1 | - | NO |
+| Tiene | EMPLEADO-CUENTA | 1-1 | - | NO |
+| Contiene | EMPLEADO-FAMILIAR EMPLEADO | 1-N | - | NO |
+
 
